@@ -1,0 +1,6 @@
+13:33:10 **** Auto Build of project fsbl_bsp ****
+make -k all 
+Finished building libraries
+
+13:33:10 Build Finished (took 80ms)
+

@@ -1,0 +1,380 @@
+13:13:00.115 INFO  - Processing command line option -hwspec /root/260214/hw/dma.xml. 
+13:13:17.922 INFO  - Restoring global repository preferences: 
+		 /root/PROJECT/XILINX/clock_test 
+13:14:10.058 INFO  - 'device-tree' is a board support package for an OS for which applications cannot be developed within SDK. 
+13:14:10.058 INFO  - You can configure and build project 'device-tree_bsp_0' within SDK at will, but have to export it into the appropriate third party environment to develop applications. 
+13:14:10.536 WARN  - Unable to determine location of documentation for OS device-tree. 
+13:15:33.664 INFO  - Invoking Bootgen:  
+13:15:34.236 INFO  - Bootgen command execution is done. 
+14:07:42.429 INFO  - Project hw_platform_0's source hardware specification located at /root/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+14:07:49.324 INFO  - Copied contents of /root/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+14:07:49.336 INFO  - Copied contents of /root/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+14:07:49.342 INFO  - Copied contents of /root/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+14:07:49.343 INFO  - Copied contents of /root/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+14:07:49.351 INFO  - Copied contents of /root/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+14:07:49.352 INFO  - Copied contents of /root/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+14:07:49.353 INFO  - Copied contents of /root/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+14:07:50.289 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+14:07:57.491 INFO  - Updating hardware inferred compiler options for fsbl. 
+14:07:57.498 INFO  - Clearing existing target manager status. 
+14:08:01.136 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+14:08:01.142 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+14:08:01.158 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+14:08:01.159 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+14:08:01.161 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+14:08:01.180 INFO  - Closing and re-opening the MSS file of ther project fsbl_bsp 
+14:08:01.890 INFO  - Closing and re-opening the MSS file of ther project device-tree_bsp_0 
+14:08:02.036 WARN  - Unable to determine location of documentation for OS device-tree. 
+14:08:03.345 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+14:10:03.506 INFO  - Specified output file already exists 
+14:10:04.787 INFO  - Invoking Bootgen:  
+14:10:05.325 INFO  - Bootgen command execution is done. 
+14:47:18.285 INFO  - Project hw_platform_0's source hardware specification located at /root/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+14:48:42.464 INFO  - Copied contents of /root/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+14:48:42.474 INFO  - Copied contents of /root/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+14:48:42.479 INFO  - Copied contents of /root/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+14:48:42.480 INFO  - Copied contents of /root/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+14:48:42.487 INFO  - Copied contents of /root/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+14:48:42.488 INFO  - Copied contents of /root/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+14:48:42.490 INFO  - Copied contents of /root/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+14:48:42.840 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+14:48:48.530 INFO  - Updating hardware inferred compiler options for fsbl. 
+14:48:48.534 INFO  - Clearing existing target manager status. 
+14:48:48.539 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+14:48:48.544 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+14:48:48.555 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+14:48:48.556 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+14:48:48.559 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+14:48:48.561 INFO  - Closing and re-opening the MSS file of ther project fsbl_bsp 
+14:48:49.025 INFO  - Closing and re-opening the MSS file of ther project device-tree_bsp_0 
+14:48:49.186 WARN  - Unable to determine location of documentation for OS device-tree. 
+14:48:50.481 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+14:49:32.580 INFO  - Specified output file already exists 
+14:49:33.837 INFO  - Invoking Bootgen:  
+14:49:34.367 INFO  - Bootgen command execution is done. 
+16:09:42.396 INFO  - Project hw_platform_0's source hardware specification located at /root/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+16:09:45.691 INFO  - Copied contents of /root/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+16:09:45.700 INFO  - Copied contents of /root/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+16:09:45.706 INFO  - Copied contents of /root/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+16:09:45.707 INFO  - Copied contents of /root/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+16:09:45.713 INFO  - Copied contents of /root/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+16:09:45.714 INFO  - Copied contents of /root/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+16:09:45.715 INFO  - Copied contents of /root/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+16:09:46.159 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+16:09:52.398 INFO  - Updating hardware inferred compiler options for fsbl. 
+16:09:52.412 INFO  - Clearing existing target manager status. 
+16:09:52.418 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+16:09:52.420 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+16:09:52.436 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+16:09:52.437 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+16:09:52.439 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+16:09:52.442 INFO  - Closing and re-opening the MSS file of ther project fsbl_bsp 
+16:09:52.944 INFO  - Closing and re-opening the MSS file of ther project device-tree_bsp_0 
+16:09:53.082 WARN  - Unable to determine location of documentation for OS device-tree. 
+16:09:54.395 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+16:11:53.001 INFO  - Specified output file already exists 
+16:11:53.994 INFO  - Invoking Bootgen:  
+16:11:54.526 INFO  - Bootgen command execution is done. 
+16:55:22.219 INFO  - Project hw_platform_0's source hardware specification located at /root/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+16:55:25.427 INFO  - Copied contents of /root/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+16:55:25.440 INFO  - Copied contents of /root/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+16:55:25.447 INFO  - Copied contents of /root/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+16:55:25.449 INFO  - Copied contents of /root/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+16:55:25.459 INFO  - Copied contents of /root/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+16:55:25.461 INFO  - Copied contents of /root/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+16:55:25.462 INFO  - Copied contents of /root/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+16:55:25.854 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+16:55:31.389 INFO  - Updating hardware inferred compiler options for fsbl. 
+16:55:31.394 INFO  - Clearing existing target manager status. 
+16:55:31.400 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+16:55:31.403 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+16:55:31.414 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+16:55:31.417 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+16:55:31.419 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+16:55:31.421 INFO  - Closing and re-opening the MSS file of ther project fsbl_bsp 
+16:55:31.897 INFO  - Closing and re-opening the MSS file of ther project device-tree_bsp_0 
+16:55:32.039 WARN  - Unable to determine location of documentation for OS device-tree. 
+16:55:33.327 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+08:15:55.130 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+08:27:20.447 INFO  - Processing command line option -hwspec /root/260214/hw/dma.xml. 
+08:27:20.998 INFO  - The hardware specification for project 'hw_platform_0' is different from /root/260214/hw/dma.xml. 
+08:27:21.671 INFO  - Copied contents of /root/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+08:27:21.683 INFO  - Copied contents of /root/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+08:27:21.689 INFO  - Copied contents of /root/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+08:27:21.691 INFO  - Copied contents of /root/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+08:27:21.698 INFO  - Copied contents of /root/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+08:27:21.700 INFO  - Copied contents of /root/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+08:27:21.701 INFO  - Copied contents of /root/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+08:27:22.020 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+08:27:29.331 INFO  - Updating hardware inferred compiler options for fsbl. 
+08:27:29.343 INFO  - Clearing existing target manager status. 
+08:27:32.815 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+08:27:32.827 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+08:27:32.870 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+08:27:32.872 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+08:27:32.874 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+08:27:49.187 INFO  - Specified output file already exists 
+08:27:50.614 INFO  - Invoking Bootgen:  
+08:27:51.145 INFO  - Bootgen command execution is done. 
+08:35:04.352 INFO  - Processing command line option -hwspec /root/260214/hw/dma.xml. 
+08:35:04.835 INFO  - The hardware specification for project 'hw_platform_0' is different from /root/260214/hw/dma.xml. 
+08:35:10.091 INFO  - Project hw_platform_0's source hardware specification located at /root/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+08:35:22.716 ERROR - Unable to save current hardware specification file in a temporary location. 
+08:35:23.059 INFO  - Copied contents of /root/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+08:35:23.070 INFO  - Copied contents of /root/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+08:35:23.077 INFO  - Copied contents of /root/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+08:35:23.078 INFO  - Copied contents of /root/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+08:35:23.086 INFO  - Copied contents of /root/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+08:35:23.087 INFO  - Copied contents of /root/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+08:35:23.089 INFO  - Copied contents of /root/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+08:35:23.265 INFO  - Copied contents of /root/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+08:35:23.277 INFO  - Copied contents of /root/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+08:49:15.020 INFO  - Specified output file already exists 
+08:49:16.062 INFO  - Invoking Bootgen:  
+08:49:16.618 INFO  - Bootgen command execution is done. 
+12:18:17.753 INFO  - Project hw_platform_0's source hardware specification located at /root/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+12:18:25.013 INFO  - Copied contents of /root/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+12:18:25.024 INFO  - Copied contents of /root/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+12:18:25.029 INFO  - Copied contents of /root/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+12:18:25.030 INFO  - Copied contents of /root/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+12:18:25.038 INFO  - Copied contents of /root/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+12:18:25.039 INFO  - Copied contents of /root/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+12:18:25.041 INFO  - Copied contents of /root/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+12:18:25.484 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+12:18:30.939 INFO  - Updating hardware inferred compiler options for fsbl. 
+12:18:30.944 INFO  - Clearing existing target manager status. 
+12:18:34.577 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+12:18:34.585 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+12:18:34.595 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+12:18:34.598 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+12:18:34.601 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+12:18:47.308 INFO  - Specified output file already exists 
+12:18:49.051 INFO  - Invoking Bootgen:  
+12:18:49.573 INFO  - Bootgen command execution is done. 
+12:40:59.138 INFO  - Project hw_platform_0's source hardware specification located at /root/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+12:41:14.925 INFO  - Copied contents of /root/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+12:41:14.935 INFO  - Copied contents of /root/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+12:41:14.941 INFO  - Copied contents of /root/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+12:41:14.942 INFO  - Copied contents of /root/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+12:41:14.950 INFO  - Copied contents of /root/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+12:41:14.951 INFO  - Copied contents of /root/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+12:41:14.953 INFO  - Copied contents of /root/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+12:41:15.363 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+12:41:35.049 INFO  - Updating hardware inferred compiler options for fsbl. 
+12:41:35.068 INFO  - Clearing existing target manager status. 
+12:41:38.401 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+12:41:38.404 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+12:41:38.415 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+12:41:38.418 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+12:41:38.420 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+12:41:52.174 INFO  - Specified output file already exists 
+12:41:53.455 INFO  - Invoking Bootgen:  
+12:41:53.976 INFO  - Bootgen command execution is done. 
+13:05:13.635 INFO  - Project hw_platform_0's source hardware specification located at /root/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+13:05:17.986 INFO  - Copied contents of /root/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+13:05:17.997 INFO  - Copied contents of /root/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+13:05:18.003 INFO  - Copied contents of /root/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+13:05:18.004 INFO  - Copied contents of /root/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+13:05:18.013 INFO  - Copied contents of /root/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+13:05:18.014 INFO  - Copied contents of /root/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+13:05:18.017 INFO  - Copied contents of /root/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+13:05:18.780 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+13:05:38.276 INFO  - Updating hardware inferred compiler options for fsbl. 
+13:05:38.290 INFO  - Clearing existing target manager status. 
+13:05:41.505 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+13:05:41.507 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+13:05:41.516 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+13:05:41.518 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+13:05:41.521 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+13:05:52.706 INFO  - Specified output file already exists 
+13:05:54.311 INFO  - Invoking Bootgen:  
+13:05:54.833 INFO  - Bootgen command execution is done. 
+13:37:05.738 INFO  - Project hw_platform_0's source hardware specification located at /root/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+13:38:19.575 INFO  - Copied contents of /root/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+13:38:19.587 INFO  - Copied contents of /root/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+13:38:19.594 INFO  - Copied contents of /root/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+13:38:19.595 INFO  - Copied contents of /root/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+13:38:19.605 INFO  - Copied contents of /root/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+13:38:19.606 INFO  - Copied contents of /root/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+13:38:19.607 INFO  - Copied contents of /root/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+13:38:20.437 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+13:38:39.561 INFO  - Updating hardware inferred compiler options for fsbl. 
+13:38:39.574 INFO  - Clearing existing target manager status. 
+13:38:42.895 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+13:38:42.900 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+13:38:42.909 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+13:38:42.911 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+13:38:42.913 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+13:39:36.691 INFO  - Specified output file already exists 
+13:39:37.978 INFO  - Invoking Bootgen:  
+13:39:38.509 INFO  - Bootgen command execution is done. 
+13:59:06.732 INFO  - Project hw_platform_0's source hardware specification located at /root/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+13:59:08.703 INFO  - Copied contents of /root/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+13:59:08.714 INFO  - Copied contents of /root/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+13:59:08.718 INFO  - Copied contents of /root/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+13:59:08.720 INFO  - Copied contents of /root/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+13:59:08.728 INFO  - Copied contents of /root/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+13:59:08.730 INFO  - Copied contents of /root/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+13:59:08.731 INFO  - Copied contents of /root/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+13:59:09.542 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+13:59:28.823 INFO  - Updating hardware inferred compiler options for fsbl. 
+13:59:28.837 INFO  - Clearing existing target manager status. 
+13:59:32.156 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+13:59:32.158 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+13:59:32.171 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+13:59:32.173 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+13:59:32.175 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+13:59:45.750 INFO  - Specified output file already exists 
+13:59:46.804 INFO  - Invoking Bootgen:  
+13:59:47.327 INFO  - Bootgen command execution is done. 
+14:33:41.957 INFO  - Project hw_platform_0's source hardware specification located at /root/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+14:33:46.591 INFO  - Copied contents of /root/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+14:33:46.601 INFO  - Copied contents of /root/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+14:33:46.606 INFO  - Copied contents of /root/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+14:33:46.607 INFO  - Copied contents of /root/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+14:33:46.614 INFO  - Copied contents of /root/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+14:33:46.617 INFO  - Copied contents of /root/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+14:33:46.618 INFO  - Copied contents of /root/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+14:33:47.373 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+14:34:06.875 INFO  - Updating hardware inferred compiler options for fsbl. 
+14:34:06.888 INFO  - Clearing existing target manager status. 
+14:34:10.148 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+14:34:10.151 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+14:34:10.160 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+14:34:10.166 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+14:34:10.169 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+14:34:26.487 INFO  - Specified output file already exists 
+14:34:27.783 INFO  - Invoking Bootgen:  
+14:34:28.307 INFO  - Bootgen command execution is done. 
+14:34:46.727 INFO  - Specified output file already exists 
+14:34:47.782 INFO  - Invoking Bootgen:  
+14:34:48.305 INFO  - Bootgen command execution is done. 
+15:40:25.631 INFO  - Project hw_platform_0's source hardware specification located at /root/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+15:40:48.134 INFO  - Copied contents of /root/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+15:40:48.145 INFO  - Copied contents of /root/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+15:40:48.150 INFO  - Copied contents of /root/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+15:40:48.158 INFO  - Copied contents of /root/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+15:40:48.165 INFO  - Copied contents of /root/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+15:40:48.167 INFO  - Copied contents of /root/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+15:40:48.168 INFO  - Copied contents of /root/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+15:40:48.961 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+15:41:08.190 INFO  - Updating hardware inferred compiler options for fsbl. 
+15:41:08.202 INFO  - Clearing existing target manager status. 
+15:41:11.460 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+15:41:11.463 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+15:41:11.473 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+15:41:11.476 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+15:41:11.478 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+15:41:22.886 INFO  - Specified output file already exists 
+15:41:24.131 INFO  - Invoking Bootgen:  
+15:41:24.654 INFO  - Bootgen command execution is done. 
+08:59:00.049 INFO  - Project hw_platform_0's source hardware specification located at /root/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+08:59:05.793 INFO  - Copied contents of /root/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+08:59:05.807 INFO  - Copied contents of /root/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+08:59:05.812 INFO  - Copied contents of /root/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+08:59:05.813 INFO  - Copied contents of /root/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+08:59:05.823 INFO  - Copied contents of /root/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+08:59:05.824 INFO  - Copied contents of /root/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+08:59:05.826 INFO  - Copied contents of /root/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+08:59:06.789 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+08:59:30.829 INFO  - Updating hardware inferred compiler options for fsbl. 
+08:59:30.840 INFO  - Clearing existing target manager status. 
+08:59:34.248 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+08:59:34.250 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+08:59:34.259 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+08:59:34.261 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+08:59:34.263 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+08:59:48.645 INFO  - Specified output file already exists 
+08:59:49.900 INFO  - Invoking Bootgen:  
+08:59:50.431 INFO  - Bootgen command execution is done. 
+09:35:04.927 INFO  - Project hw_platform_0's source hardware specification located at /root/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+09:35:06.649 INFO  - Copied contents of /root/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+09:35:06.659 INFO  - Copied contents of /root/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+09:35:06.663 INFO  - Copied contents of /root/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+09:35:06.665 INFO  - Copied contents of /root/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+09:35:06.673 INFO  - Copied contents of /root/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+09:35:06.675 INFO  - Copied contents of /root/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+09:35:06.676 INFO  - Copied contents of /root/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+09:35:07.241 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+09:35:27.672 INFO  - Updating hardware inferred compiler options for fsbl. 
+09:35:27.683 INFO  - Clearing existing target manager status. 
+09:35:31.036 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+09:35:31.038 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+09:35:31.045 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+09:35:31.047 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+09:35:31.048 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+09:35:43.936 INFO  - Specified output file already exists 
+09:35:45.129 INFO  - Invoking Bootgen:  
+09:35:45.656 INFO  - Bootgen command execution is done. 
+12:20:22.283 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+13:20:21.572 INFO  - Processing command line option -hwspec /root/260214/hw/dma.xml. 
+13:20:22.176 INFO  - The hardware specification for project 'hw_platform_0' is different from /root/260214/hw/dma.xml. 
+13:20:22.890 INFO  - Copied contents of /root/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+13:20:22.905 INFO  - Copied contents of /root/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+13:20:22.912 INFO  - Copied contents of /root/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+13:20:22.913 INFO  - Copied contents of /root/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+13:20:22.922 INFO  - Copied contents of /root/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+13:20:22.923 INFO  - Copied contents of /root/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+13:20:22.925 INFO  - Copied contents of /root/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+13:20:23.588 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+13:20:47.149 INFO  - Updating hardware inferred compiler options for fsbl. 
+13:20:47.162 INFO  - Clearing existing target manager status. 
+13:20:50.860 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+13:20:50.869 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+13:20:50.887 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+13:20:50.900 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+13:20:50.903 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+13:21:15.462 INFO  - Specified output file already exists 
+13:21:16.813 INFO  - Invoking Bootgen:  
+13:21:17.411 INFO  - Bootgen command execution is done. 
+09:06:43.718 INFO  - Project hw_platform_0's source hardware specification located at /root/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+09:06:46.688 INFO  - Copied contents of /root/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+09:06:46.698 INFO  - Copied contents of /root/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+09:06:46.703 INFO  - Copied contents of /root/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+09:06:46.705 INFO  - Copied contents of /root/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+09:06:46.713 INFO  - Copied contents of /root/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+09:06:46.715 INFO  - Copied contents of /root/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+09:06:46.716 INFO  - Copied contents of /root/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+09:06:47.596 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+09:07:06.823 INFO  - Updating hardware inferred compiler options for fsbl. 
+09:07:06.836 INFO  - Clearing existing target manager status. 
+09:07:10.238 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+09:07:10.241 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+09:07:10.250 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+09:07:10.256 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+09:07:10.261 INFO  - Copied contents of /root/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+09:07:43.796 INFO  - Specified output file already exists 
+09:07:44.999 INFO  - Invoking Bootgen:  
+09:07:45.521 INFO  - Bootgen command execution is done. 
+13:32:57.131 INFO  - Processing command line option -hwspec /root/260214/hw/dma.xml. 
+13:32:57.672 INFO  - The hardware specification for project 'hw_platform_0' is different from /root/260214/hw/dma.xml. 
+13:33:02.490 INFO  - Project hw_platform_0's source hardware specification located at /root/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+13:33:04.144 ERROR - Unable to save current hardware specification file in a temporary location. 
+13:33:10.216 INFO  - Copied contents of /root/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+13:33:10.235 INFO  - Copied contents of /root/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+13:33:10.242 INFO  - Copied contents of /root/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+13:33:10.243 INFO  - Copied contents of /root/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+13:33:10.250 INFO  - Copied contents of /root/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+13:33:10.252 INFO  - Copied contents of /root/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+13:33:10.253 INFO  - Copied contents of /root/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+13:33:10.298 INFO  - Copied contents of /root/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+13:33:10.310 INFO  - Copied contents of /root/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+13:35:24.374 INFO  - Specified output file already exists 
+13:35:25.301 INFO  - Invoking Bootgen:  
+13:35:25.860 INFO  - Bootgen command execution is done. 
