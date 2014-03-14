@@ -1,0 +1,85 @@
+# ----- REMOVE LINES ABOVE HERE --------------------------
+#
+# This license is valid from Sun Nov 10 07:30:05 UTC 2013.
+#
+# This is license NODELOCKED to HOSTID=000011111111;
+# there is no need to run lmgrd for this license.
+#
+#
+#  This license is valid for evaluation ( 30 days ) from Sun Nov 10 07:30:05 UTC 2013
+INCREMENT Vivado_System_Edition_Eval xilinxd 2014.11 11-dec-2013 \
+uncounted 614F10A01268 \
+VENDOR_STRING=silantievvv@omega.mn,Vivado_System_Edition_Eval,software,evaluation,_210823092_1777496361_0_423 \
+HOSTID=000011111111 ISSUER="Xilinx Inc" START=10-Nov-2013 \
+TS_OK
+#
+# This is a permanent license generated on Sun Nov 10 07:30:05 UTC 2013
+INCREMENT ZEDWEBPACK_XC7Z020 xilinxd 2014.11 permanent uncounted \
+2EEA20E2CC93 \
+VENDOR_STRING=silantievvv@omega.mn,ZEDWEBPACK_XC7Z020,software,permanent,_210823092_1777496361_210570472_728 \
+HOSTID=000011111111 ISSUER="Xilinx Inc" START=10-Nov-2013 \
+TS_OK
+#
+#  This license is valid for evaluation ( 30 days ) from Sun Nov 10 07:30:05 UTC 2013
+INCREMENT VIVADO_HLS xilinxd 2014.11 11-dec-2013 uncounted \
+88FBE10BD6CE \
+VENDOR_STRING=silantievvv@omega.mn,VIVADO_HLS,software,evaluation,_210823092_1777496361_0_069 \
+HOSTID=000011111111 ISSUER="Xilinx Inc" START=10-Nov-2013 \
+TS_OK
+#
+#  This license is valid for evaluation ( 365 days ) from Sun Nov 10 07:30:05 UTC 2013
+INCREMENT PetaLinux_NoSuport_Eval xilinxd 2014.11 11-nov-2014 \
+uncounted 16339F353FDF \
+VENDOR_STRING=silantievvv@omega.mn,PetaLinux_NoSuport_Eval,software,evaluation,_210823092_1777496361_0_741 \
+HOSTID=000011111111 ISSUER="Xilinx Inc" START=10-Nov-2013 \
+TS_OK
+#
+# This is a permanent license generated on Sun Nov 10 07:30:05 UTC 2013
+INCREMENT Vivado_WebPACK xilinxd 2014.11 permanent uncounted \
+486ADA4EBF96 \
+VENDOR_STRING=silantievvv@omega.mn,Vivado_WebPACK,software,permanent,_210823092_1777496361_0_975 \
+HOSTID=ANY ISSUER="Xilinx Inc" START=10-Nov-2013 TS_OK
+#
+#
+# ----------------------------------------------------------------------
+#  The following PACKAGE definition is a REQUIRED part of this license:
+#
+PACKAGE Vivado_System_Edition_Eval xilinxd 2014.11 CB061A594249 \
+COMPONENTS="XPS Implementation SysGen Synthesis PlanAhead SDK \
+ChipScopePro_SIOTK ChipscopePro ISE ISIM HLS Simulation \
+Analyzer" OPTIONS=SUITE
+#
+# ------------------------------------------------------------------------------
+#
+#
+# ----------------------------------------------------------------------
+#  The following PACKAGE definition is a REQUIRED part of this license:
+#
+PACKAGE ZEDWEBPACK_XC7Z020 xilinxd 2014.11 096A33221764 \
+COMPONENTS="Implementation XPS ChipscopePro Synthesis \
+PlanAhead ISIM SDK XC7Z020 Simulation WebPACK Analyzer \
+ChipScopePro_SIOTK" OPTIONS=SUITE
+#
+# ------------------------------------------------------------------------------
+#
+#
+# ----------------------------------------------------------------------
+#  The following PACKAGE definition is a REQUIRED part of this license:
+#
+PACKAGE PetaLinux_NoSuport_Eval xilinxd 2014.11 05A34FB37ACD \
+COMPONENTS="petalinux_arch_zynq petalinux_arch_microblaze \
+petalinux_arch_ppc" OPTIONS=SUITE
+#
+# ------------------------------------------------------------------------------
+#
+#
+# ----------------------------------------------------------------------
+#  The following PACKAGE definition is a REQUIRED part of this license:
+#
+PACKAGE Vivado_WebPACK xilinxd 2014.11 E23FD25E2EE3 \
+COMPONENTS="PlanAhead V_WebPACK XC7Z030 xps_tdp XC7Z010 \
+XC7Z020 WebPACK" OPTIONS=SUITE
+#
+# ------------------------------------------------------------------------------
+#
+# ----- REMOVE LINES BELOW HERE --------------------------
