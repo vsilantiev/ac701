@@ -165,7 +165,11 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/component.xml">
-      <FileInfo SFType="IPXACT"/>
+      <FileInfo SFType="IPXACT">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
