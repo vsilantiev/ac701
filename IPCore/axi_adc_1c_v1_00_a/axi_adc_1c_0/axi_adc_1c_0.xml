@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <spirit:vendor>avnet</spirit:vendor>
+  <spirit:vendor>xilinx</spirit:vendor>
   <spirit:library>customized_ip</spirit:library>
   <spirit:name>axi_adc_1c_0</spirit:name>
   <spirit:version>1.0</spirit:version>
@@ -1008,7 +1008,7 @@
       </xilinx:taxonomies>
       <xilinx:displayName>axi_adc_1c_v1_0</xilinx:displayName>
       <xilinx:coreRevision>1</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2014-03-14T07:18:38Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2014-03-17T09:51:16Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="pcore">1</xilinx:tag>
       </xilinx:tags>
