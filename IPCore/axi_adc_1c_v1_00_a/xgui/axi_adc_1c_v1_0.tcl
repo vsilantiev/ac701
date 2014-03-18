@@ -2,18 +2,18 @@
 proc init_gui { IPINST } {
 	set Page0 [ ipgui::add_page $IPINST  -name "Page 0" -layout vertical]
 	set Component_Name [ ipgui::add_param  $IPINST  -parent  $Page0  -name Component_Name ]
-	set C_CF_BUFTYPE [ipgui::add_param $IPINST -parent $Page0 -name C_CF_BUFTYPE]
-	set C_SLV_DWIDTH [ipgui::add_param $IPINST -parent $Page0 -name C_SLV_DWIDTH]
-	set C_SLV_AWIDTH [ipgui::add_param $IPINST -parent $Page0 -name C_SLV_AWIDTH]
-	set C_NUM_MEM [ipgui::add_param $IPINST -parent $Page0 -name C_NUM_MEM]
-	set C_NUM_REG [ipgui::add_param $IPINST -parent $Page0 -name C_NUM_REG]
+	set C_CF_BUFTYPE [ipgui::add_param $IPINST -parent $Page0 -name C_CF_BUFTYPE ]
+	set C_SLV_DWIDTH [ipgui::add_param $IPINST -parent $Page0 -name C_SLV_DWIDTH ]
+	set C_SLV_AWIDTH [ipgui::add_param $IPINST -parent $Page0 -name C_SLV_AWIDTH ]
+	set C_NUM_MEM [ipgui::add_param $IPINST -parent $Page0 -name C_NUM_MEM ]
+	set C_NUM_REG [ipgui::add_param $IPINST -parent $Page0 -name C_NUM_REG ]
 	set C_HIGHADDR [ipgui::add_param $IPINST -parent $Page0 -name C_HIGHADDR]
 	set C_BASEADDR [ipgui::add_param $IPINST -parent $Page0 -name C_BASEADDR]
-	set C_DPHASE_TIMEOUT [ipgui::add_param $IPINST -parent $Page0 -name C_DPHASE_TIMEOUT]
-	set C_USE_WSTRB [ipgui::add_param $IPINST -parent $Page0 -name C_USE_WSTRB]
+	set C_DPHASE_TIMEOUT [ipgui::add_param $IPINST -parent $Page0 -name C_DPHASE_TIMEOUT ]
+	set C_USE_WSTRB [ipgui::add_param $IPINST -parent $Page0 -name C_USE_WSTRB ]
 	set C_S_AXI_MIN_SIZE [ipgui::add_param $IPINST -parent $Page0 -name C_S_AXI_MIN_SIZE]
-	set C_S_AXI_ADDR_WIDTH [ipgui::add_param $IPINST -parent $Page0 -name C_S_AXI_ADDR_WIDTH]
-	set C_S_AXI_DATA_WIDTH [ipgui::add_param $IPINST -parent $Page0 -name C_S_AXI_DATA_WIDTH]
+	set C_S_AXI_ADDR_WIDTH [ipgui::add_param $IPINST -parent $Page0 -name C_S_AXI_ADDR_WIDTH ]
+	set C_S_AXI_DATA_WIDTH [ipgui::add_param $IPINST -parent $Page0 -name C_S_AXI_DATA_WIDTH ]
 }
 
 proc update_PARAM_VALUE.C_CF_BUFTYPE { PARAM_VALUE.C_CF_BUFTYPE } {

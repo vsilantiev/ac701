@@ -35,8 +35,9 @@
       <Option Name="IPRepoPath" Val="$PPRDIR/../init_cdma_1.0"/>
       <Option Name="IPRepoPath" Val="$PPRDIR/../../IPCore"/>
       <Option Name="IPRepoPath" Val="$PPRDIR/../acp_1.0"/>
-      <Option Name="IPRepoPath" Val="/root/IPCore/reg_status_1.0"/>
-      <Option Name="IPRepoPath" Val="$PPRDIR/../../../zynq/IP_Core"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../../../IPCore/reg_status_1.0"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../../../../zynq/IP_Core"/>
+      <Option Name="IPRepoPath" Val="/root/zedboard/IPCore/reg_status_1.0"/>
     </Config>
   </FileSet>
 </DARoots>

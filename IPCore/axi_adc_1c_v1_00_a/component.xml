@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <spirit:vendor>avnet</spirit:vendor>
+  <spirit:vendor>Silantiev</spirit:vendor>
   <spirit:library>user</spirit:library>
   <spirit:name>axi_adc_1c</spirit:name>
   <spirit:version>1.0</spirit:version>
@@ -290,12 +290,6 @@
         <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
         <spirit:modelName>axi_adc_1c</spirit:modelName>
         <spirit:fileSetRef>
-          <spirit:localName>xilinx_anylanguagesynthesis_xilinx_com_ip_proc_common_3_00_a__ref_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
-        <spirit:fileSetRef>
-          <spirit:localName>xilinx_anylanguagesynthesis_xilinx_com_ip_axi_lite_ipif_1_01_a__ref_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
-        <spirit:fileSetRef>
           <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
         </spirit:fileSetRef>
       </spirit:view>
@@ -304,12 +298,6 @@
         <spirit:displayName>Simulation</spirit:displayName>
         <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
         <spirit:modelName>axi_adc_1c</spirit:modelName>
-        <spirit:fileSetRef>
-          <spirit:localName>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_proc_common_3_00_a__ref_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
-        <spirit:fileSetRef>
-          <spirit:localName>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_axi_lite_ipif_1_01_a__ref_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
         </spirit:fileSetRef>
@@ -1015,6 +1003,26 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
       <spirit:file>
+        <spirit:name>hdl/vhdl/proc_common_pkg.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>proc_common_v3_00_a</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/family_support.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>proc_common_v3_00_a</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/pselect_f.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>proc_common_v3_00_a</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/ipif_pkg.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>proc_common_v3_00_a</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/verilog/cf_pnmon.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:logicalName>work</spirit:logicalName>
@@ -1030,6 +1038,16 @@
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/vhdl/counter_f.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>proc_common_v3_00_a</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/address_decoder.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>axi_lite_ipif_v1_01_a</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/verilog/cf_dma_wr.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:logicalName>work</spirit:logicalName>
@@ -1040,14 +1058,34 @@
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/vhdl/slave_attachment.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>axi_lite_ipif_v1_01_a</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/verilog/cf_adc_1c.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/vhdl/or_muxcy.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>proc_common_v3_00_a</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/axi_lite_ipif.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>axi_lite_ipif_v1_01_a</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/verilog/user_logic.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:logicalName>work</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/or_gate128.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>proc_common_v3_00_a</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/vhdl/axi_adc_1c.vhd</spirit:name>
@@ -1058,6 +1096,26 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
+        <spirit:name>hdl/vhdl/proc_common_pkg.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>proc_common_v3_00_a</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/family_support.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>proc_common_v3_00_a</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/pselect_f.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>proc_common_v3_00_a</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/ipif_pkg.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>proc_common_v3_00_a</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/verilog/cf_pnmon.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:logicalName>work</spirit:logicalName>
@@ -1073,6 +1131,16 @@
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/vhdl/counter_f.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>proc_common_v3_00_a</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/address_decoder.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>axi_lite_ipif_v1_01_a</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/verilog/cf_dma_wr.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:logicalName>work</spirit:logicalName>
@@ -1083,9 +1151,24 @@
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/vhdl/slave_attachment.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>axi_lite_ipif_v1_01_a</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/verilog/cf_adc_1c.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:logicalName>work</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/or_muxcy.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>proc_common_v3_00_a</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/axi_lite_ipif.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>axi_lite_ipif_v1_01_a</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/user_logic.v</spirit:name>
@@ -1093,42 +1176,15 @@
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/vhdl/or_gate128.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>proc_common_v3_00_a</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/vhdl/axi_adc_1c.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>axi_adc_1c_v1_00_a</spirit:logicalName>
       </spirit:file>
-    </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_ip_proc_common_3_00_a__ref_view_fileset</spirit:name>
-      <spirit:vendorExtensions>
-        <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="proc_common" xilinx:version="3.00.a"/>
-        </xilinx:subCoreRef>
-      </spirit:vendorExtensions>
-    </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_proc_common_3_00_a__ref_view_fileset</spirit:name>
-      <spirit:vendorExtensions>
-        <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="proc_common" xilinx:version="3.00.a"/>
-        </xilinx:subCoreRef>
-      </spirit:vendorExtensions>
-    </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_ip_axi_lite_ipif_1_01_a__ref_view_fileset</spirit:name>
-      <spirit:vendorExtensions>
-        <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="axi_lite_ipif" xilinx:version="1.01.a"/>
-        </xilinx:subCoreRef>
-      </spirit:vendorExtensions>
-    </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_axi_lite_ipif_1_01_a__ref_view_fileset</spirit:name>
-      <spirit:vendorExtensions>
-        <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="axi_lite_ipif" xilinx:version="1.01.a"/>
-        </xilinx:subCoreRef>
-      </spirit:vendorExtensions>
     </spirit:fileSet>
     <spirit:fileSet>
       <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
@@ -1144,27 +1200,27 @@
     <spirit:parameter>
       <spirit:name>C_CF_BUFTYPE</spirit:name>
       <spirit:displayName>C Cf Buftype</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_CF_BUFTYPE" spirit:order="1100">0</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_CF_BUFTYPE" spirit:order="1100" spirit:rangeType="long">0</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_SLV_DWIDTH</spirit:name>
       <spirit:displayName>C Slv Dwidth</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLV_DWIDTH" spirit:order="1200">32</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLV_DWIDTH" spirit:order="1200" spirit:rangeType="long">32</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_SLV_AWIDTH</spirit:name>
       <spirit:displayName>C Slv Awidth</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLV_AWIDTH" spirit:order="1300">32</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLV_AWIDTH" spirit:order="1300" spirit:rangeType="long">32</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_NUM_MEM</spirit:name>
       <spirit:displayName>C Num Mem</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_NUM_MEM" spirit:order="1400">1</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_NUM_MEM" spirit:order="1400" spirit:rangeType="long">1</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_NUM_REG</spirit:name>
       <spirit:displayName>C Num Reg</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_NUM_REG" spirit:order="1500">1</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_NUM_REG" spirit:order="1500" spirit:rangeType="long">1</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_HIGHADDR</spirit:name>
@@ -1179,12 +1235,12 @@
     <spirit:parameter>
       <spirit:name>C_DPHASE_TIMEOUT</spirit:name>
       <spirit:displayName>C Dphase Timeout</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_DPHASE_TIMEOUT" spirit:order="1800">8</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_DPHASE_TIMEOUT" spirit:order="1800" spirit:rangeType="long">8</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_USE_WSTRB</spirit:name>
       <spirit:displayName>C Use Wstrb</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_USE_WSTRB" spirit:order="1900">0</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_USE_WSTRB" spirit:order="1900" spirit:rangeType="long">0</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_S_AXI_MIN_SIZE</spirit:name>
@@ -1194,12 +1250,12 @@
     <spirit:parameter>
       <spirit:name>C_S_AXI_ADDR_WIDTH</spirit:name>
       <spirit:displayName>C S Axi Addr Width</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S_AXI_ADDR_WIDTH" spirit:order="2100">32</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S_AXI_ADDR_WIDTH" spirit:order="2100" spirit:rangeType="long">32</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_S_AXI_DATA_WIDTH</spirit:name>
       <spirit:displayName>C S Axi Data Width</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S_AXI_DATA_WIDTH" spirit:order="2200">32</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S_AXI_DATA_WIDTH" spirit:order="2200" spirit:rangeType="long">32</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
@@ -1215,11 +1271,11 @@
         <xilinx:taxonomy>/BaseIP</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>axi_adc_1c_v1_0</xilinx:displayName>
-      <xilinx:coreRevision>1</xilinx:coreRevision>
+      <xilinx:coreRevision>2</xilinx:coreRevision>
       <xilinx:upgrades>
         <xilinx:canUpgradeFrom>(none):user:axi_adc_1c:1.0</xilinx:canUpgradeFrom>
       </xilinx:upgrades>
-      <xilinx:coreCreationDateTime>2014-03-14T07:20:35Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2014-03-17T10:54:36Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="pcore">1</xilinx:tag>
       </xilinx:tags>
