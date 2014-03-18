@@ -1,0 +1,98 @@
+##################################################################################
+## Company: 		Analog Devices, Inc.
+## Engineer: 		MKH
+## Create Date:   18 October 2013 
+##################################################################################
+
+###################################################
+# Period Constraints
+###################################################
+NET lvds_dco_p TNM_NET = lvds_dco_p ;
+TIMESPEC TS_lvds_dco_p = PERIOD "lvds_dco_p" 250 MHz HIGH 50% ; 
+
+NET usb_read_clk TNM_NET = usb_read_clk ;
+TIMESPEC TS_usb_read_clk = PERIOD "usb_read_clk" 48 MHz HIGH 50% ;	
+
+NET spi_sclk TNM_NET = spi_sclk ;
+TIMESPEC TS_spi_sclk = PERIOD "spi_sclk" 25 MHz HIGH 50% ;	
+
+NET data_clk TNM_NET = data_clk ;
+TIMESPEC TS_data_clk = PERIOD "data_clk" 250 MHz HIGH 50% ; 
+
+###################################################
+# Input Constraints - OFFSET IN
+###################################################
+NET lvds_din_p* TNM = din_p_timegroup ; 
+TIMEGRP din_p_timegroup OFFSET = IN 2.0 ns VALID 4.0 ns BEFORE "lvds_dco_p" RISING ;
+TIMEGRP din_p_timegroup OFFSET = IN 2.0 ns VALID 4.0 ns BEFORE "lvds_dco_p" FALLING ;
+
+###################################################
+# TIG Constraints
+###################################################
+INST spi_fpga_top/spi_fpga_reg/O_reg* TNM_NET = spi_regs ;
+TIMESPEC TS_spi_regs = FROM spi_regs TIG ;
+
+###################################################
+# J2 Parallel Data Port
+###################################################
+NET lvds_dco_p      LOC = C13 | IOSTANDARD = LVDS_25 | DIFF_TERM = TRUE  ;	
+NET lvds_dco_n      LOC = C12 | IOSTANDARD = LVDS_25 | DIFF_TERM = TRUE  ;
+
+NET lvds_din_p<8>   LOC = B10 | IOSTANDARD = LVDS_25 | DIFF_TERM = TRUE  ; 
+NET lvds_din_n<8>   LOC = A10 | IOSTANDARD = LVDS_25 | DIFF_TERM = TRUE  ;
+NET lvds_din_p<7>   LOC = A8  | IOSTANDARD = LVDS_25 | DIFF_TERM = TRUE  ; 
+NET lvds_din_n<7>   LOC = A7  | IOSTANDARD = LVDS_25 | DIFF_TERM = TRUE  ;
+NET lvds_din_p<6>   LOC = K8  | IOSTANDARD = LVDS_25 | DIFF_TERM = TRUE  ; 
+NET lvds_din_n<6>   LOC = K7  | IOSTANDARD = LVDS_25 | DIFF_TERM = TRUE  ;
+NET lvds_din_p<5>   LOC = G7  | IOSTANDARD = LVDS_25 | DIFF_TERM = TRUE  ; 
+NET lvds_din_n<5>   LOC = H6  | IOSTANDARD = LVDS_25 | DIFF_TERM = TRUE  ;
+NET lvds_din_p<4>   LOC = H4  | IOSTANDARD = LVDS_25 | DIFF_TERM = TRUE  ; 
+NET lvds_din_n<4>   LOC = G4  | IOSTANDARD = LVDS_25 | DIFF_TERM = TRUE  ;
+NET lvds_din_p<3>   LOC = K6  | IOSTANDARD = LVDS_25 | DIFF_TERM = TRUE  ; 
+NET lvds_din_n<3>   LOC = J5  | IOSTANDARD = LVDS_25 | DIFF_TERM = TRUE  ;
+NET lvds_din_p<2>   LOC = L7  | IOSTANDARD = LVDS_25 | DIFF_TERM = TRUE  ; 
+NET lvds_din_n<2>   LOC = M6  | IOSTANDARD = LVDS_25 | DIFF_TERM = TRUE  ;
+NET lvds_din_p<1>   LOC = L4  | IOSTANDARD = LVDS_25 | DIFF_TERM = TRUE  ; 
+NET lvds_din_n<1>   LOC = L3  | IOSTANDARD = LVDS_25 | DIFF_TERM = TRUE  ;
+NET lvds_din_p<0>   LOC = P4  | IOSTANDARD = LVDS_25 | DIFF_TERM = TRUE  ; 
+NET lvds_din_n<0>   LOC = R3  | IOSTANDARD = LVDS_25 | DIFF_TERM = TRUE  ;
+
+###################################################
+# USB Interface
+###################################################
+NET usb_data_out<15>  LOC = V16 |IOSTANDARD = LVCMOS33 ;
+NET usb_data_out<14>  LOC = W16 |IOSTANDARD = LVCMOS33 ;
+NET usb_data_out<13>  LOC = Y12 |IOSTANDARD = LVCMOS33 ;
+NET usb_data_out<12>  LOC = Y11 |IOSTANDARD = LVCMOS33 ;
+NET usb_data_out<11>  LOC = U16 |IOSTANDARD = LVCMOS33 ;
+NET usb_data_out<10>  LOC = U15 |IOSTANDARD = LVCMOS33 ;
+NET usb_data_out<9>   LOC = W11 |IOSTANDARD = LVCMOS33 ;
+NET usb_data_out<8>   LOC = V11 |IOSTANDARD = LVCMOS33 ;
+NET usb_data_out<7>   LOC = W15 |IOSTANDARD = LVCMOS33 ;
+NET usb_data_out<6>   LOC = W14 |IOSTANDARD = LVCMOS33 ;
+NET usb_data_out<5>   LOC = Y13 |IOSTANDARD = LVCMOS33 ;
+NET usb_data_out<4>   LOC = W13 |IOSTANDARD = LVCMOS33 ;
+NET usb_data_out<3>   LOC = U14 |IOSTANDARD = LVCMOS33 ;
+NET usb_data_out<2>   LOC = V14 |IOSTANDARD = LVCMOS33 ;
+NET usb_data_out<1>   LOC = V13 |IOSTANDARD = LVCMOS33 ;
+NET usb_data_out<0>   LOC = V12 |IOSTANDARD = LVCMOS33 ;
+
+NET usb_master_rst_n  LOC = J16 |IOSTANDARD = LVCMOS33 |PULLUP ; 
+NET usb_read_en_n     LOC = H14 |IOSTANDARD = LVCMOS33 |PULLUP ; 
+NET usb_read_clk      LOC = G15 |IOSTANDARD = LVCMOS33 |CLOCK_DEDICATED_ROUTE = FALSE ; 
+NET usb_ready         LOC = G16 |IOSTANDARD = LVCMOS33 ;
+
+NET ext_trig          LOC = AD13 | IOSTANDARD = LVCMOS25 ; # SMA1, J7
+NET sysclk_ready      LOC = AE13 | IOSTANDARD = LVCMOS25 ; # SMA2, J5
+
+###################################################
+# SPI Pins
+###################################################
+NET spi_sclk   LOC = H13  | IOSTANDARD = LVCMOS33 | PULLDOWN;
+NET spi_csb_n  LOC = J15  | IOSTANDARD = LVCMOS33 | PULLUP;
+NET spi_sdi    LOC = K12  | IOSTANDARD = LVCMOS33 | PULLUP;
+NET spi_sdo    LOC = H12  | IOSTANDARD = LVCMOS33 ;
+
+###################################################
+# EOF
+###################################################
