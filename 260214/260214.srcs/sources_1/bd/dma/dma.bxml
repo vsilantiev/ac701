@@ -153,8 +153,8 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="OUT_OF_CONTEXT"/>
       </File>
-      <File Name="ip/dma_axi_fifo_mm_s_0_0/dma_axi_fifo_mm_s_0_0.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="1395034507" IsTrackable="true"/>
+      <File Name="ip/dma_axi_adc_1c_0_0/dma_axi_adc_1c_0_0.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1395051492" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>

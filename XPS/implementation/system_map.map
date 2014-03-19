@@ -1,0 +1,96 @@
+Release 14.7 Map P.20131013 (lin64)
+Xilinx Map Application Log File for Design 'system'
+
+Design Information
+------------------
+Command Line   : map -o system_map.ncd -w -pr b -ol high -timing -detail
+system.ngd system.pcf 
+Target Device  : xc7z020
+Target Package : clg484
+Target Speed   : -1
+Mapper Version : zynq -- $Revision: 1.55 $
+Mapped Date    : Wed Mar 19 16:11:47 2014
+
+WARNING:LIT:701 - PAD symbol "processing_system7_0_PS_SRSTB" has an undefined
+   IOSTANDARD.
+WARNING:LIT:702 - PAD symbol "processing_system7_0_PS_SRSTB" is not constrained
+   (LOC) to a specific location.
+WARNING:LIT:701 - PAD symbol "processing_system7_0_PS_CLK" has an undefined
+   IOSTANDARD.
+WARNING:LIT:702 - PAD symbol "processing_system7_0_PS_CLK" is not constrained
+   (LOC) to a specific location.
+WARNING:LIT:701 - PAD symbol "processing_system7_0_PS_PORB" has an undefined
+   IOSTANDARD.
+WARNING:LIT:702 - PAD symbol "processing_system7_0_PS_PORB" is not constrained
+   (LOC) to a specific location.
+Mapping design into LUTs...
+Writing file system_map.ngm...
+Running directed packing...
+WARNING:Pack:2949 - The I/O component axi_adc_1c_0_adc_data_or_n_pin uses an
+   DQS_BIAS attribute with I/O standard LVDS_25. The DQS_BIAS attribute will be
+   ignored since the selected I/O standard does not support DQS_BIAS usage.
+WARNING:Pack:2949 - The I/O component axi_adc_1c_0_adc_data_or_p_pin uses an
+   DQS_BIAS attribute with I/O standard LVDS_25. The DQS_BIAS attribute will be
+   ignored since the selected I/O standard does not support DQS_BIAS usage.
+WARNING:Pack:2949 - The I/O component axi_adc_1c_0_adc_data_in_p_pin<2> uses an
+   DQS_BIAS attribute with I/O standard LVDS_25. The DQS_BIAS attribute will be
+   ignored since the selected I/O standard does not support DQS_BIAS usage.
+WARNING:Pack:2949 - The I/O component axi_adc_1c_0_adc_data_in_n_pin<0> uses an
+   DQS_BIAS attribute with I/O standard LVDS_25. The DQS_BIAS attribute will be
+   ignored since the selected I/O standard does not support DQS_BIAS usage.
+WARNING:Pack:2949 - The I/O component axi_adc_1c_0_adc_data_in_p_pin<1> uses an
+   DQS_BIAS attribute with I/O standard LVDS_25. The DQS_BIAS attribute will be
+   ignored since the selected I/O standard does not support DQS_BIAS usage.
+WARNING:Pack:2949 - The I/O component axi_adc_1c_0_adc_data_in_p_pin<4> uses an
+   DQS_BIAS attribute with I/O standard LVDS_25. The DQS_BIAS attribute will be
+   ignored since the selected I/O standard does not support DQS_BIAS usage.
+WARNING:Pack:2949 - The I/O component axi_adc_1c_0_adc_data_in_p_pin<3> uses an
+   DQS_BIAS attribute with I/O standard LVDS_25. The DQS_BIAS attribute will be
+   ignored since the selected I/O standard does not support DQS_BIAS usage.
+WARNING:Pack:2949 - The I/O component axi_adc_1c_0_adc_data_in_n_pin<4> uses an
+   DQS_BIAS attribute with I/O standard LVDS_25. The DQS_BIAS attribute will be
+   ignored since the selected I/O standard does not support DQS_BIAS usage.
+WARNING:Pack:2949 - The I/O component axi_adc_1c_0_adc_data_in_n_pin<3> uses an
+   DQS_BIAS attribute with I/O standard LVDS_25. The DQS_BIAS attribute will be
+   ignored since the selected I/O standard does not support DQS_BIAS usage.
+WARNING:Pack:2949 - The I/O component axi_adc_1c_0_adc_data_in_n_pin<2> uses an
+   DQS_BIAS attribute with I/O standard LVDS_25. The DQS_BIAS attribute will be
+   ignored since the selected I/O standard does not support DQS_BIAS usage.
+WARNING:Pack:2949 - The I/O component axi_adc_1c_0_adc_data_in_p_pin<0> uses an
+   DQS_BIAS attribute with I/O standard LVDS_25. The DQS_BIAS attribute will be
+   ignored since the selected I/O standard does not support DQS_BIAS usage.
+WARNING:Pack:2949 - The I/O component axi_adc_1c_0_adc_data_in_n_pin<1> uses an
+   DQS_BIAS attribute with I/O standard LVDS_25. The DQS_BIAS attribute will be
+   ignored since the selected I/O standard does not support DQS_BIAS usage.
+WARNING:Pack:2949 - The I/O component axi_adc_1c_0_adc_data_in_n_pin<7> uses an
+   DQS_BIAS attribute with I/O standard LVDS_25. The DQS_BIAS attribute will be
+   ignored since the selected I/O standard does not support DQS_BIAS usage.
+WARNING:Pack:2949 - The I/O component axi_adc_1c_0_adc_data_in_n_pin<6> uses an
+   DQS_BIAS attribute with I/O standard LVDS_25. The DQS_BIAS attribute will be
+   ignored since the selected I/O standard does not support DQS_BIAS usage.
+WARNING:Pack:2949 - The I/O component axi_adc_1c_0_adc_data_in_n_pin<5> uses an
+   DQS_BIAS attribute with I/O standard LVDS_25. The DQS_BIAS attribute will be
+   ignored since the selected I/O standard does not support DQS_BIAS usage.
+WARNING:Pack:2949 - The I/O component axi_adc_1c_0_adc_data_in_p_pin<6> uses an
+   DQS_BIAS attribute with I/O standard LVDS_25. The DQS_BIAS attribute will be
+   ignored since the selected I/O standard does not support DQS_BIAS usage.
+WARNING:Pack:2949 - The I/O component axi_adc_1c_0_adc_data_in_p_pin<5> uses an
+   DQS_BIAS attribute with I/O standard LVDS_25. The DQS_BIAS attribute will be
+   ignored since the selected I/O standard does not support DQS_BIAS usage.
+WARNING:Pack:2949 - The I/O component axi_adc_1c_0_adc_data_in_p_pin<7> uses an
+   DQS_BIAS attribute with I/O standard LVDS_25. The DQS_BIAS attribute will be
+   ignored since the selected I/O standard does not support DQS_BIAS usage.
+Running delay-based LUT packing...
+ERROR:Pack:1130 - Symbol
+   axi_adc_1c_0/axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/g_adc_if[0]
+   .i_data_idelay of type IDELAYE2 has a property "IDELAY_TYPE" with an illegal
+   value of "VAR_LOADABLE".
+
+Mapping completed.
+See MAP report file "system_map.mrp" for details.
+Problem encountered during the packing phase.
+
+Design Summary
+--------------
+Number of errors   :   1
+Number of warnings :  24

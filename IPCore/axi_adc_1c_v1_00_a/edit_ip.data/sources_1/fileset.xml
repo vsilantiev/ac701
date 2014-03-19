@@ -179,6 +179,12 @@
       <Option Name="IPRepoPath" Val="$PPRDIR/../reg_status_1.0"/>
       <Option Name="IPRepoPath" Val="$PPRDIR/../acp_1.0"/>
       <Option Name="IPRepoPath" Val="/root/zedboard/IPCore/axi_adc_1c_v1_00_a"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../../../IPCore/init_cdma_1.0"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../../../IPCore/cf_lib/edk/pcores/axi_adc_1c_v1_00_a"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../../../IPCore/cf_lib/edk/pcores/util_spi_3w_v1_00_a"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../../../IPCore/reg_status_1.0"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../../../IPCore/acp_1.0"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../../../../zynq/IP_Core"/>
     </Config>
   </FileSet>
 </DARoots>

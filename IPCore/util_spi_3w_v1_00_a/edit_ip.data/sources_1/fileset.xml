@@ -12,18 +12,23 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/component.xml">
-      <FileInfo SFType="IPXACT"/>
+      <FileInfo SFType="IPXACT">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="util_spi_3w"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
-      <Option Name="IPRepoPath" Val="$PPRDIR/../../../../init_cdma_1.0"/>
+      <Option Name="TopRTLFile" Val="$PPRDIR/hdl/vhdl/util_spi_3w.vhd"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../../../IPCore/init_cdma_1.0"/>
       <Option Name="IPRepoPath" Val="$PPRDIR/../axi_adc_1c_v1_00_a"/>
-      <Option Name="IPRepoPath" Val="/root/IPCore/cf_lib/edk/pcores/util_spi_3w_v1_00_a"/>
-      <Option Name="IPRepoPath" Val="$PPRDIR/../../../../reg_status_1.0"/>
-      <Option Name="IPRepoPath" Val="$PPRDIR/../../../../acp_1.0"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../../../IPCore/cf_lib/edk/pcores/util_spi_3w_v1_00_a"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../../../IPCore/reg_status_1.0"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../../../IPCore/acp_1.0"/>
       <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../zynq/IP_Core"/>
+      <Option Name="IPRepoPath" Val="/root/zedboard/IPCore/util_spi_3w_v1_00_a"/>
     </Config>
   </FileSet>
 </DARoots>

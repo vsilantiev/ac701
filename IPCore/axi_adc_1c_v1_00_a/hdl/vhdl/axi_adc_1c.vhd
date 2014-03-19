@@ -51,11 +51,11 @@ entity axi_adc_1c is
     adc_mon_valid         : out std_logic;
     adc_mon_data          : out std_logic_vector(15 downto 0);
     S_AXIS_S2MM_CLK       : in  std_logic;
-    S_AXIS_S2MM_TVALID    : out std_logic;
-    S_AXIS_S2MM_TDATA     : out std_logic_vector(63 downto 0);
-    S_AXIS_S2MM_TKEEP     : out std_logic_vector(7 downto 0);
-    S_AXIS_S2MM_TLAST     : out std_logic;
-    S_AXIS_S2MM_TREADY    : in  std_logic;
+    S_AXIS_S2MM_TVALID    : in std_logic;
+    S_AXIS_S2MM_TDATA     : in std_logic_vector(63 downto 0);
+    S_AXIS_S2MM_TKEEP     : in std_logic_vector(7 downto 0);
+    S_AXIS_S2MM_TLAST     : in std_logic;
+    S_AXIS_S2MM_TREADY    : out std_logic;
     S_AXI_ACLK            : in  std_logic;
     S_AXI_ARESETN         : in  std_logic;
     S_AXI_AWADDR          : in  std_logic_vector(C_S_AXI_ADDR_WIDTH-1 downto 0);

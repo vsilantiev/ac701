@@ -67,6 +67,7 @@
       <Option Name="IPRepoPath" Val="$PPRDIR/../IPCore/init_cdma_1.0"/>
       <Option Name="IPRepoPath" Val="$PPRDIR/../IPCore/reg_status_1.0"/>
       <Option Name="IPRepoPath" Val="$PPRDIR/../IPCore/acp_1.0"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../IPCore/axi_adc_1c_v1_00_a"/>
     </Config>
   </FileSet>
 </DARoots>

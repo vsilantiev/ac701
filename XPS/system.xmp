@@ -1,0 +1,30 @@
+#Please do not modify this file by hand
+XmpVersion: 14.7
+VerMgmt: 14.7
+IntStyle: default
+Flow: ise
+ModuleSearchPath: /root/PROJECT/XILINX/fpgahdl_xilinx/cf_lib/edk/pcores/axi_adc_1c_v1_00_a/../../../
+MHS File: system.mhs
+Architecture: zynq
+Device: xc7z020
+Package: clg484
+SpeedGrade: -1
+UserCmd1: 
+UserCmd1Type: 0
+UserCmd2: 
+UserCmd2Type: 0
+GenSimTB: 1
+SdkExportBmmBit: 1
+SdkExportDir: SDK/SDK_Export
+InsertNoPads: 0
+WarnForEAArch: 1
+HdlLang: Verilog
+SimModel: BEHAVIORAL
+ExternalMemSim: 0
+UcfFile: data/system.ucf
+EnableParTimingError: 1
+ShowLicenseDialog: 1
+BInfo: 
+Processor: processing_system7_0
+ElfImp: 
+ElfSim: 
