@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<<<<<<< HEAD
   <spirit:vendor>Silantiev</spirit:vendor>
+=======
+  <spirit:vendor>avnet</spirit:vendor>
+>>>>>>> 1961169f7c159ba810f4e86426d4247f6762851f
   <spirit:library>customized_ip</spirit:library>
   <spirit:name>dma_axi_adc_1c_0_0</spirit:name>
   <spirit:version>1.0</spirit:version>
@@ -936,27 +940,47 @@
     <spirit:parameter>
       <spirit:name>C_CF_BUFTYPE</spirit:name>
       <spirit:displayName>C Cf Buftype</spirit:displayName>
+<<<<<<< HEAD
       <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_CF_BUFTYPE" spirit:order="1100" spirit:rangeType="long">0</spirit:value>
+=======
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_CF_BUFTYPE" spirit:order="1100">0</spirit:value>
+>>>>>>> 1961169f7c159ba810f4e86426d4247f6762851f
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_SLV_DWIDTH</spirit:name>
       <spirit:displayName>C Slv Dwidth</spirit:displayName>
+<<<<<<< HEAD
       <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLV_DWIDTH" spirit:order="1200" spirit:rangeType="long">32</spirit:value>
+=======
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLV_DWIDTH" spirit:order="1200">32</spirit:value>
+>>>>>>> 1961169f7c159ba810f4e86426d4247f6762851f
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_SLV_AWIDTH</spirit:name>
       <spirit:displayName>C Slv Awidth</spirit:displayName>
+<<<<<<< HEAD
       <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLV_AWIDTH" spirit:order="1300" spirit:rangeType="long">32</spirit:value>
+=======
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLV_AWIDTH" spirit:order="1300">32</spirit:value>
+>>>>>>> 1961169f7c159ba810f4e86426d4247f6762851f
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_NUM_MEM</spirit:name>
       <spirit:displayName>C Num Mem</spirit:displayName>
+<<<<<<< HEAD
       <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_NUM_MEM" spirit:order="1400" spirit:rangeType="long">1</spirit:value>
+=======
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_NUM_MEM" spirit:order="1400">1</spirit:value>
+>>>>>>> 1961169f7c159ba810f4e86426d4247f6762851f
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_NUM_REG</spirit:name>
       <spirit:displayName>C Num Reg</spirit:displayName>
+<<<<<<< HEAD
       <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_NUM_REG" spirit:order="1500" spirit:rangeType="long">1</spirit:value>
+=======
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_NUM_REG" spirit:order="1500">1</spirit:value>
+>>>>>>> 1961169f7c159ba810f4e86426d4247f6762851f
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_HIGHADDR</spirit:name>
@@ -971,12 +995,20 @@
     <spirit:parameter>
       <spirit:name>C_DPHASE_TIMEOUT</spirit:name>
       <spirit:displayName>C Dphase Timeout</spirit:displayName>
+<<<<<<< HEAD
       <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_DPHASE_TIMEOUT" spirit:order="1800" spirit:rangeType="long">8</spirit:value>
+=======
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_DPHASE_TIMEOUT" spirit:order="1800">8</spirit:value>
+>>>>>>> 1961169f7c159ba810f4e86426d4247f6762851f
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_USE_WSTRB</spirit:name>
       <spirit:displayName>C Use Wstrb</spirit:displayName>
+<<<<<<< HEAD
       <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_USE_WSTRB" spirit:order="1900" spirit:rangeType="long">0</spirit:value>
+=======
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_USE_WSTRB" spirit:order="1900">0</spirit:value>
+>>>>>>> 1961169f7c159ba810f4e86426d4247f6762851f
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_S_AXI_MIN_SIZE</spirit:name>
@@ -986,12 +1018,20 @@
     <spirit:parameter>
       <spirit:name>C_S_AXI_ADDR_WIDTH</spirit:name>
       <spirit:displayName>C S Axi Addr Width</spirit:displayName>
+<<<<<<< HEAD
       <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S_AXI_ADDR_WIDTH" spirit:order="2100" spirit:rangeType="long">32</spirit:value>
+=======
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S_AXI_ADDR_WIDTH" spirit:order="2100">32</spirit:value>
+>>>>>>> 1961169f7c159ba810f4e86426d4247f6762851f
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_S_AXI_DATA_WIDTH</spirit:name>
       <spirit:displayName>C S Axi Data Width</spirit:displayName>
+<<<<<<< HEAD
       <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S_AXI_DATA_WIDTH" spirit:order="2200" spirit:rangeType="long">32</spirit:value>
+=======
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S_AXI_DATA_WIDTH" spirit:order="2200">32</spirit:value>
+>>>>>>> 1961169f7c159ba810f4e86426d4247f6762851f
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
@@ -1011,7 +1051,11 @@
       <xilinx:upgrades>
         <xilinx:canUpgradeFrom>(none):user:axi_adc_1c:1.0</xilinx:canUpgradeFrom>
       </xilinx:upgrades>
+<<<<<<< HEAD
       <xilinx:coreCreationDateTime>2014-03-17T10:15:30Z</xilinx:coreCreationDateTime>
+=======
+      <xilinx:coreCreationDateTime>2014-03-14T07:20:35Z</xilinx:coreCreationDateTime>
+>>>>>>> 1961169f7c159ba810f4e86426d4247f6762851f
       <xilinx:tags>
         <xilinx:tag xilinx:name="pcore">1</xilinx:tag>
       </xilinx:tags>

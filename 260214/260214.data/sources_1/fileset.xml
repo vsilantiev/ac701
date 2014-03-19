@@ -60,11 +60,74 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/bd/dma/ip/dma_axi_crossbar_0_4/dma_axi_crossbar_0_4.upgrade_log">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/dma/ip/dma_axi_mem_intercon_0/dma_axi_mem_intercon_0.upgrade_log">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/dma/ip/dma_processing_system7_0_0/dma_processing_system7_0_0.upgrade_log">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/dma/ip/dma_axi_bram_ctrl_0_0/dma_axi_bram_ctrl_0_0.upgrade_log">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/dma/ip/dma_proc_sys_reset_0/dma_proc_sys_reset_0.upgrade_log">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/dma/ip/dma_axi_bram_ctrl_0_bram_0/dma_axi_bram_ctrl_0_bram_0.upgrade_log">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/dma/ip/dma_processing_system7_0_axi_periph_1/dma_processing_system7_0_axi_periph_1.upgrade_log">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/dma/ip/dma_axi_cdma_0_0/dma_axi_cdma_0_0.upgrade_log">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="dma_wrapper"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
+<<<<<<< HEAD
+      <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../myip2_1.0"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../myip1_1.0"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../myip_1.0"/>
+=======
+>>>>>>> 49db9d97ec3a194991d509f4012b5583a8df6041
       <Option Name="IPRepoPath" Val="$PPRDIR/../IPCore/init_cdma_1.0"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../IPCore/axi_adc_1c_v1_00_a"/>
       <Option Name="IPRepoPath" Val="$PPRDIR/../IPCore/reg_status_1.0"/>
       <Option Name="IPRepoPath" Val="$PPRDIR/../IPCore/acp_1.0"/>
       <Option Name="IPRepoPath" Val="$PPRDIR/../IPCore/axi_adc_1c_v1_00_a"/>
