@@ -1,0 +1,8 @@
+NET "s_axi_lite_aclk" TNM_NET = "s_axi_lite_aclk";
+NET "m_axi_s2mm_aclk" TNM_NET = "m_axi_s2mm_aclk";
+TIMESPEC TS_axi_dma_0_S2MM_AXIS_S2P = FROM "s_axi_lite_aclk" TO "m_axi_s2mm_aclk" 5000 PS DATAPATHONLY;
+TIMESPEC TS_axi_dma_0_S2MM_AXIS_P2S = FROM "m_axi_s2mm_aclk" TO "s_axi_lite_aclk" 10000 PS DATAPATHONLY;
+#
+#
+
+

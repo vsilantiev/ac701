@@ -1,0 +1,18 @@
+SET_FLAG FLOW SOCKETABLE 
+SET_FLAG MODE BATCH 
+SET_FLAG  DRCMODE  ERROR 
+SET_PARAMETER COMPONENT_NAME DDR3_SDRAM
+SET_PREFERENCE projectname DDR3_SDRAM
+SET_PREFERENCE flowvendor Foundation_ISE
+SET_PREFERENCE devicefamily  virtex7
+SET_PREFERENCE devicesubfamily  
+SET_PREFERENCE partname xc7vx485tffg1761-2
+SET_PREFERENCE device  xc7vx485t
+SET_PREFERENCE package  ffg1761
+SET_PREFERENCE speedgrade -2
+SET_PREFERENCE outputdirectory ./
+SET_PREFERENCE workingdirectory ./
+SET_PREFERENCE subworkingdirectory ./
+SET_PREFERENCE InputParamsFile param_input.xml
+SET_PREFERENCE OutputParamsFile param_output.xml
+SET_PARAMETER xml_input_file mig_saved.prj

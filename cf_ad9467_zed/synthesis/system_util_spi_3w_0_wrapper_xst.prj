@@ -1,0 +1,2 @@
+vhdl util_spi_3w_v1_00_a /cf_lib/edk/pcores/util_spi_3w_v1_00_a/hdl/vhdl/util_spi_3w.vhd
+vhdl work ../hdl/system_util_spi_3w_0_wrapper.vhd

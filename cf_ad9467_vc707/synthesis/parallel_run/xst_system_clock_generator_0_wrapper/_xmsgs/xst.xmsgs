@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/cf_ad9467_vc707/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 349: Assignment to <arg fmt="%s" index="1">net_vdd0</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="new" >"/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/mmcm_module.vhd" Line 156: &lt;<arg fmt="%s" index="1">mmcm_adv</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/cf_ad9467_vc707/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 463: Assignment to <arg fmt="%s" index="1">sig_mmcm0_clkout1_buf</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/cf_ad9467_vc707/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 469: Assignment to <arg fmt="%s" index="1">sig_mmcm0_clkout2_buf</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/cf_ad9467_vc707/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 475: Assignment to <arg fmt="%s" index="1">sig_mmcm0_clkout3_buf</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/cf_ad9467_vc707/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 481: Assignment to <arg fmt="%s" index="1">sig_mmcm0_clkout4_buf</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/cf_ad9467_vc707/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 487: Assignment to <arg fmt="%s" index="1">sig_mmcm0_clkout5_buf</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/cf_ad9467_vc707/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 493: Assignment to <arg fmt="%s" index="1">sig_mmcm0_clkout6_buf</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="new" >"/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/plle2_module.vhd" Line 147: &lt;<arg fmt="%s" index="1">plle2_adv</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/cf_ad9467_vc707/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 571: Assignment to <arg fmt="%s" index="1">sig_plle0_clkout0_buf</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/cf_ad9467_vc707/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 577: Assignment to <arg fmt="%s" index="1">sig_plle0_clkout1_buf</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/cf_ad9467_vc707/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 583: Assignment to <arg fmt="%s" index="1">sig_plle0_clkout2_buf</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/cf_ad9467_vc707/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 599: Assignment to <arg fmt="%s" index="1">sig_plle0_clkout4_buf</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/cf_ad9467_vc707/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 605: Assignment to <arg fmt="%s" index="1">sig_plle0_clkout5_buf</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/cf_ad9467_vc707/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 611: Assignment to <arg fmt="%s" index="1">sig_plle0_clkfbout_buf</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">CLKFBIN</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">PSCLK</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">PSEN</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">PSINCDEC</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/cf_ad9467_vc707/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd</arg>&quot; line <arg fmt="%s" index="2">369</arg>: Output port &lt;<arg fmt="%s" index="3">CLKFBOUTB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">MMCMextra_INST</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/cf_ad9467_vc707/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd</arg>&quot; line <arg fmt="%s" index="2">369</arg>: Output port &lt;<arg fmt="%s" index="3">CLKOUT1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">MMCMextra_INST</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/cf_ad9467_vc707/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd</arg>&quot; line <arg fmt="%s" index="2">369</arg>: Output port &lt;<arg fmt="%s" index="3">CLKOUT2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">MMCMextra_INST</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/cf_ad9467_vc707/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd</arg>&quot; line <arg fmt="%s" index="2">369</arg>: Output port &lt;<arg fmt="%s" index="3">CLKOUT3</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">MMCMextra_INST</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/cf_ad9467_vc707/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd</arg>&quot; line <arg fmt="%s" index="2">369</arg>: Output port &lt;<arg fmt="%s" index="3">CLKOUT4</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">MMCMextra_INST</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/cf_ad9467_vc707/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd</arg>&quot; line <arg fmt="%s" index="2">369</arg>: Output port &lt;<arg fmt="%s" index="3">CLKOUT5</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">MMCMextra_INST</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/cf_ad9467_vc707/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd</arg>&quot; line <arg fmt="%s" index="2">369</arg>: Output port &lt;<arg fmt="%s" index="3">CLKOUT6</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">MMCMextra_INST</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/cf_ad9467_vc707/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd</arg>&quot; line <arg fmt="%s" index="2">369</arg>: Output port &lt;<arg fmt="%s" index="3">CLKOUT0B</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">MMCMextra_INST</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/cf_ad9467_vc707/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd</arg>&quot; line <arg fmt="%s" index="2">369</arg>: Output port &lt;<arg fmt="%s" index="3">CLKOUT1B</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">MMCMextra_INST</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/cf_ad9467_vc707/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd</arg>&quot; line <arg fmt="%s" index="2">369</arg>: Output port &lt;<arg fmt="%s" index="3">CLKOUT2B</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">MMCMextra_INST</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/cf_ad9467_vc707/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd</arg>&quot; line <arg fmt="%s" index="2">369</arg>: Output port &lt;<arg fmt="%s" index="3">CLKOUT3B</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">MMCMextra_INST</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/cf_ad9467_vc707/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd</arg>&quot; line <arg fmt="%s" index="2">369</arg>: Output port &lt;<arg fmt="%s" index="3">CLKFBSTOPPED</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">MMCMextra_INST</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/cf_ad9467_vc707/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd</arg>&quot; line <arg fmt="%s" index="2">369</arg>: Output port &lt;<arg fmt="%s" index="3">CLKINSTOPPED</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">MMCMextra_INST</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/cf_ad9467_vc707/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd</arg>&quot; line <arg fmt="%s" index="2">369</arg>: Output port &lt;<arg fmt="%s" index="3">PSDONE</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">MMCMextra_INST</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/cf_ad9467_vc707/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd</arg>&quot; line <arg fmt="%s" index="2">513</arg>: Output port &lt;<arg fmt="%s" index="3">CLKOUT4</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">PLLE0_INST</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/cf_ad9467_vc707/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd</arg>&quot; line <arg fmt="%s" index="2">513</arg>: Output port &lt;<arg fmt="%s" index="3">CLKOUT5</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">PLLE0_INST</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/mmcm_module.vhd</arg>&quot; line <arg fmt="%s" index="2">279</arg>: Output port &lt;<arg fmt="%s" index="3">DO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">MMCM_ADV_inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/mmcm_module.vhd</arg>&quot; line <arg fmt="%s" index="2">279</arg>: Output port &lt;<arg fmt="%s" index="3">DRDY</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">MMCM_ADV_inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/plle2_module.vhd</arg>&quot; line <arg fmt="%s" index="2">245</arg>: Output port &lt;<arg fmt="%s" index="3">DO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">PLLE2_ADV_inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/plle2_module.vhd</arg>&quot; line <arg fmt="%s" index="2">245</arg>: Output port &lt;<arg fmt="%s" index="3">DRDY</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">PLLE2_ADV_inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">clock_generator_0/MMCMextra_INST/MMCM_ADV_inst</arg> in unit <arg fmt="%s" index="2">system_clock_generator_0_wrapper</arg> of type <arg fmt="%s" index="3">MMCM_ADV</arg> has been replaced by <arg fmt="%s" index="4">MMCME2_ADV</arg>
+</msg>
+
+</messages>
+

@@ -1,0 +1,2 @@
+INST "clock_generator_0/PLLE0_INST/PLLE2_ADV_inst" LOC=PLLE2_ADV_X1Y5;
+INST "clock_generator_0/MMCMextra_INST/MMCM_ADV_inst" LOC=MMCME2_ADV_X1Y5;

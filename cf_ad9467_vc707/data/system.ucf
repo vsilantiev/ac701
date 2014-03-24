@@ -1,0 +1,65 @@
+
+NET RESET LOC = "AV40"  |  IOSTANDARD = "LVCMOS18"  |  TIG;
+
+NET CLK_N LOC = "E18"  |  IOSTANDARD = "LVDS";
+NET CLK_P LOC = "E19"  |  IOSTANDARD = "LVDS";
+
+NET RS232_Uart_1_sin LOC = "AU33"  |  IOSTANDARD = "LVCMOS18";
+NET RS232_Uart_1_sout LOC = "AU36"  |  IOSTANDARD = "LVCMOS18";
+
+NET sm_fan_pwm_net_vcc LOC = "BA37" | IOSTANDARD = "LVCMOS18";
+
+NET up_status[0] LOC = "AM39" | IOSTANDARD = "LVCMOS18";
+NET up_status[1] LOC = "AN39" | IOSTANDARD = "LVCMOS18";
+NET up_status[2] LOC = "AR37" | IOSTANDARD = "LVCMOS18";
+NET up_status[3] LOC = "AT37" | IOSTANDARD = "LVCMOS18";
+NET up_status[4] LOC = "AR35" | IOSTANDARD = "LVCMOS18";
+NET up_status[5] LOC = "AP41" | IOSTANDARD = "LVCMOS18";
+NET up_status[6] LOC = "AP42" | IOSTANDARD = "LVCMOS18";
+NET up_status[7] LOC = "AU39" | IOSTANDARD = "LVCMOS18";
+
+NET adc_clk_in_p     LOC = "L39" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS";
+NET adc_clk_in_n     LOC = "L40" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS";
+NET adc_data_or_p    LOC = "M37" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS";
+NET adc_data_or_n    LOC = "M38" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS";
+NET adc_data_in_p[0] LOC = "K39" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS";
+NET adc_data_in_n[0] LOC = "K40" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS";
+NET adc_data_in_p[1] LOC = "J40" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS";
+NET adc_data_in_n[1] LOC = "J41" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS";
+NET adc_data_in_p[2] LOC = "P41" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS";
+NET adc_data_in_n[2] LOC = "N41" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS";
+NET adc_data_in_p[3] LOC = "M42" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS";
+NET adc_data_in_n[3] LOC = "L42" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS";
+NET adc_data_in_p[4] LOC = "H40" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS";
+NET adc_data_in_n[4] LOC = "H41" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS";
+NET adc_data_in_p[5] LOC = "M41" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS";
+NET adc_data_in_n[5] LOC = "L41" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS";
+NET adc_data_in_p[6] LOC = "K42" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS";
+NET adc_data_in_n[6] LOC = "J42" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS";
+NET adc_data_in_p[7] LOC = "G41" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS";
+NET adc_data_in_n[7] LOC = "G42" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS";
+
+NET spi_cs0n LOC = "T31" | IOSTANDARD = "LVCMOS18";
+NET spi_cs1n LOC = "U31" | IOSTANDARD = "LVCMOS18";
+NET spi_clk  LOC = "U29" | IOSTANDARD = "LVCMOS18";
+NET spi_sdio LOC = "V29" | IOSTANDARD = "LVCMOS18";
+
+NET lcd[6] LOC = "AT40" | IOSTANDARD = "LVCMOS18"; ## lcd_e    
+NET lcd[5] LOC = "AN41" | IOSTANDARD = "LVCMOS18"; ## lcd_rs   
+NET lcd[4] LOC = "AR42" | IOSTANDARD = "LVCMOS18"; ## lcd_rw   
+NET lcd[3] LOC = "AN40" | IOSTANDARD = "LVCMOS18"; ## lcd_db[7]
+NET lcd[2] LOC = "AR39" | IOSTANDARD = "LVCMOS18"; ## lcd_db[6]
+NET lcd[1] LOC = "AR38" | IOSTANDARD = "LVCMOS18"; ## lcd_db[5]
+NET lcd[0] LOC = "AT42" | IOSTANDARD = "LVCMOS18"; ## lcd_db[4]
+
+NET "CLK_P" TNM_NET = "CLK_P";
+TIMESPEC "TS_CLK_P" = PERIOD "CLK_P" 200 MHz;
+NET "CLK_N" TNM_NET = "CLK_N";
+TIMESPEC "TS_CLK_N" = PERIOD "CLK_N" 200 MHz;
+
+NET "adc_clk_in_p" TNM_NET = "adc_clk_in_p";
+TIMESPEC "TS_adc_clk_in_p" = PERIOD "adc_clk_in_p" 300 MHz;
+NET "adc_clk_in_n" TNM_NET = "adc_clk_in_n";
+TIMESPEC "TS_adc_clk_in_n" = PERIOD "adc_clk_in_n" 300 MHz;
+
+  

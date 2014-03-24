@@ -1,0 +1,1 @@
+ -p xc7vx485tffg1761-2 -pe microblaze_0 bootloops/microblaze_0.elf

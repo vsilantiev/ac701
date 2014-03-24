@@ -1,0 +1,10 @@
+ The following files will be modified:
+  system.mhs
+--------------------------------------
+ The following changes will be made:
+ Core microblaze 8.40.b will be replaced by 8.50.c
+ Core axi_7series_ddrx 1.07.a will be replaced by 1.08.a
+ Core axi_intc 1.03.a will be replaced by 1.04.a
+--------------------------------------
+ You must manually make the following changes:
+ Core axi_dma 5.00.a needs to be replaced by 6.03.a

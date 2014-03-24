@@ -1,0 +1,7 @@
+ The following files will be modified:
+  system.mhs
+--------------------------------------
+--------------------------------------
+ You must manually make the following changes:
+ Core processing_system7 3.00.a needs to be replaced by 4.03.a
+ Core axi_dma 5.00.a needs to be replaced by 6.03.a

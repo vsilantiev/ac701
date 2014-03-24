@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.4" xmlns:xilinx="http://www.xilinx.com">
+  <spirit:vendor/>
+  <spirit:library/>
+  <spirit:name/>
+  <spirit:version/>
+  
+  <spirit:model>
+    <spirit:views/>
+    <spirit:ports/>
+    <spirit:modelParameters>
+      <spirit:modelParameter>
+        <spirit:name>C0_C_RD_WR_ARB_ALGORITHM</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C0_C_RD_WR_ARB_ALGORITHM"> RD_PRI_REG </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C0_S_AXI_ID_WIDTH</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C0_S_AXI_ID_WIDTH"> 4 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C0_S_AXI_SUPPORTS_NARROW_BURST</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C0_S_AXI_SUPPORTS_NARROW_BURST"> 1 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_ADDR_CMD_MODE</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_ADDR_CMD_MODE"> 1T </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_ADDR_MAP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_ADDR_MAP"> 192&apos;h000_000_132_136_135_133_139_124_131_129_137_134_13A_128_138_13B </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_ADDR_WIDTH</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_ADDR_WIDTH"> 28 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_AL</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_AL"> 0 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_BANK_MAP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_BANK_MAP"> 36&apos;h125_12A_12B </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_BANK_TYPE</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_BANK_TYPE"> HP_IO </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_BANK_WIDTH</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_BANK_WIDTH"> 3 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_BURST_MODE</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_BURST_MODE"> 8 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_BURST_TYPE</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_BURST_TYPE"> SEQ </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_BYTE_LANES_B0</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_BYTE_LANES_B0"> 4&apos;b1111 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_BYTE_LANES_B1</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_BYTE_LANES_B1"> 4&apos;b1110 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_BYTE_LANES_B2</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_BYTE_LANES_B2"> 4&apos;b1111 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_BYTE_LANES_B3</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_BYTE_LANES_B3"> 4&apos;b0000 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_BYTE_LANES_B4</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_BYTE_LANES_B4"> 4&apos;b0000 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CALIB_BA_ADD</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_CALIB_BA_ADD"> 3&apos;h0 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CALIB_COL_ADD</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_CALIB_COL_ADD"> 12&apos;h000 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CALIB_ROW_ADD</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_CALIB_ROW_ADD"> 16&apos;h0000 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CAL_WIDTH</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_CAL_WIDTH"> HALF </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CAS_MAP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_CAS_MAP"> 12&apos;h115 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CA_MIRROR</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_CA_MIRROR"> OFF </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CKE_MAP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_CKE_MAP"> 96&apos;h000_000_000_000_000_000_000_117 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CKE_ODT_AUX</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_CKE_ODT_AUX"> FALSE </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CKE_ODT_BYTE_MAP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_CKE_ODT_BYTE_MAP"> 8&apos;h00 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CKE_WIDTH</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_CKE_WIDTH"> 1 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CK_BYTE_MAP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_CK_BYTE_MAP"> 144&apos;h00_00_00_00_00_00_00_00_00_00_00_00_00_00_00_00_00_11 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CK_WIDTH</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_CK_WIDTH"> 1 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CL</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_CL"> 6 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CLKFBOUT_MULT</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_CLKFBOUT_MULT"> 0 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CLKIN_PERIOD</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_CLKIN_PERIOD"> -2147483647 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CLKOUT0_DIVIDE</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_CLKOUT0_DIVIDE"> 0 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CLKOUT0_PHASE</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_CLKOUT0_PHASE"> 337.5 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CLKOUT1_DIVIDE</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_CLKOUT1_DIVIDE"> 0 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CLKOUT2_DIVIDE</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_CLKOUT2_DIVIDE"> 0 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CLKOUT3_DIVIDE</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_CLKOUT3_DIVIDE"> 0 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CMD_PIPE_PLUS1</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_CMD_PIPE_PLUS1"> ON </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_COL_WIDTH</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_COL_WIDTH"> 10 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CS_MAP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_CS_MAP"> 120&apos;h000_000_000_000_000_000_000_000_000_114 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CS_WIDTH</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_CS_WIDTH"> 1 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CWL</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_CWL"> 5 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA0_MAP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DATA0_MAP"> 96&apos;h009_000_003_001_007_006_005_002 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA10_MAP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DATA10_MAP"> 96&apos;h000_000_000_000_000_000_000_000 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA11_MAP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DATA11_MAP"> 96&apos;h000_000_000_000_000_000_000_000 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA12_MAP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DATA12_MAP"> 96&apos;h000_000_000_000_000_000_000_000 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA13_MAP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DATA13_MAP"> 96&apos;h000_000_000_000_000_000_000_000 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA14_MAP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DATA14_MAP"> 96&apos;h000_000_000_000_000_000_000_000 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA15_MAP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DATA15_MAP"> 96&apos;h000_000_000_000_000_000_000_000 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA16_MAP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DATA16_MAP"> 96&apos;h000_000_000_000_000_000_000_000 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA17_MAP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DATA17_MAP"> 96&apos;h000_000_000_000_000_000_000_000 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA1_MAP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DATA1_MAP"> 96&apos;h014_018_010_011_017_016_012_013 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA2_MAP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DATA2_MAP"> 96&apos;h021_022_025_020_027_023_026_028 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA3_MAP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DATA3_MAP"> 96&apos;h033_039_031_035_032_038_034_037 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA4_MAP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DATA4_MAP"> 96&apos;h231_238_237_236_233_232_234_239 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA5_MAP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DATA5_MAP"> 96&apos;h226_227_225_229_221_222_224_228 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA6_MAP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DATA6_MAP"> 96&apos;h214_215_210_218_217_213_219_212 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA7_MAP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DATA7_MAP"> 96&apos;h207_203_204_206_202_201_205_209 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA8_MAP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DATA8_MAP"> 96&apos;h000_000_000_000_000_000_000_000 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA9_MAP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DATA9_MAP"> 96&apos;h000_000_000_000_000_000_000_000 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA_BUF_ADDR_WIDTH</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DATA_BUF_ADDR_WIDTH"> 5 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA_CTL_B0</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DATA_CTL_B0"> 4&apos;b1111 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA_CTL_B1</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DATA_CTL_B1"> 4&apos;b0000 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA_CTL_B2</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DATA_CTL_B2"> 4&apos;b1111 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA_CTL_B3</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DATA_CTL_B3"> 4&apos;b0000 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA_CTL_B4</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DATA_CTL_B4"> 4&apos;b0000 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA_IO_IDLE_PWRDWN</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DATA_IO_IDLE_PWRDWN"> ON </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA_IO_PRIM_TYPE</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DATA_IO_PRIM_TYPE"> HP_LP </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA_WIDTH</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DATA_WIDTH"> 64 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DEBUG_PORT</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DEBUG_PORT"> OFF </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DIFF_TERM_REFCLK</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DIFF_TERM_REFCLK"> FALSE </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DIFF_TERM_SYSCLK</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DIFF_TERM_SYSCLK"> TRUE </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DIVCLK_DIVIDE</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DIVCLK_DIVIDE"> 0 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DM_WIDTH</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DM_WIDTH"> 8 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DQS_BYTE_MAP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DQS_BYTE_MAP"> 144&apos;h00_00_00_00_00_00_00_00_00_00_20_21_22_23_03_02_01_00 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DQS_CNT_WIDTH</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DQS_CNT_WIDTH"> 3 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DQS_WIDTH</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DQS_WIDTH"> 8 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DQ_CNT_WIDTH</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DQ_CNT_WIDTH"> 6 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DQ_PER_DM</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DQ_PER_DM"> 8 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DQ_WIDTH</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DQ_WIDTH"> 64 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DRAM_TYPE</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DRAM_TYPE"> DDR3 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DRAM_WIDTH</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_DRAM_WIDTH"> 8 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_ECC</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_ECC"> OFF </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_ECC_CE_COUNTER_WIDTH</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_ECC_CE_COUNTER_WIDTH"> 8 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_ECC_ONOFF_RESET_VALUE</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_ECC_ONOFF_RESET_VALUE"> 1 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_ECC_TEST</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_ECC_TEST"> OFF </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_ECC_WIDTH</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_ECC_WIDTH"> 8 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_IBUF_LPWR_MODE</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_IBUF_LPWR_MODE"> OFF </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INPUT_CLK_TYPE</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_INPUT_CLK_TYPE"> Direct_clocking </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_AR_REGISTER</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_INTERCONNECT_S_AXI_AR_REGISTER"> 8 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_AW_REGISTER</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_INTERCONNECT_S_AXI_AW_REGISTER"> 8 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_B_REGISTER</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_INTERCONNECT_S_AXI_B_REGISTER"> 8 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_READ_ACCEPTANCE</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_INTERCONNECT_S_AXI_READ_ACCEPTANCE"> 4 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_READ_FIFO_DEPTH</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_INTERCONNECT_S_AXI_READ_FIFO_DEPTH"> 0 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_R_REGISTER</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_INTERCONNECT_S_AXI_R_REGISTER"> 8 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_SECURE</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_INTERCONNECT_S_AXI_SECURE"> 0 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_WRITE_ACCEPTANCE</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_INTERCONNECT_S_AXI_WRITE_ACCEPTANCE"> 4 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_WRITE_FIFO_DEPTH</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_INTERCONNECT_S_AXI_WRITE_FIFO_DEPTH"> 0 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_W_REGISTER</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_INTERCONNECT_S_AXI_W_REGISTER"> 8 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_IODELAY_GRP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_IODELAY_GRP"> IODELAY_MIG </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_IODELAY_HP_MODE</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_IODELAY_HP_MODE"> ON </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_MASK0_MAP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_MASK0_MAP"> 108&apos;h000_200_211_223_235_036_024_015_004 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_MASK1_MAP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_MASK1_MAP"> 108&apos;h000_000_000_000_000_000_000_000_000 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_MC_ERR_ADDR_WIDTH</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_MC_ERR_ADDR_WIDTH"> 31 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_MC_NCK_PER_CLK</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_MC_NCK_PER_CLK"> 4 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_MEM_ADDR_ORDER</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_MEM_ADDR_ORDER"> BANK_ROW_COLUMN </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_MEM_DENSITY</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_MEM_DENSITY"> 1Gb </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_MEM_DEVICE_WIDTH</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_MEM_DEVICE_WIDTH"> 8 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_MEM_PARTNO</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_MEM_PARTNO"> MT8JTF12864HZ-1G6 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_MEM_SPEEDGRADE</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_MEM_SPEEDGRADE"> 125 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_NAL</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_NAL"> 0 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_NBANK_MACHS</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_NBANK_MACHS"> 4 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_NCK_PER_CLK</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_NCK_PER_CLK"> 4 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_NCS_PER_RANK</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_NCS_PER_RANK"> 1 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_ODT_MAP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_ODT_MAP"> 96&apos;h000_000_000_000_000_000_000_112 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_ODT_WIDTH</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_ODT_WIDTH"> 1 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_ORDERING</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_ORDERING"> NORM </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_OUTPUT_DRV</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_OUTPUT_DRV"> HIGH </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_PARITY_MAP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_PARITY_MAP"> 12&apos;h000 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_PAYLOAD_WIDTH</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_PAYLOAD_WIDTH"> DQ_WIDTH </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_PHY_0_BITLANES</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_PHY_0_BITLANES"> 48&apos;h3FE_1FF_1FF_2FF </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_PHY_1_BITLANES</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_PHY_1_BITLANES"> 48&apos;hFFE_F30_CB4_000 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_PHY_2_BITLANES</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_PHY_2_BITLANES"> 48&apos;h3FE_3FE_3BF_2FF </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_PHY_CONTROL_MASTER_BANK</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_PHY_CONTROL_MASTER_BANK"> 1 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_PLLE2_EXT_LOC</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_PLLE2_EXT_LOC"> X1Y5 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_RANKS</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_RANKS"> 1 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_RAS_MAP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_RAS_MAP"> 12&apos;h11A </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_RD_WR_ARB_ALGORITHM</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_RD_WR_ARB_ALGORITHM"> RD_PRI_REG </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_REFCLK_FREQ</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_REFCLK_FREQ"> 200.0 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_REFCLK_TYPE</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_REFCLK_TYPE"> DIFFERENTIAL </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_REG_CTRL</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_REG_CTRL"> OFF </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_ROW_WIDTH</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_ROW_WIDTH"> 14 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_RST_ACT_LOW</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_RST_ACT_LOW"> 1 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_RTT_NOM</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_RTT_NOM"> 40 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_RTT_WR</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_RTT_WR"> OFF </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_SIMULATION</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_SIMULATION"> FALSE </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_SIM_BYPASS_INIT_CAL</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_SIM_BYPASS_INIT_CAL"> OFF </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_SLOT_0_CONFIG</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_SLOT_0_CONFIG"> 8&apos;b0000_0001 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_SLOT_1_CONFIG</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_SLOT_1_CONFIG"> 8&apos;b0000_0000 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_STARVE_LIMIT</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_STARVE_LIMIT"> 2 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_SYSCLK_TYPE</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_SYSCLK_TYPE"> DIFFERENTIAL </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_SYS_RST_PORT</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_SYS_RST_PORT"> TRUE </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_S_AXI_ADDR_WIDTH</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_S_AXI_ADDR_WIDTH"> 32 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_S_AXI_BASEADDR</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_S_AXI_BASEADDR"> 0xc0000000 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_S_AXI_DATA_WIDTH</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_S_AXI_DATA_WIDTH"> 512 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_S_AXI_HIGHADDR</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_S_AXI_HIGHADDR"> 0xffffffff </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_S_AXI_SUPPORTS_NARROW_BURST</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_S_AXI_SUPPORTS_NARROW_BURST"> Auto </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_TCK</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_TCK"> 0 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_TCKE</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_TCKE"> 5000 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_TCQ</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_TCQ"> 100 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_TEMP_MON_CONTROL</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_TEMP_MON_CONTROL"> INTERNAL </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_TFAW</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_TFAW"> 30000 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_TPRDI</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_TPRDI"> 1_000_000 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_TRAS</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_TRAS"> 35000 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_TRCD</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_TRCD"> 13125 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_TREFI</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_TREFI"> 7800000 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_TRFC</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_TRFC"> 110000 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_TRP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_TRP"> 13125 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_TRRD</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_TRRD"> 6000 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_TRTP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_TRTP"> 7500 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_TWTR</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_TWTR"> 7500 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_TZQCS</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_TZQCS"> 64 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_TZQI</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_TZQI"> 128_000_000 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_UI_EXTRA_CLOCKS</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_UI_EXTRA_CLOCKS"> FALSE </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_USER_REFRESH</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_USER_REFRESH"> OFF </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_USE_CS_PORT</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_USE_CS_PORT"> 1 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_USE_DM_PORT</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_USE_DM_PORT"> 1 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_USE_ODT_PORT</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_USE_ODT_PORT"> 1 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_WE_MAP</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_WE_MAP"> 12&apos;h11B </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_WRLVL</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_WRLVL"> ON </spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+</spirit:component>

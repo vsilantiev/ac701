@@ -1,0 +1,33 @@
+
+NET adc_clk_in_p      LOC = "L18" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS_25";
+NET adc_clk_in_n      LOC = "L19" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS_25";
+NET adc_data_or_p     LOC = "J21" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS_25";
+NET adc_data_or_n     LOC = "J22" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS_25";
+NET adc_data_in_p[0]  LOC = "M19" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS_25";
+NET adc_data_in_n[0]  LOC = "M20" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS_25";
+NET adc_data_in_p[1]  LOC = "N19" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS_25";
+NET adc_data_in_n[1]  LOC = "N20" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS_25";
+NET adc_data_in_p[2]  LOC = "P17" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS_25";
+NET adc_data_in_n[2]  LOC = "P18" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS_25";
+NET adc_data_in_p[3]  LOC = "N22" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS_25";
+NET adc_data_in_n[3]  LOC = "P22" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS_25";
+NET adc_data_in_p[4]  LOC = "M21" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS_25";
+NET adc_data_in_n[4]  LOC = "M22" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS_25";
+NET adc_data_in_p[5]  LOC = "J18" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS_25";
+NET adc_data_in_n[5]  LOC = "K18" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS_25";
+NET adc_data_in_p[6]  LOC = "L21" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS_25";
+NET adc_data_in_n[6]  LOC = "L22" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS_25";
+NET adc_data_in_p[7]  LOC = "T16" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS_25";
+NET adc_data_in_n[7]  LOC = "T17" | DIFF_TERM = "TRUE" | IOSTANDARD = "LVDS_25";
+
+NET spi_cs0n LOC = "B22" | IOSTANDARD = "LVCMOS25";
+NET spi_cs1n LOC = "B21" | IOSTANDARD = "LVCMOS25";
+NET spi_clk  LOC = "A22" | IOSTANDARD = "LVCMOS25";
+NET spi_sdio LOC = "A21" | IOSTANDARD = "LVCMOS25";
+
+NET "adc_clk_in_p" TNM_NET = "adc_clk_in_p";
+TIMESPEC "TS_adc_clk_in_p" = PERIOD "adc_clk_in_p" 260 MHz;
+NET "adc_clk_in_n" TNM_NET = "adc_clk_in_n";
+TIMESPEC "TS_adc_clk_in_n" = PERIOD "adc_clk_in_n" 260 MHz;
+
+  

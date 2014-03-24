@@ -1,0 +1,603 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /cf_ad9467_zed/synthesis/xst_temp_dir/
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_processing_system7_0_wrapper_xst.prj"
+Verilog Include Directory          : {"/cf_ad9467_zed/pcores/" "/cf_lib/edk/pcores/" "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/" "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/" }
+
+---- Target Parameters
+Target Device                      : xc7z020clg484-1
+Output File Name                   : "system_processing_system7_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : system_processing_system7_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {./}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7_v3_00_a/hdl/verilog/b_atc.v" into library processing_system7_v3_00_a
+Parsing module <b_atc>.
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7_v3_00_a/hdl/verilog/w_atc.v" into library processing_system7_v3_00_a
+Parsing module <w_atc>.
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7_v3_00_a/hdl/verilog/aw_atc.v" into library processing_system7_v3_00_a
+Parsing module <aw_atc>.
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7_v3_00_a/hdl/verilog/atc.v" into library processing_system7_v3_00_a
+Parsing module <atc>.
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7_v3_00_a/hdl/verilog/processing_system7.v" into library processing_system7_v3_00_a
+Parsing module <processing_system7>.
+Analyzing Verilog file "/cf_ad9467_zed/synthesis/parallel_run/hdl/system_processing_system7_0_wrapper.v" into library work
+Parsing module <system_processing_system7_0_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <system_processing_system7_0_wrapper>.
+
+Elaborating module <processing_system7(C_EMIO_GPIO_WIDTH=64,C_INCLUDE_ACP_TRANS_CHECK=0,C_M_AXI_GP0_ID_WIDTH=6,C_M_AXI_GP0_ENABLE_STATIC_REMAP=1,C_M_AXI_GP1_ID_WIDTH=6,C_M_AXI_GP1_ENABLE_STATIC_REMAP=1,C_S_AXI_GP0_ID_WIDTH=6,C_S_AXI_GP1_ID_WIDTH=6,C_S_AXI_ACP_ID_WIDTH=3,C_S_AXI_HP0_ID_WIDTH=1,C_S_AXI_HP0_DATA_WIDTH=64,C_S_AXI_HP1_ID_WIDTH=6,C_S_AXI_HP1_DATA_WIDTH=64,C_S_AXI_HP2_ID_WIDTH=6,C_S_AXI_HP2_DATA_WIDTH=64,C_S_AXI_HP3_ID_WIDTH=6,C_S_AXI_HP3_DATA_WIDTH=64,C_NUM_F2P_INTR_INPUTS=2,C_FCLK_CLK0_BUF="TRUE",C_FCLK_CLK1_BUF="TRUE",C_FCLK_CLK2_BUF="TRUE",C_FCLK_CLK3_BUF="TRUE")>.
+
+Elaborating module <BUFG>.
+
+Elaborating module <PS7>.
+WARNING:HDLCompiler:1127 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7_v3_00_a/hdl/verilog/processing_system7.v" Line 2172: Assignment to IRQ_P2F_GPI ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7_v3_00_a/hdl/verilog/processing_system7.v" Line 2294: Size mismatch in connection of port <SAXIHP1WACOUNT>. Formal port size is 6-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:189 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7_v3_00_a/hdl/verilog/processing_system7.v" Line 2310: Size mismatch in connection of port <SAXIHP2WACOUNT>. Formal port size is 6-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:189 - "/cf_ad9467_zed/synthesis/parallel_run/hdl/system_processing_system7_0_wrapper.v" Line 1792: Size mismatch in connection of port <S_AXI_HP1_WACOUNT>. Formal port size is 8-bit while actual signal size is 6-bit.
+WARNING:HDLCompiler:189 - "/cf_ad9467_zed/synthesis/parallel_run/hdl/system_processing_system7_0_wrapper.v" Line 1838: Size mismatch in connection of port <S_AXI_HP2_WACOUNT>. Formal port size is 8-bit while actual signal size is 6-bit.
+WARNING:HDLCompiler:189 - "/cf_ad9467_zed/synthesis/parallel_run/hdl/system_processing_system7_0_wrapper.v" Line 1975: Size mismatch in connection of port <IRQ_F2P>. Formal port size is 16-bit while actual signal size is 2-bit.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <system_processing_system7_0_wrapper>.
+    Related source file is "/cf_ad9467_zed/synthesis/parallel_run/hdl/system_processing_system7_0_wrapper.v".
+    Summary:
+	no macro.
+Unit <system_processing_system7_0_wrapper> synthesized.
+
+Synthesizing Unit <processing_system7>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7_v3_00_a/hdl/verilog/processing_system7.v".
+        C_M_AXI_GP0_ENABLE_STATIC_REMAP = 1
+        C_M_AXI_GP1_ENABLE_STATIC_REMAP = 1
+        C_M_AXI_GP0_ID_WIDTH = 6
+        C_M_AXI_GP1_ID_WIDTH = 6
+        C_S_AXI_GP0_ID_WIDTH = 6
+        C_S_AXI_GP1_ID_WIDTH = 6
+        C_S_AXI_HP0_ID_WIDTH = 1
+        C_S_AXI_HP1_ID_WIDTH = 6
+        C_S_AXI_HP2_ID_WIDTH = 6
+        C_S_AXI_HP3_ID_WIDTH = 6
+        C_S_AXI_ACP_ID_WIDTH = 3
+        C_S_AXI_HP0_DATA_WIDTH = 64
+        C_S_AXI_HP1_DATA_WIDTH = 64
+        C_S_AXI_HP2_DATA_WIDTH = 64
+        C_S_AXI_HP3_DATA_WIDTH = 64
+        C_INCLUDE_ACP_TRANS_CHECK = 0
+        C_NUM_F2P_INTR_INPUTS = 2
+        C_FCLK_CLK0_BUF = "TRUE"
+        C_FCLK_CLK1_BUF = "TRUE"
+        C_FCLK_CLK2_BUF = "TRUE"
+        C_FCLK_CLK3_BUF = "TRUE"
+        C_EMIO_GPIO_WIDTH = 64
+WARNING:Xst:647 - Input <S_AXI_GP0_ARSIZE<2:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_GP0_AWSIZE<2:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_GP1_ARSIZE<2:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_GP1_AWSIZE<2:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_HP0_ARSIZE<2:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_HP0_AWSIZE<2:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_HP1_ARSIZE<2:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_HP1_AWSIZE<2:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_HP2_ARSIZE<2:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_HP2_AWSIZE<2:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_HP3_ARSIZE<2:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_HP3_AWSIZE<2:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <IRQ_F2P<15:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <ENET0_GMII_TX_EN>.
+    Found 1-bit register for signal <ENET0_GMII_TX_ER>.
+    Found 1-bit register for signal <ENET0_GMII_COL_i>.
+    Found 1-bit register for signal <ENET0_GMII_CRS_i>.
+    Found 8-bit register for signal <ENET0_GMII_RXD_i>.
+    Found 1-bit register for signal <ENET0_GMII_RX_DV_i>.
+    Found 1-bit register for signal <ENET0_GMII_RX_ER_i>.
+    Found 8-bit register for signal <ENET1_GMII_TXD>.
+    Found 1-bit register for signal <ENET1_GMII_TX_EN>.
+    Found 1-bit register for signal <ENET1_GMII_TX_ER>.
+    Found 1-bit register for signal <ENET1_GMII_COL_i>.
+    Found 1-bit register for signal <ENET1_GMII_CRS_i>.
+    Found 8-bit register for signal <ENET1_GMII_RXD_i>.
+    Found 1-bit register for signal <ENET1_GMII_RX_DV_i>.
+    Found 1-bit register for signal <ENET1_GMII_RX_ER_i>.
+    Found 32-bit register for signal <FTMD_TRACEIN_DATA_i>.
+    Found 1-bit register for signal <FTMD_TRACEIN_VALID_i>.
+    Found 4-bit register for signal <FTMD_TRACEIN_ATID_i>.
+    Found 8-bit register for signal <ENET0_GMII_TXD>.
+    Found 64x12-bit Read Only RAM for signal <M_AXI_GP0_BID_FULL>
+    Found 64x12-bit Read Only RAM for signal <M_AXI_GP0_RID_FULL>
+    Found 64x12-bit Read Only RAM for signal <M_AXI_GP1_BID_FULL>
+    Found 64x12-bit Read Only RAM for signal <M_AXI_GP1_RID_FULL>
+    Summary:
+	inferred   4 RAM(s).
+	inferred  81 D-type flip-flop(s).
+Unit <processing_system7> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 64x12-bit single-port Read Only RAM                   : 4
+# Registers                                            : 19
+ 1-bit register                                        : 13
+ 32-bit register                                       : 1
+ 4-bit register                                        : 1
+ 8-bit register                                        : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <processing_system7>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_M_AXI_GP0_BID_FULL> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 12-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <M_AXI_GP0_BID> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <M_AXI_GP0_BID_FULL> |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_M_AXI_GP0_RID_FULL> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 12-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <M_AXI_GP0_RID> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <M_AXI_GP0_RID_FULL> |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_M_AXI_GP1_BID_FULL> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 12-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <M_AXI_GP1_BID> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <M_AXI_GP1_BID_FULL> |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_M_AXI_GP1_RID_FULL> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 12-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <M_AXI_GP1_RID> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <M_AXI_GP1_RID_FULL> |          |
+    -----------------------------------------------------------------------
+Unit <processing_system7> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 64x12-bit single-port distributed Read Only RAM       : 4
+# Registers                                            : 81
+ Flip-Flops                                            : 81
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <system_processing_system7_0_wrapper> ...
+
+Optimizing unit <processing_system7> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block system_processing_system7_0_wrapper, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 81
+ Flip-Flops                                            : 81
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : system_processing_system7_0_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 350
+#      GND                         : 1
+#      INV                         : 79
+#      LUT3                        : 30
+#      LUT4                        : 24
+#      LUT5                        : 46
+#      LUT6                        : 170
+# FlipFlops/Latches                : 81
+#      FD                          : 81
+# Clock Buffers                    : 4
+#      BUFG                        : 4
+# Others                           : 1
+#      PS7                         : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z020clg484-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              81  out of  106400     0%  
+ Number of Slice LUTs:                  349  out of  53200     0%  
+    Number used as Logic:               349  out of  53200     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    399
+   Number with an unused Flip Flop:     318  out of    399    79%  
+   Number with an unused LUT:            50  out of    399    12%  
+   Number of fully used LUT-FF pairs:    31  out of    399     7%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                        3224
+ Number of bonded IOBs:                   0  out of    200     0%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                4  out of     32    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                          | Load  |
+-----------------------------------+------------------------------------------------+-------+
+ENET1_GMII_TX_CLK                  | NONE(processing_system7_0/ENET1_GMII_TX_ER)    | 12    |
+ENET0_GMII_TX_CLK                  | NONE(processing_system7_0/ENET0_GMII_TXD_7)    | 12    |
+FTMD_TRACEIN_CLK                   | NONE(processing_system7_0/FTMD_TRACEIN_VALID_i)| 37    |
+ENET1_GMII_RX_CLK                  | NONE(processing_system7_0/ENET1_GMII_RX_ER_i)  | 10    |
+ENET0_GMII_RX_CLK                  | NONE(processing_system7_0/ENET0_GMII_RX_ER_i)  | 10    |
+-----------------------------------+------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 0.410ns
+   Maximum output required time after clock: 0.681ns
+   Maximum combinational path delay: 3.353ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ENET1_GMII_TX_CLK'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              0.410ns (Levels of Logic = 0)
+  Source:            processing_system7_0/PS7_i:EMIOENET1GMIITXER (PAD)
+  Destination:       processing_system7_0/ENET1_GMII_TX_ER (FF)
+  Destination Clock: ENET1_GMII_TX_CLK rising
+
+  Data Path: processing_system7_0/PS7_i:EMIOENET1GMIITXER to processing_system7_0/ENET1_GMII_TX_ER
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    PS7:EMIOENET1GMIITXER    1   0.000   0.399  processing_system7_0/PS7_i (processing_system7_0/ENET1_GMII_TX_ER_i)
+     FD:D                      0.011          processing_system7_0/ENET1_GMII_TX_ER
+    ----------------------------------------
+    Total                      0.410ns (0.011ns logic, 0.399ns route)
+                                       (2.7% logic, 97.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ENET0_GMII_TX_CLK'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              0.410ns (Levels of Logic = 0)
+  Source:            processing_system7_0/PS7_i:EMIOENET0GMIITXD7 (PAD)
+  Destination:       processing_system7_0/ENET0_GMII_TXD_7 (FF)
+  Destination Clock: ENET0_GMII_TX_CLK rising
+
+  Data Path: processing_system7_0/PS7_i:EMIOENET0GMIITXD7 to processing_system7_0/ENET0_GMII_TXD_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    PS7:EMIOENET0GMIITXD7    1   0.000   0.399  processing_system7_0/PS7_i (processing_system7_0/ENET0_GMII_TXD_i<7>)
+     FD:D                      0.011          processing_system7_0/ENET0_GMII_TXD_7
+    ----------------------------------------
+    Total                      0.410ns (0.011ns logic, 0.399ns route)
+                                       (2.7% logic, 97.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'FTMD_TRACEIN_CLK'
+  Total number of paths / destination ports: 37 / 37
+-------------------------------------------------------------------------
+Offset:              0.011ns (Levels of Logic = 0)
+  Source:            FTMD_TRACEIN_VALID (PAD)
+  Destination:       processing_system7_0/FTMD_TRACEIN_VALID_i (FF)
+  Destination Clock: FTMD_TRACEIN_CLK rising
+
+  Data Path: FTMD_TRACEIN_VALID to processing_system7_0/FTMD_TRACEIN_VALID_i
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:D                      0.011          processing_system7_0/FTMD_TRACEIN_VALID_i
+    ----------------------------------------
+    Total                      0.011ns (0.011ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ENET1_GMII_RX_CLK'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              0.011ns (Levels of Logic = 0)
+  Source:            ENET1_GMII_RX_ER (PAD)
+  Destination:       processing_system7_0/ENET1_GMII_RX_ER_i (FF)
+  Destination Clock: ENET1_GMII_RX_CLK rising
+
+  Data Path: ENET1_GMII_RX_ER to processing_system7_0/ENET1_GMII_RX_ER_i
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:D                      0.011          processing_system7_0/ENET1_GMII_RX_ER_i
+    ----------------------------------------
+    Total                      0.011ns (0.011ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ENET0_GMII_RX_CLK'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              0.011ns (Levels of Logic = 0)
+  Source:            ENET0_GMII_RX_ER (PAD)
+  Destination:       processing_system7_0/ENET0_GMII_RX_ER_i (FF)
+  Destination Clock: ENET0_GMII_RX_CLK rising
+
+  Data Path: ENET0_GMII_RX_ER to processing_system7_0/ENET0_GMII_RX_ER_i
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:D                      0.011          processing_system7_0/ENET0_GMII_RX_ER_i
+    ----------------------------------------
+    Total                      0.011ns (0.011ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ENET0_GMII_TX_CLK'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              0.282ns (Levels of Logic = 0)
+  Source:            processing_system7_0/ENET0_GMII_TXD_7 (FF)
+  Destination:       ENET0_GMII_TXD<7> (PAD)
+  Source Clock:      ENET0_GMII_TX_CLK rising
+
+  Data Path: processing_system7_0/ENET0_GMII_TXD_7 to ENET0_GMII_TXD<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               0   0.282   0.000  processing_system7_0/ENET0_GMII_TXD_7 (processing_system7_0/ENET0_GMII_TXD_7)
+    ----------------------------------------
+    Total                      0.282ns (0.282ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ENET1_GMII_TX_CLK'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              0.282ns (Levels of Logic = 0)
+  Source:            processing_system7_0/ENET1_GMII_TXD_7 (FF)
+  Destination:       ENET1_GMII_TXD<7> (PAD)
+  Source Clock:      ENET1_GMII_TX_CLK rising
+
+  Data Path: processing_system7_0/ENET1_GMII_TXD_7 to ENET1_GMII_TXD<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               0   0.282   0.000  processing_system7_0/ENET1_GMII_TXD_7 (processing_system7_0/ENET1_GMII_TXD_7)
+    ----------------------------------------
+    Total                      0.282ns (0.282ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'FTMD_TRACEIN_CLK'
+  Total number of paths / destination ports: 37 / 37
+-------------------------------------------------------------------------
+Offset:              0.681ns (Levels of Logic = 0)
+  Source:            processing_system7_0/FTMD_TRACEIN_VALID_i (FF)
+  Destination:       processing_system7_0/PS7_i:FTMDTRACEINVALID (PAD)
+  Source Clock:      FTMD_TRACEIN_CLK rising
+
+  Data Path: processing_system7_0/FTMD_TRACEIN_VALID_i to processing_system7_0/PS7_i:FTMDTRACEINVALID
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.282   0.399  processing_system7_0/FTMD_TRACEIN_VALID_i (processing_system7_0/FTMD_TRACEIN_VALID_i)
+    PS7:FTMDTRACEINVALID        0.000          processing_system7_0/PS7_i
+    ----------------------------------------
+    Total                      0.681ns (0.282ns logic, 0.399ns route)
+                                       (41.4% logic, 58.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ENET0_GMII_RX_CLK'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              0.681ns (Levels of Logic = 0)
+  Source:            processing_system7_0/ENET0_GMII_RX_ER_i (FF)
+  Destination:       processing_system7_0/PS7_i:EMIOENET0GMIIRXER (PAD)
+  Source Clock:      ENET0_GMII_RX_CLK rising
+
+  Data Path: processing_system7_0/ENET0_GMII_RX_ER_i to processing_system7_0/PS7_i:EMIOENET0GMIIRXER
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.282   0.399  processing_system7_0/ENET0_GMII_RX_ER_i (processing_system7_0/ENET0_GMII_RX_ER_i)
+    PS7:EMIOENET0GMIIRXER        0.000          processing_system7_0/PS7_i
+    ----------------------------------------
+    Total                      0.681ns (0.282ns logic, 0.399ns route)
+                                       (41.4% logic, 58.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ENET1_GMII_RX_CLK'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              0.681ns (Levels of Logic = 0)
+  Source:            processing_system7_0/ENET1_GMII_RX_ER_i (FF)
+  Destination:       processing_system7_0/PS7_i:EMIOENET1GMIIRXER (PAD)
+  Source Clock:      ENET1_GMII_RX_CLK rising
+
+  Data Path: processing_system7_0/ENET1_GMII_RX_ER_i to processing_system7_0/PS7_i:EMIOENET1GMIIRXER
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.282   0.399  processing_system7_0/ENET1_GMII_RX_ER_i (processing_system7_0/ENET1_GMII_RX_ER_i)
+    PS7:EMIOENET1GMIIRXER        0.000          processing_system7_0/PS7_i
+    ----------------------------------------
+    Total                      0.681ns (0.282ns logic, 0.399ns route)
+                                       (41.4% logic, 58.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 6044 / 3144
+-------------------------------------------------------------------------
+Delay:               3.353ns (Levels of Logic = 5)
+  Source:            processing_system7_0/PS7_i:MAXIGP0ARID3 (PAD)
+  Destination:       M_AXI_GP0_ARID<0> (PAD)
+
+  Data Path: processing_system7_0/PS7_i:MAXIGP0ARID3 to M_AXI_GP0_ARID<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    PS7:MAXIGP0ARID3      14   0.000   0.687  processing_system7_0/PS7_i (processing_system7_0/M_AXI_GP0_ARID_FULL<3>)
+     LUT3:I0->O            2   0.053   0.731  processing_system7_0/out831 (processing_system7_0/out83)
+     LUT6:I1->O            1   0.053   0.485  processing_system7_0/out2 (processing_system7_0/out6)
+     LUT5:I3->O            1   0.053   0.413  processing_system7_0/out3 (processing_system7_0/out7)
+     LUT5:I4->O            6   0.053   0.772  processing_system7_0/out7 (processing_system7_0/n0165)
+     LUT6:I0->O            0   0.053   0.000  processing_system7_0/M_AXI_GP0_ARID<6>6 (M_AXI_GP0_ARID<0>)
+    ----------------------------------------
+    Total                      3.353ns (0.265ns logic, 3.088ns route)
+                                       (7.9% logic, 92.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 32.00 secs
+Total CPU time to Xst completion: 31.94 secs
+ 
+--> 
+
+
+Total memory usage is 514764 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   19 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

@@ -1,0 +1,418 @@
+Release 14.7 - platgen Xilinx EDK 14.7 Build EDK_P.20131013
+ (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: platgen -p xc7z020clg484-1 -lang vhdl -intstyle default -lp
+/cf_lib/ -msg __xps/ise/xmsgprops.lst -parallel yes system.mhs 
+
+Parse /cf_ad9467_zed/system.mhs ...
+
+Read MPD definitions ...
+WARNING:EDK:4088 - IPNAME: processing_system7, INSTANCE: processing_system7_0 -
+   Superseded core for architecture 'zynq' - /cf_ad9467_zed/system.mhs line 38 
+WARNING:EDK:4088 - IPNAME: axi_dma, INSTANCE: axi_dma_0 - Superseded core for
+   architecture 'zynq' - /cf_ad9467_zed/system.mhs line 157 
+WARNING:EDK:4092 - IPNAME: chipscope_icon, INSTANCE: chipscope_icon_0 -
+   Pre-Production version not verified on hardware for architecture 'zynq' -
+   /cf_ad9467_zed/system.mhs line 227 
+WARNING:EDK:4088 - IPNAME: processing_system7, INSTANCE: processing_system7_0 -
+   Superseded core for architecture 'zynq' - /cf_ad9467_zed/system.mhs line 38 
+WARNING:EDK:4088 - IPNAME: axi_dma, INSTANCE: axi_dma_0 - Superseded core for
+   architecture 'zynq' - /cf_ad9467_zed/system.mhs line 157 
+WARNING:EDK:4092 - IPNAME: chipscope_icon, INSTANCE: chipscope_icon_0 -
+   Pre-Production version not verified on hardware for architecture 'zynq' -
+   /cf_ad9467_zed/system.mhs line 227 
+
+Overriding IP level properties ...
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_1 - tcl is
+   overriding PARAMETER C_BASEFAMILY value to zynq -
+   /opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v
+   1_06_a/data/axi_interconnect_v2_1_0.mpd line 81 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_2 - tcl is
+   overriding PARAMETER C_BASEFAMILY value to zynq -
+   /opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v
+   1_06_a/data/axi_interconnect_v2_1_0.mpd line 81 
+
+Computing clock values...
+WARNING:EDK:1954 - No Top-level Input clock for the design. 
+WARNING:EDK:3712 - IPNAME: axi_interconnect, INSTANCE: axi_interconnect_1 -
+   Frequency of the interconnect's clock port could not be determined. All IPs
+   in the design will be considered to be asynchronous with respect to the
+   interconnect. This will lead to more resource usage. You can avoid this by
+   specifying the clock frequency on the port that the interconnect's clock is
+   connected to.
+WARNING:EDK:3712 - IPNAME: axi_interconnect, INSTANCE: axi_interconnect_2 -
+   Frequency of the interconnect's clock port could not be determined. All IPs
+   in the design will be considered to be asynchronous with respect to the
+   interconnect. This will lead to more resource usage. You can avoid this by
+   specifying the clock frequency on the port that the interconnect's clock is
+   connected to.
+INFO:EDK:3707 - Frequency of the clock port of the interconnect
+   'axi_interconnect_1' could not be determined. Tools are updating the value of
+   the parameter C_INTERCONNECT_M_AXI_GP0_IS_ACLK_ASYNC on core
+   processing_system7_0 to '1'. 
+INFO:EDK:3707 - Frequency of the clock port of the interconnect
+   'axi_interconnect_1' could not be determined. Tools are updating the value of
+   the parameter C_INTERCONNECT_S_AXI_IS_ACLK_ASYNC on core axi_adc_1c_0 to '1'.
+    
+INFO:EDK:3707 - Frequency of the clock port of the interconnect
+   'axi_interconnect_1' could not be determined. Tools are updating the value of
+   the parameter C_INTERCONNECT_S_AXI_LITE_IS_ACLK_ASYNC on core axi_dma_0 to
+   '1'. 
+INFO:EDK:3707 - Frequency of the clock port of the interconnect
+   'axi_interconnect_1' could not be determined. Tools are updating the value of
+   the parameter C_INTERCONNECT_S_AXI_IS_ACLK_ASYNC on core axi_spi_0 to '1'. 
+INFO:EDK:3707 - Frequency of the clock port of the interconnect
+   'axi_interconnect_2' could not be determined. Tools are updating the value of
+   the parameter C_INTERCONNECT_M_AXI_S2MM_IS_ACLK_ASYNC on core axi_dma_0 to
+   '1'. 
+INFO:EDK:3707 - Frequency of the clock port of the interconnect
+   'axi_interconnect_2' could not be determined. Tools are updating the value of
+   the parameter C_INTERCONNECT_S_AXI_HP0_IS_ACLK_ASYNC on core
+   processing_system7_0 to '1'. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor processing_system7_0
+  (0x40400000-0x4040ffff) axi_dma_0	axi_interconnect_1
+  (0x42000000-0x4200ffff) axi_spi_0	axi_interconnect_1
+  (0x79000000-0x7900ffff) axi_adc_1c_0	axi_interconnect_1
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: axi_interconnect, INSTANCE: axi_interconnect_1 - 1 master(s) : 3
+slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi_interconnect_2 - 1 master(s) : 1
+slave(s) 
+
+Checking port drivers...
+WARNING:EDK:4180 - PORT: tdi_in, CONNECTOR: bscan_tdi - No driver found. Port
+   will be driven to GND -
+   /opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_icon_v1_
+   06_a/data/chipscope_icon_v2_1_0.mpd line 101 
+WARNING:EDK:4180 - PORT: reset_in, CONNECTOR: bscan_reset - No driver found.
+   Port will be driven to GND -
+   /opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_icon_v1_
+   06_a/data/chipscope_icon_v2_1_0.mpd line 102 
+WARNING:EDK:4180 - PORT: shift_in, CONNECTOR: bscan_shift - No driver found.
+   Port will be driven to GND -
+   /opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_icon_v1_
+   06_a/data/chipscope_icon_v2_1_0.mpd line 103 
+WARNING:EDK:4180 - PORT: update_in, CONNECTOR: bscan_update - No driver found.
+   Port will be driven to GND -
+   /opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_icon_v1_
+   06_a/data/chipscope_icon_v2_1_0.mpd line 104 
+WARNING:EDK:4180 - PORT: sel_in, CONNECTOR: bscan_sel1 - No driver found. Port
+   will be driven to GND -
+   /opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_icon_v1_
+   06_a/data/chipscope_icon_v2_1_0.mpd line 105 
+WARNING:EDK:4180 - PORT: drck_in, CONNECTOR: bscan_drck1 - No driver found. Port
+   will be driven to GND -
+   /opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_icon_v1_
+   06_a/data/chipscope_icon_v2_1_0.mpd line 106 
+WARNING:EDK:4180 - PORT: capture_in, CONNECTOR: bscan_capture - No driver found.
+   Port will be driven to GND -
+   /opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_icon_v1_
+   06_a/data/chipscope_icon_v2_1_0.mpd line 107 
+WARNING:EDK:4181 - PORT: mm2s_prmry_reset_out_n, CONNECTOR: RESET_OUT_N -
+   floating connection -
+   /opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_dma_v5_00_a/da
+   ta/axi_dma_v2_1_0.mpd line 212 
+WARNING:EDK:4181 - PORT: mm2s_cntrl_reset_out_n, CONNECTOR: RESET_OUT_N -
+   floating connection -
+   /opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_dma_v5_00_a/da
+   ta/axi_dma_v2_1_0.mpd line 218 
+WARNING:EDK:4181 - PORT: s2mm_prmry_reset_out_n, CONNECTOR: RESET_OUT_N -
+   floating connection -
+   /opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_dma_v5_00_a/da
+   ta/axi_dma_v2_1_0.mpd line 240 
+WARNING:EDK:4181 - PORT: s2mm_sts_reset_out_n, CONNECTOR: RESET_OUT_N - floating
+   connection -
+   /opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_dma_v5_00_a/da
+   ta/axi_dma_v2_1_0.mpd line 246 
+WARNING:EDK:4181 - PORT: tdo_out, CONNECTOR: bscan_tdo1 - floating connection -
+   /opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_icon_v1_
+   06_a/data/chipscope_icon_v2_1_0.mpd line 108 
+
+Performing Clock DRCs...
+INFO:EDK:4060 - INSTANCE: axi_dma_0, PARAMETER: C_S_AXI_LITE_ACLK_FREQ_HZ - Did
+   not implement clock DRCs for the parameter. Top-level frequency could not be
+   propagated to this IP. Please make sure that you have specified the frequency
+   of the top-level clock port, and that the clocks are properly connected.
+INFO:EDK:4060 - INSTANCE: axi_dma_0, PARAMETER: C_M_AXI_SG_ACLK_FREQ_HZ - Did
+   not implement clock DRCs for the parameter. Top-level frequency could not be
+   propagated to this IP. Please make sure that you have specified the frequency
+   of the top-level clock port, and that the clocks are properly connected.
+INFO:EDK:4060 - INSTANCE: axi_dma_0, PARAMETER: C_M_AXI_S2MM_ACLK_FREQ_HZ - Did
+   not implement clock DRCs for the parameter. Top-level frequency could not be
+   propagated to this IP. Please make sure that you have specified the frequency
+   of the top-level clock port, and that the clocks are properly connected.
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi_interconnect_1.
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_1 - tcl is
+   overriding PARAMETER C_RANGE_CHECK value to 1 -
+   /opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v
+   1_06_a/data/axi_interconnect_v2_1_0.mpd line 149 
+
+INFO: Setting C_RANGE_CHECK = OFF for axi_interconnect axi_interconnect_2; no
+DECERR checking will be performed.
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_2 - tcl is
+   overriding PARAMETER C_RANGE_CHECK value to 0 -
+   /opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v
+   1_06_a/data/axi_interconnect_v2_1_0.mpd line 149 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+WARNING:EDK -  ****************************************************************
+WARNING:EDK -  Optimization Alert: axi_interconnect axi_interconnect_1: Port 
+WARNING:EDK -  INTERCONNECT_ACLK is not connected to the same clock source as 
+WARNING:EDK -  any SI or MI slot. Your configuration may have unnecessary clock 
+WARNING:EDK -  conversion(s). Typically, best throughput is achieved by 
+WARNING:EDK -  connecting INTERCONNECT_ACLK to the same clock source as the 
+WARNING:EDK -  fastest performance-critical MI slot (connected slave).
+
+WARNING:EDK -  ****************************************************************
+WARNING:EDK -  Optimization Alert: axi_interconnect axi_interconnect_2: Port 
+WARNING:EDK -  INTERCONNECT_ACLK is not connected to the same clock source as 
+WARNING:EDK -  any SI or MI slot. Your configuration may have unnecessary clock 
+WARNING:EDK -  conversion(s). Typically, best throughput is achieved by 
+WARNING:EDK -  connecting INTERCONNECT_ACLK to the same clock source as the 
+WARNING:EDK -  fastest performance-critical MI slot (connected slave).
+
+Chipscope Integrate Controller, instance 'chipscope_icon', exists in System 
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: Generating core-level timing constraints for asynchronous clock
+conversions in axi_interconnect axi_interconnect_1.
+WARNING:EDK -  ****************************************************************
+WARNING:EDK -  Cannot determine frequency of INTERCONNECT_ACLK for 
+WARNING:EDK -  axi_interconnect axi_interconnect_1; generating TIG constraint 
+WARNING:EDK -  for asynchronous clock-converter data pathways.
+
+INFO: Generating core-level timing constraints for asynchronous clock
+conversions in axi_interconnect axi_interconnect_2.
+WARNING:EDK -  ****************************************************************
+WARNING:EDK -  Cannot determine frequency of INTERCONNECT_ACLK for 
+WARNING:EDK -  axi_interconnect axi_interconnect_2; generating TIG constraint 
+WARNING:EDK -  for asynchronous clock-converter data pathways.
+
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+IPNAME:chipscope_ila INSTANCE:chipscope_ila_0 - /cf_ad9467_zed/system.mhs line
+213 - Copying (BBD-specified) netlist files.
+IPNAME:chipscope_icon INSTANCE:chipscope_icon_0 - /cf_ad9467_zed/system.mhs line
+227 - Copying (BBD-specified) netlist files.
+
+Managing cache ...
+
+Elaborating instances ...
+IPNAME:chipscope_ila INSTANCE:chipscope_ila_0 - /cf_ad9467_zed/system.mhs line
+213 - elaborating IP
+Created elaborate directory hdl/elaborate/chipscope_ila_0_v1_05_a/synhdl/vhdl/
+Generating ChipScope core: chipscope_ila_0 ...
+ChipScope Core Generator command: coregen -b /cf_ad9467_zed/implementation/chipscope_ila_0.xco
+Release 14.7 - Xilinx CORE Generator P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+All runtime messages will be recorded in
+/cf_ad9467_zed/implementation/chipscope_ila_0_wrapper/coregen.log
+Updating project device from '7z020' to 'xc7z020'.
+Wrote CGP file for project 'coregen'.
+Resolving generic values...
+Finished resolving generic values.
+Generating IP...
+Configuring files for chipscope_ila_0 root...
+Gathering HDL files for chipscope_ila_0 root...
+Creating XST project for chipscope_ila_0...
+Creating XST script file for chipscope_ila_0...
+Creating XST instantiation file for chipscope_ila_0...
+Running XST for chipscope_ila_0...
+XST: HDL Parsing
+XST: HDL Elaboration
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+XST: Design Summary
+Not generating VHDL wrapper
+Not generating Verilog wrapper
+Skipping VHDL instantiation template for chipscope_ila_0...
+Skipping Verilog instantiation template for chipscope_ila_0...
+Finished Generation.
+Generating IP instantiation template...
+Generating ASY schematic symbol...
+Generating metadata file...
+Generating ISE project...
+XCO file found: chipscope_ila_0.xco
+XMDF file found: chipscope_ila_0_xmdf.tcl
+WARNING:EDK - : chipscope_ila_0.vhd does not exist, will not be added to ISE
+   project.
+
+WARNING:EDK - : chipscope_ila_0.vho does not exist, will not be added to ISE
+   project.
+
+Adding
+/cf_ad9467_zed/implementation/chipscope_ila_0_wrapper/tmp/_cg/chipscope_ila_0.as
+y -view all -origin_type imported
+Adding
+/cf_ad9467_zed/implementation/chipscope_ila_0_wrapper/tmp/_cg/chipscope_ila_0.ng
+c -view all -origin_type created
+Checking file
+"/cf_ad9467_zed/implementation/chipscope_ila_0_wrapper/tmp/_cg/chipscope_ila_0.n
+gc" for project device match ...
+File
+"/cf_ad9467_zed/implementation/chipscope_ila_0_wrapper/tmp/_cg/chipscope_ila_0.n
+gc" device information matches project device.
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/chipscope_ila_0"
+Generating README file...
+Generating FLIST file...
+Moving files to output directory...
+Finished moving files to output directory
+Saved CGP file for project 'coregen'.
+*************************************************************
+IPNAME:chipscope_icon INSTANCE:chipscope_icon_0 - /cf_ad9467_zed/system.mhs line
+227 - elaborating IP
+Created elaborate directory hdl/elaborate/chipscope_icon_0_v1_06_a/synhdl/vhdl/
+Generating ChipScope core: chipscope_icon_0 ...
+ChipScope Core Generator command: coregen -b /cf_ad9467_zed/implementation/chipscope_icon_0.xco
+Release 14.7 - Xilinx CORE Generator P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+All runtime messages will be recorded in
+/cf_ad9467_zed/implementation/chipscope_icon_0_wrapper/coregen.log
+Updating project device from '7z020' to 'xc7z020'.
+Wrote CGP file for project 'coregen'.
+Resolving generic values...
+Finished resolving generic values.
+Generating IP...
+Configuring files for chipscope_icon_0 root...
+Gathering HDL files for chipscope_icon_0 root...
+Creating XST project for chipscope_icon_0...
+Creating XST script file for chipscope_icon_0...
+Creating XST instantiation file for chipscope_icon_0...
+Running XST for chipscope_icon_0...
+XST: HDL Parsing
+XST: HDL Elaboration
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+XST: Design Summary
+Not generating VHDL wrapper
+Not generating Verilog wrapper
+Skipping VHDL instantiation template for chipscope_icon_0...
+Skipping Verilog instantiation template for chipscope_icon_0...
+Finished Generation.
+Generating IP instantiation template...
+Generating ASY schematic symbol...
+Generating metadata file...
+Generating ISE project...
+XCO file found: chipscope_icon_0.xco
+XMDF file found: chipscope_icon_0_xmdf.tcl
+WARNING:EDK - : chipscope_icon_0.vhd does not exist, will not be added to ISE
+   project.
+
+WARNING:EDK - : chipscope_icon_0.vho does not exist, will not be added to ISE
+   project.
+
+Adding
+/cf_ad9467_zed/implementation/chipscope_icon_0_wrapper/tmp/_cg/chipscope_icon_0.
+asy -view all -origin_type imported
+Adding
+/cf_ad9467_zed/implementation/chipscope_icon_0_wrapper/tmp/_cg/chipscope_icon_0.
+ngc -view all -origin_type created
+Checking file
+"/cf_ad9467_zed/implementation/chipscope_icon_0_wrapper/tmp/_cg/chipscope_icon_0
+.ngc" for project device match ...
+File
+"/cf_ad9467_zed/implementation/chipscope_icon_0_wrapper/tmp/_cg/chipscope_icon_0
+.ngc" device information matches project device.
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/chipscope_icon_0"
+Generating README file...
+Generating FLIST file...
+Moving files to output directory...
+Finished moving files to output directory
+Saved CGP file for project 'coregen'.
+*************************************************************
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 1.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+
+INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INFO:EDK:4194 - Running XST parallelly on 2 processors
+INSTANCE:processing_system7_0 - /cf_ad9467_zed/system.mhs line 38 - Running XST
+synthesis
+INSTANCE:axi_adc_1c_0 - /cf_ad9467_zed/system.mhs line 128 - Running XST
+synthesis
+INSTANCE:axi_interconnect_1 - /cf_ad9467_zed/system.mhs line 149 - Running XST
+synthesis
+INSTANCE:axi_dma_0 - /cf_ad9467_zed/system.mhs line 157 - Running XST synthesis
+INSTANCE:axi_interconnect_2 - /cf_ad9467_zed/system.mhs line 176 - Running XST
+synthesis
+INSTANCE:axi_spi_0 - /cf_ad9467_zed/system.mhs line 184 - Running XST synthesis
+INSTANCE:util_spi_3w_0 - /cf_ad9467_zed/system.mhs line 199 - Running XST
+synthesis
+INSTANCE:chipscope_ila_0 - /cf_ad9467_zed/system.mhs line 213 - Running XST
+synthesis
+INSTANCE:chipscope_icon_0 - /cf_ad9467_zed/system.mhs line 227 - Running XST
+synthesis
+
+Running NGCBUILD ...
+IPNAME:system_axi_interconnect_1_wrapper INSTANCE:axi_interconnect_1 -
+/cf_ad9467_zed/system.mhs line 149 - Running NGCBUILD
+IPNAME:system_axi_dma_0_wrapper INSTANCE:axi_dma_0 - /cf_ad9467_zed/system.mhs
+line 157 - Running NGCBUILD
+IPNAME:system_axi_interconnect_2_wrapper INSTANCE:axi_interconnect_2 -
+/cf_ad9467_zed/system.mhs line 176 - Running NGCBUILD
+IPNAME:system_chipscope_ila_0_wrapper INSTANCE:chipscope_ila_0 -
+/cf_ad9467_zed/system.mhs line 213 - Running NGCBUILD
+IPNAME:system_chipscope_icon_0_wrapper INSTANCE:chipscope_icon_0 -
+/cf_ad9467_zed/system.mhs line 227 - Running NGCBUILD
+INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
+   If any constraint needs to be overridden, this should be done by modifying
+   the data/system.ucf file.
+
+Rebuilding cache ...
+
+Total run time: 1141.00 seconds

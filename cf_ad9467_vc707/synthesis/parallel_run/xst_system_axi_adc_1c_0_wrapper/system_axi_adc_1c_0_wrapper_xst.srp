@@ -1,0 +1,1778 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /cf_ad9467_vc707/synthesis/xst_temp_dir/
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_axi_adc_1c_0_wrapper_xst.prj"
+Verilog Include Directory          : {"/cf_ad9467_vc707/pcores/" "/cf_lib/edk/pcores/" "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/" "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/" }
+
+---- Target Parameters
+Target Device                      : xc7vx485tffg1761-2
+Output File Name                   : "system_axi_adc_1c_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : system_axi_adc_1c_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {./}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/cf_lib/edk/pcores/axi_adc_1c_v1_00_a/hdl/verilog/cf_mem.v" into library axi_adc_1c_v1_00_a
+Parsing module <cf_mem>.
+Analyzing Verilog file "/cf_lib/edk/pcores/axi_adc_1c_v1_00_a/hdl/verilog/cf_pnmon.v" into library axi_adc_1c_v1_00_a
+Parsing module <cf_pnmon>.
+Analyzing Verilog file "/cf_lib/edk/pcores/axi_adc_1c_v1_00_a/hdl/verilog/cf_adc_if.v" into library axi_adc_1c_v1_00_a
+Parsing module <cf_adc_if>.
+Analyzing Verilog file "/cf_lib/edk/pcores/axi_adc_1c_v1_00_a/hdl/verilog/cf_adc_wr.v" into library axi_adc_1c_v1_00_a
+Parsing module <cf_adc_wr>.
+Analyzing Verilog file "/cf_lib/edk/pcores/axi_adc_1c_v1_00_a/hdl/verilog/cf_dma_wr.v" into library axi_adc_1c_v1_00_a
+Parsing module <cf_dma_wr>.
+Analyzing Verilog file "/cf_lib/edk/pcores/axi_adc_1c_v1_00_a/hdl/verilog/cf_adc_1c.v" into library axi_adc_1c_v1_00_a
+Parsing module <cf_adc_1c>.
+Analyzing Verilog file "/cf_lib/edk/pcores/axi_adc_1c_v1_00_a/hdl/verilog/user_logic.v" into library axi_adc_1c_v1_00_a
+Parsing module <user_logic>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <proc_common_pkg>.
+Parsing package body <proc_common_pkg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <ipif_pkg>.
+Parsing package body <ipif_pkg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy>.
+Parsing architecture <implementation> of entity <or_muxcy>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate128>.
+Parsing architecture <imp> of entity <or_gate128>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" into library proc_common_v3_00_a
+Parsing package <family_support>.
+Parsing package body <family_support>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_f>.
+Parsing architecture <imp> of entity <pselect_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_f>.
+Parsing architecture <imp> of entity <counter_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/address_decoder.vhd" into library axi_lite_ipif_v1_01_a
+Parsing entity <address_decoder>.
+Parsing architecture <IMP> of entity <address_decoder>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd" into library axi_lite_ipif_v1_01_a
+Parsing entity <slave_attachment>.
+Parsing architecture <imp> of entity <slave_attachment>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/axi_lite_ipif.vhd" into library axi_lite_ipif_v1_01_a
+Parsing entity <axi_lite_ipif>.
+Parsing architecture <imp> of entity <axi_lite_ipif>.
+Parsing VHDL file "/cf_lib/edk/pcores/axi_adc_1c_v1_00_a/hdl/vhdl/axi_adc_1c.vhd" into library axi_adc_1c_v1_00_a
+Parsing entity <axi_adc_1c>.
+Parsing architecture <IMP> of entity <axi_adc_1c>.
+Parsing VHDL file "/cf_ad9467_vc707/synthesis/parallel_run/hdl/system_axi_adc_1c_0_wrapper.vhd" into library work
+Parsing entity <system_axi_adc_1c_0_wrapper>.
+Parsing architecture <STRUCTURE> of entity <system_axi_adc_1c_0_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <system_axi_adc_1c_0_wrapper> (architecture <STRUCTURE>) from library <work>.
+
+Elaborating entity <axi_adc_1c> (architecture <IMP>) with generics from library <axi_adc_1c_v1_00_a>.
+
+Elaborating entity <axi_lite_ipif> (architecture <imp>) with generics from library <axi_lite_ipif_v1_01_a>.
+
+Elaborating entity <slave_attachment> (architecture <imp>) with generics from library <axi_lite_ipif_v1_01_a>.
+
+Elaborating entity <address_decoder> (architecture <IMP>) with generics from library <axi_lite_ipif_v1_01_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+INFO:HDLCompiler:679 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd" Line 417. Case statement is complete. others clause is never selected
+Going to verilog side to elaborate module user_logic
+
+Elaborating module <user_logic(C_NUM_REG=32,C_SLV_DWIDTH=32,C_CF_BUFTYPE=0)>.
+
+Elaborating module <cf_adc_1c(C_CF_BUFTYPE=0)>.
+
+Elaborating module <cf_dma_wr>.
+
+Elaborating module <cf_mem(DW=65,AW=6)>.
+
+Elaborating module <cf_adc_wr(C_CF_BUFTYPE=0)>.
+
+Elaborating module <cf_pnmon>.
+
+Elaborating module <cf_adc_if(C_CF_BUFTYPE=0)>.
+
+Elaborating module <FDPE(INIT=1'b1)>.
+
+Elaborating module <IBUFDS>.
+
+Elaborating module <IDELAYE2(CINVCTRL_SEL="FALSE",DELAY_SRC="IDATAIN",HIGH_PERFORMANCE_MODE="FALSE",IDELAY_TYPE="VAR_LOAD",IDELAY_VALUE=0,REFCLK_FREQUENCY=200.0,PIPE_SEL="FALSE",SIGNAL_PATTERN="DATA")>.
+
+Elaborating module <IDDR(INIT_Q1=1'b0,INIT_Q2=1'b0,DDR_CLK_EDGE="SAME_EDGE_PIPELINED",SRTYPE="ASYNC")>.
+
+Elaborating module <IBUFGDS>.
+
+Elaborating module <BUFG>.
+
+Elaborating module <IDELAYCTRL>.
+Back to vhdl to continue elaboration
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <system_axi_adc_1c_0_wrapper>.
+    Related source file is "/cf_ad9467_vc707/synthesis/parallel_run/hdl/system_axi_adc_1c_0_wrapper.vhd".
+    Summary:
+	no macro.
+Unit <system_axi_adc_1c_0_wrapper> synthesized.
+
+Synthesizing Unit <axi_adc_1c>.
+    Related source file is "/cf_lib/edk/pcores/axi_adc_1c_v1_00_a/hdl/vhdl/axi_adc_1c.vhd".
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+        C_S_AXI_DATA_WIDTH = 32
+        C_S_AXI_ADDR_WIDTH = 32
+        C_S_AXI_MIN_SIZE = "00000000000000000000000111111111"
+        C_USE_WSTRB = 0
+        C_DPHASE_TIMEOUT = 8
+        C_BASEADDR = "01110011000000000000000000000000"
+        C_HIGHADDR = "01110011000000001111111111111111"
+        C_FAMILY = "virtex7"
+        C_NUM_REG = 1
+        C_NUM_MEM = 1
+        C_SLV_AWIDTH = 32
+        C_SLV_DWIDTH = 32
+        C_CF_BUFTYPE = 0
+    Set property "MAX_FANOUT = 10000" for signal <S_AXI_ACLK>.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "MAX_FANOUT = 10000" for signal <S_AXI_ARESETN>.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+INFO:Xst:3210 - "/cf_lib/edk/pcores/axi_adc_1c_v1_00_a/hdl/vhdl/axi_adc_1c.vhd" line 171: Output port <Bus2IP_Addr> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/cf_lib/edk/pcores/axi_adc_1c_v1_00_a/hdl/vhdl/axi_adc_1c.vhd" line 171: Output port <Bus2IP_CS> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/cf_lib/edk/pcores/axi_adc_1c_v1_00_a/hdl/vhdl/axi_adc_1c.vhd" line 171: Output port <Bus2IP_RNW> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <axi_adc_1c> synthesized.
+
+Synthesizing Unit <axi_lite_ipif>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/axi_lite_ipif.vhd".
+        C_S_AXI_DATA_WIDTH = 32
+        C_S_AXI_ADDR_WIDTH = 32
+        C_S_AXI_MIN_SIZE = "00000000000000000000000111111111"
+        C_USE_WSTRB = 0
+        C_DPHASE_TIMEOUT = 8
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000001110011000000000000000000000000","0000000000000000000000000000000001110011000000001111111111111111")
+        C_ARD_NUM_CE_ARRAY = (32)
+        C_FAMILY = "virtex7"
+    Summary:
+	no macro.
+Unit <axi_lite_ipif> synthesized.
+
+Synthesizing Unit <slave_attachment>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd".
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000001110011000000000000000000000000","0000000000000000000000000000000001110011000000001111111111111111")
+        C_ARD_NUM_CE_ARRAY = (32)
+        C_IPIF_ABUS_WIDTH = 32
+        C_IPIF_DBUS_WIDTH = 32
+        C_S_AXI_MIN_SIZE = "00000000000000000000000111111111"
+        C_USE_WSTRB = 0
+        C_DPHASE_TIMEOUT = 8
+        C_FAMILY = "virtex7"
+WARNING:Xst:647 - Input <S_AXI_AWADDR<31:9>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_WSTRB> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_ARADDR<31:9>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd" line 341: Output port <CS_for_gaps> of the instance <I_DECODER> is unconnected or connected to loadless signal.
+    Found 2-bit register for signal <state>.
+    Found 2-bit register for signal <s_axi_rresp_i>.
+    Found 32-bit register for signal <s_axi_rdata_i>.
+    Found 1-bit register for signal <s_axi_rvalid_i>.
+    Found 2-bit register for signal <s_axi_bresp_i>.
+    Found 1-bit register for signal <s_axi_bvalid_i>.
+    Found 4-bit register for signal <INCLUDE_DPHASE_TIMER.dpto_cnt>.
+    Found 1-bit register for signal <rst>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 4                                              |
+    | Clock              | S_AXI_ACLK (rising_edge)                       |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | sm_idle                                        |
+    | Power Up State     | sm_idle                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit adder for signal <INCLUDE_DPHASE_TIMER.dpto_cnt[3]_GND_14_o_add_31_OUT> created at line 507.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  43 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <slave_attachment> synthesized.
+
+Synthesizing Unit <address_decoder>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/address_decoder.vhd".
+        C_BUS_AWIDTH = 9
+        C_S_AXI_MIN_SIZE = "00000000000000000000000111111111"
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000001110011000000000000000000000000","0000000000000000000000000000000001110011000000001111111111111111")
+        C_ARD_NUM_CE_ARRAY = (32)
+        C_FAMILY = "nofamily"
+WARNING:Xst:647 - Input <Address_In_Erly<0:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Bus_RNW> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <Bus_RNW_reg>.
+    Found 1-bit register for signal <ce_out_i<0>>.
+    Found 1-bit register for signal <ce_out_i<1>>.
+    Found 1-bit register for signal <ce_out_i<2>>.
+    Found 1-bit register for signal <ce_out_i<3>>.
+    Found 1-bit register for signal <ce_out_i<4>>.
+    Found 1-bit register for signal <ce_out_i<5>>.
+    Found 1-bit register for signal <ce_out_i<6>>.
+    Found 1-bit register for signal <ce_out_i<7>>.
+    Found 1-bit register for signal <ce_out_i<8>>.
+    Found 1-bit register for signal <ce_out_i<9>>.
+    Found 1-bit register for signal <ce_out_i<10>>.
+    Found 1-bit register for signal <ce_out_i<11>>.
+    Found 1-bit register for signal <ce_out_i<12>>.
+    Found 1-bit register for signal <ce_out_i<13>>.
+    Found 1-bit register for signal <ce_out_i<14>>.
+    Found 1-bit register for signal <ce_out_i<15>>.
+    Found 1-bit register for signal <ce_out_i<16>>.
+    Found 1-bit register for signal <ce_out_i<17>>.
+    Found 1-bit register for signal <ce_out_i<18>>.
+    Found 1-bit register for signal <ce_out_i<19>>.
+    Found 1-bit register for signal <ce_out_i<20>>.
+    Found 1-bit register for signal <ce_out_i<21>>.
+    Found 1-bit register for signal <ce_out_i<22>>.
+    Found 1-bit register for signal <ce_out_i<23>>.
+    Found 1-bit register for signal <ce_out_i<24>>.
+    Found 1-bit register for signal <ce_out_i<25>>.
+    Found 1-bit register for signal <ce_out_i<26>>.
+    Found 1-bit register for signal <ce_out_i<27>>.
+    Found 1-bit register for signal <ce_out_i<28>>.
+    Found 1-bit register for signal <ce_out_i<29>>.
+    Found 1-bit register for signal <ce_out_i<30>>.
+    Found 1-bit register for signal <ce_out_i<31>>.
+    Found 1-bit register for signal <cs_out_i>.
+    Summary:
+	inferred  34 D-type flip-flop(s).
+Unit <address_decoder> synthesized.
+
+Synthesizing Unit <pselect_f_1>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "00000"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_1> synthesized.
+
+Synthesizing Unit <pselect_f_2>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "00001"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_2> synthesized.
+
+Synthesizing Unit <pselect_f_3>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "00010"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_3> synthesized.
+
+Synthesizing Unit <pselect_f_4>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "00011"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_4> synthesized.
+
+Synthesizing Unit <pselect_f_5>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "00100"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_5> synthesized.
+
+Synthesizing Unit <pselect_f_6>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "00101"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_6> synthesized.
+
+Synthesizing Unit <pselect_f_7>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "00110"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_7> synthesized.
+
+Synthesizing Unit <pselect_f_8>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "00111"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_8> synthesized.
+
+Synthesizing Unit <pselect_f_9>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "01000"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_9> synthesized.
+
+Synthesizing Unit <pselect_f_10>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "01001"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_10> synthesized.
+
+Synthesizing Unit <pselect_f_11>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "01010"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_11> synthesized.
+
+Synthesizing Unit <pselect_f_12>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "01011"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_12> synthesized.
+
+Synthesizing Unit <pselect_f_13>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "01100"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_13> synthesized.
+
+Synthesizing Unit <pselect_f_14>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "01101"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_14> synthesized.
+
+Synthesizing Unit <pselect_f_15>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "01110"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_15> synthesized.
+
+Synthesizing Unit <pselect_f_16>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "01111"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_16> synthesized.
+
+Synthesizing Unit <pselect_f_17>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "10000"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_17> synthesized.
+
+Synthesizing Unit <pselect_f_18>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "10001"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_18> synthesized.
+
+Synthesizing Unit <pselect_f_19>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "10010"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_19> synthesized.
+
+Synthesizing Unit <pselect_f_20>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "10011"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_20> synthesized.
+
+Synthesizing Unit <pselect_f_21>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "10100"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_21> synthesized.
+
+Synthesizing Unit <pselect_f_22>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "10101"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_22> synthesized.
+
+Synthesizing Unit <pselect_f_23>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "10110"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_23> synthesized.
+
+Synthesizing Unit <pselect_f_24>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "10111"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_24> synthesized.
+
+Synthesizing Unit <pselect_f_25>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "11000"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_25> synthesized.
+
+Synthesizing Unit <pselect_f_26>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "11001"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_26> synthesized.
+
+Synthesizing Unit <pselect_f_27>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "11010"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_27> synthesized.
+
+Synthesizing Unit <pselect_f_28>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "11011"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_28> synthesized.
+
+Synthesizing Unit <pselect_f_29>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "11100"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_29> synthesized.
+
+Synthesizing Unit <pselect_f_30>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "11101"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_30> synthesized.
+
+Synthesizing Unit <pselect_f_31>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "11110"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_31> synthesized.
+
+Synthesizing Unit <pselect_f_32>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "11111"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_32> synthesized.
+
+Synthesizing Unit <user_logic>.
+    Related source file is "/cf_lib/edk/pcores/axi_adc_1c_v1_00_a/hdl/verilog/user_logic.v".
+        C_NUM_REG = 32
+        C_SLV_DWIDTH = 32
+        C_CF_BUFTYPE = 0
+WARNING:Xst:647 - Input <Bus2IP_BE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <up_rwn>.
+    Found 1-bit register for signal <IP2Bus_RdAck>.
+    Found 1-bit register for signal <IP2Bus_WrAck>.
+    Found 1-bit register for signal <up_sel>.
+    Found 5-bit register for signal <up_addr>.
+    Found 32-bit register for signal <up_wdata>.
+    Found 32-bit register for signal <IP2Bus_Data>.
+    WARNING:Xst:2404 -  FFs/Latches <IP2Bus_Error<0:0>> (without init value) have a constant value of 0 in block <user_logic>.
+    Summary:
+	inferred  73 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <user_logic> synthesized.
+
+Synthesizing Unit <cf_adc_1c>.
+    Related source file is "/cf_lib/edk/pcores/axi_adc_1c_v1_00_a/hdl/verilog/cf_adc_1c.v".
+        C_CF_BUFTYPE = 0
+WARNING:Xst:647 - Input <up_wdata<31:18>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <up_dma_unf_hold>.
+    Found 1-bit register for signal <up_dma_ovf_hold>.
+    Found 1-bit register for signal <up_dma_status>.
+    Found 1-bit register for signal <up_adc_or_hold>.
+    Found 1-bit register for signal <up_adc_pn_oos_hold>.
+    Found 1-bit register for signal <up_adc_pn_err_hold>.
+    Found 1-bit register for signal <up_dmode>.
+    Found 1-bit register for signal <up_delay_sel>.
+    Found 1-bit register for signal <up_delay_rwn>.
+    Found 1-bit register for signal <up_pn_type>.
+    Found 1-bit register for signal <up_sel_d>.
+    Found 1-bit register for signal <up_sel_2d>.
+    Found 1-bit register for signal <up_ack>.
+    Found 1-bit register for signal <up_dma_ovf_m1>.
+    Found 1-bit register for signal <up_dma_ovf_m2>.
+    Found 1-bit register for signal <up_dma_ovf>.
+    Found 1-bit register for signal <up_dma_unf_m1>.
+    Found 1-bit register for signal <up_dma_unf_m2>.
+    Found 1-bit register for signal <up_dma_unf>.
+    Found 1-bit register for signal <up_dma_complete_m1>.
+    Found 1-bit register for signal <up_dma_complete_m2>.
+    Found 1-bit register for signal <up_dma_complete_m3>.
+    Found 1-bit register for signal <up_dma_complete>.
+    Found 1-bit register for signal <up_adc_or_m1>.
+    Found 1-bit register for signal <up_adc_or_m2>.
+    Found 1-bit register for signal <up_adc_or>.
+    Found 1-bit register for signal <up_adc_pn_oos_m1>.
+    Found 1-bit register for signal <up_adc_pn_oos_m2>.
+    Found 1-bit register for signal <up_adc_pn_oos>.
+    Found 1-bit register for signal <up_adc_pn_err_m1>.
+    Found 1-bit register for signal <up_adc_pn_err_m2>.
+    Found 1-bit register for signal <up_adc_pn_err>.
+    Found 1-bit register for signal <up_delay_ack_m1>.
+    Found 1-bit register for signal <up_delay_ack_m2>.
+    Found 1-bit register for signal <up_delay_ack_m3>.
+    Found 1-bit register for signal <up_delay_ack>.
+    Found 1-bit register for signal <up_delay_locked>.
+    Found 1-bit register for signal <up_capture>.
+    Found 1-bit register for signal <up_status>.
+    Found 3-bit register for signal <up_status_dummy>.
+    Found 16-bit register for signal <up_capture_count>.
+    Found 4-bit register for signal <up_delay_addr>.
+    Found 5-bit register for signal <up_delay_wdata>.
+    Found 5-bit register for signal <up_delay_rdata>.
+    Found 32-bit register for signal <up_rdata>.
+    WARNING:Xst:2404 -  FFs/Latches <up_status<7:4>> (without init value) have a constant value of 0 in block <cf_adc_1c>.
+    Summary:
+	inferred 104 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+Unit <cf_adc_1c> synthesized.
+
+Synthesizing Unit <cf_dma_wr>.
+    Related source file is "/cf_lib/edk/pcores/axi_adc_1c_v1_00_a/hdl/verilog/cf_dma_wr.v".
+    Found 1-bit register for signal <dma_fs_toggle_m2>.
+    Found 1-bit register for signal <dma_fs_toggle_m3>.
+    Found 1-bit register for signal <dma_fs_toggle>.
+    Found 6-bit register for signal <dma_fs_waddr>.
+    Found 1-bit register for signal <dma_rel_toggle_m1>.
+    Found 1-bit register for signal <dma_rel_toggle_m2>.
+    Found 1-bit register for signal <dma_rel_toggle_m3>.
+    Found 6-bit register for signal <dma_rel_waddr>.
+    Found 6-bit register for signal <dma_waddr_m1>.
+    Found 6-bit register for signal <dma_waddr_m2>.
+    Found 6-bit register for signal <dma_waddr>.
+    Found 6-bit register for signal <dma_addr_diff>.
+    Found 6-bit register for signal <dma_raddr>.
+    Found 1-bit register for signal <dma_rd>.
+    Found 1-bit register for signal <dma_rvalid>.
+    Found 65-bit register for signal <dma_rdata>.
+    Found 2-bit register for signal <dma_wcnt>.
+    Found 1-bit register for signal <dma_rvalid_0>.
+    Found 65-bit register for signal <dma_rdata_0>.
+    Found 1-bit register for signal <dma_rvalid_1>.
+    Found 65-bit register for signal <dma_rdata_1>.
+    Found 1-bit register for signal <dma_rvalid_2>.
+    Found 65-bit register for signal <dma_rdata_2>.
+    Found 1-bit register for signal <dma_rvalid_3>.
+    Found 65-bit register for signal <dma_rdata_3>.
+    Found 2-bit register for signal <dma_rcnt>.
+    Found 1-bit register for signal <dma_valid>.
+    Found 8-bit register for signal <dma_be>.
+    Found 1-bit register for signal <dma_last>.
+    Found 64-bit register for signal <dma_data>.
+    Found 1-bit register for signal <dma_almost_full>.
+    Found 1-bit register for signal <dma_almost_empty>.
+    Found 5-bit register for signal <dma_ovf_count>.
+    Found 1-bit register for signal <dma_ovf>.
+    Found 5-bit register for signal <dma_unf_count>.
+    Found 1-bit register for signal <dma_unf>.
+    Found 1-bit register for signal <dma_complete>.
+    Found 1-bit register for signal <adc_capture_m1>.
+    Found 1-bit register for signal <adc_capture_m2>.
+    Found 1-bit register for signal <adc_capture_m3>.
+    Found 1-bit register for signal <adc_capture>.
+    Found 17-bit register for signal <adc_capture_count>.
+    Found 4-bit register for signal <adc_rel_count>.
+    Found 1-bit register for signal <adc_capture_enb>.
+    Found 1-bit register for signal <adc_capture_enb_d>.
+    Found 1-bit register for signal <adc_fs_toggle>.
+    Found 6-bit register for signal <adc_fs_waddr>.
+    Found 1-bit register for signal <adc_rel_toggle>.
+    Found 6-bit register for signal <adc_rel_waddr>.
+    Found 1-bit register for signal <adc_wr>.
+    Found 6-bit register for signal <adc_waddr>.
+    Found 6-bit register for signal <adc_waddr_g>.
+    Found 65-bit register for signal <adc_wdata>.
+    Found 1-bit register for signal <dma_fs_toggle_m1>.
+    Found 7-bit subtractor for signal <dma_addr_diff_s> created at line 265.
+    Found 17-bit subtractor for signal <adc_capture_count[16]_GND_51_o_sub_107_OUT> created at line 421.
+    Found 6-bit adder for signal <dma_raddr[5]_GND_51_o_add_28_OUT> created at line 302.
+    Found 2-bit adder for signal <dma_wcnt[1]_GND_51_o_add_35_OUT> created at line 313.
+    Found 2-bit adder for signal <dma_rcnt[1]_GND_51_o_add_63_OUT> created at line 344.
+    Found 5-bit adder for signal <dma_ovf_count[4]_GND_51_o_add_88_OUT> created at line 387.
+    Found 5-bit adder for signal <dma_unf_count[4]_GND_51_o_add_93_OUT> created at line 393.
+    Found 4-bit adder for signal <adc_rel_count[3]_GND_51_o_add_107_OUT> created at line 422.
+    Found 6-bit adder for signal <adc_waddr[5]_GND_51_o_add_125_OUT> created at line 447.
+    Found 1-bit 4-to-1 multiplexer for signal <dma_rcnt[1]_dma_rvalid_3_Mux_67_o> created at line 347.
+    Found 1-bit 4-to-1 multiplexer for signal <dma_rcnt[1]_dma_rdata_3[64]_Mux_69_o> created at line 347.
+    Found 64-bit 4-to-1 multiplexer for signal <dma_rcnt[1]_dma_rdata_3[63]_wide_mux_70_OUT> created at line 347.
+    Found 6-bit comparator equal for signal <dma_rel_waddr[5]_dma_raddr[5]_equal_25_o> created at line 294
+    Found 2-bit comparator not equal for signal <n0112> created at line 343
+    Found 6-bit comparator greater for signal <dma_addr_diff[5]_GND_51_o_LessThan_82_o> created at line 378
+    Found 6-bit comparator greater for signal <PWR_51_o_dma_addr_diff[5]_LessThan_83_o> created at line 379
+    Found 16-bit comparator greater for signal <GND_51_o_adc_capture_count[15]_LessThan_102_o> created at line 412
+    Summary:
+	inferred   9 Adder/Subtractor(s).
+	inferred 592 D-type flip-flop(s).
+	inferred   5 Comparator(s).
+	inferred  12 Multiplexer(s).
+Unit <cf_dma_wr> synthesized.
+
+Synthesizing Unit <cf_mem>.
+    Related source file is "/cf_lib/edk/pcores/axi_adc_1c_v1_00_a/hdl/verilog/cf_mem.v".
+        DW = 65
+        AW = 6
+    Found 64x65-bit dual-port RAM <Mram_m_ram> for signal <m_ram>.
+    Found 65-bit register for signal <doutb>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  65 D-type flip-flop(s).
+Unit <cf_mem> synthesized.
+
+Synthesizing Unit <cf_adc_wr>.
+    Related source file is "/cf_lib/edk/pcores/axi_adc_1c_v1_00_a/hdl/verilog/cf_adc_wr.v".
+        C_CF_BUFTYPE = 0
+    Found 1-bit register for signal <adc_valid>.
+    Found 64-bit register for signal <adc_data>.
+    Found 2-bit register for signal <adc_count>.
+    Found 2-bit adder for signal <adc_count[1]_GND_53_o_add_2_OUT> created at line 126.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  67 D-type flip-flop(s).
+Unit <cf_adc_wr> synthesized.
+
+Synthesizing Unit <cf_pnmon>.
+    Related source file is "/cf_lib/edk/pcores/axi_adc_1c_v1_00_a/hdl/verilog/cf_pnmon.v".
+    Found 1-bit register for signal <adc_pn_type_m2>.
+    Found 1-bit register for signal <adc_pn_type>.
+    Found 1-bit register for signal <adc_pn_en>.
+    Found 16-bit register for signal <adc_data_d>.
+    Found 32-bit register for signal <adc_pn_data>.
+    Found 1-bit register for signal <adc_pn_en_d>.
+    Found 1-bit register for signal <adc_pn_match>.
+    Found 7-bit register for signal <adc_pn_oos_count>.
+    Found 1-bit register for signal <adc_pn_oos>.
+    Found 5-bit register for signal <adc_pn_err_count>.
+    Found 1-bit register for signal <adc_pn_err>.
+    Found 1-bit register for signal <adc_pn_type_m1>.
+    Found 7-bit adder for signal <adc_pn_oos_count[6]_GND_54_o_add_23_OUT> created at line 235.
+    Found 5-bit adder for signal <adc_pn_err_count[4]_GND_54_o_add_33_OUT> created at line 254.
+    Found 16-bit comparator equal for signal <adc_pn_match0_s> created at line 185
+    Found 16-bit comparator equal for signal <adc_pn_match1_s> created at line 186
+    Found 7-bit comparator greater for signal <GND_54_o_INV_98_o> created at line 218
+    Found 7-bit comparator lessequal for signal <n0171> created at line 231
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  68 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred   7 Multiplexer(s).
+Unit <cf_pnmon> synthesized.
+
+Synthesizing Unit <cf_adc_if>.
+    Related source file is "/cf_lib/edk/pcores/axi_adc_1c_v1_00_a/hdl/verilog/cf_adc_if.v".
+        C_CF_BUFTYPE = 0
+        C_CF_7SERIES = 0
+        C_CF_VIRTEX6 = 1
+    Set property "IODELAY_GROUP = ADC_IF_DELAY_GROUP" for instance <g_adc_if[0].i_data_idelay>.
+    Set property "IODELAY_GROUP = ADC_IF_DELAY_GROUP" for instance <g_adc_if[1].i_data_idelay>.
+    Set property "IODELAY_GROUP = ADC_IF_DELAY_GROUP" for instance <g_adc_if[2].i_data_idelay>.
+    Set property "IODELAY_GROUP = ADC_IF_DELAY_GROUP" for instance <g_adc_if[3].i_data_idelay>.
+    Set property "IODELAY_GROUP = ADC_IF_DELAY_GROUP" for instance <g_adc_if[4].i_data_idelay>.
+    Set property "IODELAY_GROUP = ADC_IF_DELAY_GROUP" for instance <g_adc_if[5].i_data_idelay>.
+    Set property "IODELAY_GROUP = ADC_IF_DELAY_GROUP" for instance <g_adc_if[6].i_data_idelay>.
+    Set property "IODELAY_GROUP = ADC_IF_DELAY_GROUP" for instance <g_adc_if[7].i_data_idelay>.
+    Set property "IODELAY_GROUP = ADC_IF_DELAY_GROUP" for instance <i_or_idelay>.
+    Set property "IODELAY_GROUP = ADC_IF_DELAY_GROUP" for instance <i_delay_ctrl>.
+    Found 1-bit register for signal <adc_dmode>.
+    Found 8-bit register for signal <adc_data_p>.
+    Found 8-bit register for signal <adc_data_n>.
+    Found 8-bit register for signal <adc_data_n_d>.
+    Found 8-bit register for signal <adc_dmux_a>.
+    Found 8-bit register for signal <adc_dmux_b>.
+    Found 16-bit register for signal <adc_data>.
+    Found 1-bit register for signal <adc_or_p>.
+    Found 1-bit register for signal <adc_or_n>.
+    Found 5-bit register for signal <adc_or_count>.
+    Found 1-bit register for signal <adc_or>.
+    Found 8-bit register for signal <delay_rst_cnt>.
+    Found 1-bit register for signal <delay_sel_m1>.
+    Found 1-bit register for signal <delay_sel_m2>.
+    Found 1-bit register for signal <delay_sel_m3>.
+    Found 1-bit register for signal <delay_sel>.
+    Found 1-bit register for signal <delay_rwn>.
+    Found 4-bit register for signal <delay_addr>.
+    Found 5-bit register for signal <delay_wdata>.
+    Found 9-bit register for signal <delay_ld>.
+    Found 1-bit register for signal <delay_sel_d>.
+    Found 1-bit register for signal <delay_sel_2d>.
+    Found 1-bit register for signal <delay_sel_3d>.
+    Found 1-bit register for signal <delay_ack>.
+    Found 5-bit register for signal <delay_rdata>.
+    Found 1-bit register for signal <delay_locked>.
+    Found 1-bit register for signal <adc_dmode_m1>.
+    Found 5-bit adder for signal <adc_or_count[4]_GND_55_o_add_8_OUT> created at line 179.
+    Found 8-bit adder for signal <delay_rst_cnt[7]_GND_55_o_add_23_OUT> created at line 191.
+    Found 16x9-bit Read Only RAM for signal <delay_addr[3]_GND_55_o_wide_mux_32_OUT>
+    Found 5-bit 12-to-1 multiplexer for signal <delay_addr[3]_GND_55_o_wide_mux_35_OUT> created at line 224.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred 107 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <cf_adc_if> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x9-bit single-port Read Only RAM                    : 1
+ 64x65-bit dual-port RAM                               : 1
+# Adders/Subtractors                                   : 15
+ 17-bit subtractor                                     : 1
+ 2-bit adder                                           : 3
+ 4-bit adder                                           : 2
+ 5-bit adder                                           : 4
+ 6-bit adder                                           : 2
+ 7-bit adder                                           : 1
+ 7-bit subtractor                                      : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 188
+ 1-bit register                                        : 129
+ 16-bit register                                       : 3
+ 17-bit register                                       : 1
+ 2-bit register                                        : 7
+ 3-bit register                                        : 1
+ 32-bit register                                       : 5
+ 4-bit register                                        : 4
+ 5-bit register                                        : 9
+ 6-bit register                                        : 11
+ 64-bit register                                       : 2
+ 65-bit register                                       : 7
+ 7-bit register                                        : 1
+ 8-bit register                                        : 7
+ 9-bit register                                        : 1
+# Comparators                                          : 9
+ 16-bit comparator equal                               : 2
+ 16-bit comparator greater                             : 1
+ 2-bit comparator not equal                            : 1
+ 6-bit comparator equal                                : 1
+ 6-bit comparator greater                              : 2
+ 7-bit comparator greater                              : 1
+ 7-bit comparator lessequal                            : 1
+# Multiplexers                                         : 66
+ 1-bit 2-to-1 multiplexer                              : 47
+ 1-bit 4-to-1 multiplexer                              : 2
+ 17-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 4
+ 5-bit 12-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 4
+ 6-bit 2-to-1 multiplexer                              : 1
+ 64-bit 4-to-1 multiplexer                             : 1
+ 7-bit 2-to-1 multiplexer                              : 3
+ 8-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 1
+# Xors                                                 : 88
+ 1-bit xor2                                            : 69
+ 1-bit xor3                                            : 19
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <cf_adc_if>.
+The following registers are absorbed into counter <delay_rst_cnt>: 1 register on signal <delay_rst_cnt>.
+The following registers are absorbed into counter <adc_or_count>: 1 register on signal <adc_or_count>.
+INFO:Xst:3231 - The small RAM <Mram_delay_addr[3]_GND_55_o_wide_mux_32_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 9-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <delay_addr>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <cf_adc_if> synthesized (advanced).
+
+Synthesizing (advanced) Unit <cf_adc_wr>.
+The following registers are absorbed into counter <adc_count>: 1 register on signal <adc_count>.
+Unit <cf_adc_wr> synthesized (advanced).
+
+Synthesizing (advanced) Unit <cf_dma_wr>.
+The following registers are absorbed into counter <adc_capture_count>: 1 register on signal <adc_capture_count>.
+The following registers are absorbed into counter <adc_waddr>: 1 register on signal <adc_waddr>.
+The following registers are absorbed into counter <adc_rel_count>: 1 register on signal <adc_rel_count>.
+The following registers are absorbed into counter <dma_raddr>: 1 register on signal <dma_raddr>.
+The following registers are absorbed into counter <dma_wcnt>: 1 register on signal <dma_wcnt>.
+The following registers are absorbed into counter <dma_ovf_count>: 1 register on signal <dma_ovf_count>.
+The following registers are absorbed into counter <dma_rcnt>: 1 register on signal <dma_rcnt>.
+The following registers are absorbed into counter <dma_unf_count>: 1 register on signal <dma_unf_count>.
+INFO:Xst:3226 - The RAM <i_mem/Mram_m_ram> will be implemented as a BLOCK RAM, absorbing the following register(s): <i_mem/doutb> <dma_rdata>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 65-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <adc_clk>       | rise     |
+    |     weA            | connected to signal <adc_wr>        | high     |
+    |     addrA          | connected to signal <adc_waddr>     |          |
+    |     diA            | connected to signal <adc_wdata>     |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 65-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <dma_clk>       | rise     |
+    |     addrB          | connected to signal <dma_raddr>     |          |
+    |     doB            | connected to signal <dma_rdata>     |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <cf_dma_wr> synthesized (advanced).
+
+Synthesizing (advanced) Unit <cf_pnmon>.
+The following registers are absorbed into counter <adc_pn_err_count>: 1 register on signal <adc_pn_err_count>.
+Unit <cf_pnmon> synthesized (advanced).
+
+Synthesizing (advanced) Unit <slave_attachment>.
+The following registers are absorbed into counter <INCLUDE_DPHASE_TIMER.dpto_cnt>: 1 register on signal <INCLUDE_DPHASE_TIMER.dpto_cnt>.
+Unit <slave_attachment> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x9-bit single-port distributed Read Only RAM        : 1
+ 64x65-bit dual-port block RAM                         : 1
+# Adders/Subtractors                                   : 2
+ 7-bit adder                                           : 1
+ 7-bit subtractor                                      : 1
+# Counters                                             : 13
+ 17-bit down counter                                   : 1
+ 2-bit up counter                                      : 3
+ 4-bit up counter                                      : 2
+ 5-bit up counter                                      : 4
+ 6-bit up counter                                      : 2
+ 8-bit up counter                                      : 1
+# Registers                                            : 953
+ Flip-Flops                                            : 953
+# Comparators                                          : 9
+ 16-bit comparator equal                               : 2
+ 16-bit comparator greater                             : 1
+ 2-bit comparator not equal                            : 1
+ 6-bit comparator equal                                : 1
+ 6-bit comparator greater                              : 2
+ 7-bit comparator greater                              : 1
+ 7-bit comparator lessequal                            : 1
+# Multiplexers                                         : 63
+ 1-bit 2-to-1 multiplexer                              : 53
+ 1-bit 4-to-1 multiplexer                              : 2
+ 32-bit 2-to-1 multiplexer                             : 3
+ 5-bit 12-to-1 multiplexer                             : 1
+ 64-bit 4-to-1 multiplexer                             : 1
+ 7-bit 2-to-1 multiplexer                              : 3
+# FSMs                                                 : 1
+# Xors                                                 : 88
+ 1-bit xor2                                            : 69
+ 1-bit xor3                                            : 19
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <up_rdata_18> has a constant value of 0 in block <cf_adc_1c>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <up_rdata_19> has a constant value of 0 in block <cf_adc_1c>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <up_rdata_20> has a constant value of 0 in block <cf_adc_1c>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <up_rdata_21> has a constant value of 0 in block <cf_adc_1c>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <up_rdata_22> has a constant value of 0 in block <cf_adc_1c>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <up_rdata_23> has a constant value of 0 in block <cf_adc_1c>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <up_rdata_24> has a constant value of 0 in block <cf_adc_1c>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <up_rdata_25> has a constant value of 0 in block <cf_adc_1c>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <up_rdata_26> has a constant value of 0 in block <cf_adc_1c>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <up_rdata_27> has a constant value of 0 in block <cf_adc_1c>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <up_rdata_28> has a constant value of 0 in block <cf_adc_1c>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <up_rdata_29> has a constant value of 0 in block <cf_adc_1c>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <up_rdata_30> has a constant value of 0 in block <cf_adc_1c>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <up_rdata_31> has a constant value of 0 in block <cf_adc_1c>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <s_axi_rresp_i_0> has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <s_axi_bresp_i_0> has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/FSM_0> on signal <state[1:2]> with user encoding.
+----------------------
+ State    | Encoding
+----------------------
+ sm_idle  | 00
+ sm_read  | 01
+ sm_write | 10
+ sm_resp  | 11
+----------------------
+INFO:Xst:1901 - Instance g_adc_if[0].i_data_ddr in unit cf_adc_if of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance g_adc_if[1].i_data_ddr in unit cf_adc_if of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance g_adc_if[2].i_data_ddr in unit cf_adc_if of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance g_adc_if[3].i_data_ddr in unit cf_adc_if of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance g_adc_if[4].i_data_ddr in unit cf_adc_if of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance g_adc_if[5].i_data_ddr in unit cf_adc_if of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance g_adc_if[6].i_data_ddr in unit cf_adc_if of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance g_adc_if[7].i_data_ddr in unit cf_adc_if of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance i_or_ddr in unit cf_adc_if of type IDDR has been replaced by IDDR_2CLK
+
+Optimizing unit <system_axi_adc_1c_0_wrapper> ...
+
+Optimizing unit <user_logic> ...
+
+Optimizing unit <cf_adc_1c> ...
+
+Optimizing unit <cf_adc_wr> ...
+
+Optimizing unit <cf_adc_if> ...
+
+Optimizing unit <cf_pnmon> ...
+
+Optimizing unit <cf_dma_wr> ...
+
+Optimizing unit <slave_attachment> ...
+
+Optimizing unit <address_decoder> ...
+WARNING:Xst:1293 - FF/Latch <axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_1> has a constant value of 0 in block <system_axi_adc_1c_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_1> has a constant value of 0 in block <system_axi_adc_1c_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_adc_1c_0/USER_LOGIC_I/IP2Bus_Data_18> (without init value) has a constant value of 0 in block <system_axi_adc_1c_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_adc_1c_0/USER_LOGIC_I/IP2Bus_Data_19> (without init value) has a constant value of 0 in block <system_axi_adc_1c_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_adc_1c_0/USER_LOGIC_I/IP2Bus_Data_20> (without init value) has a constant value of 0 in block <system_axi_adc_1c_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_adc_1c_0/USER_LOGIC_I/IP2Bus_Data_21> (without init value) has a constant value of 0 in block <system_axi_adc_1c_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_adc_1c_0/USER_LOGIC_I/IP2Bus_Data_22> (without init value) has a constant value of 0 in block <system_axi_adc_1c_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_adc_1c_0/USER_LOGIC_I/IP2Bus_Data_23> (without init value) has a constant value of 0 in block <system_axi_adc_1c_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_adc_1c_0/USER_LOGIC_I/IP2Bus_Data_24> (without init value) has a constant value of 0 in block <system_axi_adc_1c_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_adc_1c_0/USER_LOGIC_I/IP2Bus_Data_25> (without init value) has a constant value of 0 in block <system_axi_adc_1c_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_adc_1c_0/USER_LOGIC_I/IP2Bus_Data_26> (without init value) has a constant value of 0 in block <system_axi_adc_1c_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_adc_1c_0/USER_LOGIC_I/IP2Bus_Data_27> (without init value) has a constant value of 0 in block <system_axi_adc_1c_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_adc_1c_0/USER_LOGIC_I/IP2Bus_Data_28> (without init value) has a constant value of 0 in block <system_axi_adc_1c_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_adc_1c_0/USER_LOGIC_I/IP2Bus_Data_29> (without init value) has a constant value of 0 in block <system_axi_adc_1c_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_adc_1c_0/USER_LOGIC_I/IP2Bus_Data_30> (without init value) has a constant value of 0 in block <system_axi_adc_1c_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_adc_1c_0/USER_LOGIC_I/IP2Bus_Data_31> (without init value) has a constant value of 0 in block <system_axi_adc_1c_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_18> has a constant value of 0 in block <system_axi_adc_1c_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_19> has a constant value of 0 in block <system_axi_adc_1c_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_20> has a constant value of 0 in block <system_axi_adc_1c_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_21> has a constant value of 0 in block <system_axi_adc_1c_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_22> has a constant value of 0 in block <system_axi_adc_1c_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_23> has a constant value of 0 in block <system_axi_adc_1c_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_24> has a constant value of 0 in block <system_axi_adc_1c_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_25> has a constant value of 0 in block <system_axi_adc_1c_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_26> has a constant value of 0 in block <system_axi_adc_1c_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_27> has a constant value of 0 in block <system_axi_adc_1c_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_28> has a constant value of 0 in block <system_axi_adc_1c_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_29> has a constant value of 0 in block <system_axi_adc_1c_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_30> has a constant value of 0 in block <system_axi_adc_1c_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_31> has a constant value of 0 in block <system_axi_adc_1c_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <axi_adc_1c_0/USER_LOGIC_I/up_wdata_31> of sequential type is unconnected in block <system_axi_adc_1c_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_adc_1c_0/USER_LOGIC_I/up_wdata_30> of sequential type is unconnected in block <system_axi_adc_1c_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_adc_1c_0/USER_LOGIC_I/up_wdata_29> of sequential type is unconnected in block <system_axi_adc_1c_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_adc_1c_0/USER_LOGIC_I/up_wdata_28> of sequential type is unconnected in block <system_axi_adc_1c_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_adc_1c_0/USER_LOGIC_I/up_wdata_27> of sequential type is unconnected in block <system_axi_adc_1c_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_adc_1c_0/USER_LOGIC_I/up_wdata_26> of sequential type is unconnected in block <system_axi_adc_1c_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_adc_1c_0/USER_LOGIC_I/up_wdata_25> of sequential type is unconnected in block <system_axi_adc_1c_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_adc_1c_0/USER_LOGIC_I/up_wdata_24> of sequential type is unconnected in block <system_axi_adc_1c_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_adc_1c_0/USER_LOGIC_I/up_wdata_23> of sequential type is unconnected in block <system_axi_adc_1c_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_adc_1c_0/USER_LOGIC_I/up_wdata_22> of sequential type is unconnected in block <system_axi_adc_1c_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_adc_1c_0/USER_LOGIC_I/up_wdata_21> of sequential type is unconnected in block <system_axi_adc_1c_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_adc_1c_0/USER_LOGIC_I/up_wdata_20> of sequential type is unconnected in block <system_axi_adc_1c_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_adc_1c_0/USER_LOGIC_I/up_wdata_19> of sequential type is unconnected in block <system_axi_adc_1c_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_adc_1c_0/USER_LOGIC_I/up_wdata_18> of sequential type is unconnected in block <system_axi_adc_1c_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0> of sequential type is unconnected in block <system_axi_adc_1c_0_wrapper>.
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_be_7> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following 7 FFs/Latches, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_be_6> <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_be_5> <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_be_4> <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_be_3> <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_be_2> <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_be_1> <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_be_0> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_10> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_26> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_11> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_27> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_12> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_28> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_13> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_29> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_14> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_30> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_20> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_36> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_15> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_31> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_21> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_37> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_16> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_32> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_22> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_38> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_17> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_33> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_23> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_39> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_18> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_34> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_24> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_40> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_19> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_35> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_30> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_46> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_25> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_41> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_31> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_47> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_26> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_42> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_32> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_48> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_27> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_43> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_33> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_49> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_28> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_44> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_34> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_50> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_29> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_45> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_40> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_56> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_0> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_16> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_35> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_51> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_41> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_57> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_1> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_17> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_36> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_52> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_42> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_58> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_2> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_18> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_37> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_53> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_43> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_59> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_3> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_19> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_38> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_54> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_44> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_60> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_4> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_20> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_39> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_55> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_50> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_data_d_2> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_5> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_21> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_45> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_61> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_51> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_data_d_3> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_6> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_22> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_46> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_62> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_52> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_data_d_4> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_7> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_23> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_47> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_63> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_53> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_data_d_5> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_8> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_24> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_48> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_data_d_0> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_54> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_data_d_6> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_9> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_25> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_49> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_data_d_1> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_60> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_data_d_12> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_55> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_data_d_7> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_61> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_data_d_13> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_56> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_data_d_8> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_62> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_data_d_14> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_57> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_data_d_9> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_63> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_data_d_15> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_58> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_data_d_10> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_count_0> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_pn_en> 
+INFO:Xst:2261 - The FF/Latch <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_59> in Unit <system_axi_adc_1c_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_data_d_11> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block system_axi_adc_1c_0_wrapper, actual ratio is 0.
+FlipFlop axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <system_axi_adc_1c_0_wrapper> :
+	Found 2-bit shift register for signal <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/adc_dmode>.
+	Found 3-bit shift register for signal <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/delay_sel_3d>.
+	Found 2-bit shift register for signal <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/delay_sel_m2>.
+	Found 3-bit shift register for signal <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_pn_type>.
+	Found 2-bit shift register for signal <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_waddr_m2_5>.
+	Found 2-bit shift register for signal <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_waddr_m2_4>.
+	Found 2-bit shift register for signal <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_waddr_m2_3>.
+	Found 2-bit shift register for signal <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_waddr_m2_2>.
+	Found 2-bit shift register for signal <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_waddr_m2_1>.
+	Found 2-bit shift register for signal <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_waddr_m2_0>.
+	Found 2-bit shift register for signal <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_rel_toggle_m2>.
+	Found 2-bit shift register for signal <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_fs_toggle_m2>.
+	Found 2-bit shift register for signal <axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_capture_m2>.
+Unit <system_axi_adc_1c_0_wrapper> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 866
+ Flip-Flops                                            : 866
+# Shift Registers                                      : 13
+ 2-bit shift register                                  : 11
+ 3-bit shift register                                  : 2
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : system_axi_adc_1c_0_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 768
+#      GND                         : 1
+#      INV                         : 17
+#      LUT1                        : 7
+#      LUT2                        : 96
+#      LUT3                        : 95
+#      LUT4                        : 56
+#      LUT5                        : 88
+#      LUT6                        : 322
+#      MUXCY                       : 41
+#      MUXF7                       : 13
+#      VCC                         : 1
+#      XORCY                       : 31
+# FlipFlops/Latches                : 888
+#      FD                          : 197
+#      FDC                         : 101
+#      FDCE                        : 34
+#      FDE                         : 200
+#      FDP                         : 1
+#      FDR                         : 17
+#      FDRE                        : 329
+#      IDDR_2CLK                   : 9
+# RAMS                             : 1
+#      RAMB36E1                    : 1
+# Shift Registers                  : 13
+#      SRLC16E                     : 13
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 10
+#      IBUFDS                      : 9
+#      IBUFGDS                     : 1
+# Others                           : 10
+#      IDELAYCTRL                  : 1
+#      IDELAYE2                    : 9
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7vx485tffg1761-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             888  out of  607200     0%  
+ Number of Slice LUTs:                  694  out of  303600     0%  
+    Number used as Logic:               681  out of  303600     0%  
+    Number used as Memory:               13  out of  130800     0%  
+       Number used as SRL:               13
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1232
+   Number with an unused Flip Flop:     344  out of   1232    27%  
+   Number with an unused LUT:           538  out of   1232    43%  
+   Number of fully used LUT-FF pairs:   350  out of   1232    28%  
+   Number of unique control sets:        40
+
+IO Utilization: 
+ Number of IOs:                         415
+ Number of bonded IOBs:                  20  out of    700     2%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of   1030     0%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+---------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                     | Load  |
+-----------------------------------+---------------------------------------------------------------------------+-------+
+S_AXI_ACLK                         | NONE(axi_adc_1c_0/USER_LOGIC_I/IP2Bus_RdAck)                              | 196   |
+adc_clk_in_p                       | IBUFGDS+BUFG                                                              | 255   |
+delay_clk                          | NONE(axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/delay_rst_cnt_7)| 41    |
+S_AXIS_S2MM_CLK                    | NONE(axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_rcnt_1)              | 402   |
+-----------------------------------+---------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 5.000ns (Maximum Frequency: 199.994MHz)
+   Minimum input arrival time before clock: 1.683ns
+   Maximum output required time after clock: 1.587ns
+   Maximum combinational path delay: 0.339ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'S_AXI_ACLK'
+  Clock period: 5.000ns (frequency: 199.994MHz)
+  Total number of paths / destination ports: 149440 / 305
+-------------------------------------------------------------------------
+Delay:               5.000ns (Levels of Logic = 9)
+  Source:            axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_14 (FF)
+  Destination:       axi_adc_1c_0/USER_LOGIC_I/up_addr_1 (FF)
+  Source Clock:      S_AXI_ACLK rising
+  Destination Clock: S_AXI_ACLK rising
+
+  Data Path: axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_14 to axi_adc_1c_0/USER_LOGIC_I/up_addr_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            13   0.236   0.681  axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_14 (axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_14)
+     LUT6:I0->O            1   0.043   0.000  axi_adc_1c_0/USER_LOGIC_I/Bus2IP_RdCE[31]_GND_49_o_equal_43_o<31>1_F (N236)
+     MUXF7:I0->O           2   0.176   0.618  axi_adc_1c_0/USER_LOGIC_I/Bus2IP_RdCE[31]_GND_49_o_equal_43_o<31>1 (axi_adc_1c_0/USER_LOGIC_I/Bus2IP_RdCE[31]_GND_49_o_equal_43_o<31>)
+     LUT6:I0->O           64   0.043   0.486  axi_adc_1c_0/USER_LOGIC_I/Bus2IP_RdCE[31]_GND_49_o_equal_43_o<31>7 (axi_adc_1c_0/USER_LOGIC_I/Bus2IP_RdCE[31]_GND_49_o_equal_43_o)
+     LUT3:I2->O           13   0.043   0.671  axi_adc_1c_0/USER_LOGIC_I/Mmux_up_rwce_s51 (axi_adc_1c_0/USER_LOGIC_I/up_rwce_s<13>)
+     LUT6:I1->O            3   0.043   0.417  axi_adc_1c_0/USER_LOGIC_I/up_rwce_s[31]_GND_49_o_equal_28_o<31>11_SW5 (N140)
+     LUT6:I4->O            3   0.043   0.615  axi_adc_1c_0/USER_LOGIC_I/up_rwce_s[31]_GND_49_o_equal_28_o<31>1 (axi_adc_1c_0/USER_LOGIC_I/up_rwce_s[31]_GND_49_o_equal_28_o)
+     LUT6:I1->O            1   0.043   0.350  axi_adc_1c_0/USER_LOGIC_I/up_rwce_s[31]_GND_49_o_select_38_OUT<4>1 (axi_adc_1c_0/USER_LOGIC_I/up_rwce_s[31]_GND_49_o_select_38_OUT<4>1)
+     LUT6:I5->O            1   0.043   0.405  axi_adc_1c_0/USER_LOGIC_I/up_rwce_s[31]_GND_49_o_select_38_OUT<4>2 (axi_adc_1c_0/USER_LOGIC_I/up_rwce_s[31]_GND_49_o_select_38_OUT<4>2)
+     LUT6:I4->O            1   0.043   0.000  axi_adc_1c_0/USER_LOGIC_I/up_rwce_s[31]_GND_49_o_select_38_OUT<4>3 (axi_adc_1c_0/USER_LOGIC_I/up_rwce_s[31]_GND_49_o_select_38_OUT<1>)
+     FDC:D                    -0.000          axi_adc_1c_0/USER_LOGIC_I/up_addr_1
+    ----------------------------------------
+    Total                      5.000ns (0.756ns logic, 4.244ns route)
+                                       (15.1% logic, 84.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'adc_clk_in_p'
+  Clock period: 2.079ns (frequency: 480.896MHz)
+  Total number of paths / destination ports: 1771 / 366
+-------------------------------------------------------------------------
+Delay:               2.079ns (Levels of Logic = 2)
+  Source:            axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_rel_count_2 (FF)
+  Destination:       axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_rel_waddr_5 (FF)
+  Source Clock:      adc_clk_in_p rising
+  Destination Clock: adc_clk_in_p rising
+
+  Data Path: axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_rel_count_2 to axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_rel_waddr_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.236   0.615  axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_rel_count_2 (axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_rel_count_2)
+     LUT5:I0->O            2   0.043   0.608  axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/Mmux_adc_capture_rel_s11 (axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/Mmux_adc_capture_rel_s1)
+     LUT5:I0->O            7   0.043   0.373  axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_capture_rel_s_adc_capture_end_s_OR_134_o1 (axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_capture_rel_s_adc_capture_end_s_OR_134_o)
+     FDE:CE                    0.161          axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_rel_toggle
+    ----------------------------------------
+    Total                      2.079ns (0.483ns logic, 1.596ns route)
+                                       (23.2% logic, 76.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'delay_clk'
+  Clock period: 1.613ns (frequency: 620.117MHz)
+  Total number of paths / destination ports: 215 / 64
+-------------------------------------------------------------------------
+Delay:               1.613ns (Levels of Logic = 1)
+  Source:            axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/delay_addr_3 (FF)
+  Destination:       axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/delay_rst_cnt_7 (FF)
+  Source Clock:      delay_clk rising
+  Destination Clock: delay_clk rising
+
+  Data Path: axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/delay_addr_3 to axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/delay_rst_cnt_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             15   0.236   0.691  axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/delay_addr_3 (axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/delay_addr_3)
+     LUT6:I0->O            8   0.043   0.378  axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/delay_sel_delay_addr[3]_AND_157_o21 (axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/delay_sel_delay_addr[3]_AND_157_o)
+     FDRE:R                    0.264          axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/delay_rst_cnt_0
+    ----------------------------------------
+    Total                      1.613ns (0.543ns logic, 1.070ns route)
+                                       (33.7% logic, 66.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'S_AXIS_S2MM_CLK'
+  Clock period: 2.514ns (frequency: 397.788MHz)
+  Total number of paths / destination ports: 3300 / 739
+-------------------------------------------------------------------------
+Delay:               2.514ns (Levels of Logic = 4)
+  Source:            axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_rel_waddr_5 (FF)
+  Destination:       axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_raddr_5 (FF)
+  Source Clock:      S_AXIS_S2MM_CLK rising
+  Destination Clock: S_AXIS_S2MM_CLK rising
+
+  Data Path: axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_rel_waddr_5 to axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_raddr_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.236   0.522  axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_rel_waddr_5 (axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_rel_waddr_5)
+     LUT4:I0->O            1   0.043   0.350  axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/Mmux_dma_rd_s15_SW0_SW0 (N218)
+     LUT5:I4->O            1   0.043   0.350  axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/Mmux_dma_rd_s15_SW0 (N204)
+     LUT6:I5->O            2   0.043   0.355  axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/Mmux_dma_rd_s15 (dma_dbg_data<4>)
+     LUT2:I1->O            6   0.043   0.367  axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/_n0370_inv1 (axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/_n0370_inv)
+     FDE:CE                    0.161          axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_raddr_0
+    ----------------------------------------
+    Total                      2.514ns (0.569ns logic, 1.945ns route)
+                                       (22.6% logic, 77.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'S_AXI_ACLK'
+  Total number of paths / destination ports: 874 / 256
+-------------------------------------------------------------------------
+Offset:              0.991ns (Levels of Logic = 2)
+  Source:            S_AXI_AWVALID (PAD)
+  Destination:       axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_24 (FF)
+  Destination Clock: S_AXI_ACLK rising
+
+  Data Path: S_AXI_AWVALID to axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT5:I2->O           64   0.043   0.749  axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/Mmux_start11 (axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/start)
+     LUT6:I0->O            1   0.043   0.000  axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].PER_CE_GEN[24].MULTIPLE_CES_THIS_CS_GEN.CE_I/Mmux_CS11 (axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_expnd_i<24>)
+     FDRE:D                   -0.000          axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_24
+    ----------------------------------------
+    Total                      0.991ns (0.242ns logic, 0.749ns route)
+                                       (24.4% logic, 75.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'adc_clk_in_p'
+  Total number of paths / destination ports: 18 / 18
+-------------------------------------------------------------------------
+Offset:              0.339ns (Levels of Logic = 0)
+  Source:            axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/i_or_ddr:Q2 (PAD)
+  Destination:       axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/adc_or_n (FF)
+  Destination Clock: adc_clk_in_p rising
+
+  Data Path: axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/i_or_ddr:Q2 to axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/adc_or_n
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    IDDR_2CLK:Q2           1   0.000   0.339  axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/i_or_ddr (axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/adc_or_n_s)
+     FD:D                     -0.000          axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/adc_or_n
+    ----------------------------------------
+    Total                      0.339ns (0.000ns logic, 0.339ns route)
+                                       (0.0% logic, 100.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'delay_clk'
+  Total number of paths / destination ports: 45 / 5
+-------------------------------------------------------------------------
+Offset:              1.103ns (Levels of Logic = 2)
+  Source:            axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/g_adc_if[7].i_data_idelay:CNTVALUEOUT4 (PAD)
+  Destination:       axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/delay_rdata_4 (FF)
+  Destination Clock: delay_clk rising
+
+  Data Path: axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/g_adc_if[7].i_data_idelay:CNTVALUEOUT4 to axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/delay_rdata_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    IDELAYE2:CNTVALUEOUT4    1   0.000   0.522  axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/g_adc_if[7].i_data_idelay (axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/delay_rdata_s<7><4>)
+     LUT6:I2->O            1   0.043   0.495  axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/delay_addr[3]_GND_55_o_wide_mux_35_OUT<4>2 (axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/delay_addr[3]_GND_55_o_wide_mux_35_OUT<4>2)
+     LUT5:I2->O            1   0.043   0.000  axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/delay_addr[3]_GND_55_o_wide_mux_35_OUT<4>4 (axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/delay_addr[3]_GND_55_o_wide_mux_35_OUT<4>)
+     FD:D                     -0.000          axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/delay_rdata_4
+    ----------------------------------------
+    Total                      1.103ns (0.086ns logic, 1.017ns route)
+                                       (7.8% logic, 92.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'S_AXIS_S2MM_CLK'
+  Total number of paths / destination ports: 341 / 341
+-------------------------------------------------------------------------
+Offset:              1.683ns (Levels of Logic = 3)
+  Source:            S_AXIS_S2MM_TREADY (PAD)
+  Destination:       axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_rvalid_2 (FF)
+  Destination Clock: S_AXIS_S2MM_CLK rising
+
+  Data Path: S_AXIS_S2MM_TREADY to axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_rvalid_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT2:I0->O           67   0.043   0.749  axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_xfer_en_s1 (dma_dbg_data<7>)
+     LUT6:I0->O           66   0.043   0.739  axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/_n03591 (axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/_n0359)
+     LUT5:I0->O            1   0.043   0.000  axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_rvalid_2_rstpot (axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_rvalid_2_rstpot)
+     FD:D                     -0.000          axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_rvalid_2
+    ----------------------------------------
+    Total                      1.683ns (0.195ns logic, 1.488ns route)
+                                       (11.6% logic, 88.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'S_AXI_ACLK'
+  Total number of paths / destination ports: 30 / 27
+-------------------------------------------------------------------------
+Offset:              0.701ns (Levels of Logic = 1)
+  Source:            axi_adc_1c_0/USER_LOGIC_I/IP2Bus_WrAck (FF)
+  Destination:       S_AXI_WREADY (PAD)
+  Source Clock:      S_AXI_ACLK rising
+
+  Data Path: axi_adc_1c_0/USER_LOGIC_I/IP2Bus_WrAck to S_AXI_WREADY
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.236   0.422  axi_adc_1c_0/USER_LOGIC_I/IP2Bus_WrAck (axi_adc_1c_0/USER_LOGIC_I/IP2Bus_WrAck)
+     LUT2:I0->O            0   0.043   0.000  axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done1 (S_AXI_AWREADY)
+    ----------------------------------------
+    Total                      0.701ns (0.279ns logic, 0.422ns route)
+                                       (39.8% logic, 60.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'S_AXIS_S2MM_CLK'
+  Total number of paths / destination ports: 228 / 133
+-------------------------------------------------------------------------
+Offset:              1.587ns (Levels of Logic = 3)
+  Source:            axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_rel_waddr_5 (FF)
+  Destination:       dma_dbg_data<4> (PAD)
+  Source Clock:      S_AXIS_S2MM_CLK rising
+
+  Data Path: axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_rel_waddr_5 to dma_dbg_data<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.236   0.522  axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_rel_waddr_5 (axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_rel_waddr_5)
+     LUT4:I0->O            1   0.043   0.350  axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/Mmux_dma_rd_s15_SW0_SW0 (N218)
+     LUT5:I4->O            1   0.043   0.350  axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/Mmux_dma_rd_s15_SW0 (N204)
+     LUT6:I5->O            2   0.043   0.000  axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/Mmux_dma_rd_s15 (dma_dbg_data<4>)
+    ----------------------------------------
+    Total                      1.587ns (0.365ns logic, 1.222ns route)
+                                       (23.0% logic, 77.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'adc_clk_in_p'
+  Total number of paths / destination ports: 156 / 88
+-------------------------------------------------------------------------
+Offset:              1.539ns (Levels of Logic = 2)
+  Source:            axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_capture_count_16 (FF)
+  Destination:       adc_dbg_data<59> (PAD)
+  Source Clock:      adc_clk_in_p rising
+
+  Data Path: axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_capture_count_16 to adc_dbg_data<59>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             23   0.236   0.722  axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_capture_count_16 (axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_capture_count_16)
+     LUT6:I1->O            1   0.043   0.495  axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/Mmux_adc_capture_last_s11 (axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/Mmux_adc_capture_last_s1)
+     LUT3:I0->O            1   0.043   0.000  axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/Mmux_adc_capture_last_s14 (adc_dbg_trigger<2>)
+    ----------------------------------------
+    Total                      1.539ns (0.322ns logic, 1.217ns route)
+                                       (20.9% logic, 79.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'delay_clk'
+  Total number of paths / destination ports: 54 / 54
+-------------------------------------------------------------------------
+Offset:              0.620ns (Levels of Logic = 0)
+  Source:            axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/delay_wdata_4 (FF)
+  Destination:       axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/i_or_idelay:CNTVALUEIN4 (PAD)
+  Source Clock:      delay_clk rising
+
+  Data Path: axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/delay_wdata_4 to axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/i_or_idelay:CNTVALUEIN4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              9   0.236   0.384  axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/delay_wdata_4 (axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/delay_wdata_4)
+    IDELAYE2:CNTVALUEIN4        0.000          axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/g_adc_if[0].i_data_idelay
+    ----------------------------------------
+    Total                      0.620ns (0.236ns logic, 0.384ns route)
+                                       (38.1% logic, 61.9% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 40 / 31
+-------------------------------------------------------------------------
+Delay:               0.339ns (Levels of Logic = 0)
+  Source:            axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/i_or_idelay:DATAOUT (PAD)
+  Destination:       axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/i_or_ddr:D (PAD)
+
+  Data Path: axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/i_or_idelay:DATAOUT to axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/i_or_ddr:D
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    IDELAYE2:DATAOUT       1   0.000   0.339  axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/i_or_idelay (axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/adc_or_idelay_s)
+    IDDR_2CLK:D                0.000          axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_adc_if/i_or_ddr
+    ----------------------------------------
+    Total                      0.339ns (0.000ns logic, 0.339ns route)
+                                       (0.0% logic, 100.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock S_AXIS_S2MM_CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+S_AXIS_S2MM_CLK|    2.514|         |         |         |
+adc_clk_in_p   |    1.123|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock S_AXI_ACLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+S_AXIS_S2MM_CLK|    0.580|         |         |         |
+S_AXI_ACLK     |    5.000|         |         |         |
+adc_clk_in_p   |    0.709|         |         |         |
+delay_clk      |    0.580|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock adc_clk_in_p
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+S_AXI_ACLK     |    1.509|         |         |         |
+adc_clk_in_p   |    2.079|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock delay_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+S_AXI_ACLK     |    0.585|         |         |         |
+delay_clk      |    1.613|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 40.00 secs
+Total CPU time to Xst completion: 39.54 secs
+ 
+--> 
+
+
+Total memory usage is 531460 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   74 (   0 filtered)
+Number of infos    :   82 (   0 filtered)
+

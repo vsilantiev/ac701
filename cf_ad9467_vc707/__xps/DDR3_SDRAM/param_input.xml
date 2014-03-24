@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="UTF-8"?>
+            <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.4" xmlns:xilinx="http://www.xilinx.com">
+            <spirit:vendor/>
+            <spirit:library/>
+            <spirit:name/>
+            <spirit:version/>
+            
+            <spirit:model>          
+            <spirit:views/>
+            <spirit:ports/>
+            <spirit:modelParameters>
+            
+        
+      <spirit:modelParameter>
+        <spirit:name>C_ADDR_CMD_MODE</spirit:name>
+        <spirit:value spirit:format="STRING" spirit:resolve="UPDATE" spirit:id="DDR3_SDRAM.C_ADDR_CMD_MODE"> "1T" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_ADDR_MAP</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_ADDR_MAP"> "0x000_000_000_000_000_000_000_000_000_000_000_000_000_000_000_000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_BANK_MAP</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_BANK_MAP"> "0x000_000_000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_BANK_TYPE</spirit:name>
+        <spirit:value spirit:format="STRING" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_BANK_TYPE"> "HP_IO" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_BANK_WIDTH</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_BANK_WIDTH"> "3" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_BURST_MODE</spirit:name>
+        <spirit:value spirit:format="STRING" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_BURST_MODE"> "8" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_BURST_TYPE</spirit:name>
+        <spirit:value spirit:format="STRING" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_BURST_TYPE"> "SEQ" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_BYTE_LANES_B0</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_BYTE_LANES_B0"> "0xF" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_BYTE_LANES_B1</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_BYTE_LANES_B1"> "0xF" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_BYTE_LANES_B2</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_BYTE_LANES_B2"> "0xF" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_BYTE_LANES_B3</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_BYTE_LANES_B3"> "0xF" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_BYTE_LANES_B4</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_BYTE_LANES_B4"> "0xF" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CA_MIRROR</spirit:name>
+        <spirit:value spirit:format="STRING" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_CA_MIRROR"> "OFF" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CAL_WIDTH</spirit:name>
+        <spirit:value spirit:format="STRING" spirit:resolve="CONSTANT" spirit:id="DDR3_SDRAM.C_CAL_WIDTH"> "HALF" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CAS_MAP</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_CAS_MAP"> "0x000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CK_BYTE_MAP</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_CK_BYTE_MAP"> "0x00_00_00_00_00_00_00_00_00_00_00_00_00_00_00_00_00_00" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CK_WIDTH</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_CK_WIDTH"> "1" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CKE_MAP</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_CKE_MAP"> "0x000_000_000_000_000_000_000_000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CKE_ODT_AUX</spirit:name>
+        <spirit:value spirit:format="STRING" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_CKE_ODT_AUX"> "FALSE" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CKE_WIDTH</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_CKE_WIDTH"> "1" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CL</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="UPDATE" spirit:id="DDR3_SDRAM.C_CL"> "6" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CLKOUT0_PHASE</spirit:name>
+        <spirit:value spirit:format="STRING" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_CLKOUT0_PHASE"> "" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CMD_PIPE_PLUS1</spirit:name>
+        <spirit:value spirit:format="STRING" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_CMD_PIPE_PLUS1"> "ON" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_COL_WIDTH</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_COL_WIDTH"> "10" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CS_MAP</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_CS_MAP"> "0x000_000_000_000_000_000_000_000_000_000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CS_WIDTH</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_CS_WIDTH"> "1" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_CWL</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="UPDATE" spirit:id="DDR3_SDRAM.C_CWL"> "5" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA0_MAP</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_DATA0_MAP"> "0x000_000_000_000_000_000_000_000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA1_MAP</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_DATA1_MAP"> "0x000_000_000_000_000_000_000_000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA2_MAP</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_DATA2_MAP"> "0x000_000_000_000_000_000_000_000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA3_MAP</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_DATA3_MAP"> "0x000_000_000_000_000_000_000_000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA4_MAP</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_DATA4_MAP"> "0x000_000_000_000_000_000_000_000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA5_MAP</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_DATA5_MAP"> "0x000_000_000_000_000_000_000_000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA6_MAP</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_DATA6_MAP"> "0x000_000_000_000_000_000_000_000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA7_MAP</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_DATA7_MAP"> "0x000_000_000_000_000_000_000_000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA8_MAP</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_DATA8_MAP"> "0x000_000_000_000_000_000_000_000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA9_MAP</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_DATA9_MAP"> "0x000_000_000_000_000_000_000_000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA10_MAP</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_DATA10_MAP"> "0x000_000_000_000_000_000_000_000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA11_MAP</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_DATA11_MAP"> "0x000_000_000_000_000_000_000_000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA12_MAP</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_DATA12_MAP"> "0x000_000_000_000_000_000_000_000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA13_MAP</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_DATA13_MAP"> "0x000_000_000_000_000_000_000_000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA14_MAP</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_DATA14_MAP"> "0x000_000_000_000_000_000_000_000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA15_MAP</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_DATA15_MAP"> "0x000_000_000_000_000_000_000_000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA16_MAP</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_DATA16_MAP"> "0x000_000_000_000_000_000_000_000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA17_MAP</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_DATA17_MAP"> "0x000_000_000_000_000_000_000_000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA_BUF_ADDR_WIDTH</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="UPDATE" spirit:id="DDR3_SDRAM.C_DATA_BUF_ADDR_WIDTH"> "5" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA_CTL_B0</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_DATA_CTL_B0"> "0xc" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA_CTL_B1</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_DATA_CTL_B1"> "0xF" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA_CTL_B2</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_DATA_CTL_B2"> "0xF" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA_CTL_B3</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_DATA_CTL_B3"> "0x0" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA_CTL_B4</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_DATA_CTL_B4"> "0x0" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA_IO_IDLE_PWRDWN</spirit:name>
+        <spirit:value spirit:format="STRING" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_DATA_IO_IDLE_PWRDWN"> "ON" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA_IO_PRIM_TYPE</spirit:name>
+        <spirit:value spirit:format="STRING" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_DATA_IO_PRIM_TYPE"> "DEFAULT" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DDR2_DQSN_ENABLE</spirit:name>
+        <spirit:value spirit:format="STRING" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_DDR2_DQSN_ENABLE"> "YES" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DM_WIDTH</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_DM_WIDTH"> "8" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DQ_WIDTH</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_DQ_WIDTH"> "64" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DQS_BYTE_MAP</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_DQS_BYTE_MAP"> "0x00_00_00_00_00_00_00_00_00_00_00_00_00_00_00_00_00_00" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DQS_WIDTH</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_DQS_WIDTH"> "8" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DRAM_TYPE</spirit:name>
+        <spirit:value spirit:format="STRING" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_DRAM_TYPE"> "DDR3" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DRAM_WIDTH</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_DRAM_WIDTH"> "8" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_ECC</spirit:name>
+        <spirit:value spirit:format="STRING" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_ECC"> "OFF" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_ECC_ONOFF_RESET_VALUE</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_ECC_ONOFF_RESET_VALUE"> "1" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_ECC_TEST</spirit:name>
+        <spirit:value spirit:format="STRING" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_ECC_TEST"> "OFF" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_ACLK_RATIO</spirit:name>
+        <spirit:value spirit:format="integer" spirit:resolve="UPDATE" spirit:id="DDR3_SDRAM.C_INTERCONNECT_S_AXI_ACLK_RATIO"> "100000000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_AR_REGISTER</spirit:name>
+        <spirit:value spirit:format="integer" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_INTERCONNECT_S_AXI_AR_REGISTER"> "8" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_AW_REGISTER</spirit:name>
+        <spirit:value spirit:format="integer" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_INTERCONNECT_S_AXI_AW_REGISTER"> "8" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_B_REGISTER</spirit:name>
+        <spirit:value spirit:format="integer" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_INTERCONNECT_S_AXI_B_REGISTER"> "8" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_CTRL_ACLK_RATIO</spirit:name>
+        <spirit:value spirit:format="integer" spirit:resolve="UPDATE" spirit:id="DDR3_SDRAM.C_INTERCONNECT_S_AXI_CTRL_ACLK_RATIO"> "1" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_CTRL_AR_REGISTER</spirit:name>
+        <spirit:value spirit:format="integer" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_INTERCONNECT_S_AXI_CTRL_AR_REGISTER"> "0" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_CTRL_AW_REGISTER</spirit:name>
+        <spirit:value spirit:format="integer" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_INTERCONNECT_S_AXI_CTRL_AW_REGISTER"> "0" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_CTRL_B_REGISTER</spirit:name>
+        <spirit:value spirit:format="integer" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_INTERCONNECT_S_AXI_CTRL_B_REGISTER"> "0" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_CTRL_IS_ACLK_ASYNC</spirit:name>
+        <spirit:value spirit:format="integer" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_INTERCONNECT_S_AXI_CTRL_IS_ACLK_ASYNC"> "0" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_CTRL_MASTERS</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_INTERCONNECT_S_AXI_CTRL_MASTERS"> "none" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_CTRL_R_REGISTER</spirit:name>
+        <spirit:value spirit:format="integer" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_INTERCONNECT_S_AXI_CTRL_R_REGISTER"> "0" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_CTRL_READ_ACCEPTANCE</spirit:name>
+        <spirit:value spirit:format="integer" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_INTERCONNECT_S_AXI_CTRL_READ_ACCEPTANCE"> "1" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_CTRL_READ_FIFO_DEPTH</spirit:name>
+        <spirit:value spirit:format="integer" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_INTERCONNECT_S_AXI_CTRL_READ_FIFO_DEPTH"> "0" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_CTRL_SECURE</spirit:name>
+        <spirit:value spirit:format="integer" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_INTERCONNECT_S_AXI_CTRL_SECURE"> "0" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_CTRL_W_REGISTER</spirit:name>
+        <spirit:value spirit:format="integer" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_INTERCONNECT_S_AXI_CTRL_W_REGISTER"> "0" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_CTRL_WRITE_ACCEPTANCE</spirit:name>
+        <spirit:value spirit:format="integer" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_INTERCONNECT_S_AXI_CTRL_WRITE_ACCEPTANCE"> "1" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_CTRL_WRITE_FIFO_DEPTH</spirit:name>
+        <spirit:value spirit:format="integer" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_INTERCONNECT_S_AXI_CTRL_WRITE_FIFO_DEPTH"> "0" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_IS_ACLK_ASYNC</spirit:name>
+        <spirit:value spirit:format="integer" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_INTERCONNECT_S_AXI_IS_ACLK_ASYNC"> "0" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_MASTERS</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_INTERCONNECT_S_AXI_MASTERS"> "microblaze_0.M_AXI_DC &amp; microblaze_0.M_AXI_IC &amp; axi_dma_0.M_AXI_S2MM" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_R_REGISTER</spirit:name>
+        <spirit:value spirit:format="integer" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_INTERCONNECT_S_AXI_R_REGISTER"> "8" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_READ_ACCEPTANCE</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_INTERCONNECT_S_AXI_READ_ACCEPTANCE"> "4" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_READ_FIFO_DELAY</spirit:name>
+        <spirit:value spirit:format="integer" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_INTERCONNECT_S_AXI_READ_FIFO_DELAY"> "0" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_READ_FIFO_DEPTH</spirit:name>
+        <spirit:value spirit:format="integer" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_INTERCONNECT_S_AXI_READ_FIFO_DEPTH"> "0" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_SECURE</spirit:name>
+        <spirit:value spirit:format="integer" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_INTERCONNECT_S_AXI_SECURE"> "0" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_W_REGISTER</spirit:name>
+        <spirit:value spirit:format="integer" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_INTERCONNECT_S_AXI_W_REGISTER"> "8" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_WRITE_ACCEPTANCE</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_INTERCONNECT_S_AXI_WRITE_ACCEPTANCE"> "4" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_WRITE_FIFO_DELAY</spirit:name>
+        <spirit:value spirit:format="integer" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_INTERCONNECT_S_AXI_WRITE_FIFO_DELAY"> "0" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_INTERCONNECT_S_AXI_WRITE_FIFO_DEPTH</spirit:name>
+        <spirit:value spirit:format="integer" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_INTERCONNECT_S_AXI_WRITE_FIFO_DEPTH"> "0" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_IODELAY_GRP</spirit:name>
+        <spirit:value spirit:format="STRING" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_IODELAY_GRP"> "IODELAY_MIG" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_IODELAY_HP_MODE</spirit:name>
+        <spirit:value spirit:format="STRING" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_IODELAY_HP_MODE"> "ON" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_MASK0_MAP</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_MASK0_MAP"> "0x000_000_000_000_000_000_000_000_000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_MASK1_MAP</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_MASK1_MAP"> "0x000_000_000_000_000_000_000_000_000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_MEM_ADDR_ORDER</spirit:name>
+        <spirit:value spirit:format="STRING" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_MEM_ADDR_ORDER"> "BANK_ROW_COLUMN" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_MEM_BASEPARTNO</spirit:name>
+        <spirit:value spirit:format="STRING" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_MEM_BASEPARTNO"> "" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_MEM_PARTNO</spirit:name>
+        <spirit:value spirit:format="STRING" spirit:resolve="REQUIRE" spirit:id="DDR3_SDRAM.C_MEM_PARTNO"> "MT8JTF12864HZ-1G6" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_NBANK_MACHS</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_NBANK_MACHS"> "4" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_NCK_PER_CLK</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_NCK_PER_CLK"> "4" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_NCS_PER_RANK</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_NCS_PER_RANK"> "1" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_ODT_MAP</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_ODT_MAP"> "0x000_000_000_000_000_000_000_000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_ODT_WIDTH</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="UPDATE" spirit:id="DDR3_SDRAM.C_ODT_WIDTH"> "1" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_ORDERING</spirit:name>
+        <spirit:value spirit:format="STRING" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_ORDERING"> "NORM" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_OUTPUT_DRV</spirit:name>
+        <spirit:value spirit:format="STRING" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_OUTPUT_DRV"> "HIGH" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_PARITY_MAP</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_PARITY_MAP"> "0x000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_PART_REV</spirit:name>
+        <spirit:value spirit:format="STRING" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_PART_REV"> "STANDARD" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_PHY_0_BITLANES</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_PHY_0_BITLANES"> "0x0000_0000_0000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_PHY_1_BITLANES</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_PHY_1_BITLANES"> "0x0000_0000_0000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_PHY_2_BITLANES</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_PHY_2_BITLANES"> "0x0000_0000_0000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_PHY_CONTROL_MASTER_BANK</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="UPDATE" spirit:id="DDR3_SDRAM.C_PHY_CONTROL_MASTER_BANK"> "0" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_PLLE2_EXT_LOC</spirit:name>
+        <spirit:value spirit:format="STRING" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_PLLE2_EXT_LOC"> "" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_RANKS</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="UPDATE" spirit:id="DDR3_SDRAM.C_RANKS"> "1" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_RAS_MAP</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_RAS_MAP"> "0x000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_RD_WR_ARB_ALGORITHM</spirit:name>
+        <spirit:value spirit:format="STRING" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_RD_WR_ARB_ALGORITHM"> "RD_PRI_REG" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_REFCLK_FREQ</spirit:name>
+        <spirit:value spirit:format="REAL" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_REFCLK_FREQ"> "5000.0" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_REFCLK_FREQ_EDK</spirit:name>
+        <spirit:value spirit:format="REAL" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_REFCLK_FREQ_EDK"> "0" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_REG_CTRL</spirit:name>
+        <spirit:value spirit:format="STRING" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_REG_CTRL"> "OFF" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_ROW_WIDTH</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_ROW_WIDTH"> "14" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_RTT_NOM</spirit:name>
+        <spirit:value spirit:format="STRING" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_RTT_NOM"> "40" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_RTT_WR</spirit:name>
+        <spirit:value spirit:format="STRING" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_RTT_WR"> "OFF" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_S_AXI_ADDED_AXI_PARAMS</spirit:name>
+        <spirit:value spirit:format="" spirit:resolve="CONSTANT" spirit:id="DDR3_SDRAM.C_S_AXI_ADDED_AXI_PARAMS"> "TRUE" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_S_AXI_ADDR_WIDTH</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="CONSTANT" spirit:id="DDR3_SDRAM.C_S_AXI_ADDR_WIDTH"> "32" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_S_AXI_AXI_VER</spirit:name>
+        <spirit:value spirit:format="" spirit:resolve="CONSTANT" spirit:id="DDR3_SDRAM.C_S_AXI_AXI_VER"> "1.06.a" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_S_AXI_BASEADDR</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_S_AXI_BASEADDR"> "0xc0000000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_S_AXI_CTRL_ADDED_AXI_PARAMS</spirit:name>
+        <spirit:value spirit:format="" spirit:resolve="CONSTANT" spirit:id="DDR3_SDRAM.C_S_AXI_CTRL_ADDED_AXI_PARAMS"> "TRUE" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_S_AXI_CTRL_ADDR_WIDTH</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="CONSTANT" spirit:id="DDR3_SDRAM.C_S_AXI_CTRL_ADDR_WIDTH"> "32" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_S_AXI_CTRL_AXI_VER</spirit:name>
+        <spirit:value spirit:format="" spirit:resolve="CONSTANT" spirit:id="DDR3_SDRAM.C_S_AXI_CTRL_AXI_VER"> "1.01.a" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_S_AXI_CTRL_BASEADDR</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_S_AXI_CTRL_BASEADDR"> "0xFFFFFFFF" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_S_AXI_CTRL_DATA_WIDTH</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="CONSTANT" spirit:id="DDR3_SDRAM.C_S_AXI_CTRL_DATA_WIDTH"> "32" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_S_AXI_CTRL_HIGHADDR</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_S_AXI_CTRL_HIGHADDR"> "0x00000000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_S_AXI_CTRL_PROTOCOL</spirit:name>
+        <spirit:value spirit:format="STRING" spirit:resolve="CONSTANT" spirit:id="DDR3_SDRAM.C_S_AXI_CTRL_PROTOCOL"> "AXI4LITE" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_S_AXI_DATA_WIDTH</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_S_AXI_DATA_WIDTH"> "512" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_S_AXI_HIGHADDR</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_S_AXI_HIGHADDR"> "0xffffffff" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_S_AXI_ID_WIDTH</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="UPDATE" spirit:id="DDR3_SDRAM.C_S_AXI_ID_WIDTH"> "2" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_S_AXI_PROTOCOL</spirit:name>
+        <spirit:value spirit:format="STRING" spirit:resolve="CONSTANT" spirit:id="DDR3_SDRAM.C_S_AXI_PROTOCOL"> "AXI4" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_S_AXI_REG_EN0</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_S_AXI_REG_EN0"> "0x00000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_S_AXI_REG_EN1</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_S_AXI_REG_EN1"> "0x01000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_S_AXI_SUPPORTS_NARROW_BURST</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_S_AXI_SUPPORTS_NARROW_BURST"> "Auto" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_SIM_BYPASS_INIT_CAL</spirit:name>
+        <spirit:value spirit:format="STRING" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_SIM_BYPASS_INIT_CAL"> "FAST" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_SLOT_0_CONFIG</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_SLOT_0_CONFIG"> "0b00000001" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_SLOT_1_CONFIG</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_SLOT_1_CONFIG"> "0b00000000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_TCK</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_TCK"> "2500.0" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_TCK_EDK</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_TCK_EDK"> "0" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_TCKE</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_TCKE"> "-1" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_TFAW</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_TFAW"> "-1" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_TPRDI</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_TPRDI"> "-1" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_TRAS</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_TRAS"> "-1" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_TRCD</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_TRCD"> "-1" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_TREFI</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_TREFI"> "-1" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_TRFC</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_TRFC"> "-1" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_TRP</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_TRP"> "-1" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_TRRD</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_TRRD"> "-1" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_TRTP</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_TRTP"> "-1" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_TWTR</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_TWTR"> "-1" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_TZQCS</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_TZQCS"> "-1" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_TZQI</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_TZQI"> "-1" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_USE_CS_PORT</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_USE_CS_PORT"> "1" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_USE_DM_PORT</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_USE_DM_PORT"> "1" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_USE_EXTERNAL_IODELAY_CTRL</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="UPDATE" spirit:id="DDR3_SDRAM.C_USE_EXTERNAL_IODELAY_CTRL"> "0" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_USE_EXTERNAL_XADC</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="UPDATE" spirit:id="DDR3_SDRAM.C_USE_EXTERNAL_XADC"> "0" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_USE_ODT_PORT</spirit:name>
+        <spirit:value spirit:format="INTEGER" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_USE_ODT_PORT"> "1" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_WE_MAP</spirit:name>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL_UPDATE" spirit:id="DDR3_SDRAM.C_WE_MAP"> "0x000" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_XC7K325T_REV_1X</spirit:name>
+        <spirit:value spirit:format="STRING" spirit:resolve="OPTIONAL" spirit:id="DDR3_SDRAM.C_XC7K325T_REV_1X"> "FALSE" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>HW_VER</spirit:name>
+        <spirit:value spirit:format="" spirit:resolve="" spirit:id="DDR3_SDRAM.HW_VER"> "1.08.a" </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>INSTANCE</spirit:name>
+        <spirit:value spirit:format="" spirit:resolve="" spirit:id="DDR3_SDRAM.INSTANCE"> "DDR3_SDRAM" </spirit:value>
+      </spirit:modelParameter>
+</spirit:modelParameters>
+            </spirit:model>               
+            </spirit:component>
+        

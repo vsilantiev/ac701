@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">sigis</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">sigis</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">sigis</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">sigis</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/cf_lib/edk/pcores/axi_adc_1c_v1_00_a/hdl/vhdl/axi_adc_1c.vhd</arg>&quot; line <arg fmt="%s" index="2">171</arg>: Output port &lt;<arg fmt="%s" index="3">Bus2IP_Addr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AXI_LITE_IPIF_I</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/cf_lib/edk/pcores/axi_adc_1c_v1_00_a/hdl/vhdl/axi_adc_1c.vhd</arg>&quot; line <arg fmt="%s" index="2">171</arg>: Output port &lt;<arg fmt="%s" index="3">Bus2IP_CS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AXI_LITE_IPIF_I</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/cf_lib/edk/pcores/axi_adc_1c_v1_00_a/hdl/vhdl/axi_adc_1c.vhd</arg>&quot; line <arg fmt="%s" index="2">171</arg>: Output port &lt;<arg fmt="%s" index="3">Bus2IP_RNW</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AXI_LITE_IPIF_I</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">S_AXI_AWADDR&lt;31:9&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">S_AXI_WSTRB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">S_AXI_ARADDR&lt;31:9&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd</arg>&quot; line <arg fmt="%s" index="2">341</arg>: Output port &lt;<arg fmt="%s" index="3">CS_for_gaps</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">I_DECODER</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">Address_In_Erly&lt;0:1&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">Bus_RNW</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">Bus2IP_BE</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">IP2Bus_Error</arg>&lt;<arg fmt="%d" index="2">0</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">up_wdata&lt;31:18&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">up_status</arg>&lt;<arg fmt="%d" index="2">7</arg>:<arg fmt="%d" index="3">4</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">cf_adc_1c</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram_delay_addr[3]_GND_55_o_wide_mux_32_OUT</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="info" file="Xst" num="3226" delta="new" >The RAM &lt;<arg fmt="%s" index="1">i_mem/Mram_m_ram</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">up_rdata_18</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cf_adc_1c</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">up_rdata_19</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cf_adc_1c</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">up_rdata_20</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cf_adc_1c</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">up_rdata_21</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cf_adc_1c</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">up_rdata_22</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cf_adc_1c</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">up_rdata_23</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cf_adc_1c</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">up_rdata_24</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cf_adc_1c</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">up_rdata_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cf_adc_1c</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">up_rdata_26</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cf_adc_1c</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">up_rdata_27</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cf_adc_1c</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">up_rdata_28</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cf_adc_1c</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">up_rdata_29</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cf_adc_1c</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">up_rdata_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cf_adc_1c</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">up_rdata_31</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cf_adc_1c</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">s_axi_rresp_i_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">slave_attachment</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">s_axi_bresp_i_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">slave_attachment</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">g_adc_if[0].i_data_ddr</arg> in unit <arg fmt="%s" index="2">cf_adc_if</arg> of type <arg fmt="%s" index="3">IDDR</arg> has been replaced by <arg fmt="%s" index="4">IDDR_2CLK</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">g_adc_if[1].i_data_ddr</arg> in unit <arg fmt="%s" index="2">cf_adc_if</arg> of type <arg fmt="%s" index="3">IDDR</arg> has been replaced by <arg fmt="%s" index="4">IDDR_2CLK</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">g_adc_if[2].i_data_ddr</arg> in unit <arg fmt="%s" index="2">cf_adc_if</arg> of type <arg fmt="%s" index="3">IDDR</arg> has been replaced by <arg fmt="%s" index="4">IDDR_2CLK</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">g_adc_if[3].i_data_ddr</arg> in unit <arg fmt="%s" index="2">cf_adc_if</arg> of type <arg fmt="%s" index="3">IDDR</arg> has been replaced by <arg fmt="%s" index="4">IDDR_2CLK</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">g_adc_if[4].i_data_ddr</arg> in unit <arg fmt="%s" index="2">cf_adc_if</arg> of type <arg fmt="%s" index="3">IDDR</arg> has been replaced by <arg fmt="%s" index="4">IDDR_2CLK</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">g_adc_if[5].i_data_ddr</arg> in unit <arg fmt="%s" index="2">cf_adc_if</arg> of type <arg fmt="%s" index="3">IDDR</arg> has been replaced by <arg fmt="%s" index="4">IDDR_2CLK</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">g_adc_if[6].i_data_ddr</arg> in unit <arg fmt="%s" index="2">cf_adc_if</arg> of type <arg fmt="%s" index="3">IDDR</arg> has been replaced by <arg fmt="%s" index="4">IDDR_2CLK</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">g_adc_if[7].i_data_ddr</arg> in unit <arg fmt="%s" index="2">cf_adc_if</arg> of type <arg fmt="%s" index="3">IDDR</arg> has been replaced by <arg fmt="%s" index="4">IDDR_2CLK</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">i_or_ddr</arg> in unit <arg fmt="%s" index="2">cf_adc_if</arg> of type <arg fmt="%s" index="3">IDDR</arg> has been replaced by <arg fmt="%s" index="4">IDDR_2CLK</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system_axi_adc_1c_0_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system_axi_adc_1c_0_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/IP2Bus_Data_18</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system_axi_adc_1c_0_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/IP2Bus_Data_19</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system_axi_adc_1c_0_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/IP2Bus_Data_20</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system_axi_adc_1c_0_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/IP2Bus_Data_21</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system_axi_adc_1c_0_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/IP2Bus_Data_22</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system_axi_adc_1c_0_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/IP2Bus_Data_23</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system_axi_adc_1c_0_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/IP2Bus_Data_24</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system_axi_adc_1c_0_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/IP2Bus_Data_25</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system_axi_adc_1c_0_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/IP2Bus_Data_26</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system_axi_adc_1c_0_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/IP2Bus_Data_27</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system_axi_adc_1c_0_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/IP2Bus_Data_28</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system_axi_adc_1c_0_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/IP2Bus_Data_29</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system_axi_adc_1c_0_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/IP2Bus_Data_30</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system_axi_adc_1c_0_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/IP2Bus_Data_31</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system_axi_adc_1c_0_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_18</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system_axi_adc_1c_0_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_19</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system_axi_adc_1c_0_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_20</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system_axi_adc_1c_0_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_21</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system_axi_adc_1c_0_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_22</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system_axi_adc_1c_0_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_23</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system_axi_adc_1c_0_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_24</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system_axi_adc_1c_0_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system_axi_adc_1c_0_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_26</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system_axi_adc_1c_0_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_27</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system_axi_adc_1c_0_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_28</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system_axi_adc_1c_0_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_29</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system_axi_adc_1c_0_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system_axi_adc_1c_0_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_31</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system_axi_adc_1c_0_wrapper</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/up_wdata_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/up_wdata_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/up_wdata_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/up_wdata_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/up_wdata_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/up_wdata_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/up_wdata_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/up_wdata_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/up_wdata_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/up_wdata_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/up_wdata_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/up_wdata_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/up_wdata_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/up_wdata_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">axi_adc_1c_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_be_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_be_6&gt; &lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_be_5&gt; &lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_be_4&gt; &lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_be_3&gt; &lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_be_2&gt; &lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_be_1&gt; &lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/dma_be_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_26&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_27&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_28&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_29&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_30&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_20</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_36&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_31&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_21</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_37&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_16</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_32&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_22</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_38&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_17</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_33&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_23</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_39&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_18</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_34&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_24</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_40&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_19</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_35&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_30</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_46&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_25</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_41&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_31</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_47&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_26</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_42&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_32</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_48&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_27</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_43&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_33</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_49&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_28</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_44&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_34</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_50&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_29</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_45&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_40</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_56&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_16&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_35</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_51&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_41</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_57&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_17&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_36</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_52&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_42</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_58&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_18&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_37</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_53&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_43</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_59&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_19&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_38</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_54&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_44</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_60&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_20&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_39</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_55&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_50</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_data_d_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_21&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_45</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_61&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_51</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_data_d_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_22&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_46</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_62&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_52</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_data_d_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_23&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_47</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_63&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_53</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_data_d_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_24&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_48</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_data_d_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_54</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_data_d_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_dma_wr/adc_wdata_25&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_49</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_data_d_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_60</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_data_d_12&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_55</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_data_d_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_61</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_data_d_13&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_56</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_data_d_8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_62</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_data_d_14&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_57</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_data_d_9&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_63</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_data_d_15&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_58</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_data_d_10&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_count_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_pn_en&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/adc_data_59</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system_axi_adc_1c_0_wrapper</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;axi_adc_1c_0/USER_LOGIC_I/i_adc_1c/i_adc_wr/i_pnmon_a/adc_data_d_11&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+
