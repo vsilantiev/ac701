@@ -1,1 +1,1 @@
- -p virtex7 -lang vhdl$(PROJECT_SEARCHPATHOPT) $(GLOBAL_SEARCHPATHOPT) -msg __xps/ise/xmsgprops.lst -s isim
+ -p artix7 -lang vhdl$(PROJECT_SEARCHPATHOPT) $(GLOBAL_SEARCHPATHOPT) -msg __xps/ise/xmsgprops.lst -s isim -X F:/ARTIX/cf_ad9467_vc707_edk_14_4_2013_02_11/cf_ad9467_vc707/

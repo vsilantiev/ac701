@@ -49,7 +49,7 @@
 //   ____  ____
 //  /   /\/   /
 // /___/  \  /   Vendor             : Xilinx
-// \   \   \/    Version            : 1.9
+// \   \   \/    Version            : 1.8
 //  \   \        Application        : MIG
 //  /   /        Filename           : DDR3_SDRAM.veo
 // /___/   /\    Date Last Modified : $Date: 2011/06/02 08:34:47 $
@@ -295,10 +295,10 @@ DDR3_SDRAM # (
                                      // position indicates a data byte lane and
                                      // a '0' indicates a control byte lane
 
-   .PHY_0_BITLANES                (48'h3FE_1FF_1FF_2FF),
+   .PHY_0_BITLANES                (48'h3FE_3FE_3FE_2FF),
    .PHY_1_BITLANES                (48'hFFE_F30_CB4_000),
-   .PHY_2_BITLANES                (48'h3FE_3FE_3BF_2FF),
-   .CK_BYTE_MAP                   (144'h00_00_00_00_00_00_00_00_00_00_00_00_00_00_00_00_00_11),
+   .PHY_2_BITLANES                (48'h3FE_3FE_3FE_2FF),
+   .CK_BYTE_MAP                   (144'h00_00_00_00_00_00_00_00_00_00_00_00_00_00_00_00_00_12),
    .ADDR_MAP                      (192'h000_000_132_136_135_133_139_124_131_129_137_134_13A_128_138_13B),
    .BANK_MAP                      (36'h125_12A_12B),
    .CAS_MAP                       (12'h115),
@@ -309,15 +309,15 @@ DDR3_SDRAM # (
    .PARITY_MAP                    (12'h000),
    .RAS_MAP                       (12'h11A),
    .WE_MAP                        (12'h11B),
-   .DQS_BYTE_MAP                  (144'h00_00_00_00_00_00_00_00_00_00_20_21_22_23_03_02_01_00),
-   .DATA0_MAP                     (96'h009_000_003_001_007_006_005_002),
-   .DATA1_MAP                     (96'h014_018_010_011_017_016_012_013),
-   .DATA2_MAP                     (96'h021_022_025_020_027_023_026_028),
-   .DATA3_MAP                     (96'h033_039_031_035_032_038_034_037),
-   .DATA4_MAP                     (96'h231_238_237_236_233_232_234_239),
-   .DATA5_MAP                     (96'h226_227_225_229_221_222_224_228),
-   .DATA6_MAP                     (96'h214_215_210_218_217_213_219_212),
-   .DATA7_MAP                     (96'h207_203_204_206_202_201_205_209),
+   .DQS_BYTE_MAP                  (144'h00_00_00_00_00_00_00_00_00_00_03_02_01_00_23_22_21_20),
+   .DATA0_MAP                     (96'h209_207_206_205_204_203_202_201),
+   .DATA1_MAP                     (96'h219_218_217_216_215_214_213_212),
+   .DATA2_MAP                     (96'h229_228_227_226_225_224_223_222),
+   .DATA3_MAP                     (96'h239_238_237_236_235_234_233_232),
+   .DATA4_MAP                     (96'h009_007_006_005_004_003_002_001),
+   .DATA5_MAP                     (96'h019_018_017_016_015_014_013_012),
+   .DATA6_MAP                     (96'h029_028_027_026_025_024_023_022),
+   .DATA7_MAP                     (96'h039_038_037_036_035_034_033_032),
    .DATA8_MAP                     (96'h000_000_000_000_000_000_000_000),
    .DATA9_MAP                     (96'h000_000_000_000_000_000_000_000),
    .DATA10_MAP                    (96'h000_000_000_000_000_000_000_000),
@@ -328,7 +328,7 @@ DDR3_SDRAM # (
    .DATA15_MAP                    (96'h000_000_000_000_000_000_000_000),
    .DATA16_MAP                    (96'h000_000_000_000_000_000_000_000),
    .DATA17_MAP                    (96'h000_000_000_000_000_000_000_000),
-   .MASK0_MAP                     (108'h000_200_211_223_235_036_024_015_004),
+   .MASK0_MAP                     (108'h000_031_021_011_000_231_221_211_200),
    .MASK1_MAP                     (108'h000_000_000_000_000_000_000_000_000),
 
    .SLOT_0_CONFIG                 (8'b0000_0001),
@@ -345,7 +345,7 @@ DDR3_SDRAM # (
                                      // to phy_top
    .DATA_IO_IDLE_PWRDWN           ("ON"),
                                      // # = "ON", "OFF"
-   .DATA_IO_PRIM_TYPE             ("HP_LP"),
+   .DATA_IO_PRIM_TYPE             ("HR_LP"),
                                      // # = "HP_LP", "HR_LP", "DEFAULT"
    .CKE_ODT_AUX                   ("FALSE"),
    .USER_REFRESH                  ("OFF"),
@@ -368,9 +368,9 @@ DDR3_SDRAM # (
                                      // It is associated to a set of IODELAYs with
                                      // an IDELAYCTRL that have same IODELAY CONTROLLER
                                      // clock frequency.
-   .SYSCLK_TYPE                   ("DIFFERENTIAL"),
+   .SYSCLK_TYPE                   ("NO_BUFFER"),
                                      // System clock type DIFFERENTIAL or SINGLE_ENDED
-   .REFCLK_TYPE                   ("DIFFERENTIAL"),
+   .REFCLK_TYPE                   ("NO_BUFFER"),
                                      // Reference clock type DIFFERENTIAL or SINGLE_ENDED
    .CMD_PIPE_PLUS1                ("ON"),
                                      // add pipeline stage between MC and PHY
@@ -383,7 +383,7 @@ DDR3_SDRAM # (
    //***************************************************************************
    .REFCLK_FREQ                   (200.0),
                                      // IODELAYCTRL reference clock frequency
-   .DIFF_TERM_REFCLK              ("FALSE"),
+   .DIFF_TERM_REFCLK              ("TRUE"),
                                      // Differential Termination for idelay
                                      // reference clock input pins
    //***************************************************************************
@@ -496,10 +496,6 @@ DDR3_SDRAM # (
      .ddr3_cs_n                      (ddr3_cs_n),
      .ddr3_dm                        (ddr3_dm),
      .ddr3_odt                       (ddr3_odt),
-     .sys_clk_p                      (sys_clk_p),
-     .sys_clk_n                      (sys_clk_n),
-     .clk_ref_p                      (clk_ref_p),
-     .clk_ref_n                      (clk_ref_n),
 // Application interface ports
      .ui_clk                         (ui_clk),
      .ui_clk_sync_rst                (ui_clk_sync_rst),

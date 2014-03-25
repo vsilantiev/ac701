@@ -4,12 +4,12 @@ SET_FLAG  DRCMODE  ERROR
 SET_PARAMETER COMPONENT_NAME DDR3_SDRAM
 SET_PREFERENCE projectname DDR3_SDRAM
 SET_PREFERENCE flowvendor Foundation_ISE
-SET_PREFERENCE devicefamily  virtex7
+SET_PREFERENCE devicefamily  artix7
 SET_PREFERENCE devicesubfamily  
-SET_PREFERENCE partname xc7vx485tffg1761-2
-SET_PREFERENCE device  xc7vx485t
-SET_PREFERENCE package  ffg1761
-SET_PREFERENCE speedgrade -2
+SET_PREFERENCE partname xc7a200tfbg676-3
+SET_PREFERENCE device  xc7a200t
+SET_PREFERENCE package  fbg676
+SET_PREFERENCE speedgrade -3
 SET_PREFERENCE outputdirectory ./
 SET_PREFERENCE workingdirectory ./
 SET_PREFERENCE subworkingdirectory ./
