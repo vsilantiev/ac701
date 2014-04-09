@@ -1,4 +1,4 @@
-# Date: Mon Mar 24 06:37:02 2014
+# Date: Tue Apr 08 11:31:08 2014
 
 SET addpads = false
 SET asysymbol = true
@@ -17,6 +17,6 @@ SET simulationfiles = Behavioral
 SET speedgrade = -3
 SET verilogsim = false
 SET vhdlsim = true
-SET workingdirectory = ./tmp/
+SET workingdirectory = .\tmp\
 
-# CRC: f72a7428
+# CRC: 8054ceb1

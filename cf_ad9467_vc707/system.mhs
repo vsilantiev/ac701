@@ -42,7 +42,6 @@
  PORT spi_cs1n = spi_cs1n, DIR = O
  PORT spi_clk = spi_clk, DIR = O
  PORT spi_sdio = spi_sdio, DIR = IO
- PORT up_status = up_status, DIR = O, VEC = [7:0]
  PORT lcd = axi_gpio_0_lcd, DIR = IO, VEC = [6:0]
 
 
@@ -313,7 +312,6 @@ BEGIN axi_adc_1c
  PORT adc_data_or_p = adc_data_or_p
  PORT adc_data_or_n = adc_data_or_n
  PORT delay_clk = clk_200_0000MHzPLLE0
- PORT up_status = up_status
  PORT adc_clk = adc_clk
  PORT adc_mon_valid = adc_mon_valid
  PORT adc_mon_data = adc_mon_data

@@ -128,7 +128,7 @@ begin
       C_DPHASE_TIMEOUT => 8,
       C_BASEADDR => X"73000000",
       C_HIGHADDR => X"7300ffff",
-      C_FAMILY => "virtex7",
+      C_FAMILY => "artix7",
       C_NUM_REG => 1,
       C_NUM_MEM => 1,
       C_SLV_AWIDTH => 32,

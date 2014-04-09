@@ -1,5 +1,5 @@
 The following files were generated for 'chipscope_ila_0' in directory
-/cf_ad9467_vc707/implementation/chipscope_ila_0_wrapper/
+D:\WORK\zedboard\cf_ad9467_vc707\implementation\chipscope_ila_0_wrapper\
 
 XCO file generator:
    Generate an XCO file for compatibility with legacy flows.

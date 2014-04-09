@@ -1,0 +1,11 @@
+-p
+xc7a200tfbg676-3
+-lang
+vhdl
+-intstyle
+default
+-lp
+D:/WORK/zedboard/cf_lib/
+-msg
+__xps/ise/xmsgprops.lst
+system.mhs

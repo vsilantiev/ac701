@@ -1,0 +1,73 @@
+11:23:46 **** Build of project bsp ****
+make -k all 
+libgen -hw ../hw/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw/system.xml -pe microblaze_0 -log libgen.log
+system.mss 
+
+WARNING:EDK:411 - axidma -
+   /media/Data/WORK/zedboard/cf_ad9467_vc707/SDK/SDK_Workspace/bsp/system.mss
+   line 27 - deprecated driver!
+WARNING:EDK:411 - gpio -
+   /media/Data/WORK/zedboard/cf_ad9467_vc707/SDK/SDK_Workspace/bsp/system.mss
+   line 33 - deprecated driver!
+WARNING:EDK:411 - intc -
+   /media/Data/WORK/zedboard/cf_ad9467_vc707/SDK/SDK_Workspace/bsp/system.mss
+   line 39 - deprecated driver!
+WARNING:EDK:411 - spi -
+   /media/Data/WORK/zedboard/cf_ad9467_vc707/SDK/SDK_Workspace/bsp/system.mss
+   line 45 - deprecated driver!
+WARNING:EDK:411 - tmrctr -
+   /media/Data/WORK/zedboard/cf_ad9467_vc707/SDK/SDK_Workspace/bsp/system.mss
+   line 51 - deprecated driver!
+WARNING:EDK:411 - uartlite -
+   /media/Data/WORK/zedboard/cf_ad9467_vc707/SDK/SDK_Workspace/bsp/system.mss
+   line 63 - deprecated driver!
+WARNING:EDK:411 - bram -
+   /media/Data/WORK/zedboard/cf_ad9467_vc707/SDK/SDK_Workspace/bsp/system.mss
+   line 69 - deprecated driver!
+WARNING:EDK:411 - bram -
+   /media/Data/WORK/zedboard/cf_ad9467_vc707/SDK/SDK_Workspace/bsp/system.mss
+   line 75 - deprecated driver!
+WARNING:EDK:411 - uartlite -
+   /media/Data/WORK/zedboard/cf_ad9467_vc707/SDK/SDK_Workspace/bsp/system.mss
+   line 81 - deprecated driver!
+WARNING:EDK:411 - cpu -
+   /media/Data/WORK/zedboard/cf_ad9467_vc707/SDK/SDK_Workspace/bsp/system.mss
+   line 14 - deprecated processor!
+WARNING:EDK:411 - standalone -
+   /media/Data/WORK/zedboard/cf_ad9467_vc707/SDK/SDK_Workspace/bsp/system.mss
+   line 5 - deprecated os!
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+/bin/bash: gmake: command not found
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-multiply-high
+-mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.40.b  -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"'.
+/bin/bash: gmake: command not found
+/bin/bash: gmake: command not found
+/bin/bash: gmake: command not found
+/bin/bash: gmake: command not found
+/bin/bash: gmake: command not found
+/bin/bash: gmake: command not found
+/bin/bash: gmake: command not found
+/bin/bash: gmake: command not found
+/bin/bash: gmake: command not found
+ERROR:EDK:368 -  make failed for target "include" 
+ERROR:EDK:3418 - Error(s) while running make.
+make: *** [microblaze_0/lib/libxil.a] Error 2
+make: Target `all' not remade because of errors.
+
+11:23:52 Build Finished (took 5s.222ms)
+

@@ -71,7 +71,7 @@ begin
       C_PORT_DWIDTH => 32,
       C_PORT_AWIDTH => 32,
       C_NUM_WE => 4,
-      C_FAMILY => "virtex7"
+      C_FAMILY => "artix7"
     )
     port map (
       BRAM_Rst_A => BRAM_Rst_A,

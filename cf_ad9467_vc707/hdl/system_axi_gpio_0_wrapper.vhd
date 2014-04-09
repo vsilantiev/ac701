@@ -97,7 +97,7 @@ begin
 
   axi_gpio_0 : axi_gpio
     generic map (
-      C_FAMILY => "virtex7",
+      C_FAMILY => "artix7",
       C_INSTANCE => "axi_gpio_0",
       C_S_AXI_DATA_WIDTH => 32,
       C_GPIO_WIDTH => 7,

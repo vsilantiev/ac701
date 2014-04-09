@@ -40,7 +40,6 @@ entity system is
     spi_cs1n : out std_logic;
     spi_clk : out std_logic;
     spi_sdio : inout std_logic;
-    up_status : out std_logic_vector(7 downto 0);
     lcd : inout std_logic_vector(6 downto 0)
   );
 end system;
@@ -2270,11 +2269,11 @@ architecture STRUCTURE of system is
       spi_cs0n : out std_logic;
       spi_cs1n : out std_logic;
       spi_clk : out std_logic;
+      debug_data : out std_logic_vector(63 downto 0);
+      debug_trigger : out std_logic_vector(7 downto 0);
       spi_sdio_I : in std_logic;
       spi_sdio_O : out std_logic;
-      spi_sdio_T : out std_logic;
-      debug_data : out std_logic_vector(63 downto 0);
-      debug_trigger : out std_logic_vector(7 downto 0)
+      spi_sdio_T : out std_logic
     );
   end component;
 
@@ -4679,7 +4678,7 @@ begin
       adc_data_or_p => adc_data_or_p,
       adc_data_or_n => adc_data_or_n,
       delay_clk => clk_200_0000MHzPLLE0,
-      up_status => up_status,
+      up_status => open,
       dma_dbg_data => open,
       dma_dbg_trigger => open,
       adc_clk => adc_clk,
@@ -4870,11 +4869,11 @@ begin
       spi_cs0n => spi_cs0n,
       spi_cs1n => spi_cs1n,
       spi_clk => spi_clk,
+      debug_data => open,
+      debug_trigger => open,
       spi_sdio_I => spi_sdio_I,
       spi_sdio_O => spi_sdio_O,
-      spi_sdio_T => spi_sdio_T,
-      debug_data => open,
-      debug_trigger => open
+      spi_sdio_T => spi_sdio_T
     );
 
   axi_gpio_0 : system_axi_gpio_0_wrapper

@@ -49,7 +49,7 @@
 //   ____  ____
 //  /   /\/   /
 // /___/  \  /   Vendor             : Xilinx
-// \   \   \/    Version            : 1.8
+// \   \   \/    Version            : 1.9
 //  \   \        Application        : MIG
 //  /   /        Filename           : DDR3_SDRAM.veo
 // /___/   /\    Date Last Modified : $Date: 2011/06/02 08:34:47 $

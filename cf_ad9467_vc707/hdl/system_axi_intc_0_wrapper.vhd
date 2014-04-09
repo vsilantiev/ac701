@@ -107,7 +107,7 @@ begin
 
   axi_intc_0 : axi_intc
     generic map (
-      C_FAMILY => "virtex7",
+      C_FAMILY => "artix7",
       C_INSTANCE => "axi_intc_0",
       C_S_AXI_ADDR_WIDTH => 9,
       C_S_AXI_DATA_WIDTH => 32,

@@ -84,7 +84,7 @@ begin
 
   RS232_Uart_1 : axi_uartlite
     generic map (
-      C_FAMILY => "virtex7",
+      C_FAMILY => "artix7",
       C_INSTANCE => "RS232_Uart_1",
       C_S_AXI_ACLK_FREQ_HZ => 100000000,
       C_S_AXI_DATA_WIDTH => 32,

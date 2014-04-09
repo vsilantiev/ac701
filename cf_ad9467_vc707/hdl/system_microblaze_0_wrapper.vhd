@@ -1475,7 +1475,7 @@ begin
       C_FREQ => 100000000,
       C_DATA_SIZE => 32,
       C_DYNAMIC_BUS_SIZING => 1,
-      C_FAMILY => "virtex7",
+      C_FAMILY => "artix7",
       C_INSTANCE => "microblaze_0",
       C_AVOID_PRIMITIVES => 0,
       C_FAULT_TOLERANT => 0,

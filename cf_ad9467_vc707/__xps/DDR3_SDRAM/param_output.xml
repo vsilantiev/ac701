@@ -435,7 +435,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter>
         <spirit:name>C_MEM_DENSITY</spirit:name>
-        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_MEM_DENSITY"> 1GB </spirit:value>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_MEM_DENSITY"> 1Gb </spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter>
         <spirit:name>C_MEM_DEVICE_WIDTH</spirit:name>
@@ -574,6 +574,10 @@
         <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_SYSCLK_TYPE"> NO_BUFFER </spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter>
+        <spirit:name>C_SYS_RST_PORT</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_SYS_RST_PORT"> FALSE </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
         <spirit:name>C_S_AXI_ADDR_WIDTH</spirit:name>
         <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_S_AXI_ADDR_WIDTH"> 32 </spirit:value>
       </spirit:modelParameter>
@@ -656,6 +660,10 @@
       <spirit:modelParameter>
         <spirit:name>C_TZQI</spirit:name>
         <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_TZQI"> 128_000_000 </spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_UI_EXTRA_CLOCKS</spirit:name>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_UI_EXTRA_CLOCKS"> FALSE </spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter>
         <spirit:name>C_USER_REFRESH</spirit:name>

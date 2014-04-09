@@ -1,7 +1,7 @@
 # Output products list for <chipscope_icon_0>
 chipscope_icon_0.asy
-chipscope_icon_0.constraints/chipscope_icon_0.ucf
-chipscope_icon_0.constraints/chipscope_icon_0.xdc
+chipscope_icon_0.constraints\chipscope_icon_0.ucf
+chipscope_icon_0.constraints\chipscope_icon_0.xdc
 chipscope_icon_0.gise
 chipscope_icon_0.ngc
 chipscope_icon_0.ucf

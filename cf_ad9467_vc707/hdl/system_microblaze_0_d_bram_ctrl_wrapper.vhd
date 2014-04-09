@@ -297,7 +297,7 @@ begin
     generic map (
       C_BASEADDR => X"00000000",
       C_HIGHADDR => X"00007fff",
-      C_FAMILY => "virtex7",
+      C_FAMILY => "artix7",
       C_MASK => X"40000000",
       C_MASK1 => X"00800000",
       C_MASK2 => X"00800000",

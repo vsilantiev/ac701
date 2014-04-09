@@ -1,0 +1,21 @@
+15:27:55.499 INFO  - Processing command line option -hwspec D:\WORK\zedboard\cf_ad9467_vc707\SDK\SDK_Export\hw\system.xml. 
+15:32:32.802 INFO  - FPGA configured successfully with bitstream "D:/WORK/zedboard/cf_ad9467_vc707/SDK/SDK_Export/cf_ad9467_vc707_hw_platform/download.bit" 
+15:34:22.768 INFO  - FPGA configured successfully with bitstream "D:/WORK/zedboard/cf_ad9467_vc707/SDK/SDK_Export/cf_ad9467_vc707_hw_platform/download.bit" 
+15:53:04.397 INFO  - FPGA configured successfully with bitstream "D:/WORK/zedboard/cf_ad9467_vc707/SDK/SDK_Export/cf_ad9467_vc707_hw_platform/download.bit" 
+15:54:05.667 INFO  - FPGA configured successfully with bitstream "D:/WORK/zedboard/cf_ad9467_vc707/SDK/SDK_Export/cf_ad9467_vc707_hw_platform/download.bit" 
+15:55:41.192 INFO  - FPGA configured successfully with bitstream "D:/WORK/zedboard/cf_ad9467_vc707/SDK/SDK_Export/cf_ad9467_vc707_hw_platform/download.bit" 
+13:50:14.818 INFO  - Processing command line option -hwspec D:\WORK\zedboard\cf_ad9467_vc707\SDK\SDK_Export\hw\system.xml. 
+13:50:34.165 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+13:51:15.464 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+13:52:06.832 INFO  - FPGA configured successfully with bitstream "D:/WORK/zedboard/cf_ad9467_vc707/SDK/SDK_Export/cf_ad9467_vc707_hw_platform/download.bit" 
+14:11:06.078 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

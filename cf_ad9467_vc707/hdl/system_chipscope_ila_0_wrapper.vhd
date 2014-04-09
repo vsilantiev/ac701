@@ -148,10 +148,10 @@ begin
 
   chipscope_ila_0 : chipscope_ila
     generic map (
-      C_FAMILY => "virtex7",
-      C_DEVICE => "7vx485t",
-      C_PACKAGE => "ffg1761",
-      C_SPEEDGRADE => "-2",
+      C_FAMILY => "artix7",
+      C_DEVICE => "7a200t",
+      C_PACKAGE => "fbg676",
+      C_SPEEDGRADE => "-3",
       C_NUM_DATA_SAMPLES => 1024,
       C_DATA_SAME_AS_TRIGGER => 0,
       C_DATA_IN_WIDTH => 16,

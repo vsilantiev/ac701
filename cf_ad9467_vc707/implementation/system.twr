@@ -1,0 +1,2116 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -e 3 -xml system.twx
+system.ncd system.pcf
+
+Design file:              system.ncd
+Physical constraint file: system.pcf
+Device,package,speed:     xc7a200t,fbg676,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2802 - Read 107 constraints.  If you are experiencing memory or 
+   runtime issues it may help to consolidate some of these constraints.  For 
+   more details please do a search for "timing:2802" at 
+   http://www.xilinx.com/support.
+INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more 
+   information, see the TSI report.  Please consult the Xilinx Command Line 
+   Tools User Guide for information on generating a TSI report.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: PATH "TS_sync_axi_intc_0_path" TIG;
+
+ 3 paths analyzed, 2 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_intr_sync_p1_axi_intc_0_path" TIG;
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_ISERDES_CLOCK = PERIOD TIMEGRP "TNM_ISERDES_CLK" 2.5 ns 
+HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_MULTICYCLEPATH = MAXDELAY FROM TIMEGRP "TNM_SOURCE_IDLE" 
+TO TIMEGRP         "TNM_DEST_ISERDES" TS_ISERDES_CLOCK * 6;
+For more information, see From:To (Multicycle) Analysis in the Timing Closure User Guide (UG612).
+
+ 128 paths analyzed, 64 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Maximum delay is   6.726ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_MULTICYCLEPATH_DEVICE_TEMP_SYNC = MAXDELAY TO TIMEGRP     
+    "TNM_MULTICYCLEPATH_DEVICE_TEMP_SYNC" 20 ns DATAPATHONLY;
+For more information, see From:To (Multicycle) Analysis in the Timing Closure User Guide (UG612).
+
+ 36 paths analyzed, 24 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Maximum delay is   2.424ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_TIG_DDR3_SDRAM_IODELAY_CTRL_RDY_O_SYNCH_path" TIG;
+
+ 3 paths analyzed, 2 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_TIG_DDR3_SDRAM_IODELAY_CTRL_RST_SYNCH_path" TIG;
+
+ 3 paths analyzed, 2 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_TIG_microblaze_0_Reset_path" TIG;
+
+ 3 paths analyzed, 3 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_TIG_microblaze_0_Interrupt_path" TIG;
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_axi4_0_reset_resync_path" TIG;
+
+ 33 paths analyzed, 24 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_axi4lite_0_reset_resync_path" TIG;
+
+ 11 paths analyzed, 8 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_TIG_microblaze_0_dlmb_POR_FF_I_path" TIG;
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_TIG_microblaze_0_ilmb_POR_FF_I_path" TIG;
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_axi_dma_0_S2MM_AXIS_S2P = MAXDELAY FROM TIMEGRP 
+"s_axi_lite_aclk" TO         TIMEGRP "m_axi_s2mm_aclk" 5 ns DATAPATHONLY;
+For more information, see From:To (Multicycle) Analysis in the Timing Closure User Guide (UG612).
+
+ 47 paths analyzed, 38 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Maximum delay is   3.546ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_axi_dma_0_S2MM_AXIS_P2S = MAXDELAY FROM TIMEGRP 
+"m_axi_s2mm_aclk" TO         TIMEGRP "s_axi_lite_aclk" 10 ns DATAPATHONLY;
+For more information, see From:To (Multicycle) Analysis in the Timing Closure User Guide (UG612).
+
+ 1226 paths analyzed, 1218 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Maximum delay is   2.668ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_CLK_P = PERIOD TIMEGRP "CLK_P" 200 MHz HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   2.800ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_CLK_N = PERIOD TIMEGRP "CLK_N" 200 MHz HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   2.800ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_adc_clk_in_p = PERIOD TIMEGRP "adc_clk_in_p" 300 MHz HIGH 
+50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.962ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_adc_clk_in_n = PERIOD TIMEGRP "adc_clk_in_n" 300 MHz HIGH 
+50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 2584 paths analyzed, 1232 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.239ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clk_25_0000MHz10PLLE0_nobuf = PERIOD TIMEGRP 
+"clk_25_0000MHz10PLLE0_nobuf"         TS_CLK_P * 0.125 PHASE 1.09375 ns HIGH 
+6.25%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   7.504ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clk_400_0000MHzPLLE0_nobuf = PERIOD TIMEGRP 
+"clk_400_0000MHzPLLE0_nobuf"         TS_CLK_P * 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.107ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clock_generator_0_clock_generator_0_SIG_PLLE0_CLKOUT3 = 
+PERIOD TIMEGRP         "clock_generator_0_clock_generator_0_SIG_PLLE0_CLKOUT3" 
+TS_CLK_P * 0.5         HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   4.000ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clk_400_0000MHz337PLLE0_nobuf = PERIOD TIMEGRP         
+"clk_400_0000MHz337PLLE0_nobuf" TS_CLK_P * 2 PHASE 2.34375 ns HIGH         50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   0.938ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clk_25_0000MHz10PLLE0_nobuf_0 = PERIOD TIMEGRP         
+"clk_25_0000MHz10PLLE0_nobuf_0" TS_CLK_N * 0.125 PHASE 1.09375 ns HIGH         
+6.25%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   7.504ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clk_400_0000MHzPLLE0_nobuf_0 = PERIOD TIMEGRP         
+"clk_400_0000MHzPLLE0_nobuf_0" TS_CLK_N * 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 3 paths analyzed, 3 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   1.107ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clock_generator_0_clock_generator_0_SIG_PLLE0_CLKOUT3_0 = 
+PERIOD TIMEGRP         
+"clock_generator_0_clock_generator_0_SIG_PLLE0_CLKOUT3_0" TS_CLK_N *         
+0.5 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   4.000ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clk_400_0000MHz337PLLE0_nobuf_0 = PERIOD TIMEGRP         
+"clk_400_0000MHz337PLLE0_nobuf_0" TS_CLK_N * 2 PHASE 2.34375 ns HIGH         
+50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   0.938ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_1_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_
+lane_B_oserdes_clkdiv         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_1_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_la
+ne_B_oserdes_clkdiv"         TS_clk_400_0000MHzPLLE0_nobuf / 4 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_1_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_
+lane_B_oserdes_clk         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_1_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_la
+ne_B_oserdes_clk"         TS_clk_400_0000MHzPLLE0_nobuf HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_1_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_
+lane_C_oserdes_clkdiv         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_1_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_la
+ne_C_oserdes_clkdiv"         TS_clk_400_0000MHzPLLE0_nobuf / 4 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_1_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_
+lane_C_oserdes_clk         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_1_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_la
+ne_C_oserdes_clk"         TS_clk_400_0000MHzPLLE0_nobuf HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_1_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_
+lane_D_oserdes_clkdiv         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_1_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_la
+ne_D_oserdes_clkdiv"         TS_clk_400_0000MHzPLLE0_nobuf / 4 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_1_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_
+lane_D_oserdes_clk         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_1_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_la
+ne_D_oserdes_clk"         TS_clk_400_0000MHzPLLE0_nobuf HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_
+lane_D_oserdes_clkdiv         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_la
+ne_D_oserdes_clkdiv"         TS_clk_400_0000MHzPLLE0_nobuf / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_
+lane_D_oserdes_clk         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_la
+ne_D_oserdes_clk"         TS_clk_400_0000MHzPLLE0_nobuf HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_
+lane_D_oserdes_clkdiv         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_la
+ne_D_oserdes_clkdiv"         TS_clk_400_0000MHzPLLE0_nobuf / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_
+lane_D_oserdes_clk         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_la
+ne_D_oserdes_clk"         TS_clk_400_0000MHzPLLE0_nobuf HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_
+lane_C_oserdes_clkdiv         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_la
+ne_C_oserdes_clkdiv"         TS_clk_400_0000MHzPLLE0_nobuf / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_
+lane_C_oserdes_clk         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_la
+ne_C_oserdes_clk"         TS_clk_400_0000MHzPLLE0_nobuf HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_
+lane_C_oserdes_clkdiv         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_la
+ne_C_oserdes_clkdiv"         TS_clk_400_0000MHzPLLE0_nobuf / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_
+lane_C_oserdes_clk         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_la
+ne_C_oserdes_clk"         TS_clk_400_0000MHzPLLE0_nobuf HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_
+lane_B_oserdes_clkdiv         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_la
+ne_B_oserdes_clkdiv"         TS_clk_400_0000MHzPLLE0_nobuf / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_
+lane_B_oserdes_clk         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_la
+ne_B_oserdes_clk"         TS_clk_400_0000MHzPLLE0_nobuf HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_
+lane_B_oserdes_clkdiv         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_la
+ne_B_oserdes_clkdiv"         TS_clk_400_0000MHzPLLE0_nobuf / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_
+lane_B_oserdes_clk         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_la
+ne_B_oserdes_clk"         TS_clk_400_0000MHzPLLE0_nobuf HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_A_ddr_byte_
+lane_A_oserdes_clkdiv         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_A_ddr_byte_la
+ne_A_oserdes_clkdiv"         TS_clk_400_0000MHzPLLE0_nobuf / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_A_ddr_byte_
+lane_A_oserdes_clk         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_A_ddr_byte_la
+ne_A_oserdes_clk"         TS_clk_400_0000MHzPLLE0_nobuf HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_A_ddr_byte_
+lane_A_oserdes_clkdiv         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_A_ddr_byte_la
+ne_A_oserdes_clkdiv"         TS_clk_400_0000MHzPLLE0_nobuf / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_A_ddr_byte_
+lane_A_oserdes_clk         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_A_ddr_byte_la
+ne_A_oserdes_clk"         TS_clk_400_0000MHzPLLE0_nobuf HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clock_generator_0_clock_generator_0_SIG_MMCM0_CLKOUT0 = 
+PERIOD TIMEGRP         "clock_generator_0_clock_generator_0_SIG_MMCM0_CLKOUT0"  
+       TS_clock_generator_0_clock_generator_0_SIG_PLLE0_CLKOUT3 * 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   3.225ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clock_generator_0_clock_generator_0_SIG_MMCM0_CLKFBOUT = 
+PERIOD TIMEGRP         "clock_generator_0_clock_generator_0_SIG_MMCM0_CLKFBOUT" 
+        TS_clock_generator_0_clock_generator_0_SIG_PLLE0_CLKOUT3 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   4.000ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_
+lane_C_iserdes_clk         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_la
+ne_C_iserdes_clk"         TS_clk_400_0000MHz337PLLE0_nobuf HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_
+lane_C_iserdes_clkdiv         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_la
+ne_C_iserdes_clkdiv"         TS_clk_400_0000MHz337PLLE0_nobuf / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_
+lane_D_iserdes_clkdiv         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_la
+ne_D_iserdes_clkdiv"         TS_clk_400_0000MHz337PLLE0_nobuf / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_
+lane_D_iserdes_clk         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_la
+ne_D_iserdes_clk"         TS_clk_400_0000MHz337PLLE0_nobuf HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_
+lane_D_iserdes_clkdiv         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_la
+ne_D_iserdes_clkdiv"         TS_clk_400_0000MHz337PLLE0_nobuf / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_
+lane_D_iserdes_clk         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_la
+ne_D_iserdes_clk"         TS_clk_400_0000MHz337PLLE0_nobuf HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_
+lane_C_iserdes_clkdiv         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_la
+ne_C_iserdes_clkdiv"         TS_clk_400_0000MHz337PLLE0_nobuf / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_
+lane_C_iserdes_clk         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_la
+ne_C_iserdes_clk"         TS_clk_400_0000MHz337PLLE0_nobuf HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_
+lane_B_iserdes_clkdiv         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_la
+ne_B_iserdes_clkdiv"         TS_clk_400_0000MHz337PLLE0_nobuf / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_
+lane_B_iserdes_clk         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_la
+ne_B_iserdes_clk"         TS_clk_400_0000MHz337PLLE0_nobuf HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_
+lane_B_iserdes_clkdiv         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_la
+ne_B_iserdes_clkdiv"         TS_clk_400_0000MHz337PLLE0_nobuf / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_
+lane_B_iserdes_clk         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_la
+ne_B_iserdes_clk"         TS_clk_400_0000MHz337PLLE0_nobuf HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_A_ddr_byte_
+lane_A_iserdes_clkdiv         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_A_ddr_byte_la
+ne_A_iserdes_clkdiv"         TS_clk_400_0000MHz337PLLE0_nobuf / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_A_ddr_byte_
+lane_A_iserdes_clk         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_A_ddr_byte_la
+ne_A_iserdes_clk"         TS_clk_400_0000MHz337PLLE0_nobuf HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_A_ddr_byte_
+lane_A_iserdes_clkdiv         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_A_ddr_byte_la
+ne_A_iserdes_clkdiv"         TS_clk_400_0000MHz337PLLE0_nobuf / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_A_ddr_byte_
+lane_A_iserdes_clk         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_A_ddr_byte_la
+ne_A_iserdes_clk"         TS_clk_400_0000MHz337PLLE0_nobuf HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_1_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_
+lane_B_oserdes_clkdiv_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_1_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_la
+ne_B_oserdes_clkdiv_0"         TS_clk_400_0000MHzPLLE0_nobuf_0 / 4 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 24 paths analyzed, 24 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_1_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_
+lane_B_oserdes_clk_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_1_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_la
+ne_B_oserdes_clk_0"         TS_clk_400_0000MHzPLLE0_nobuf_0 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_1_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_
+lane_C_oserdes_clkdiv_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_1_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_la
+ne_C_oserdes_clkdiv_0"         TS_clk_400_0000MHzPLLE0_nobuf_0 / 4 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 24 paths analyzed, 24 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_1_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_
+lane_C_oserdes_clk_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_1_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_la
+ne_C_oserdes_clk_0"         TS_clk_400_0000MHzPLLE0_nobuf_0 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_1_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_
+lane_D_oserdes_clkdiv_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_1_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_la
+ne_D_oserdes_clkdiv_0"         TS_clk_400_0000MHzPLLE0_nobuf_0 / 4 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 44 paths analyzed, 44 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_1_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_
+lane_D_oserdes_clk_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_1_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_la
+ne_D_oserdes_clk_0"         TS_clk_400_0000MHzPLLE0_nobuf_0 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_
+lane_D_oserdes_clkdiv_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_la
+ne_D_oserdes_clkdiv_0"         TS_clk_400_0000MHzPLLE0_nobuf_0 / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 36 paths analyzed, 36 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_
+lane_D_oserdes_clk_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_la
+ne_D_oserdes_clk_0"         TS_clk_400_0000MHzPLLE0_nobuf_0 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_
+lane_D_oserdes_clkdiv_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_la
+ne_D_oserdes_clkdiv_0"         TS_clk_400_0000MHzPLLE0_nobuf_0 / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 36 paths analyzed, 36 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_
+lane_D_oserdes_clk_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_la
+ne_D_oserdes_clk_0"         TS_clk_400_0000MHzPLLE0_nobuf_0 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_
+lane_C_oserdes_clkdiv_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_la
+ne_C_oserdes_clkdiv_0"         TS_clk_400_0000MHzPLLE0_nobuf_0 / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 36 paths analyzed, 36 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_
+lane_C_oserdes_clk_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_la
+ne_C_oserdes_clk_0"         TS_clk_400_0000MHzPLLE0_nobuf_0 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_
+lane_C_oserdes_clkdiv_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_la
+ne_C_oserdes_clkdiv_0"         TS_clk_400_0000MHzPLLE0_nobuf_0 / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 36 paths analyzed, 36 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_
+lane_C_oserdes_clk_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_la
+ne_C_oserdes_clk_0"         TS_clk_400_0000MHzPLLE0_nobuf_0 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_
+lane_B_oserdes_clkdiv_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_la
+ne_B_oserdes_clkdiv_0"         TS_clk_400_0000MHzPLLE0_nobuf_0 / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 36 paths analyzed, 36 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_
+lane_B_oserdes_clk_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_la
+ne_B_oserdes_clk_0"         TS_clk_400_0000MHzPLLE0_nobuf_0 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_
+lane_B_oserdes_clkdiv_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_la
+ne_B_oserdes_clkdiv_0"         TS_clk_400_0000MHzPLLE0_nobuf_0 / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 36 paths analyzed, 36 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_
+lane_B_oserdes_clk_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_la
+ne_B_oserdes_clk_0"         TS_clk_400_0000MHzPLLE0_nobuf_0 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_A_ddr_byte_
+lane_A_oserdes_clkdiv_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_A_ddr_byte_la
+ne_A_oserdes_clkdiv_0"         TS_clk_400_0000MHzPLLE0_nobuf_0 / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 36 paths analyzed, 36 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_A_ddr_byte_
+lane_A_oserdes_clk_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_A_ddr_byte_la
+ne_A_oserdes_clk_0"         TS_clk_400_0000MHzPLLE0_nobuf_0 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_A_ddr_byte_
+lane_A_oserdes_clkdiv_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_A_ddr_byte_la
+ne_A_oserdes_clkdiv_0"         TS_clk_400_0000MHzPLLE0_nobuf_0 / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 36 paths analyzed, 36 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_A_ddr_byte_
+lane_A_oserdes_clk_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_A_ddr_byte_la
+ne_A_oserdes_clk_0"         TS_clk_400_0000MHzPLLE0_nobuf_0 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clock_generator_0_clock_generator_0_SIG_MMCM0_CLKOUT0_0 = 
+PERIOD TIMEGRP         
+"clock_generator_0_clock_generator_0_SIG_MMCM0_CLKOUT0_0"         
+TS_clock_generator_0_clock_generator_0_SIG_PLLE0_CLKOUT3_0 * 2 HIGH         
+50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 295850 paths analyzed, 17267 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   4.949ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clock_generator_0_clock_generator_0_SIG_MMCM0_CLKFBOUT_0 
+= PERIOD TIMEGRP         
+"clock_generator_0_clock_generator_0_SIG_MMCM0_CLKFBOUT_0"         
+TS_clock_generator_0_clock_generator_0_SIG_PLLE0_CLKOUT3_0 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 6743852 paths analyzed, 122345 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   9.895ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_
+lane_C_iserdes_clk_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_la
+ne_C_iserdes_clk_0"         TS_clk_400_0000MHz337PLLE0_nobuf_0 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_
+lane_C_iserdes_clkdiv_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_la
+ne_C_iserdes_clkdiv_0"         TS_clk_400_0000MHz337PLLE0_nobuf_0 / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 32 paths analyzed, 32 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_
+lane_D_iserdes_clkdiv_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_la
+ne_D_iserdes_clkdiv_0"         TS_clk_400_0000MHz337PLLE0_nobuf_0 / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 32 paths analyzed, 32 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_
+lane_D_iserdes_clk_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_la
+ne_D_iserdes_clk_0"         TS_clk_400_0000MHz337PLLE0_nobuf_0 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_
+lane_D_iserdes_clkdiv_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_la
+ne_D_iserdes_clkdiv_0"         TS_clk_400_0000MHz337PLLE0_nobuf_0 / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 32 paths analyzed, 32 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_
+lane_D_iserdes_clk_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_D_ddr_byte_la
+ne_D_iserdes_clk_0"         TS_clk_400_0000MHz337PLLE0_nobuf_0 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_
+lane_C_iserdes_clkdiv_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_la
+ne_C_iserdes_clkdiv_0"         TS_clk_400_0000MHz337PLLE0_nobuf_0 / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 32 paths analyzed, 32 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_
+lane_C_iserdes_clk_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_C_ddr_byte_la
+ne_C_iserdes_clk_0"         TS_clk_400_0000MHz337PLLE0_nobuf_0 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_
+lane_B_iserdes_clkdiv_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_la
+ne_B_iserdes_clkdiv_0"         TS_clk_400_0000MHz337PLLE0_nobuf_0 / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 32 paths analyzed, 32 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_
+lane_B_iserdes_clk_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_la
+ne_B_iserdes_clk_0"         TS_clk_400_0000MHz337PLLE0_nobuf_0 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_
+lane_B_iserdes_clkdiv_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_la
+ne_B_iserdes_clkdiv_0"         TS_clk_400_0000MHz337PLLE0_nobuf_0 / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 32 paths analyzed, 32 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_
+lane_B_iserdes_clk_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_B_ddr_byte_la
+ne_B_iserdes_clk_0"         TS_clk_400_0000MHz337PLLE0_nobuf_0 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_A_ddr_byte_
+lane_A_iserdes_clkdiv_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_A_ddr_byte_la
+ne_A_iserdes_clkdiv_0"         TS_clk_400_0000MHz337PLLE0_nobuf_0 / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 32 paths analyzed, 32 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_A_ddr_byte_
+lane_A_iserdes_clk_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_2_u_ddr_phy_4lanes_ddr_byte_lane_A_ddr_byte_la
+ne_A_iserdes_clk_0"         TS_clk_400_0000MHz337PLLE0_nobuf_0 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_A_ddr_byte_
+lane_A_iserdes_clkdiv_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_A_ddr_byte_la
+ne_A_iserdes_clkdiv_0"         TS_clk_400_0000MHz337PLLE0_nobuf_0 / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 32 paths analyzed, 32 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.750ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_
+wrapper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_A_ddr_byte_
+lane_A_iserdes_clk_0         = PERIOD TIMEGRP         
+"DDR3_SDRAM_DDR3_SDRAM_u_memc_ui_top_axi_mem_intfc0_ddr_phy_top0_u_ddr_mc_phy_wr
+apper_u_ddr_mc_phy_ddr_phy_4lanes_0_u_ddr_phy_4lanes_ddr_byte_lane_A_ddr_byte_la
+ne_A_iserdes_clk_0"         TS_clk_400_0000MHz337PLLE0_nobuf_0 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.471ns.
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_ISERDES_CLOCK
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_ISERDES_CLOCK               |      2.500ns|      1.471ns|      1.121ns|            0|            0|            0|          128|
+| TS_MULTICYCLEPATH             |     15.000ns|      6.726ns|          N/A|            0|            0|          128|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+Derived Constraints for TS_CLK_P
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_CLK_P                       |      5.000ns|      2.800ns|      3.750ns|            0|            0|            0|            0|
+| TS_clk_25_0000MHz10PLLE0_nobuf|     40.000ns|      7.504ns|          N/A|            0|            0|            0|            0|
+| TS_clk_400_0000MHzPLLE0_nobuf |      2.500ns|      1.107ns|      1.875ns|            0|            0|            0|            0|
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|     10.000ns|      3.750ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  1_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_B_ddr_byte_lane_B_oserdes|             |             |             |             |             |             |             |
+|  _clkdiv                      |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  1_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_B_ddr_byte_lane_B_oserdes|             |             |             |             |             |             |             |
+|  _clk                         |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|     10.000ns|      3.750ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  1_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_C_ddr_byte_lane_C_oserdes|             |             |             |             |             |             |             |
+|  _clkdiv                      |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  1_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_C_ddr_byte_lane_C_oserdes|             |             |             |             |             |             |             |
+|  _clk                         |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|     10.000ns|      3.750ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  1_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_D_ddr_byte_lane_D_oserdes|             |             |             |             |             |             |             |
+|  _clkdiv                      |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  1_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_D_ddr_byte_lane_D_oserdes|             |             |             |             |             |             |             |
+|  _clk                         |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      5.000ns|      3.750ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  2_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_D_ddr_byte_lane_D_oserdes|             |             |             |             |             |             |             |
+|  _clkdiv                      |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  2_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_D_ddr_byte_lane_D_oserdes|             |             |             |             |             |             |             |
+|  _clk                         |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      5.000ns|      3.750ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  0_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_D_ddr_byte_lane_D_oserdes|             |             |             |             |             |             |             |
+|  _clkdiv                      |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  0_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_D_ddr_byte_lane_D_oserdes|             |             |             |             |             |             |             |
+|  _clk                         |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      5.000ns|      3.750ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  2_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_C_ddr_byte_lane_C_oserdes|             |             |             |             |             |             |             |
+|  _clkdiv                      |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  2_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_C_ddr_byte_lane_C_oserdes|             |             |             |             |             |             |             |
+|  _clk                         |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      5.000ns|      3.750ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  0_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_C_ddr_byte_lane_C_oserdes|             |             |             |             |             |             |             |
+|  _clkdiv                      |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  0_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_C_ddr_byte_lane_C_oserdes|             |             |             |             |             |             |             |
+|  _clk                         |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      5.000ns|      3.750ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  2_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_B_ddr_byte_lane_B_oserdes|             |             |             |             |             |             |             |
+|  _clkdiv                      |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  2_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_B_ddr_byte_lane_B_oserdes|             |             |             |             |             |             |             |
+|  _clk                         |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      5.000ns|      3.750ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  0_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_B_ddr_byte_lane_B_oserdes|             |             |             |             |             |             |             |
+|  _clkdiv                      |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  0_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_B_ddr_byte_lane_B_oserdes|             |             |             |             |             |             |             |
+|  _clk                         |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      5.000ns|      3.750ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  2_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_A_ddr_byte_lane_A_oserdes|             |             |             |             |             |             |             |
+|  _clkdiv                      |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  2_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_A_ddr_byte_lane_A_oserdes|             |             |             |             |             |             |             |
+|  _clk                         |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      5.000ns|      3.750ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  0_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_A_ddr_byte_lane_A_oserdes|             |             |             |             |             |             |             |
+|  _clkdiv                      |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  0_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_A_ddr_byte_lane_A_oserdes|             |             |             |             |             |             |             |
+|  _clk                         |             |             |             |             |             |             |             |
+| TS_clock_generator_0_clock_gen|     10.000ns|      4.000ns|      6.450ns|            0|            0|            0|            0|
+| erator_0_SIG_PLLE0_CLKOUT3    |             |             |             |             |             |             |             |
+|  TS_clock_generator_0_clock_ge|      5.000ns|      3.225ns|          N/A|            0|            0|            0|            0|
+|  nerator_0_SIG_MMCM0_CLKOUT0  |             |             |             |             |             |             |             |
+|  TS_clock_generator_0_clock_ge|     10.000ns|      4.000ns|          N/A|            0|            0|            0|            0|
+|  nerator_0_SIG_MMCM0_CLKFBOUT |             |             |             |             |             |             |             |
+| TS_clk_400_0000MHz337PLLE0_nob|      2.500ns|      0.938ns|      1.875ns|            0|            0|            0|            0|
+| uf                            |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  0_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_C_ddr_byte_lane_C_iserdes|             |             |             |             |             |             |             |
+|  _clk                         |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      5.000ns|      3.750ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  0_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_C_ddr_byte_lane_C_iserdes|             |             |             |             |             |             |             |
+|  _clkdiv                      |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      5.000ns|      3.750ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  2_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_D_ddr_byte_lane_D_iserdes|             |             |             |             |             |             |             |
+|  _clkdiv                      |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  2_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_D_ddr_byte_lane_D_iserdes|             |             |             |             |             |             |             |
+|  _clk                         |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      5.000ns|      3.750ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  0_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_D_ddr_byte_lane_D_iserdes|             |             |             |             |             |             |             |
+|  _clkdiv                      |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  0_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_D_ddr_byte_lane_D_iserdes|             |             |             |             |             |             |             |
+|  _clk                         |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      5.000ns|      3.750ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  2_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_C_ddr_byte_lane_C_iserdes|             |             |             |             |             |             |             |
+|  _clkdiv                      |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  2_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_C_ddr_byte_lane_C_iserdes|             |             |             |             |             |             |             |
+|  _clk                         |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      5.000ns|      3.750ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  2_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_B_ddr_byte_lane_B_iserdes|             |             |             |             |             |             |             |
+|  _clkdiv                      |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  2_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_B_ddr_byte_lane_B_iserdes|             |             |             |             |             |             |             |
+|  _clk                         |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      5.000ns|      3.750ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  0_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_B_ddr_byte_lane_B_iserdes|             |             |             |             |             |             |             |
+|  _clkdiv                      |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  0_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_B_ddr_byte_lane_B_iserdes|             |             |             |             |             |             |             |
+|  _clk                         |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      5.000ns|      3.750ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  2_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_A_ddr_byte_lane_A_iserdes|             |             |             |             |             |             |             |
+|  _clkdiv                      |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  2_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_A_ddr_byte_lane_A_iserdes|             |             |             |             |             |             |             |
+|  _clk                         |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      5.000ns|      3.750ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  0_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_A_ddr_byte_lane_A_iserdes|             |             |             |             |             |             |             |
+|  _clkdiv                      |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  0_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_A_ddr_byte_lane_A_iserdes|             |             |             |             |             |             |             |
+|  _clk                         |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+Derived Constraints for TS_CLK_N
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_CLK_N                       |      5.000ns|      2.800ns|      4.949ns|            0|            0|            0|      7040341|
+| TS_clk_25_0000MHz10PLLE0_nobuf|     40.000ns|      7.504ns|          N/A|            0|            0|            0|            0|
+| _0                            |             |             |             |             |             |             |             |
+| TS_clk_400_0000MHzPLLE0_nobuf_|      2.500ns|      1.107ns|      1.875ns|            0|            0|            3|          380|
+| 0                             |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|     10.000ns|      3.750ns|          N/A|            0|            0|           24|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  1_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_B_ddr_byte_lane_B_oserdes|             |             |             |             |             |             |             |
+|  _clkdiv_0                    |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  1_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_B_ddr_byte_lane_B_oserdes|             |             |             |             |             |             |             |
+|  _clk_0                       |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|     10.000ns|      3.750ns|          N/A|            0|            0|           24|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  1_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_C_ddr_byte_lane_C_oserdes|             |             |             |             |             |             |             |
+|  _clkdiv_0                    |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  1_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_C_ddr_byte_lane_C_oserdes|             |             |             |             |             |             |             |
+|  _clk_0                       |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|     10.000ns|      3.750ns|          N/A|            0|            0|           44|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  1_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_D_ddr_byte_lane_D_oserdes|             |             |             |             |             |             |             |
+|  _clkdiv_0                    |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  1_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_D_ddr_byte_lane_D_oserdes|             |             |             |             |             |             |             |
+|  _clk_0                       |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      5.000ns|      3.750ns|          N/A|            0|            0|           36|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  2_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_D_ddr_byte_lane_D_oserdes|             |             |             |             |             |             |             |
+|  _clkdiv_0                    |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  2_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_D_ddr_byte_lane_D_oserdes|             |             |             |             |             |             |             |
+|  _clk_0                       |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      5.000ns|      3.750ns|          N/A|            0|            0|           36|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  0_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_D_ddr_byte_lane_D_oserdes|             |             |             |             |             |             |             |
+|  _clkdiv_0                    |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  0_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_D_ddr_byte_lane_D_oserdes|             |             |             |             |             |             |             |
+|  _clk_0                       |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      5.000ns|      3.750ns|          N/A|            0|            0|           36|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  2_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_C_ddr_byte_lane_C_oserdes|             |             |             |             |             |             |             |
+|  _clkdiv_0                    |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  2_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_C_ddr_byte_lane_C_oserdes|             |             |             |             |             |             |             |
+|  _clk_0                       |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      5.000ns|      3.750ns|          N/A|            0|            0|           36|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  0_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_C_ddr_byte_lane_C_oserdes|             |             |             |             |             |             |             |
+|  _clkdiv_0                    |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  0_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_C_ddr_byte_lane_C_oserdes|             |             |             |             |             |             |             |
+|  _clk_0                       |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      5.000ns|      3.750ns|          N/A|            0|            0|           36|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  2_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_B_ddr_byte_lane_B_oserdes|             |             |             |             |             |             |             |
+|  _clkdiv_0                    |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  2_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_B_ddr_byte_lane_B_oserdes|             |             |             |             |             |             |             |
+|  _clk_0                       |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      5.000ns|      3.750ns|          N/A|            0|            0|           36|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  0_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_B_ddr_byte_lane_B_oserdes|             |             |             |             |             |             |             |
+|  _clkdiv_0                    |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  0_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_B_ddr_byte_lane_B_oserdes|             |             |             |             |             |             |             |
+|  _clk_0                       |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      5.000ns|      3.750ns|          N/A|            0|            0|           36|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  2_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_A_ddr_byte_lane_A_oserdes|             |             |             |             |             |             |             |
+|  _clkdiv_0                    |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  2_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_A_ddr_byte_lane_A_oserdes|             |             |             |             |             |             |             |
+|  _clk_0                       |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      5.000ns|      3.750ns|          N/A|            0|            0|           36|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  0_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_A_ddr_byte_lane_A_oserdes|             |             |             |             |             |             |             |
+|  _clkdiv_0                    |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  0_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_A_ddr_byte_lane_A_oserdes|             |             |             |             |             |             |             |
+|  _clk_0                       |             |             |             |             |             |             |             |
+| TS_clock_generator_0_clock_gen|     10.000ns|      4.000ns|      9.898ns|            0|            0|            0|      7039702|
+| erator_0_SIG_PLLE0_CLKOUT3_0  |             |             |             |             |             |             |             |
+|  TS_clock_generator_0_clock_ge|      5.000ns|      4.949ns|          N/A|            0|            0|       295850|            0|
+|  nerator_0_SIG_MMCM0_CLKOUT0_0|             |             |             |             |             |             |             |
+|  TS_clock_generator_0_clock_ge|     10.000ns|      9.895ns|          N/A|            0|            0|      6743852|            0|
+|  nerator_0_SIG_MMCM0_CLKFBOUT_|             |             |             |             |             |             |             |
+|  0                            |             |             |             |             |             |             |             |
+| TS_clk_400_0000MHz337PLLE0_nob|      2.500ns|      0.938ns|      1.875ns|            0|            0|            0|          256|
+| uf_0                          |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  0_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_C_ddr_byte_lane_C_iserdes|             |             |             |             |             |             |             |
+|  _clk_0                       |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      5.000ns|      3.750ns|          N/A|            0|            0|           32|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  0_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_C_ddr_byte_lane_C_iserdes|             |             |             |             |             |             |             |
+|  _clkdiv_0                    |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      5.000ns|      3.750ns|          N/A|            0|            0|           32|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  2_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_D_ddr_byte_lane_D_iserdes|             |             |             |             |             |             |             |
+|  _clkdiv_0                    |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  2_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_D_ddr_byte_lane_D_iserdes|             |             |             |             |             |             |             |
+|  _clk_0                       |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      5.000ns|      3.750ns|          N/A|            0|            0|           32|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  0_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_D_ddr_byte_lane_D_iserdes|             |             |             |             |             |             |             |
+|  _clkdiv_0                    |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  0_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_D_ddr_byte_lane_D_iserdes|             |             |             |             |             |             |             |
+|  _clk_0                       |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      5.000ns|      3.750ns|          N/A|            0|            0|           32|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  2_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_C_ddr_byte_lane_C_iserdes|             |             |             |             |             |             |             |
+|  _clkdiv_0                    |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  2_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_C_ddr_byte_lane_C_iserdes|             |             |             |             |             |             |             |
+|  _clk_0                       |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      5.000ns|      3.750ns|          N/A|            0|            0|           32|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  2_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_B_ddr_byte_lane_B_iserdes|             |             |             |             |             |             |             |
+|  _clkdiv_0                    |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  2_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_B_ddr_byte_lane_B_iserdes|             |             |             |             |             |             |             |
+|  _clk_0                       |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      5.000ns|      3.750ns|          N/A|            0|            0|           32|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  0_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_B_ddr_byte_lane_B_iserdes|             |             |             |             |             |             |             |
+|  _clkdiv_0                    |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  0_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_B_ddr_byte_lane_B_iserdes|             |             |             |             |             |             |             |
+|  _clk_0                       |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      5.000ns|      3.750ns|          N/A|            0|            0|           32|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  2_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_A_ddr_byte_lane_A_iserdes|             |             |             |             |             |             |             |
+|  _clkdiv_0                    |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  2_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_A_ddr_byte_lane_A_iserdes|             |             |             |             |             |             |             |
+|  _clk_0                       |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      5.000ns|      3.750ns|          N/A|            0|            0|           32|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  0_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_A_ddr_byte_lane_A_iserdes|             |             |             |             |             |             |             |
+|  _clkdiv_0                    |             |             |             |             |             |             |             |
+|  TS_DDR3_SDRAM_DDR3_SDRAM_u_me|      2.500ns|      1.471ns|          N/A|            0|            0|            0|            0|
+|  mc_ui_top_axi_mem_intfc0_ddr_|             |             |             |             |             |             |             |
+|  phy_top0_u_ddr_mc_phy_wrapper|             |             |             |             |             |             |             |
+|  _u_ddr_mc_phy_ddr_phy_4lanes_|             |             |             |             |             |             |             |
+|  0_u_ddr_phy_4lanes_ddr_byte_l|             |             |             |             |             |             |             |
+|  ane_A_ddr_byte_lane_A_iserdes|             |             |             |             |             |             |             |
+|  _clk_0                       |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock CLK_N
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK_N          |    9.895|         |    6.726|         |
+CLK_P          |    9.895|         |    6.726|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock CLK_P
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK_N          |    9.895|         |    6.726|         |
+CLK_P          |    9.895|         |    6.726|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock adc_clk_in_n
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+adc_clk_in_n   |    3.239|         |         |         |
+adc_clk_in_p   |    3.239|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock adc_clk_in_p
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+adc_clk_in_n   |    3.239|         |         |         |
+adc_clk_in_p   |    3.239|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 7044422 paths, 0 nets, and 157695 connections
+
+Design statistics:
+   Minimum period:   9.895ns   (Maximum frequency: 101.061MHz)
+   Maximum path delay from/to any node:   6.726ns
+
+
+Analysis completed Tue Apr 08 16:32:57 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 1530 MB
+
+
+

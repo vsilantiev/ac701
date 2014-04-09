@@ -40,7 +40,6 @@ entity system_stub is
     spi_cs1n : out std_logic;
     spi_clk : out std_logic;
     spi_sdio : inout std_logic;
-    up_status : out std_logic_vector(7 downto 0);
     lcd : inout std_logic_vector(6 downto 0)
   );
 end system_stub;
@@ -80,7 +79,6 @@ architecture STRUCTURE of system_stub is
       spi_cs1n : out std_logic;
       spi_clk : out std_logic;
       spi_sdio : inout std_logic;
-      up_status : out std_logic_vector(7 downto 0);
       lcd : inout std_logic_vector(6 downto 0)
     );
   end component;
@@ -123,7 +121,6 @@ begin
       spi_cs1n => spi_cs1n,
       spi_clk => spi_clk,
       spi_sdio => spi_sdio,
-      up_status => up_status,
       lcd => lcd
     );
 

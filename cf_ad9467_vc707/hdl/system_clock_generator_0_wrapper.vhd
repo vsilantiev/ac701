@@ -89,10 +89,10 @@ begin
 
   clock_generator_0 : clock_generator
     generic map (
-      C_FAMILY => "virtex7",
-      C_DEVICE => "7vx485t",
-      C_PACKAGE => "ffg1761",
-      C_SPEEDGRADE => "-2"
+      C_FAMILY => "artix7",
+      C_DEVICE => "7a200t",
+      C_PACKAGE => "fbg676",
+      C_SPEEDGRADE => "-3"
     )
     port map (
       CLKIN => CLKIN,

@@ -1,5 +1,5 @@
-set_property LOC PLLE2_ADV_X1Y5 [get_cells PLLE0_INST/PLLE2_ADV_inst]
-set_property LOC MMCME2_ADV_X1Y5 [get_cells MMCMextra_INST/MMCM_ADV_inst]
+set_property LOC PLLE2_ADV_X1Y2 [get_cells PLLE0_INST/PLLE2_ADV_inst]
+set_property LOC MMCME2_ADV_X1Y2 [get_cells MMCMextra_INST/MMCM_ADV_inst]
 set_false_path -through [get_pins PLLE0_INST/PLLE2_ADV_inst/CLKOUT0]
 set_false_path -through [get_pins PLLE0_INST/PLLE2_ADV_inst/CLKOUT1]
 set_false_path -through [get_pins PLLE0_INST/PLLE2_ADV_inst/CLKOUT2]

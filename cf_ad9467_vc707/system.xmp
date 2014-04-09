@@ -5,10 +5,10 @@ IntStyle: default
 Flow: ise
 ModuleSearchPath: ../cf_lib/
 MHS File: system.mhs
-Architecture: virtex7
-Device: xc7vx485t
-Package: ffg1761
-SpeedGrade: -2
+Architecture: artix7
+Device: xc7a200t
+Package: fbg676
+SpeedGrade: -3
 UserCmd1: 
 UserCmd1Type: 0
 UserCmd2: 

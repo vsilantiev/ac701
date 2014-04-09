@@ -108,7 +108,7 @@ begin
 
   axi_spi_0 : axi_spi
     generic map (
-      C_FAMILY => "virtex7",
+      C_FAMILY => "artix7",
       C_BASEADDR => X"40a00000",
       C_HIGHADDR => X"40a0ffff",
       C_S_AXI_ADDR_WIDTH => 32,

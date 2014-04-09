@@ -739,7 +739,7 @@ begin
 
   debug_module : mdm
     generic map (
-      C_FAMILY => "virtex7",
+      C_FAMILY => "artix7",
       C_JTAG_CHAIN => 2,
       C_INTERCONNECT => 2,
       C_BASEADDR => X"74800000",

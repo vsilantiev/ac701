@@ -94,7 +94,7 @@ begin
 
   axi_timer_0 : axi_timer
     generic map (
-      C_FAMILY => "virtex7",
+      C_FAMILY => "artix7",
       C_INSTANCE => "axi_timer_0",
       C_COUNT_WIDTH => 32,
       C_ONE_TIMER_ONLY => 0,

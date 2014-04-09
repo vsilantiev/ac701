@@ -1,0 +1,364 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:\WORK\zedboard\cf_ad9467_vc707\synthesis\xst_temp_dir\
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_util_spi_3w_0_wrapper_xst.prj"
+Verilog Include Directory          : {"D:\WORK\zedboard\cf_ad9467_vc707\pcores\" "D:\WORK\zedboard\cf_lib\edk\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc7a200tfbg676-3
+Output File Name                   : "../implementation/system_util_spi_3w_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : system_util_spi_3w_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:/WORK/zedboard/cf_lib/edk/pcores/util_spi_3w_v1_00_a/hdl/vhdl/util_spi_3w.vhd" into library util_spi_3w_v1_00_a
+Parsing entity <util_spi_3w>.
+Parsing architecture <IMP> of entity <util_spi_3w>.
+Parsing VHDL file "D:\WORK\zedboard\cf_ad9467_vc707\hdl\system_util_spi_3w_0_wrapper.vhd" into library work
+Parsing entity <system_util_spi_3w_0_wrapper>.
+Parsing architecture <STRUCTURE> of entity <system_util_spi_3w_0_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <system_util_spi_3w_0_wrapper> (architecture <STRUCTURE>) from library <work>.
+
+Elaborating entity <util_spi_3w> (architecture <IMP>) from library <util_spi_3w_v1_00_a>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <system_util_spi_3w_0_wrapper>.
+    Related source file is "D:\WORK\zedboard\cf_ad9467_vc707\hdl\system_util_spi_3w_0_wrapper.vhd".
+    Summary:
+	no macro.
+Unit <system_util_spi_3w_0_wrapper> synthesized.
+
+Synthesizing Unit <util_spi_3w>.
+    Related source file is "D:/WORK/zedboard/cf_lib/edk/pcores/util_spi_3w_v1_00_a/hdl/vhdl/util_spi_3w.vhd".
+    Found 1-bit register for signal <x_csn_d>.
+    Found 1-bit register for signal <m_enable>.
+    Found 1-bit register for signal <m_rdwr>.
+    Found 6-bit register for signal <m_bitcnt>.
+    Found 6-bit register for signal <m_clkcnt>.
+    Found 1-bit register for signal <x_clk_d>.
+    Found 6-bit adder for signal <m_bitcnt[5]_GND_7_o_add_7_OUT> created at line 125.
+    Found 6-bit adder for signal <m_clkcnt[5]_GND_7_o_add_10_OUT> created at line 130.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+Unit <util_spi_3w> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 6-bit adder                                           : 2
+# Registers                                            : 6
+ 1-bit register                                        : 4
+ 6-bit register                                        : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <util_spi_3w>.
+The following registers are absorbed into counter <m_clkcnt>: 1 register on signal <m_clkcnt>.
+The following registers are absorbed into counter <m_bitcnt>: 1 register on signal <m_bitcnt>.
+Unit <util_spi_3w> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 6-bit up counter                                      : 2
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <system_util_spi_3w_0_wrapper> ...
+
+Optimizing unit <util_spi_3w> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block system_util_spi_3w_0_wrapper, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 16
+ Flip-Flops                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : system_util_spi_3w_0_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 26
+#      GND                         : 1
+#      INV                         : 2
+#      LUT2                        : 5
+#      LUT3                        : 6
+#      LUT4                        : 4
+#      LUT5                        : 3
+#      LUT6                        : 5
+# FlipFlops/Latches                : 16
+#      FD                          : 4
+#      FDR                         : 6
+#      FDRE                        : 6
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a200tfbg676-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              16  out of  269200     0%  
+ Number of Slice LUTs:                   25  out of  134600     0%  
+    Number used as Logic:                25  out of  134600     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     27
+   Number with an unused Flip Flop:      11  out of     27    40%  
+   Number with an unused LUT:             2  out of     27     7%  
+   Number of fully used LUT-FF pairs:    14  out of     27    51%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          84
+ Number of bonded IOBs:                   0  out of    400     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)         | Load  |
+-----------------------------------+-------------------------------+-------+
+m_clk                              | NONE(util_spi_3w_0/m_bitcnt_5)| 16    |
+-----------------------------------+-------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.076ns (Maximum Frequency: 481.719MHz)
+   Minimum input arrival time before clock: 0.985ns
+   Maximum output required time after clock: 0.979ns
+   Maximum combinational path delay: 0.197ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'm_clk'
+  Clock period: 2.076ns (frequency: 481.719MHz)
+  Total number of paths / destination ports: 98 / 32
+-------------------------------------------------------------------------
+Delay:               2.076ns (Levels of Logic = 3)
+  Source:            util_spi_3w_0/m_clkcnt_4 (FF)
+  Destination:       util_spi_3w_0/m_enable (FF)
+  Source Clock:      m_clk rising
+  Destination Clock: m_clk rising
+
+  Data Path: util_spi_3w_0/m_clkcnt_4 to util_spi_3w_0/m_enable
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.361   0.521  util_spi_3w_0/m_clkcnt_4 (util_spi_3w_0/m_clkcnt_4)
+     LUT3:I0->O            2   0.097   0.515  util_spi_3w_0/GND_7_o_GND_7_o_AND_4_o_SW0 (N2)
+     LUT6:I3->O            1   0.097   0.379  util_spi_3w_0/m_enable_rstpot (util_spi_3w_0/m_enable_rstpot)
+     LUT2:I0->O            1   0.097   0.000  util_spi_3w_0/m_enable_rstpot1 (util_spi_3w_0/m_enable_rstpot1)
+     FD:D                      0.008          util_spi_3w_0/m_enable
+    ----------------------------------------
+    Total                      2.076ns (0.660ns logic, 1.416ns route)
+                                       (31.8% logic, 68.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'm_clk'
+  Total number of paths / destination ports: 33 / 22
+-------------------------------------------------------------------------
+Offset:              0.985ns (Levels of Logic = 1)
+  Source:            x_csn<1> (PAD)
+  Destination:       util_spi_3w_0/m_bitcnt_5 (FF)
+  Destination Clock: m_clk rising
+
+  Data Path: x_csn<1> to util_spi_3w_0/m_bitcnt_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT3:I0->O            7   0.097   0.307  util_spi_3w_0/x_csn_s_x_csn_d_AND_6_o1 (util_spi_3w_0/x_csn_s_x_csn_d_AND_6_o)
+     FDRE:R                    0.349          util_spi_3w_0/m_bitcnt_0
+    ----------------------------------------
+    Total                      0.985ns (0.678ns logic, 0.307ns route)
+                                       (68.8% logic, 31.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'm_clk'
+  Total number of paths / destination ports: 18 / 18
+-------------------------------------------------------------------------
+Offset:              0.979ns (Levels of Logic = 1)
+  Source:            util_spi_3w_0/m_enable (FF)
+  Destination:       debug_data<14> (PAD)
+  Source Clock:      m_clk rising
+
+  Data Path: util_spi_3w_0/m_enable to debug_data<14>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.361   0.521  util_spi_3w_0/m_enable (util_spi_3w_0/m_enable)
+     LUT3:I0->O            0   0.097   0.000  util_spi_3w_0/spi_sdio_T1 (spi_sdio_T)
+    ----------------------------------------
+    Total                      0.979ns (0.458ns logic, 0.521ns route)
+                                       (46.8% logic, 53.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 18 / 14
+-------------------------------------------------------------------------
+Delay:               0.197ns (Levels of Logic = 1)
+  Source:            x_csn<1> (PAD)
+  Destination:       debug_data<15> (PAD)
+
+  Data Path: x_csn<1> to debug_data<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT2:I0->O            1   0.097   0.000  util_spi_3w_0/x_csn_s1 (debug_trigger<0>)
+    ----------------------------------------
+    Total                      0.197ns (0.197ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock m_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+m_clk          |    2.076|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.49 secs
+ 
+--> 
+
+Total memory usage is 459612 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

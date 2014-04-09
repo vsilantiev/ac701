@@ -1,4 +1,4 @@
-Updating project device from '7vx485t' to 'xc7vx485t'.
+Updating project device from '7a200t' to 'xc7a200t'.
 INFO:encore:314 - Created non-GUI application for batch mode execution.
 Wrote CGP file for project 'coregen'.
 INFO:sim:172 - Generating IP...
@@ -32,17 +32,17 @@ XMDF file found: chipscope_ila_0_xmdf.tcl
 WARNING: chipscope_ila_0.vhd does not exist, will not be added to ISE project.
 WARNING: chipscope_ila_0.vho does not exist, will not be added to ISE project.
 Adding
-/cf_ad9467_vc707/implementation/chipscope_ila_0_wrapper/tmp/_cg/chipscope_ila_0.
-asy -view all -origin_type imported
+D:/WORK/zedboard/cf_ad9467_vc707/implementation/chipscope_ila_0_wrapper/tmp/_cg/
+chipscope_ila_0.asy -view all -origin_type imported
 Adding
-/cf_ad9467_vc707/implementation/chipscope_ila_0_wrapper/tmp/_cg/chipscope_ila_0.
-ngc -view all -origin_type created
+D:/WORK/zedboard/cf_ad9467_vc707/implementation/chipscope_ila_0_wrapper/tmp/_cg/
+chipscope_ila_0.ngc -view all -origin_type created
 Checking file
-"/cf_ad9467_vc707/implementation/chipscope_ila_0_wrapper/tmp/_cg/chipscope_ila_0
-.ngc" for project device match ...
+"D:/WORK/zedboard/cf_ad9467_vc707/implementation/chipscope_ila_0_wrapper/tmp/_cg
+/chipscope_ila_0.ngc" for project device match ...
 File
-"/cf_ad9467_vc707/implementation/chipscope_ila_0_wrapper/tmp/_cg/chipscope_ila_0
-.ngc" device information matches project device.
+"D:/WORK/zedboard/cf_ad9467_vc707/implementation/chipscope_ila_0_wrapper/tmp/_cg
+/chipscope_ila_0.ngc" device information matches project device.
 INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
    Please set the new top explicitly by running the "project set top" command.
    To re-calculate the new top automatically, set the "Auto Implementation Top"

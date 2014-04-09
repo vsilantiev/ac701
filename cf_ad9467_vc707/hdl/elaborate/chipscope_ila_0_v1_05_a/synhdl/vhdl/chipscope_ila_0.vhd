@@ -10,10 +10,10 @@ use Unisim.all;
 
 entity chipscope_ila is
   generic (
-    C_FAMILY           : string   := "virtex7";
-    C_DEVICE           : string   := "7vx485t";
-    C_PACKAGE          : string   := "ffg1761";
-    C_SPEEDGRADE       : string   := "-2";
+    C_FAMILY           : string   := "artix7";
+    C_DEVICE           : string   := "7a200t";
+    C_PACKAGE          : string   := "fbg676";
+    C_SPEEDGRADE       : string   := "-3";
     C_NUM_DATA_SAMPLES : integer  := 1024;
     C_DATA_SAME_AS_TRIGGER : integer := 0;
     C_DATA_IN_WIDTH : integer := 16;
@@ -142,7 +142,7 @@ architecture imp of chipscope_ila is
   component chipscope_ila_0 is
 
     generic ( 
-    C_FAMILY           : string   := "virtex7";
+    C_FAMILY           : string   := "artix7";
     C_NUM_DATA_SAMPLES : integer  := 1024;
     C_DATA_SAME_AS_TRIGGER : integer := 0;
     C_DATA_IN_WIDTH : integer := 16;

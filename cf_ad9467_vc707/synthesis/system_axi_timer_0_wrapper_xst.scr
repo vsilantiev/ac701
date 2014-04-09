@@ -1,9 +1,9 @@
-set -tmpdir /cf_ad9467_vc707/synthesis/xst_temp_dir/
+set -tmpdir D:\WORK\zedboard\cf_ad9467_vc707\synthesis\xst_temp_dir\
 run
 -opt_mode speed
 -netlist_hierarchy as_optimized
 -opt_level 1
--p xc7vx485tffg1761-2
+-p xc7a200tfbg676-3
 -top system_axi_timer_0_wrapper
 -ifmt MIXED
 -ifn system_axi_timer_0_wrapper_xst.prj
@@ -11,4 +11,4 @@ run
 -hierarchy_separator /
 -iobuf NO
 -sd {../implementation}
--vlgincdir {"/cf_ad9467_vc707/pcores/" "/cf_lib/edk/pcores/" "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/" "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/" }
+-vlgincdir {"D:\WORK\zedboard\cf_ad9467_vc707\pcores\" "D:\WORK\zedboard\cf_lib\edk\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }

@@ -87,10 +87,10 @@ begin
 
   chipscope_icon_0 : chipscope_icon
     generic map (
-      C_FAMILY => "virtex7",
-      C_DEVICE => "7vx485t",
-      C_PACKAGE => "ffg1761",
-      C_SPEEDGRADE => "-2",
+      C_FAMILY => "artix7",
+      C_DEVICE => "7a200t",
+      C_PACKAGE => "fbg676",
+      C_SPEEDGRADE => "-3",
       C_NUM_CONTROL_PORTS => 1,
       C_SYSTEM_CONTAINS_MDM => 1,
       C_FORCE_BSCAN_USER_PORT => 1

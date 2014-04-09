@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="system.bit" key="cf_ad9467_vc707_hw_platform-bitFile"/>
+	<item value="system_bd.bmm" key="cf_ad9467_vc707_hw_platform-bmmFile"/>
+	<item value="bootloop" key="cf_ad9467_vc707_hw_platform-microblaze_0-initElf"/>
+</section>

@@ -1,0 +1,7 @@
+INFILE=D:\WORK\zedboard\cf_ad9467_vc707\implementation\system.ncd
+OUTFILE=D:\WORK\zedboard\cf_ad9467_vc707\implementation\system.bit
+FAMILY=Artix7
+PART=xc7a200t-3fbg676
+WORKINGDIR=D:\WORK\zedboard\cf_ad9467_vc707\implementation
+LICENSE=WebPack
+USER_INFO=__0_0_0

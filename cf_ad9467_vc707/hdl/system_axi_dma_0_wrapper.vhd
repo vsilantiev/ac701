@@ -302,7 +302,7 @@ begin
       C_M_AXI_S2MM_ADDR_WIDTH => 32,
       C_M_AXI_S2MM_DATA_WIDTH => 64,
       C_S_AXIS_S2MM_TDATA_WIDTH => 64,
-      C_FAMILY => "virtex7",
+      C_FAMILY => "artix7",
       C_INSTANCE => "axi_dma_0",
       C_S_AXI_LITE_ACLK_FREQ_HZ => 100000000,
       C_M_AXI_SG_ACLK_FREQ_HZ => 100000000,

@@ -1,0 +1,24 @@
+D:\WORK\zedboard\cf_ad9467_vc707\implementation\system.ngc 1396957939
+D:/WORK/zedboard/cf_ad9467_vc707/implementation/system_axi_adc_1c_0_wrapper.ngc 1396957295
+D:/WORK/zedboard/cf_ad9467_vc707/implementation/system_rs232_uart_1_wrapper.ngc 1396957103
+D:/WORK/zedboard/cf_ad9467_vc707/implementation/system_proc_sys_reset_0_wrapper.ngc 1396956716
+D:/WORK/zedboard/cf_ad9467_vc707/implementation/system_clock_generator_0_wrapper.ngc 1396957810
+D:/WORK/zedboard/cf_ad9467_vc707/implementation/system_chipscope_ila_0_wrapper.ngc 1396957838
+D:/WORK/zedboard/cf_ad9467_vc707/implementation/system_axi_dma_0_wrapper.ngc 1396957851
+D:/WORK/zedboard/cf_ad9467_vc707/implementation/system_microblaze_0_ilmb_wrapper.ngc 1396957791
+D:/WORK/zedboard/cf_ad9467_vc707/implementation/system_microblaze_0_dlmb_wrapper.ngc 1396957797
+D:/WORK/zedboard/cf_ad9467_vc707/implementation/system_axi4lite_0_wrapper.ngc 1396957817
+D:/WORK/zedboard/cf_ad9467_vc707/implementation/system_axi4_0_wrapper.ngc 1396957825
+D:/WORK/zedboard/cf_ad9467_vc707/implementation/system_microblaze_0_wrapper.ngc 1396957804
+D:/WORK/zedboard/cf_ad9467_vc707/implementation/system_ddr3_sdram_wrapper.ngc 1396957832
+D:/WORK/zedboard/cf_ad9467_vc707/implementation/system_axi_intc_0_wrapper.ngc 1396957256
+D:/WORK/zedboard/cf_ad9467_vc707/implementation/system_microblaze_0_i_bram_ctrl_wrapper.ngc 1396956732
+D:/WORK/zedboard/cf_ad9467_vc707/implementation/system_microblaze_0_d_bram_ctrl_wrapper.ngc 1396956747
+D:/WORK/zedboard/cf_ad9467_vc707/implementation/system_debug_module_wrapper.ngc 1396956828
+D:/WORK/zedboard/cf_ad9467_vc707/implementation/system_axi_timer_0_wrapper.ngc 1396957243
+D:/WORK/zedboard/cf_ad9467_vc707/implementation/system_axi_spi_0_wrapper.ngc 1396957761
+D:/WORK/zedboard/cf_ad9467_vc707/implementation/system_util_spi_3w_0_wrapper.ngc 1396957771
+D:/WORK/zedboard/cf_ad9467_vc707/implementation/system_axi_gpio_0_wrapper.ngc 1396957785
+D:/WORK/zedboard/cf_ad9467_vc707/implementation/system_microblaze_0_bram_block_wrapper.ngc 1396956756
+D:/WORK/zedboard/cf_ad9467_vc707/implementation/system_chipscope_icon_0_wrapper.ngc 1396957844
+OK

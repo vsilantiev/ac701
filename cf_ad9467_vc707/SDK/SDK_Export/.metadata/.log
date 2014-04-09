@@ -1,0 +1,15 @@
+!SESSION 2014-04-08 13:49:57.714 -----------------------------------------------
+eclipse.buildId=Release 14.7 Build SDK_P.20131013
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-04-08 13:50:10.436
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-04-08 14:10:20.447
+!MESSAGE Indexed 'sw' (5 sources, 26 headers) in 1,52 sec: 1 338 declarations; 3 351 references; 8 unresolved inclusions; 0 syntax errors; 61 unresolved names (1,28 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-04-08 14:10:20.482
+!MESSAGE Indexed 'bsp' (0 sources, 0 headers) in 0,00 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0,00 %)

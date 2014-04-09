@@ -20,11 +20,11 @@ entity system_util_spi_3w_0_wrapper is
     spi_cs0n : out std_logic;
     spi_cs1n : out std_logic;
     spi_clk : out std_logic;
+    debug_data : out std_logic_vector(63 downto 0);
+    debug_trigger : out std_logic_vector(7 downto 0);
     spi_sdio_I : in std_logic;
     spi_sdio_O : out std_logic;
-    spi_sdio_T : out std_logic;
-    debug_data : out std_logic_vector(63 downto 0);
-    debug_trigger : out std_logic_vector(7 downto 0)
+    spi_sdio_T : out std_logic
   );
 end system_util_spi_3w_0_wrapper;
 
@@ -40,11 +40,11 @@ architecture STRUCTURE of system_util_spi_3w_0_wrapper is
       spi_cs0n : out std_logic;
       spi_cs1n : out std_logic;
       spi_clk : out std_logic;
+      debug_data : out std_logic_vector(63 downto 0);
+      debug_trigger : out std_logic_vector(7 downto 0);
       spi_sdio_I : in std_logic;
       spi_sdio_O : out std_logic;
-      spi_sdio_T : out std_logic;
-      debug_data : out std_logic_vector(63 downto 0);
-      debug_trigger : out std_logic_vector(7 downto 0)
+      spi_sdio_T : out std_logic
     );
   end component;
 
@@ -60,11 +60,11 @@ begin
       spi_cs0n => spi_cs0n,
       spi_cs1n => spi_cs1n,
       spi_clk => spi_clk,
+      debug_data => debug_data,
+      debug_trigger => debug_trigger,
       spi_sdio_I => spi_sdio_I,
       spi_sdio_O => spi_sdio_O,
-      spi_sdio_T => spi_sdio_T,
-      debug_data => debug_data,
-      debug_trigger => debug_trigger
+      spi_sdio_T => spi_sdio_T
     );
 
 end architecture STRUCTURE;

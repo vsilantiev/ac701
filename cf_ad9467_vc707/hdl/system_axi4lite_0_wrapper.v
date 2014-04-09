@@ -417,7 +417,7 @@ module system_axi4lite_0_wrapper
 
   axi_interconnect
     #(
-      .C_BASEFAMILY ( "virtex7" ),
+      .C_BASEFAMILY ( "artix7" ),
       .C_NUM_SLAVE_SLOTS ( 1 ),
       .C_NUM_MASTER_SLOTS ( 8 ),
       .C_AXI_ID_WIDTH ( 1 ),

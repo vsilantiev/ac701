@@ -1,0 +1,75 @@
+15:27:39.868 INFO  - Processing command line option -hwspec D:\WORK\zedboard\cf_ad9467_vc707\SDK\SDK_Export\hw\system.xml. 
+15:27:56.805 INFO  - FPGA configured successfully with bitstream "D:/WORK/zedboard/cf_ad9467_vc707/SDK/SDK_Workspace/cf_ad9467_vc707_hw_platform/download.bit" 
+15:28:20.719 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+16:51:08.464 INFO  - Processing command line option -hwspec D:\WORK\zedboard\cf_ad9467_vc707\SDK\SDK_Export\hw\system.xml. 
+16:52:01.622 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+17:04:53.971 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+17:05:10.031 INFO  - FPGA configured successfully with bitstream "D:/WORK/zedboard/cf_ad9467_vc707/SDK/SDK_Workspace/cf_ad9467_vc707_hw_platform/download.bit" 
+17:08:31.685 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+17:08:40.970 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+17:09:11.149 INFO  - FPGA configured successfully with bitstream "D:/WORK/zedboard/cf_ad9467_vc707/SDK/SDK_Workspace/cf_ad9467_vc707_hw_platform/download.bit" 
+17:50:10.275 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+17:50:10.275 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+11:23:55.927 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+11:25:44.901 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:26:52.941 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+11:27:21.064 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+11:27:57.023 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+11:28:24.585 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+11:28:27.387 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+12:09:14.585 INFO  - FPGA configured successfully with bitstream "/media/Data/WORK/zedboard/cf_ad9467_vc707/SDK/SDK_Workspace/cf_ad9467_vc707_hw_platform/download.bit" 
+12:14:50.393 INFO  - FPGA configured successfully with bitstream "/media/Data/WORK/zedboard/cf_ad9467_vc707/SDK/SDK_Workspace/cf_ad9467_vc707_hw_platform/download.bit" 
+12:47:22.541 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

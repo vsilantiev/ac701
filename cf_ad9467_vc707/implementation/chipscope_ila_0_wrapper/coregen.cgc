@@ -241,10 +241,10 @@
                   <xilinx:subWorkingDirectory>./tmp/_cg/</xilinx:subWorkingDirectory>
                </xilinx:projectOptions>
                <xilinx:part>
-                  <xilinx:device>xc7vx485t</xilinx:device>
-                  <xilinx:deviceFamily>virtex7</xilinx:deviceFamily>
-                  <xilinx:package>ffg1761</xilinx:package>
-                  <xilinx:speedGrade>-2</xilinx:speedGrade>
+                  <xilinx:device>xc7a200t</xilinx:device>
+                  <xilinx:deviceFamily>artix7</xilinx:deviceFamily>
+                  <xilinx:package>fbg676</xilinx:package>
+                  <xilinx:speedGrade>-3</xilinx:speedGrade>
                </xilinx:part>
                <xilinx:flowOptions>
                   <xilinx:busFormat>BusFormatAngleBracketNotRipped</xilinx:busFormat>
@@ -275,8 +275,8 @@
                   <xilinx:file>
                      <xilinx:name>./chipscope_ila_0.xco</xilinx:name>
                      <xilinx:userFileType>xco</xilinx:userFileType>
-                     <xilinx:timeStamp>Mon Mar 24 06:34:36 GMT 2014</xilinx:timeStamp>
-                     <xilinx:checkSum>0x7C6B380A</xilinx:checkSum>
+                     <xilinx:timeStamp>Tue Apr 08 11:28:56 GMT 2014</xilinx:timeStamp>
+                     <xilinx:checkSum>0x94B3D557</xilinx:checkSum>
                      <xilinx:generationId>generationID_1879581046</xilinx:generationId>
                   </xilinx:file>
                </xilinx:fileSet>
@@ -285,22 +285,22 @@
                   <xilinx:file>
                      <xilinx:name>./chipscope_ila_0.cdc</xilinx:name>
                      <xilinx:userFileType>unknown</xilinx:userFileType>
-                     <xilinx:timeStamp>Mon Mar 24 06:36:51 GMT 2014</xilinx:timeStamp>
-                     <xilinx:checkSum>0xE9EB96E3</xilinx:checkSum>
+                     <xilinx:timeStamp>Tue Apr 08 11:31:01 GMT 2014</xilinx:timeStamp>
+                     <xilinx:checkSum>0xC99999FC</xilinx:checkSum>
                      <xilinx:generationId>generationID_1879581046</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./chipscope_ila_0.constraints/chipscope_ila_0.ucf</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>ucf</xilinx:userFileType>
-                     <xilinx:timeStamp>Mon Mar 24 06:36:51 GMT 2014</xilinx:timeStamp>
+                     <xilinx:timeStamp>Tue Apr 08 11:31:01 GMT 2014</xilinx:timeStamp>
                      <xilinx:checkSum>0x4EB3CF5F</xilinx:checkSum>
                      <xilinx:generationId>generationID_1879581046</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./chipscope_ila_0.constraints/chipscope_ila_0.xdc</xilinx:name>
                      <xilinx:userFileType>xdc</xilinx:userFileType>
-                     <xilinx:timeStamp>Mon Mar 24 06:36:51 GMT 2014</xilinx:timeStamp>
+                     <xilinx:timeStamp>Tue Apr 08 11:31:01 GMT 2014</xilinx:timeStamp>
                      <xilinx:checkSum>0x5F4D4543</xilinx:checkSum>
                      <xilinx:generationId>generationID_1879581046</xilinx:generationId>
                   </xilinx:file>
@@ -308,22 +308,22 @@
                      <xilinx:name>./chipscope_ila_0.ncf</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>unknown</xilinx:userFileType>
-                     <xilinx:timeStamp>Mon Mar 24 06:36:51 GMT 2014</xilinx:timeStamp>
+                     <xilinx:timeStamp>Tue Apr 08 11:31:01 GMT 2014</xilinx:timeStamp>
                      <xilinx:checkSum>0x6991FB41</xilinx:checkSum>
                      <xilinx:generationId>generationID_1879581046</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./chipscope_ila_0.ngc</xilinx:name>
                      <xilinx:userFileType>ngc</xilinx:userFileType>
-                     <xilinx:timeStamp>Mon Mar 24 06:36:42 GMT 2014</xilinx:timeStamp>
-                     <xilinx:checkSum>0xE16B5641</xilinx:checkSum>
+                     <xilinx:timeStamp>Tue Apr 08 11:30:59 GMT 2014</xilinx:timeStamp>
+                     <xilinx:checkSum>0x1EF8C7F8</xilinx:checkSum>
                      <xilinx:generationId>generationID_1879581046</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./chipscope_ila_0.ucf</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>ucf</xilinx:userFileType>
-                     <xilinx:timeStamp>Mon Mar 24 06:36:51 GMT 2014</xilinx:timeStamp>
+                     <xilinx:timeStamp>Tue Apr 08 11:31:01 GMT 2014</xilinx:timeStamp>
                      <xilinx:checkSum>0x4EB3CF5F</xilinx:checkSum>
                      <xilinx:generationId>generationID_1879581046</xilinx:generationId>
                   </xilinx:file>
@@ -331,14 +331,14 @@
                      <xilinx:name>./chipscope_ila_0.xdc</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>xdc</xilinx:userFileType>
-                     <xilinx:timeStamp>Mon Mar 24 06:36:51 GMT 2014</xilinx:timeStamp>
+                     <xilinx:timeStamp>Tue Apr 08 11:31:01 GMT 2014</xilinx:timeStamp>
                      <xilinx:checkSum>0x5F4D4543</xilinx:checkSum>
                      <xilinx:generationId>generationID_1879581046</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./chipscope_ila_0_xmdf.tcl</xilinx:name>
                      <xilinx:userFileType>tcl</xilinx:userFileType>
-                     <xilinx:timeStamp>Mon Mar 24 06:34:37 GMT 2014</xilinx:timeStamp>
+                     <xilinx:timeStamp>Tue Apr 08 11:28:58 GMT 2014</xilinx:timeStamp>
                      <xilinx:checkSum>0xB899A863</xilinx:checkSum>
                      <xilinx:generationId>generationID_1879581046</xilinx:generationId>
                   </xilinx:file>
@@ -351,7 +351,7 @@
                   <xilinx:file>
                      <xilinx:name>./chipscope_ila_0.asy</xilinx:name>
                      <xilinx:userFileType>asy</xilinx:userFileType>
-                     <xilinx:timeStamp>Mon Mar 24 06:36:51 GMT 2014</xilinx:timeStamp>
+                     <xilinx:timeStamp>Tue Apr 08 11:31:01 GMT 2014</xilinx:timeStamp>
                      <xilinx:checkSum>0x6F345526</xilinx:checkSum>
                      <xilinx:generationId>generationID_1879581046</xilinx:generationId>
                   </xilinx:file>
@@ -365,7 +365,7 @@
                      <xilinx:name>./chipscope_ila_0.gise</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>gise</xilinx:userFileType>
-                     <xilinx:timeStamp>Mon Mar 24 06:36:57 GMT 2014</xilinx:timeStamp>
+                     <xilinx:timeStamp>Tue Apr 08 11:31:06 GMT 2014</xilinx:timeStamp>
                      <xilinx:checkSum>0xCD92D53F</xilinx:checkSum>
                      <xilinx:generationId>generationID_1879581046</xilinx:generationId>
                   </xilinx:file>
@@ -373,8 +373,8 @@
                      <xilinx:name>./chipscope_ila_0.xise</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>xise</xilinx:userFileType>
-                     <xilinx:timeStamp>Mon Mar 24 06:36:57 GMT 2014</xilinx:timeStamp>
-                     <xilinx:checkSum>0x84A801B9</xilinx:checkSum>
+                     <xilinx:timeStamp>Tue Apr 08 11:31:06 GMT 2014</xilinx:timeStamp>
+                     <xilinx:checkSum>0xB08C6F5D</xilinx:checkSum>
                      <xilinx:generationId>generationID_1879581046</xilinx:generationId>
                   </xilinx:file>
                </xilinx:fileSet>
@@ -385,8 +385,8 @@
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>txtReadme</xilinx:userFileType>
                      <xilinx:userFileType>txt</xilinx:userFileType>
-                     <xilinx:timeStamp>Mon Mar 24 06:36:57 GMT 2014</xilinx:timeStamp>
-                     <xilinx:checkSum>0xB832331E</xilinx:checkSum>
+                     <xilinx:timeStamp>Tue Apr 08 11:31:06 GMT 2014</xilinx:timeStamp>
+                     <xilinx:checkSum>0xC067C846</xilinx:checkSum>
                      <xilinx:generationId>generationID_1879581046</xilinx:generationId>
                   </xilinx:file>
                </xilinx:fileSet>
@@ -397,8 +397,8 @@
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>txtFlist</xilinx:userFileType>
                      <xilinx:userFileType>txt</xilinx:userFileType>
-                     <xilinx:timeStamp>Mon Mar 24 06:36:57 GMT 2014</xilinx:timeStamp>
-                     <xilinx:checkSum>0x211A32CF</xilinx:checkSum>
+                     <xilinx:timeStamp>Tue Apr 08 11:31:06 GMT 2014</xilinx:timeStamp>
+                     <xilinx:checkSum>0xD98D1EC1</xilinx:checkSum>
                      <xilinx:generationId>generationID_1879581046</xilinx:generationId>
                   </xilinx:file>
                </xilinx:fileSet>
