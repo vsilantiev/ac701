@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DARoots Version="1" Minor="30">
+  <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/hdl/vhdl/util_spi_3w.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="util_spi_3w_v1_00_a"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/component.xml">
+      <FileInfo SFType="IPXACT">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="util_spi_3w"/>
+      <Option Name="TopRTLFile" Val="$PPRDIR/hdl/vhdl/util_spi_3w.vhd"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../../../IPCore/init_cdma_1.0"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../axi_adc_1c_v1_00_a"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../../../IPCore/cf_lib/edk/pcores/util_spi_3w_v1_00_a"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../../../IPCore/reg_status_1.0"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../../../IPCore/acp_1.0"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../zynq/IP_Core"/>
+      <Option Name="IPRepoPath" Val="/root/zedboard/IPCore/util_spi_3w_v1_00_a"/>
+    </Config>
+  </FileSet>
+</DARoots>

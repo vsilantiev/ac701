@@ -1,8 +1,8 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------
 | Tool Version : Vivado v.2013.3 (lin64) Build 329390 Wed Oct 16 18:26:55 MDT 2013
-| Date         : Thu Mar 13 14:19:20 2014
-| Host         : ubuntu running 64-bit Ubuntu 12.04.3 LTS
+| Date         : Tue Apr 15 14:01:31 2014
+| Host         : ubuntu running 64-bit Ubuntu 12.04.4 LTS
 | Command      : report_io -file dma_wrapper_io_placed.rpt
 | Design       : dma_wrapper
 | Device       : xc7z020
@@ -22,7 +22,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|           137 |
+|           136 |
 +---------------+
 
 
@@ -471,7 +471,7 @@ Table of Contents
 | V19        |                   | IOB33S    | IO_L6N_T0_VREF_33       | UNUSED    |                   |             33 |            |           |             |           |         |            |                        |                  |
 | V20        |                   | IOB33S    | IO_L5N_T0_33            | UNUSED    |                   |             33 |            |           |             |           |         |            |                        |                  |
 | V21        |                   |           | VCCO_33                 |           |                   |             33 |            |           |             |           |    1.50 |            |                        |                  |
-| V22        | LD_4              | IOB33M    | IO_L3P_T0_DQS_33        | OUTPUT    | LVCMOS15          |             33 |         12 |      SLOW |             |           |         | FIXED      | NONE                   | NONE             |
+| V22        |                   | IOB33M    | IO_L3P_T0_DQS_33        | UNUSED    |                   |             33 |            |           |             |           |         |            |                        |                  |
 | W1         | DDR_dq[28]        | IOPAD     | PS_DDR_DQ28_502         | BIDIR     | SSTL15_T_DCI      |                |            |      FAST |             |           |         | FIXED      | NONE                   | SPLIT            |
 | W2         | DDR_dqs_n[3]      | IOPAD     | PS_DDR_DQS_N3_502       | BIDIR     | DIFF_SSTL15_T_DCI |                |            |      FAST |             |           |         | FIXED      | NONE                   | SPLIT            |
 | W3         | DDR_dq[30]        | IOPAD     | PS_DDR_DQ30_502         | BIDIR     | SSTL15_T_DCI      |                |            |      FAST |             |           |         | FIXED      | NONE                   | SPLIT            |

@@ -378,3 +378,480 @@
 13:35:24.374 INFO  - Specified output file already exists 
 13:35:25.301 INFO  - Invoking Bootgen:  
 13:35:25.860 INFO  - Bootgen command execution is done. 
+12:46:12.525 INFO  - Processing command line option -hwspec /home/vladimir/260214/hw/dma.xml. 
+12:46:12.746 INFO  - The hardware specification for project 'hw_platform_0' is different from /home/vladimir/260214/hw/dma.xml. 
+12:46:13.259 INFO  - Copied contents of /home/vladimir/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+12:46:13.271 INFO  - Copied contents of /home/vladimir/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+12:46:13.274 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+12:46:13.275 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+12:46:13.279 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+12:46:13.280 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+12:46:13.280 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+12:46:13.434 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+12:46:31.626 INFO  - Updating hardware inferred compiler options for fsbl. 
+12:46:31.637 INFO  - Clearing existing target manager status. 
+12:46:33.182 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+12:46:33.199 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+12:46:33.221 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+12:46:33.222 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+12:46:33.223 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+12:49:43.819 INFO  - Saving repository preferences. 
+12:49:43.820 INFO  - Reading in cores from global repositories: 
+		 /home/vladimir/PROJECT/XILINX 
+12:49:43.831 INFO  - Updating libgen.options on all BSP projects. 
+12:49:43.832 INFO  - Cleaning BSP projects in the workspace. 
+12:49:44.460 INFO  - Saving repository preferences. 
+12:51:19.077 INFO  - Specified output file already exists 
+12:51:20.586 INFO  - Invoking Bootgen:  
+12:51:21.112 INFO  - Bootgen command execution is done. 
+13:49:34.146 INFO  - Project hw_platform_0's source hardware specification located at /home/vladimir/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+13:49:36.557 INFO  - Copied contents of /home/vladimir/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+13:49:36.563 INFO  - Copied contents of /home/vladimir/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+13:49:36.565 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+13:49:36.566 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+13:49:36.570 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+13:49:36.570 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+13:49:36.571 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+13:49:36.709 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+13:49:40.961 INFO  - Updating hardware inferred compiler options for fsbl. 
+13:49:40.976 INFO  - Clearing existing target manager status. 
+13:49:40.982 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+13:49:40.984 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+13:49:40.994 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+13:49:41.000 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+13:49:41.000 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+13:49:58.510 INFO  - Specified output file already exists 
+13:50:00.098 INFO  - Invoking Bootgen:  
+13:50:00.613 INFO  - Bootgen command execution is done. 
+14:11:19.790 INFO  - Project hw_platform_0's source hardware specification located at /home/vladimir/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+14:11:21.316 INFO  - Copied contents of /home/vladimir/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+14:11:21.323 INFO  - Copied contents of /home/vladimir/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+14:11:21.325 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+14:11:21.326 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+14:11:21.329 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+14:11:21.330 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+14:11:21.330 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+14:11:21.472 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+14:11:37.103 INFO  - Updating hardware inferred compiler options for fsbl. 
+14:11:37.114 INFO  - Clearing existing target manager status. 
+14:11:38.637 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+14:11:38.643 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+14:11:38.661 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+14:11:38.663 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+14:11:38.664 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+14:12:00.212 INFO  - Specified output file already exists 
+14:12:01.182 INFO  - Invoking Bootgen:  
+14:12:01.700 INFO  - Bootgen command execution is done. 
+14:13:10.673 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+17:05:54.375 INFO  - Processing command line option -hwspec /home/vladimir/260214/hw/dma.xml. 
+17:05:54.653 INFO  - The hardware specification for project 'hw_platform_0' is different from /home/vladimir/260214/hw/dma.xml. 
+17:05:59.527 INFO  - Project hw_platform_0's source hardware specification located at /home/vladimir/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+17:06:00.923 ERROR - Unable to save current hardware specification file in a temporary location. 
+17:06:05.635 INFO  - Copied contents of /home/vladimir/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+17:06:05.645 INFO  - Copied contents of /home/vladimir/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+17:06:05.649 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+17:06:05.650 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+17:06:05.654 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+17:06:05.655 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+17:06:05.655 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+17:06:05.716 INFO  - Copied contents of /home/vladimir/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+17:06:05.721 INFO  - Copied contents of /home/vladimir/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+17:06:47.268 INFO  - Specified output file already exists 
+17:06:48.271 INFO  - Invoking Bootgen:  
+17:06:48.800 INFO  - Bootgen command execution is done. 
+17:43:49.771 INFO  - Project hw_platform_0's source hardware specification located at /home/vladimir/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+17:43:54.213 INFO  - Copied contents of /home/vladimir/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+17:43:54.219 INFO  - Copied contents of /home/vladimir/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+17:43:54.222 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+17:43:54.222 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+17:43:54.226 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+17:43:54.227 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+17:43:54.227 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+17:43:54.389 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+17:43:58.587 INFO  - Updating hardware inferred compiler options for fsbl. 
+17:43:58.595 INFO  - Clearing existing target manager status. 
+17:44:00.184 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+17:44:00.186 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+17:44:00.194 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+17:44:00.195 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+17:44:00.197 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+17:44:18.776 INFO  - Specified output file already exists 
+17:44:19.849 INFO  - Invoking Bootgen:  
+17:44:20.364 INFO  - Bootgen command execution is done. 
+08:54:23.889 INFO  - Project hw_platform_0's source hardware specification located at /home/vladimir/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+08:54:26.010 INFO  - Copied contents of /home/vladimir/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+08:54:26.016 INFO  - Copied contents of /home/vladimir/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+08:54:26.019 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+08:54:26.019 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+08:54:26.024 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+08:54:26.024 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+08:54:26.025 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+08:54:26.378 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+08:54:42.147 INFO  - Updating hardware inferred compiler options for fsbl. 
+08:54:42.158 INFO  - Clearing existing target manager status. 
+08:54:43.858 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+08:54:43.860 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+08:54:43.866 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+08:54:43.867 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+08:54:43.868 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+08:55:05.469 INFO  - Specified output file already exists 
+08:55:06.678 INFO  - Invoking Bootgen:  
+08:55:07.196 INFO  - Bootgen command execution is done. 
+09:37:37.564 INFO  - Project hw_platform_0's source hardware specification located at /home/vladimir/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+09:37:39.128 INFO  - Copied contents of /home/vladimir/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+09:37:39.134 INFO  - Copied contents of /home/vladimir/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+09:37:39.137 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+09:37:39.137 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+09:37:39.141 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+09:37:39.142 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+09:37:39.142 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+09:37:39.351 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+09:37:54.514 INFO  - Updating hardware inferred compiler options for fsbl. 
+09:37:54.533 INFO  - Clearing existing target manager status. 
+09:37:56.112 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+09:37:56.120 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+09:37:56.129 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+09:37:56.131 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+09:37:56.135 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+09:38:10.008 INFO  - Specified output file already exists 
+09:38:11.070 INFO  - Invoking Bootgen:  
+09:38:11.596 INFO  - Bootgen command execution is done. 
+10:05:24.140 INFO  - Project hw_platform_0's source hardware specification located at /home/vladimir/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+10:05:26.745 INFO  - Copied contents of /home/vladimir/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+10:05:26.751 INFO  - Copied contents of /home/vladimir/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+10:05:26.753 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+10:05:26.754 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+10:05:26.758 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+10:05:26.758 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+10:05:26.759 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+10:05:26.935 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+10:05:42.105 INFO  - Updating hardware inferred compiler options for fsbl. 
+10:05:42.114 INFO  - Clearing existing target manager status. 
+10:05:43.759 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+10:05:43.763 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+10:05:43.771 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+10:05:43.773 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+10:05:43.774 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+10:10:26.840 INFO  - Specified output file already exists 
+10:10:27.992 INFO  - Invoking Bootgen:  
+10:10:28.507 INFO  - Bootgen command execution is done. 
+10:27:48.270 INFO  - Project hw_platform_0's source hardware specification located at /home/vladimir/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+10:27:50.000 INFO  - Copied contents of /home/vladimir/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+10:27:50.006 INFO  - Copied contents of /home/vladimir/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+10:27:50.009 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+10:27:50.010 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+10:27:50.014 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+10:27:50.015 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+10:27:50.015 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+10:27:50.169 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+10:28:05.096 INFO  - Updating hardware inferred compiler options for fsbl. 
+10:28:05.111 INFO  - Clearing existing target manager status. 
+10:28:06.727 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+10:28:06.729 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+10:28:06.743 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+10:28:06.745 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+10:28:06.747 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+10:28:24.026 INFO  - Specified output file already exists 
+10:28:24.921 INFO  - Invoking Bootgen:  
+10:28:25.440 INFO  - Bootgen command execution is done. 
+11:26:09.624 INFO  - Project hw_platform_0's source hardware specification located at /home/vladimir/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+11:26:36.597 INFO  - Copied contents of /home/vladimir/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+11:26:36.603 INFO  - Copied contents of /home/vladimir/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+11:26:36.606 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+11:26:36.607 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+11:26:36.611 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+11:26:36.611 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+11:26:36.612 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+11:26:36.749 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+11:26:52.313 INFO  - Updating hardware inferred compiler options for fsbl. 
+11:26:52.323 INFO  - Clearing existing target manager status. 
+11:26:53.913 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+11:26:53.915 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+11:26:53.919 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+11:26:53.920 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+11:26:53.921 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+11:27:45.712 INFO  - Specified output file already exists 
+11:27:46.856 INFO  - Invoking Bootgen:  
+11:27:47.372 INFO  - Bootgen command execution is done. 
+16:12:52.452 INFO  - Project hw_platform_0's source hardware specification located at /home/vladimir/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+16:12:53.732 INFO  - Copied contents of /home/vladimir/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+16:12:53.737 INFO  - Copied contents of /home/vladimir/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+16:12:53.740 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+16:12:53.741 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+16:12:53.745 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+16:12:53.745 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+16:12:53.746 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+16:12:53.892 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+16:13:09.425 INFO  - Updating hardware inferred compiler options for fsbl. 
+16:13:09.436 INFO  - Clearing existing target manager status. 
+16:13:10.984 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+16:13:10.985 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+16:13:10.993 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+16:13:10.995 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+16:13:10.996 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+16:13:23.308 INFO  - Specified output file already exists 
+16:13:25.068 INFO  - Invoking Bootgen:  
+16:13:25.587 INFO  - Bootgen command execution is done. 
+16:42:49.683 INFO  - Project hw_platform_0's source hardware specification located at /home/vladimir/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+16:42:51.170 INFO  - Copied contents of /home/vladimir/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+16:42:51.176 INFO  - Copied contents of /home/vladimir/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+16:42:51.178 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+16:42:51.179 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+16:42:51.182 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+16:42:51.183 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+16:42:51.183 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+16:42:51.322 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+16:43:06.437 INFO  - Updating hardware inferred compiler options for fsbl. 
+16:43:06.452 INFO  - Clearing existing target manager status. 
+16:43:07.992 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+16:43:07.993 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+16:43:07.998 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+16:43:07.999 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+16:43:08.000 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+16:43:27.360 INFO  - Specified output file already exists 
+16:43:28.641 INFO  - Invoking Bootgen:  
+16:43:29.157 INFO  - Bootgen command execution is done. 
+10:57:14.103 INFO  - Project hw_platform_0's source hardware specification located at /home/vladimir/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+10:57:19.489 INFO  - Copied contents of /home/vladimir/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+10:57:19.494 INFO  - Copied contents of /home/vladimir/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+10:57:19.497 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+10:57:19.498 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+10:57:19.501 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+10:57:19.502 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+10:57:19.502 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+10:57:19.641 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+10:57:34.755 INFO  - Updating hardware inferred compiler options for fsbl. 
+10:57:34.765 INFO  - Clearing existing target manager status. 
+10:57:36.316 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+10:57:36.321 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+10:57:36.327 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+10:57:36.329 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+10:57:36.331 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+10:58:34.201 INFO  - Specified output file already exists 
+10:58:35.689 INFO  - Invoking Bootgen:  
+10:58:36.216 INFO  - Bootgen command execution is done. 
+12:04:16.315 INFO  - Project hw_platform_0's source hardware specification located at /home/vladimir/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+12:04:36.173 INFO  - Copied contents of /home/vladimir/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+12:04:36.178 INFO  - Copied contents of /home/vladimir/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+12:04:36.181 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+12:04:36.181 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+12:04:36.185 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+12:04:36.185 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+12:04:36.186 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+12:04:36.325 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+12:04:51.664 INFO  - Updating hardware inferred compiler options for fsbl. 
+12:04:51.677 INFO  - Clearing existing target manager status. 
+12:04:53.395 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+12:04:53.396 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+12:04:53.401 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+12:04:53.402 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+12:04:53.403 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+12:05:49.910 INFO  - Specified output file already exists 
+12:05:51.687 INFO  - Invoking Bootgen:  
+12:05:52.208 INFO  - Bootgen command execution is done. 
+12:53:50.282 INFO  - Project hw_platform_0's source hardware specification located at /home/vladimir/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+12:53:52.629 INFO  - Copied contents of /home/vladimir/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+12:53:52.634 INFO  - Copied contents of /home/vladimir/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+12:53:52.637 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+12:53:52.637 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+12:53:52.641 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+12:53:52.642 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+12:53:52.642 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+12:53:52.816 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+12:54:07.872 INFO  - Updating hardware inferred compiler options for fsbl. 
+12:54:07.883 INFO  - Clearing existing target manager status. 
+12:54:09.510 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+12:54:09.512 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+12:54:09.516 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+12:54:09.517 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+12:54:09.519 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+12:54:50.288 INFO  - Specified output file already exists 
+12:54:51.146 INFO  - Invoking Bootgen:  
+12:54:51.668 INFO  - Bootgen command execution is done. 
+14:21:12.936 INFO  - Project hw_platform_0's source hardware specification located at /home/vladimir/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+14:27:43.001 INFO  - Copied contents of /home/vladimir/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+14:27:43.006 INFO  - Copied contents of /home/vladimir/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+14:27:43.009 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+14:27:43.010 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+14:27:43.013 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+14:27:43.014 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+14:27:43.014 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+14:27:43.153 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+14:27:58.248 INFO  - Updating hardware inferred compiler options for fsbl. 
+14:27:58.258 INFO  - Clearing existing target manager status. 
+14:27:59.868 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+14:27:59.869 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+14:27:59.874 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+14:27:59.875 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+14:27:59.876 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+14:30:36.503 INFO  - Specified output file already exists 
+14:30:37.739 INFO  - Invoking Bootgen:  
+14:30:38.269 INFO  - Bootgen command execution is done. 
+14:33:47.105 INFO  - Specified output file already exists 
+14:33:48.394 INFO  - Invoking Bootgen:  
+14:33:48.919 INFO  - Bootgen command execution is done. 
+14:34:00.876 INFO  - Specified output file already exists 
+14:34:02.178 INFO  - Invoking Bootgen:  
+14:34:02.723 INFO  - Bootgen command execution is done. 
+15:05:04.073 INFO  - Project hw_platform_0's source hardware specification located at /home/vladimir/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+15:05:08.544 INFO  - Copied contents of /home/vladimir/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+15:05:08.549 INFO  - Copied contents of /home/vladimir/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+15:05:08.552 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+15:05:08.552 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+15:05:08.556 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+15:05:08.556 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+15:05:08.557 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+15:05:08.694 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+15:05:24.012 INFO  - Updating hardware inferred compiler options for fsbl. 
+15:05:24.021 INFO  - Clearing existing target manager status. 
+15:05:25.663 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+15:05:25.665 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+15:05:25.669 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+15:05:25.670 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+15:05:25.671 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+15:06:02.025 INFO  - Specified output file already exists 
+15:06:03.444 INFO  - Invoking Bootgen:  
+15:06:03.968 INFO  - Bootgen command execution is done. 
+15:39:34.634 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+15:40:17.411 INFO  - Processing command line option -hwspec /home/vladimir/260214/hw/dma.xml. 
+15:40:17.588 INFO  - The hardware specification for project 'hw_platform_0' is different from /home/vladimir/260214/hw/dma.xml. 
+15:40:17.937 INFO  - Copied contents of /home/vladimir/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+15:40:17.943 INFO  - Copied contents of /home/vladimir/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+15:40:17.947 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+15:40:17.948 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+15:40:17.952 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+15:40:17.953 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+15:40:17.953 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+15:40:18.102 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+15:40:33.844 INFO  - Updating hardware inferred compiler options for fsbl. 
+15:40:33.853 INFO  - Clearing existing target manager status. 
+15:40:35.835 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+15:40:35.847 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+15:40:35.857 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+15:40:35.860 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+15:40:35.861 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+15:40:51.074 INFO  - Specified output file already exists 
+15:40:52.346 INFO  - Invoking Bootgen:  
+15:40:52.872 INFO  - Bootgen command execution is done. 
+15:52:36.126 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+16:05:31.082 INFO  - Processing command line option -hwspec /home/vladimir/260214/hw/dma.xml. 
+16:05:31.275 INFO  - The hardware specification for project 'hw_platform_0' is different from /home/vladimir/260214/hw/dma.xml. 
+16:05:31.631 INFO  - Copied contents of /home/vladimir/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+16:05:31.637 INFO  - Copied contents of /home/vladimir/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+16:05:31.641 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+16:05:31.641 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+16:05:31.646 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+16:05:31.647 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+16:05:31.647 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+16:05:31.788 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+16:05:47.292 INFO  - Updating hardware inferred compiler options for fsbl. 
+16:05:47.306 INFO  - Clearing existing target manager status. 
+16:05:49.460 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+16:05:49.465 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+16:05:49.480 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+16:05:49.492 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+16:05:49.500 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+16:06:02.507 INFO  - Specified output file already exists 
+16:06:03.637 INFO  - Invoking Bootgen:  
+16:06:04.158 INFO  - Bootgen command execution is done. 
+10:40:14.806 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:57:03.852 INFO  - Processing command line option -hwspec /home/vladimir/260214/hw/dma.xml. 
+11:57:04.098 INFO  - The hardware specification for project 'hw_platform_0' is different from /home/vladimir/260214/hw/dma.xml. 
+11:57:04.610 INFO  - Copied contents of /home/vladimir/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+11:57:04.617 INFO  - Copied contents of /home/vladimir/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+11:57:04.620 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+11:57:04.621 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+11:57:04.626 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+11:57:04.627 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+11:57:04.628 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+11:57:04.795 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+11:57:20.539 INFO  - Updating hardware inferred compiler options for fsbl. 
+11:57:20.553 INFO  - Clearing existing target manager status. 
+11:57:22.465 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+11:57:22.466 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+11:57:22.471 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+11:57:22.472 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+11:57:22.473 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+11:59:49.216 INFO  - Specified output file already exists 
+11:59:51.417 INFO  - Invoking Bootgen:  
+11:59:51.934 INFO  - Bootgen command execution is done. 
+12:00:33.064 INFO  - Specified output file already exists 
+12:00:34.065 INFO  - Invoking Bootgen:  
+12:00:34.581 INFO  - Bootgen command execution is done. 
+13:12:16.050 INFO  - Project hw_platform_0's source hardware specification located at /home/vladimir/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+13:12:30.926 INFO  - Copied contents of /home/vladimir/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+13:12:30.932 INFO  - Copied contents of /home/vladimir/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+13:12:30.934 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+13:12:30.935 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+13:12:30.939 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+13:12:30.939 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+13:12:30.940 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+13:12:31.309 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+13:12:35.193 INFO  - Updating hardware inferred compiler options for fsbl. 
+13:12:35.198 INFO  - Clearing existing target manager status. 
+13:12:35.205 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+13:12:35.208 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+13:12:35.220 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+13:12:35.230 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+13:12:35.232 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+13:12:55.430 INFO  - Specified output file already exists 
+13:12:56.411 INFO  - Invoking Bootgen:  
+13:12:56.931 INFO  - Bootgen command execution is done. 
+13:34:28.843 INFO  - Project hw_platform_0's source hardware specification located at /home/vladimir/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+13:34:31.182 INFO  - Copied contents of /home/vladimir/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+13:34:31.187 INFO  - Copied contents of /home/vladimir/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+13:34:31.190 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+13:34:31.191 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+13:34:31.194 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+13:34:31.195 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+13:34:31.195 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+13:34:31.338 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+13:34:46.537 INFO  - Updating hardware inferred compiler options for fsbl. 
+13:34:46.546 INFO  - Clearing existing target manager status. 
+13:34:48.210 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+13:34:48.212 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+13:34:48.220 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+13:34:48.221 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+13:34:48.222 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+13:36:04.032 INFO  - Specified output file already exists 
+13:36:05.146 INFO  - Invoking Bootgen:  
+13:36:05.664 INFO  - Bootgen command execution is done. 
+14:03:51.849 INFO  - Project hw_platform_0's source hardware specification located at /home/vladimir/260214/hw/dma.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+14:03:56.019 INFO  - Copied contents of /home/vladimir/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+14:03:56.025 INFO  - Copied contents of /home/vladimir/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+14:03:56.027 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+14:03:56.028 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+14:03:56.032 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+14:03:56.032 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+14:03:56.033 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+14:03:56.202 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+14:04:11.805 INFO  - Updating hardware inferred compiler options for fsbl. 
+14:04:11.815 INFO  - Clearing existing target manager status. 
+14:04:13.648 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+14:04:13.649 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+14:04:13.654 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+14:04:13.657 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+14:04:13.659 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+14:04:25.800 INFO  - Specified output file already exists 
+14:04:26.878 INFO  - Invoking Bootgen:  
+14:04:27.393 INFO  - Bootgen command execution is done. 
+14:51:02.584 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

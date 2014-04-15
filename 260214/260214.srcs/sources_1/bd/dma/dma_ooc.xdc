@@ -9,5 +9,6 @@
 #create_clock -name clock_name -period 10 [get_ports clock_name]
 ################################################################################
 create_clock -name FCLK_CLK0 -period 10 [get_ports FCLK_CLK0]
+create_clock -name FCLK_CLK2 -period 20 [get_ports FCLK_CLK2]
 
 ################################################################################

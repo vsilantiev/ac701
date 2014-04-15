@@ -25,7 +25,6 @@ module dma_wrapper
     JA_1,
     LD_0,
     LD_1,
-    LD_4,
     LD_5,
     LD_6,
     LD_7);
@@ -53,7 +52,6 @@ module dma_wrapper
   output JA_1;
   output LD_0;
   output LD_1;
-  output LD_4;
   output LD_5;
   output LD_6;
   output LD_7;
@@ -82,7 +80,6 @@ module dma_wrapper
   wire JA_1;
   wire LD_0;
   wire LD_1;
-  wire LD_4;
   wire LD_5;
   wire LD_6;
   wire LD_7;
@@ -112,7 +109,6 @@ dma dma_i
         .JA_1(JA_1),
         .LD_0(LD_0),
         .LD_1(LD_1),
-        .LD_4(LD_4),
         .LD_5(LD_5),
         .LD_6(LD_6),
         .LD_7(LD_7));

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<!--Product Version: Vivado v2013.4 (64-bit)-->
-<Project Version="6" Minor="14" Path="C:/Users/&#xD1;&#xF2;&#xE0;&#xED;&#xE8;&#xF1;&#xEB;&#xE0;&#xE2;/Desktop/zedboard/260214/260214.xpr">
+<!--Product Version: Vivado v2013.3 (64-bit)-->
+<Project Version="6" Minor="13" Path="/home/vladimir/260214/260214.xpr">
 	<FileSet Dir="sources_1" File="fileset.xml"/>
 	<FileSet Dir="constrs_1" File="fileset.xml"/>
 	<FileSet Dir="sim_1" File="fileset.xml"/>

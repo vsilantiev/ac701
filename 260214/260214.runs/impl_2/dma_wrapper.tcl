@@ -44,6 +44,7 @@ proc step_failed { step } {
 
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
+set_msg_config -id {HDL-1065} -limit 10000
 
 start_step init_design
 set rc [catch {
@@ -52,17 +53,17 @@ set rc [catch {
   create_project -in_memory -part xc7z020clg484-1
   set_property board em.avnet.com:zynq:zed:d [current_project]
   set_property design_mode GateLvl [current_fileset]
-  set_property webtalk.parent_dir /root/260214/260214.data/wt [current_project]
-  set_property parent.project_dir /root/260214 [current_project]
-  add_files /root/260214/260214.runs/synth_2/dma_wrapper.dcp
-  read_xdc -ref dma_processing_system7_0_0 -cells inst /root/260214/260214.srcs/sources_1/bd/dma/ip/dma_processing_system7_0_0/dma_processing_system7_0_0.xdc
-  read_xdc -ref dma_axi_cdma_0_0 -cells U0 /root/260214/260214.srcs/sources_1/bd/dma/ip/dma_axi_cdma_0_0/dma_axi_cdma_0_0.xdc
-  read_xdc -prop_thru_buffers -ref dma_proc_sys_reset_0 -cells U0 /root/260214/260214.srcs/sources_1/bd/dma/ip/dma_proc_sys_reset_0/dma_proc_sys_reset_0_board.xdc
-  read_xdc -ref dma_proc_sys_reset_0 -cells U0 /root/260214/260214.srcs/sources_1/bd/dma/ip/dma_proc_sys_reset_0/dma_proc_sys_reset_0.xdc
-  read_xdc /root/260214/260214.srcs/constrs_1/new/dma_wrapper.xdc
-  read_xdc -ref dma_auto_ds_465 -cells inst /root/260214/260214.srcs/sources_1/bd/dma/ip/dma_auto_ds_465/dma_auto_ds_465_clocks.xdc
-  read_xdc -ref dma_auto_us_466 -cells inst /root/260214/260214.srcs/sources_1/bd/dma/ip/dma_auto_us_466/dma_auto_us_466_clocks.xdc
-  read_xdc -ref dma_auto_us_467 -cells inst /root/260214/260214.srcs/sources_1/bd/dma/ip/dma_auto_us_467/dma_auto_us_467_clocks.xdc
+  set_property webtalk.parent_dir /home/vladimir/260214/260214.data/wt [current_project]
+  set_property parent.project_dir /home/vladimir/260214 [current_project]
+  add_files /home/vladimir/260214/260214.runs/synth_2/dma_wrapper.dcp
+  read_xdc -ref dma_processing_system7_0_0 -cells inst /home/vladimir/260214/260214.srcs/sources_1/bd/dma/ip/dma_processing_system7_0_0/dma_processing_system7_0_0.xdc
+  read_xdc -ref dma_axi_cdma_0_0 -cells U0 /home/vladimir/260214/260214.srcs/sources_1/bd/dma/ip/dma_axi_cdma_0_0/dma_axi_cdma_0_0.xdc
+  read_xdc -prop_thru_buffers -ref dma_proc_sys_reset_0 -cells U0 /home/vladimir/260214/260214.srcs/sources_1/bd/dma/ip/dma_proc_sys_reset_0/dma_proc_sys_reset_0_board.xdc
+  read_xdc -ref dma_proc_sys_reset_0 -cells U0 /home/vladimir/260214/260214.srcs/sources_1/bd/dma/ip/dma_proc_sys_reset_0/dma_proc_sys_reset_0.xdc
+  read_xdc /home/vladimir/260214/260214.srcs/constrs_1/new/dma_wrapper.xdc
+  read_xdc -ref dma_auto_ds_777 -cells inst /home/vladimir/260214/260214.srcs/sources_1/bd/dma/ip/dma_auto_ds_777/dma_auto_ds_777_clocks.xdc
+  read_xdc -ref dma_auto_us_778 -cells inst /home/vladimir/260214/260214.srcs/sources_1/bd/dma/ip/dma_auto_us_778/dma_auto_us_778_clocks.xdc
+  read_xdc -ref dma_auto_us_779 -cells inst /home/vladimir/260214/260214.srcs/sources_1/bd/dma/ip/dma_auto_us_779/dma_auto_us_779_clocks.xdc
   link_design -top dma_wrapper -part xc7z020clg484-1
   close_msg_db -file init_design.pb
 } RESULT]
