@@ -1,0 +1,34 @@
+Release 14.7 - libgen Xilinx EDK 14.7 Build EDK_P.20131013
+ (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw/system.xml -lp /home/vladimir/cf_ad9467_zed -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+ERROR:EDK:3323 -
+   /home/vladimir/Z/zedboard/cf_ad9467_zed/SDK/SDK_Workspace/bsp/system.mss line
+   27 - Cannot find MDD file axidma_v2_1_0.mdd for the driver axidma 5.00.a
+INFO:EDK:1040 - Directories Searched :
+  -
+/home/vladimir/Z/zedboard/cf_ad9467_zed/SDK/SDK_Workspace/bsp/drivers/axidma_v5_
+00_a/data
+  -
+/home/vladimir/Z/zedboard/cf_ad9467_zed/SDK/SDK_Workspace/bsp/pcores/axidma_v5_0
+0_a/data
+  - /home/vladimir/cf_ad9467_zed/drivers/axidma_v5_00_a/data
+  - /home/vladimir/cf_ad9467_zed/pcores/axidma_v5_00_a/data
+  - /opt/Xilinx/14.7/ISE_DS/EDK/sw/lib/drivers/axidma_v5_00_a/data
+  - /opt/Xilinx/14.7/ISE_DS/EDK/sw/lib/pcores/axidma_v5_00_a/data
+  -
+/opt/Xilinx/14.7/ISE_DS/EDK/sw/XilinxProcessorIPLib/drivers/axidma_v5_00_a/data
+  -
+/opt/Xilinx/14.7/ISE_DS/EDK/sw/XilinxProcessorIPLib/pcores/axidma_v5_00_a/data
+  - /opt/Xilinx/14.7/ISE_DS/EDK/sw/ThirdParty/drivers/axidma_v5_00_a/data
+  - /opt/Xilinx/14.7/ISE_DS/EDK/sw/ThirdParty/pcores/axidma_v5_00_a/data
+INFO:EDK:772 - Check the following for possible causes of not finding MDD:
+  - If DRIVER_VER is specified in MSS, it must follow literal form X.YY.Z
+  - There is no driver with given name
+  - Driver exists but not that version
+  - Driver and version (directory) exist but no MDD is available
+
+ERROR:EDK:1204 - Errors occured while creating Software System.

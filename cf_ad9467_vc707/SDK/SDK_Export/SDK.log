@@ -19,3 +19,10 @@
  
 13:52:06.832 INFO  - FPGA configured successfully with bitstream "D:/WORK/zedboard/cf_ad9467_vc707/SDK/SDK_Export/cf_ad9467_vc707_hw_platform/download.bit" 
 14:11:06.078 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+13:00:54.702 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Адрес уже используется 
+13:01:06.190 INFO  - FPGA configured successfully with bitstream "/home/vladimir/Z/zedboard/cf_ad9467_vc707/SDK/SDK_Export/cf_ad9467_vc707_hw_platform/download.bit" 
+13:19:18.679 INFO  - FPGA configured successfully with bitstream "/home/vladimir/Z/zedboard/cf_ad9467_vc707/SDK/SDK_Export/cf_ad9467_vc707_hw_platform/download.bit" 
+13:22:56.653 INFO  - FPGA configured successfully with bitstream "/home/vladimir/Z/zedboard/cf_ad9467_vc707/SDK/SDK_Export/cf_ad9467_vc707_hw_platform/download.bit" 
+13:32:15.340 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+16:29:02.367 INFO  - FPGA configured successfully with bitstream "/home/vladimir/Z/zedboard/cf_ad9467_vc707/SDK/SDK_Export/cf_ad9467_vc707_hw_platform/download.bit" 
+17:49:14.739 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

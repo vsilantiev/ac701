@@ -1,7 +1,6 @@
+<EDKSYSTEM EDKVERSION="14.7" EDWVERSION="1.2" TIMESTAMP="Wed Apr  9 13:57:48 2014">
 
-<EDKSYSTEM EDKVERSION="14.7" EDWVERSION="1.2" TIMESTAMP="Tue Apr 08 15:26:30 2014">
-
-  <SYSTEMINFO ARCH="artix7" DEVICE="xc7a200t" PACKAGE="fbg676" PART="xc7a200tfbg676-3" SOURCE="D:/WORK/zedboard/cf_ad9467_vc707/system.xmp" SPEEDGRADE="-3"/>
+  <SYSTEMINFO ARCH="artix7" DEVICE="xc7a200t" PACKAGE="fbg676" PART="xc7a200tfbg676-3" SOURCE="/home/vladimir/Z/zedboard/cf_ad9467_vc707/system.xmp" SPEEDGRADE="-3"/>
 
   <EXTERNALPORTS>
     <PORT DIR="O" MHS_INDEX="0" NAME="sm_fan_pwm_net_vcc" SIGNAME="net_vcc">
@@ -1477,7 +1476,7 @@
       <DESCRIPTION TYPE="SHORT">MicroBlaze</DESCRIPTION>
       <DESCRIPTION TYPE="LONG">The MicroBlaze 32 bit soft processor</DESCRIPTION>
       <DOCUMENTATION>
-        <DOCUMENT SOURCE="C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/doc/microblaze.pdf" TYPE="IP"/>
+        <DOCUMENT SOURCE="/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/doc/microblaze.pdf" TYPE="IP"/>
       </DOCUMENTATION>
       <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
@@ -8614,7 +8613,7 @@
       <DESCRIPTION TYPE="SHORT">AXI DMA Engine</DESCRIPTION>
       <DESCRIPTION TYPE="LONG">AXI MemoryMap to/from AXI Stream Direct Memory Access Engine</DESCRIPTION>
       <DOCUMENTATION>
-        <DOCUMENT SOURCE="C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_dma_v5_00_a/doc/pg021_axi_dma.pdf" TYPE="IP"/>
+        <DOCUMENT SOURCE="/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_dma_v5_00_a/doc/pg021_axi_dma.pdf" TYPE="IP"/>
       </DOCUMENTATION>
       <LICENSEINFO ICON_NAME="ps_core_deprecated"/>
       <PARAMETERS>
