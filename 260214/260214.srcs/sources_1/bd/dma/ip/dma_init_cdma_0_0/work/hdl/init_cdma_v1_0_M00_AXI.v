@@ -626,7 +626,7 @@
     	    // Initiates AXI transaction delay    
     	  if (M_AXI_ARESETN == 0)                                                                                                                   
     	        offset_ddr <= 32'h0;                                                                                                                                                                                                                                                  
-    	  else if ( init_txn_pulse == 1'b1 && C_M_START_CAPTURE == 1'b1 ) 
+    	  else if ( init_txn_pulse == 1'b1 && C_M_START_CAPTURE == 1'b1) 
     	       offset_ddr <= offset_ddr + C_M_LEN_DATA;
     	  end 
     	  /*

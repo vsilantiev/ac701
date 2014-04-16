@@ -89,7 +89,7 @@
 		.C_M_TRANSACTIONS_NUM(C_M00_AXI_TRANSACTIONS_NUM)
 	) mydatagen_v1_0_M00_AXI_inst (
             
-           .C_M_START_CAPTURE(C_M00_START_CAPTURE),
+           .C_M_START_CAPTURE(C_M00_AXI_START_CAPTURE),
             
 	      .C_M_BUF0_ADDR(C_M00_AXI_BUF0_ADDR),
 	      .C_M_BUF1_ADDR(C_M00_AXI_BUF1_ADDR),

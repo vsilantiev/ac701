@@ -855,3 +855,44 @@
 14:04:26.878 INFO  - Invoking Bootgen:  
 14:04:27.393 INFO  - Bootgen command execution is done. 
 14:51:02.584 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+16:21:58.267 INFO  - Processing command line option -hwspec /home/vladimir/260214/hw/dma.xml. 
+16:21:58.454 INFO  - The hardware specification for project 'hw_platform_0' is different from /home/vladimir/260214/hw/dma.xml. 
+16:21:58.945 INFO  - Copied contents of /home/vladimir/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+16:21:58.952 INFO  - Copied contents of /home/vladimir/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+16:21:58.955 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+16:21:58.956 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+16:21:58.960 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+16:21:58.961 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+16:21:58.961 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+16:21:59.108 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+16:22:14.892 INFO  - Updating hardware inferred compiler options for fsbl. 
+16:22:14.904 INFO  - Clearing existing target manager status. 
+16:22:16.788 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+16:22:16.791 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+16:22:16.797 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+16:22:16.800 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+16:22:16.803 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+16:22:35.259 INFO  - Specified output file already exists 
+16:22:36.929 INFO  - Invoking Bootgen:  
+16:22:37.448 INFO  - Bootgen command execution is done. 
+16:40:51.879 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+09:41:27.266 INFO  - Processing command line option -hwspec /home/vladimir/260214/hw/dma.xml. 
+09:41:27.458 INFO  - The hardware specification for project 'hw_platform_0' is different from /home/vladimir/260214/hw/dma.xml. 
+09:41:27.965 INFO  - Copied contents of /home/vladimir/260214/hw/dma.xml into /hw_platform_0/system.xml. 
+09:41:27.972 INFO  - Copied contents of /home/vladimir/260214/hw/dma_wrapper.bit into /hw_platform_0/dma_wrapper.bit. 
+09:41:27.976 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+09:41:27.976 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+09:41:27.980 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+09:41:27.981 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+09:41:27.982 INFO  - Copied contents of /home/vladimir/260214/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+09:41:28.141 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+09:41:43.436 INFO  - Updating hardware inferred compiler options for fsbl. 
+09:41:43.450 INFO  - Clearing existing target manager status. 
+09:41:45.409 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.c into /fsbl/src/ps7_init.c. 
+09:41:45.414 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.h into /fsbl/src/ps7_init.h. 
+09:41:45.420 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html. 
+09:41:45.424 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_summary.html into /fsbl/src/ps7_summary.html. 
+09:41:45.425 INFO  - Copied contents of /home/vladimir/260214/hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl. 
+09:42:02.912 INFO  - Specified output file already exists 
+09:42:04.372 INFO  - Invoking Bootgen:  
+09:42:04.909 INFO  - Bootgen command execution is done. 

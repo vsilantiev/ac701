@@ -1,29 +1,24 @@
 	module acp_v1_0 #
 	(
-		// Users to add parameters here
-
-		// User parameters ends
-		// Do not modify the parameters beyond this line
-
-
-		// Parameters of Axi Master Bus Interface M00_AXI
-		parameter  C_M00_AXI_START_DATA_VALUE	= 32'hAA000000,
+		//Адрес BRAM на шине AXI
 		parameter  C_M00_AXI_TARGET_SLAVE_BASE_ADDR	= 32'h40000000,
+		//Ширина адреса и данных
 		parameter integer C_M00_AXI_ADDR_WIDTH	= 32,
 		parameter integer C_M00_AXI_DATA_WIDTH	= 32,
-		parameter integer C_M00_AXI_TRANSACTIONS_NUM	= 4
+        //Кол-во 32р. машинных слов BRAM
+		parameter integer C_M00_AXI_TRANSACTIONS_NUM = 131072
 	)
 	(
-		// Users to add ports here
+		//Вход данных с ADC
         input wire [C_M00_AXI_ADDR_WIDTH-1 : 0] C_M00_AXI_DATA_ADC,
-		// User ports ends
-		// Do not modify the ports beyond this line
-
+        //Указатель начального адреса в BRAM для блока init_cdma
         output wire [C_M00_AXI_ADDR_WIDTH-1 : 0] C_M00_AXI_SRC_ADDR,
+
 		// Ports of Axi Master Bus Interface M00_AXI
+        //Сигнал для init_cdma (начало передачи текущей половины BRAM)
 		output wire m00_axi_half,
-		output wire  m00_axi_error,
-		output wire  m00_axi_txn_done,
+
+
 		input wire  m00_axi_aclk,
 		input wire  m00_axi_aresetn,
 		output wire [C_M00_AXI_ADDR_WIDTH-1 : 0] m00_axi_awaddr,
@@ -48,7 +43,6 @@
 	);
 // Instantiation of Axi Bus Interface M00_AXI
 	acp_v1_0_M00_AXI # ( 
-		.C_M_START_DATA_VALUE(C_M00_AXI_START_DATA_VALUE),
 		.C_M_TARGET_SLAVE_BASE_ADDR(C_M00_AXI_TARGET_SLAVE_BASE_ADDR),
 		.C_M_AXI_ADDR_WIDTH(C_M00_AXI_ADDR_WIDTH),
 		.C_M_AXI_DATA_WIDTH(C_M00_AXI_DATA_WIDTH),
@@ -57,8 +51,6 @@
 	    .C_M_SRC_ADDR(C_M00_AXI_SRC_ADDR),
 	    .HALF(m00_axi_half),
          .C_M_DATA_ADC(C_M00_AXI_DATA_ADC),
-		.ERROR(m00_axi_error),
-		.TXN_DONE(m00_axi_txn_done),
 		.M_AXI_ACLK(m00_axi_aclk),
 		.M_AXI_ARESETN(m00_axi_aresetn),
 		.M_AXI_AWADDR(m00_axi_awaddr),

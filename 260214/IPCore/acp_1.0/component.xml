@@ -625,41 +625,9 @@
           </spirit:wireTypeDefs>
         </spirit:wire>
       </spirit:port>
-      <spirit:port>
-        <spirit:name>m00_axi_error</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>m00_axi_txn_done</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
     </spirit:ports>
     <spirit:modelParameters>
       <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
-        <spirit:name>C_M00_AXI_START_DATA_VALUE</spirit:name>
-        <spirit:displayName>C_M00_AXI_START_DATA_VALUE</spirit:displayName>
-        <spirit:description>The master will start generating data from the C_M_START_DATA_VALUE value</spirit:description>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M00_AXI_START_DATA_VALUE" spirit:order="3" spirit:bitStringLength="32">0xAA000000</spirit:value>
-      </spirit:modelParameter>
-      <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_M00_AXI_TARGET_SLAVE_BASE_ADDR</spirit:name>
         <spirit:displayName>C_M00_AXI_TARGET_SLAVE_BASE_ADDR</spirit:displayName>
         <spirit:description>The master requires a target slave base address.
@@ -685,7 +653,7 @@
         <spirit:displayName>C_M00_AXI_TRANSACTIONS_NUM</spirit:displayName>
         <spirit:description>Transaction number is the number of write 
     // and read transactions the master will perform as a part of this example memory test.</spirit:description>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M00_AXI_TRANSACTIONS_NUM" spirit:order="7" spirit:minimum="1" spirit:rangeType="long">4</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M00_AXI_TRANSACTIONS_NUM" spirit:order="7" spirit:minimum="1" spirit:rangeType="long">131072</spirit:value>
       </spirit:modelParameter>
     </spirit:modelParameters>
   </spirit:model>
@@ -737,12 +705,6 @@
   <spirit:description>acp_v1_0</spirit:description>
   <spirit:parameters>
     <spirit:parameter>
-      <spirit:name>C_M00_AXI_START_DATA_VALUE</spirit:name>
-      <spirit:displayName>C_M00_AXI_START_DATA_VALUE</spirit:displayName>
-      <spirit:description>The master will start generating data from the C_M_START_DATA_VALUE value</spirit:description>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M00_AXI_START_DATA_VALUE" spirit:order="3" spirit:bitStringLength="32">0xAA000000</spirit:value>
-    </spirit:parameter>
-    <spirit:parameter>
       <spirit:name>C_M00_AXI_TARGET_SLAVE_BASE_ADDR</spirit:name>
       <spirit:displayName>C_M00_AXI_TARGET_SLAVE_BASE_ADDR</spirit:displayName>
       <spirit:description>The master requires a target slave base address.
@@ -768,7 +730,7 @@
       <spirit:displayName>C_M00_AXI_TRANSACTIONS_NUM</spirit:displayName>
       <spirit:description>Transaction number is the number of write 
     // and read transactions the master will perform as a part of this example memory test.</spirit:description>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M00_AXI_TRANSACTIONS_NUM" spirit:order="7" spirit:minimum="1" spirit:rangeType="long">4</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M00_AXI_TRANSACTIONS_NUM" spirit:order="7" spirit:minimum="1" spirit:rangeType="long">131072</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
@@ -784,8 +746,8 @@
         <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>acp_v1_0</xilinx:displayName>
-      <xilinx:coreRevision>54</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2014-04-15T08:48:01Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>55</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2014-04-16T05:00:41Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2013.3</xilinx:xilinxVersion>

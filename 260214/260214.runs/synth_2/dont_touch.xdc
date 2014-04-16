@@ -48,29 +48,29 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dma_reg_status_
 # IP: bd/dma/ip/dma_reg_init_0_1/dma_reg_init_0_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dma_reg_init_0_1 || ORIG_REF_NAME==dma_reg_init_0_1}]
 
-# IP: bd/dma/ip/dma_ADC_emul_0_0/dma_ADC_emul_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dma_ADC_emul_0_0 || ORIG_REF_NAME==dma_ADC_emul_0_0}]
+# IP: bd/dma/ip/dma_ADC_emul_0_1/dma_ADC_emul_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dma_ADC_emul_0_1 || ORIG_REF_NAME==dma_ADC_emul_0_1}]
 
-# IP: bd/dma/ip/dma_auto_pc_1049/dma_auto_pc_1049.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dma_auto_pc_1049 || ORIG_REF_NAME==dma_auto_pc_1049}]
+# IP: bd/dma/ip/dma_auto_pc_1181/dma_auto_pc_1181.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dma_auto_pc_1181 || ORIG_REF_NAME==dma_auto_pc_1181}]
 
-# IP: bd/dma/ip/dma_auto_ds_777/dma_auto_ds_777.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dma_auto_ds_777 || ORIG_REF_NAME==dma_auto_ds_777}]
+# IP: bd/dma/ip/dma_auto_ds_876/dma_auto_ds_876.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dma_auto_ds_876 || ORIG_REF_NAME==dma_auto_ds_876}]
 
-# IP: bd/dma/ip/dma_auto_pc_1050/dma_auto_pc_1050.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dma_auto_pc_1050 || ORIG_REF_NAME==dma_auto_pc_1050}]
+# IP: bd/dma/ip/dma_auto_pc_1182/dma_auto_pc_1182.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dma_auto_pc_1182 || ORIG_REF_NAME==dma_auto_pc_1182}]
 
-# IP: bd/dma/ip/dma_auto_us_778/dma_auto_us_778.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dma_auto_us_778 || ORIG_REF_NAME==dma_auto_us_778}]
+# IP: bd/dma/ip/dma_auto_us_877/dma_auto_us_877.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dma_auto_us_877 || ORIG_REF_NAME==dma_auto_us_877}]
 
-# IP: bd/dma/ip/dma_auto_pc_1051/dma_auto_pc_1051.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dma_auto_pc_1051 || ORIG_REF_NAME==dma_auto_pc_1051}]
+# IP: bd/dma/ip/dma_auto_pc_1183/dma_auto_pc_1183.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dma_auto_pc_1183 || ORIG_REF_NAME==dma_auto_pc_1183}]
 
-# IP: bd/dma/ip/dma_auto_us_779/dma_auto_us_779.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dma_auto_us_779 || ORIG_REF_NAME==dma_auto_us_779}]
+# IP: bd/dma/ip/dma_auto_us_878/dma_auto_us_878.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dma_auto_us_878 || ORIG_REF_NAME==dma_auto_us_878}]
 
-# IP: bd/dma/ip/dma_auto_pc_1052/dma_auto_pc_1052.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dma_auto_pc_1052 || ORIG_REF_NAME==dma_auto_pc_1052}]
+# IP: bd/dma/ip/dma_auto_pc_1184/dma_auto_pc_1184.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dma_auto_pc_1184 || ORIG_REF_NAME==dma_auto_pc_1184}]
 
 # XDC: bd/dma/ip/dma_processing_system7_0_0/dma_processing_system7_0_0.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==dma_processing_system7_0_0 || ORIG_REF_NAME==dma_processing_system7_0_0}] {/inst }]/inst ]]
@@ -98,27 +98,27 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/dma/ip/dma_axi_bram_ctrl_0_bram_0/dma_axi_bram_ctrl_0_bram_0_ooc.xdc
 
-# XDC: bd/dma/ip/dma_auto_pc_1049/dma_auto_pc_1049_ooc.xdc
+# XDC: bd/dma/ip/dma_auto_pc_1181/dma_auto_pc_1181_ooc.xdc
 
-# XDC: bd/dma/ip/dma_auto_ds_777/dma_auto_ds_777_ooc.xdc
+# XDC: bd/dma/ip/dma_auto_ds_876/dma_auto_ds_876_ooc.xdc
 
-# XDC: bd/dma/ip/dma_auto_ds_777/dma_auto_ds_777_clocks.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==dma_auto_ds_777 || ORIG_REF_NAME==dma_auto_ds_777}] {/inst }]/inst ]]
+# XDC: bd/dma/ip/dma_auto_ds_876/dma_auto_ds_876_clocks.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==dma_auto_ds_876 || ORIG_REF_NAME==dma_auto_ds_876}] {/inst }]/inst ]]
 
-# XDC: bd/dma/ip/dma_auto_pc_1050/dma_auto_pc_1050_ooc.xdc
+# XDC: bd/dma/ip/dma_auto_pc_1182/dma_auto_pc_1182_ooc.xdc
 
-# XDC: bd/dma/ip/dma_auto_us_778/dma_auto_us_778_ooc.xdc
+# XDC: bd/dma/ip/dma_auto_us_877/dma_auto_us_877_ooc.xdc
 
-# XDC: bd/dma/ip/dma_auto_us_778/dma_auto_us_778_clocks.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==dma_auto_us_778 || ORIG_REF_NAME==dma_auto_us_778}] {/inst }]/inst ]]
+# XDC: bd/dma/ip/dma_auto_us_877/dma_auto_us_877_clocks.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==dma_auto_us_877 || ORIG_REF_NAME==dma_auto_us_877}] {/inst }]/inst ]]
 
-# XDC: bd/dma/ip/dma_auto_pc_1051/dma_auto_pc_1051_ooc.xdc
+# XDC: bd/dma/ip/dma_auto_pc_1183/dma_auto_pc_1183_ooc.xdc
 
-# XDC: bd/dma/ip/dma_auto_us_779/dma_auto_us_779_ooc.xdc
+# XDC: bd/dma/ip/dma_auto_us_878/dma_auto_us_878_ooc.xdc
 
-# XDC: bd/dma/ip/dma_auto_us_779/dma_auto_us_779_clocks.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==dma_auto_us_779 || ORIG_REF_NAME==dma_auto_us_779}] {/inst }]/inst ]]
+# XDC: bd/dma/ip/dma_auto_us_878/dma_auto_us_878_clocks.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==dma_auto_us_878 || ORIG_REF_NAME==dma_auto_us_878}] {/inst }]/inst ]]
 
-# XDC: bd/dma/ip/dma_auto_pc_1052/dma_auto_pc_1052_ooc.xdc
+# XDC: bd/dma/ip/dma_auto_pc_1184/dma_auto_pc_1184_ooc.xdc
 
 # XDC: bd/dma/dma_ooc.xdc

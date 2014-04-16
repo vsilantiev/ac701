@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Apr 15 14:03:36 2014" VIVADOVERSION="2013.3">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Apr 16 09:41:04 2014" VIVADOVERSION="2013.3">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z020" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
@@ -40,11 +40,6 @@
         <CONNECTION INSTANCE="init_cdma_0" PORT="m00_axi_txn_done"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="LD_5" SIGIS="undef" SIGNAME="reg_init_0_start">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="reg_init_0" PORT="start"/>
-      </CONNECTIONS>
-    </PORT>
     <PORT DIR="O" NAME="LD_6" SIGIS="undef" SIGNAME="acp_0_m00_axi_half">
       <CONNECTIONS>
         <CONNECTION INSTANCE="acp_0" PORT="m00_axi_half"/>
@@ -55,14 +50,19 @@
         <CONNECTION INSTANCE="init_cdma_0" PORT="m00_axi_irq_end_transfer"/>
       </CONNECTIONS>
     </PORT>
+    <PORT DIR="O" NAME="LD_5" SIGIS="undef" SIGNAME="reg_init_0_start">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="reg_init_0" PORT="start"/>
+      </CONNECTIONS>
+    </PORT>
   </EXTERNALPORTS>
 
   <MODULES>
     <MODULE FULLNAME="/ADC_emul_0" HWVERSION="1.0" INSTANCE="ADC_emul_0" IPTYPE="PERIPHERAL" MODCLASS="PERIPHERAL" MODTYPE="ADC_emul">
       <PARAMETERS>
-        <PARAMETER NAME="WIDTH" VALUE="16"/>
+        <PARAMETER NAME="WIDTH" VALUE="32"/>
         <PARAMETER NAME="accPP" VALUE="1"/>
-        <PARAMETER CHANGEDBY="default" NAME="Component_Name" VALUE="dma_ADC_emul_0_0"/>
+        <PARAMETER CHANGEDBY="default" NAME="Component_Name" VALUE="dma_ADC_emul_0_1"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
@@ -76,18 +76,16 @@
             <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_RESET0_N"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="lvds" SIGIS="undef" SIGNAME="ADC_emul_0_lvds">
+        <PORT DIR="O" NAME="link" SIGIS="undef" SIGNAME="ADC_emul_0_link">
           <CONNECTIONS>
             <CONNECTION INSTANCE="acp_0" PORT="C_M00_AXI_DATA_ADC"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="clk_out" SIGIS="undef"/>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
     <MODULE FULLNAME="/acp_0" HWVERSION="1.0" INSTANCE="acp_0" IPTYPE="PERIPHERAL" MODCLASS="PERIPHERAL" MODTYPE="acp">
       <PARAMETERS>
-        <PARAMETER NAME="C_M00_AXI_START_DATA_VALUE" VALUE="0x00000000"/>
         <PARAMETER NAME="C_M00_AXI_TARGET_SLAVE_BASE_ADDR" VALUE="0x40000000"/>
         <PARAMETER NAME="C_M00_AXI_ADDR_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_M00_AXI_DATA_WIDTH" VALUE="32"/>
@@ -96,9 +94,9 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" NAME="C_M00_AXI_DATA_ADC" SIGIS="undef" SIGNAME="ADC_emul_0_lvds">
+        <PORT DIR="I" NAME="C_M00_AXI_DATA_ADC" SIGIS="undef" SIGNAME="ADC_emul_0_link">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ADC_emul_0" PORT="lvds"/>
+            <CONNECTION INSTANCE="ADC_emul_0" PORT="link"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="C_M00_AXI_SRC_ADDR" SIGIS="undef" SIGNAME="acp_0_C_M00_AXI_SRC_ADDR">
@@ -217,8 +215,6 @@
             <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_RESET0_N"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="m00_axi_error" SIGIS="undef"/>
-        <PORT DIR="O" NAME="m00_axi_txn_done" SIGIS="undef"/>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="axi_mem_intercon_s01_couplers_auto_us" NAME="M00_AXI" TYPE="MASTER">
@@ -2598,7 +2594,7 @@
         <PARAMETER CHANGEDBY="undefined" NAME="RUSER_WIDTH" VALUE="0"/>
         <PARAMETER CHANGEDBY="undefined" NAME="WUSER_WIDTH" VALUE="0"/>
         <PARAMETER CHANGEDBY="undefined" NAME="BUSER_WIDTH" VALUE="0"/>
-        <PARAMETER CHANGEDBY="default" NAME="Component_Name" VALUE="dma_auto_pc_1049"/>
+        <PARAMETER CHANGEDBY="default" NAME="Component_Name" VALUE="dma_auto_pc_1181"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="BUS"/>
       </PARAMETERS>
       <PORTS>
@@ -3029,7 +3025,7 @@
         <PARAMETER CHANGEDBY="default" NAME="ACLK_ASYNC" VALUE="0"/>
         <PARAMETER CHANGEDBY="default" NAME="SYNCHRONIZATION_STAGES" VALUE="3"/>
         <PARAMETER CHANGEDBY="default" NAME="ACLK_RATIO" VALUE="1:2"/>
-        <PARAMETER CHANGEDBY="default" NAME="Component_Name" VALUE="dma_auto_ds_777"/>
+        <PARAMETER CHANGEDBY="default" NAME="Component_Name" VALUE="dma_auto_ds_876"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="BUS"/>
       </PARAMETERS>
       <PORTS>
@@ -3445,7 +3441,7 @@
         <PARAMETER CHANGEDBY="constant" NAME="RUSER_WIDTH" VALUE="0"/>
         <PARAMETER CHANGEDBY="constant" NAME="WUSER_WIDTH" VALUE="0"/>
         <PARAMETER CHANGEDBY="constant" NAME="BUSER_WIDTH" VALUE="0"/>
-        <PARAMETER CHANGEDBY="default" NAME="Component_Name" VALUE="dma_auto_pc_1050"/>
+        <PARAMETER CHANGEDBY="default" NAME="Component_Name" VALUE="dma_auto_pc_1182"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="BUS"/>
       </PARAMETERS>
       <PORTS>
@@ -3761,7 +3757,7 @@
         <PARAMETER CHANGEDBY="default" NAME="ACLK_ASYNC" VALUE="0"/>
         <PARAMETER CHANGEDBY="default" NAME="SYNCHRONIZATION_STAGES" VALUE="3"/>
         <PARAMETER CHANGEDBY="default" NAME="ACLK_RATIO" VALUE="1:2"/>
-        <PARAMETER CHANGEDBY="default" NAME="Component_Name" VALUE="dma_auto_us_778"/>
+        <PARAMETER CHANGEDBY="default" NAME="Component_Name" VALUE="dma_auto_us_877"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="BUS"/>
       </PARAMETERS>
       <PORTS>
@@ -4125,7 +4121,7 @@
         <PARAMETER CHANGEDBY="constant" NAME="RUSER_WIDTH" VALUE="0"/>
         <PARAMETER CHANGEDBY="constant" NAME="WUSER_WIDTH" VALUE="0"/>
         <PARAMETER CHANGEDBY="constant" NAME="BUSER_WIDTH" VALUE="0"/>
-        <PARAMETER CHANGEDBY="default" NAME="Component_Name" VALUE="dma_auto_pc_1051"/>
+        <PARAMETER CHANGEDBY="default" NAME="Component_Name" VALUE="dma_auto_pc_1183"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="BUS"/>
       </PARAMETERS>
       <PORTS>
@@ -4441,7 +4437,7 @@
         <PARAMETER CHANGEDBY="default" NAME="ACLK_ASYNC" VALUE="0"/>
         <PARAMETER CHANGEDBY="default" NAME="SYNCHRONIZATION_STAGES" VALUE="3"/>
         <PARAMETER CHANGEDBY="default" NAME="ACLK_RATIO" VALUE="1:2"/>
-        <PARAMETER CHANGEDBY="default" NAME="Component_Name" VALUE="dma_auto_us_779"/>
+        <PARAMETER CHANGEDBY="default" NAME="Component_Name" VALUE="dma_auto_us_878"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="BUS"/>
       </PARAMETERS>
       <PORTS>
@@ -6971,7 +6967,7 @@
         <PARAMETER CHANGEDBY="constant" NAME="RUSER_WIDTH" VALUE="0"/>
         <PARAMETER CHANGEDBY="constant" NAME="WUSER_WIDTH" VALUE="0"/>
         <PARAMETER CHANGEDBY="constant" NAME="BUSER_WIDTH" VALUE="0"/>
-        <PARAMETER CHANGEDBY="default" NAME="Component_Name" VALUE="dma_auto_pc_1052"/>
+        <PARAMETER CHANGEDBY="default" NAME="Component_Name" VALUE="dma_auto_pc_1184"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="BUS"/>
       </PARAMETERS>
       <PORTS>
@@ -7944,7 +7940,7 @@
         <PARAMETER CHANGEDBY="default" NAME="M15_ERR_MODE" VALUE="0"/>
         <PARAMETER CHANGEDBY="default" NAME="S00_SINGLE_THREAD" VALUE="1"/>
         <PARAMETER CHANGEDBY="default" NAME="S01_SINGLE_THREAD" VALUE="1"/>
-        <PARAMETER CHANGEDBY="default" NAME="S02_SINGLE_THREAD" VALUE="0"/>
+        <PARAMETER CHANGEDBY="default" NAME="S02_SINGLE_THREAD" VALUE="1"/>
         <PARAMETER CHANGEDBY="default" NAME="S03_SINGLE_THREAD" VALUE="0"/>
         <PARAMETER CHANGEDBY="default" NAME="S04_SINGLE_THREAD" VALUE="0"/>
         <PARAMETER CHANGEDBY="default" NAME="S05_SINGLE_THREAD" VALUE="0"/>

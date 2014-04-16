@@ -17,7 +17,7 @@
     <File Path="$PSRCDIR/sources_1/imports/hdl/dma_wrapper.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/bd/dma/hdl/dma_wrapper.v"/>
-        <Attr Name="ImportTime" Val="1397555532"/>
+        <Attr Name="ImportTime" Val="1397624492"/>
         <Attr Name="UsedInSynthesis" Val="1"/>
         <Attr Name="UsedInImplementation" Val="1"/>
         <Attr Name="UsedInSimulation" Val="1"/>
@@ -36,6 +36,7 @@
     <File Path="$PSRCDIR/sources_1/bd/dma/ip/dma_init_cdma_0_0/dma_init_cdma_0_0.upgrade_log"/>
     <File Path="$PSRCDIR/sources_1/bd/dma/ip/dma_acp_0_0/dma_acp_0_0.upgrade_log"/>
     <File Path="$PSRCDIR/sources_1/bd/dma/ip/dma_ADC_emul_0_0/dma_ADC_emul_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/dma/ip/dma_ADC_emul_0_1/dma_ADC_emul_0_1.upgrade_log"/>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="dma_wrapper"/>

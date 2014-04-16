@@ -17,7 +17,7 @@
     <File Path="$PSRCDIR/sources_1/imports/hdl/dma_wrapper.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/bd/dma/hdl/dma_wrapper.v"/>
-        <Attr Name="ImportTime" Val="1397555532"/>
+        <Attr Name="ImportTime" Val="1397624492"/>
         <Attr Name="UsedInSynthesis" Val="1"/>
         <Attr Name="UsedInImplementation" Val="1"/>
         <Attr Name="UsedInSimulation" Val="1"/>
@@ -57,6 +57,13 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/bd/dma/ip/dma_ADC_emul_0_0/dma_ADC_emul_0_0.upgrade_log">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/dma/ip/dma_ADC_emul_0_1/dma_ADC_emul_0_1.upgrade_log">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

@@ -1,12 +1,5 @@
 	module acp_v1_0_M00_AXI #
 	(
-		// Users to add parameters here
-
-		// User parameters ends
-		// Do not modify the parameters beyond this line
-
-		// The master will start generating data from the C_M_START_DATA_VALUE value
-		parameter  C_M_START_DATA_VALUE	= 32'hAA000000,
 		// The master requires a target slave base address.
     // The master will initiate read and write transactions on the slave with base address specified here as a parameter.
 		parameter  C_M_TARGET_SLAVE_BASE_ADDR	= 32'h40000000,
@@ -30,9 +23,6 @@
 
 		// Initiate AXI transactions
 		// Asserts when ERROR is detected
-		output reg  ERROR,
-		// Asserts when AXI transactions is complete
-		output wire  TXN_DONE,
 		// AXI clock signal
 		input wire  M_AXI_ACLK,
 		// AXI active low reset signal
@@ -159,7 +149,7 @@
 	//Expected read data used to compare with the read data.
 	reg [C_M_AXI_DATA_WIDTH-1 : 0] 	expected_rdata;
 	//Flag marks the completion of comparison of the read data with the expected read data
-	reg  	compare_done;
+//	reg  	compare_done;
 	//This flag is asserted when there is a mismatch of the read data with the expected read data.
 	reg  	read_mismatch;
 	//Flag is asserted when the write index reaches the last write transction number
@@ -196,7 +186,7 @@
 	//Read and Read Response (R)
 	assign M_AXI_RREADY	= axi_rready;
 	//Example design I/O
-	assign TXN_DONE	= compare_done;
+	//assign TXN_DONE	= compare_done;
 	assign init_txn_pulse	= (!init_txn_ff2) && init_txn_ff;
 
     assign HALF = half;
@@ -417,7 +407,7 @@
 	        if (M_AXI_ARESETN == 0 || init_txn_pulse == 1'b1 )
 	        ////if (M_AXI_ARESETN == 0)                                 
 	          begin                                                 
-	            axi_wdata <= C_M_START_DATA_VALUE;                  
+	            axi_wdata <= C_M_DATA_ADC;                  
 	          end                                                   
 	        // Signals a new write address/ write data is           
 	        // available by user logic                              
@@ -446,8 +436,7 @@
 	        write_issued  <= 1'b0;                                                      
 	      //  start_single_read  <= 1'b0;                                                 
 	       // read_issued   <= 1'b0;                                                      
-	        compare_done  <= 1'b0;                                                      
-	        ERROR <= 1'b0;
+	       // compare_done  <= 1'b0;                                                      
 	      end                                                                           
 	    else                                                                            
 	      begin                                                                         
@@ -615,43 +604,6 @@
         	    else if (axi_awaddr/4 == 1)
         	       begin
         	       half <= 1'b0;
-                   end
-        	   
-        	    //else if ((write_index == 1'b1) && M_AXI_AWREADY)
-        	      // half <= 1'b1;                                                                                                                 
+                   end                                                                                                          
         	  end   
-                         
-
-
-        	 /* 
-        	  always @(posedge M_AXI_ACLK)										      
-                 begin                                                                        
-                      	    // Initiates AXI transaction delay    
-                     if (M_AXI_ARESETN == 0)
-                        begin
-                        init <= 1'b1;
-                        end
-                     else if (axi_awaddr/4 == C_M_TRANSACTIONS_NUM/2)
-                        begin                                                                                                             
-                      	init <= 1'b0;
-                      	end
-                      	//надо передать значение адресса для init cdma
-                     else if (compare_done == 1'b1)
-                        begin
-                        init <= 1'b1;
-                        end
-                        //                                                                                                                                                                                                                       
-                 end 
-             /*
-             /*    
-              always @(posedge M_AXI_ACLK)
-              begin
-              if(M_AXI_ARESETN == 0)
-                count_txn <= 0;
-              else if (init_txn_pulse == 1'b1)
-               count_txn <= count_txn + 1;
-              end 
-              */     
-	// User logic ends
-
 	endmodule

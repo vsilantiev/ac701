@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:acp:1.0
-// IP Revision: 54
+// IP Revision: 55
 
 `timescale 1ns/1ps
 
@@ -77,9 +77,7 @@ module dma_acp_0_0 (
   m00_axi_rvalid,
   m00_axi_rready,
   m00_axi_aclk,
-  m00_axi_aresetn,
-  m00_axi_error,
-  m00_axi_txn_done
+  m00_axi_aresetn
 );
 
 input [31 : 0] C_M00_AXI_DATA_ADC;
@@ -127,11 +125,8 @@ output m00_axi_rready;
 input m00_axi_aclk;
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 M00_AXI_RST RST" *)
 input m00_axi_aresetn;
-output m00_axi_error;
-output m00_axi_txn_done;
 
   acp_v1_0 #(
-    .C_M00_AXI_START_DATA_VALUE('H00000000),
     .C_M00_AXI_TARGET_SLAVE_BASE_ADDR('H40000000),
     .C_M00_AXI_ADDR_WIDTH(32),
     .C_M00_AXI_DATA_WIDTH(32),
@@ -160,8 +155,6 @@ output m00_axi_txn_done;
     .m00_axi_rvalid(m00_axi_rvalid),
     .m00_axi_rready(m00_axi_rready),
     .m00_axi_aclk(m00_axi_aclk),
-    .m00_axi_aresetn(m00_axi_aresetn),
-    .m00_axi_error(m00_axi_error),
-    .m00_axi_txn_done(m00_axi_txn_done)
+    .m00_axi_aresetn(m00_axi_aresetn)
   );
 endmodule

@@ -1,4 +1,4 @@
-14:03:56 **** Auto Build of project fsbl_bsp ****
+09:41:29 **** Auto Build of project fsbl_bsp ****
 make -k all 
 libgen -hw ../hw_platform_0/system.xml\
 	       -lp /home/vladimir/PROJECT/XILINX\
@@ -45,5 +45,5 @@ Compiling cpu_cortexa9
 Running execs_generate.
 Finished building libraries
 
-14:04:09 Build Finished (took 13s.86ms)
+09:41:42 Build Finished (took 12s.416ms)
 

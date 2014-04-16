@@ -47,7 +47,7 @@
 // DO NOT MODIFY THIS FILE.
 
 // IP VLNV: xilinx.com:user:acp:1.0
-// IP Revision: 54
+// IP Revision: 55
 
 // The following must be inserted into your Verilog file for this
 // core to be instantiated. Change the instance name and port connections
@@ -78,9 +78,7 @@ dma_acp_0_0 your_instance_name (
   .m00_axi_rvalid(m00_axi_rvalid),          // input m00_axi_rvalid
   .m00_axi_rready(m00_axi_rready),          // output m00_axi_rready
   .m00_axi_aclk(m00_axi_aclk),              // input m00_axi_aclk
-  .m00_axi_aresetn(m00_axi_aresetn),        // input m00_axi_aresetn
-  .m00_axi_error(m00_axi_error),            // output m00_axi_error
-  .m00_axi_txn_done(m00_axi_txn_done)      // output m00_axi_txn_done
+  .m00_axi_aresetn(m00_axi_aresetn)        // input m00_axi_aresetn
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

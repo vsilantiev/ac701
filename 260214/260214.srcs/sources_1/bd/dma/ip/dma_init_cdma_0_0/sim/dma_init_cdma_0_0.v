@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:init_cdma:1.0
-// IP Revision: 62
+// IP Revision: 63
 
 `timescale 1ns/1ps
 
