@@ -25,8 +25,6 @@
 		
 		input wire [C_M00_AXI_ADDR_WIDTH-1 : 0] C_M00_AXI_SRC_ADDR,
 		
-		input wire C_M00_AXI_START_CAPTURE,
-		
 		input wire [C_M00_AXI_ADDR_WIDTH-1 : 0] C_M00_AXI_BUF0_ADDR,
 		input wire [C_M00_AXI_ADDR_WIDTH-1 : 0] C_M00_AXI_BUF1_ADDR,
 		input wire [C_M00_AXI_ADDR_WIDTH-1 : 0] C_M00_AXI_BUF2_ADDR,
@@ -88,9 +86,7 @@
 		.C_M_AXI_DATA_WIDTH(C_M00_AXI_DATA_WIDTH),
 		.C_M_TRANSACTIONS_NUM(C_M00_AXI_TRANSACTIONS_NUM)
 	) mydatagen_v1_0_M00_AXI_inst (
-            
-           .C_M_START_CAPTURE(C_M00_AXI_START_CAPTURE),
-            
+                      
 	      .C_M_BUF0_ADDR(C_M00_AXI_BUF0_ADDR),
 	      .C_M_BUF1_ADDR(C_M00_AXI_BUF1_ADDR),
 	      .C_M_BUF2_ADDR(C_M00_AXI_BUF2_ADDR),

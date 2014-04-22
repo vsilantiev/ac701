@@ -270,6 +270,19 @@
     </spirit:views>
     <spirit:ports>
       <spirit:port>
+        <spirit:name>START_CAPTURE</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
         <spirit:name>C_M00_AXI_DATA_ADC</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
@@ -746,8 +759,8 @@
         <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>acp_v1_0</xilinx:displayName>
-      <xilinx:coreRevision>55</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2014-04-16T05:00:41Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>85</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2014-04-17T13:05:19Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2013.3</xilinx:xilinxVersion>

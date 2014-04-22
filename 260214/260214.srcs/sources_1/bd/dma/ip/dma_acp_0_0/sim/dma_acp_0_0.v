@@ -48,12 +48,13 @@
 
 
 // IP VLNV: xilinx.com:user:acp:1.0
-// IP Revision: 55
+// IP Revision: 85
 
 `timescale 1ns/1ps
 
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module dma_acp_0_0 (
+  START_CAPTURE,
   C_M00_AXI_DATA_ADC,
   C_M00_AXI_SRC_ADDR,
   m00_axi_half,
@@ -80,6 +81,7 @@ module dma_acp_0_0 (
   m00_axi_aresetn
 );
 
+input START_CAPTURE;
 input [31 : 0] C_M00_AXI_DATA_ADC;
 output [31 : 0] C_M00_AXI_SRC_ADDR;
 output m00_axi_half;
@@ -127,11 +129,12 @@ input m00_axi_aclk;
 input m00_axi_aresetn;
 
   acp_v1_0 #(
-    .C_M00_AXI_TARGET_SLAVE_BASE_ADDR('H40000000),
+    .C_M00_AXI_TARGET_SLAVE_BASE_ADDR('HC0000000),
     .C_M00_AXI_ADDR_WIDTH(32),
     .C_M00_AXI_DATA_WIDTH(32),
     .C_M00_AXI_TRANSACTIONS_NUM(131072)
   ) inst (
+    .START_CAPTURE(START_CAPTURE),
     .C_M00_AXI_DATA_ADC(C_M00_AXI_DATA_ADC),
     .C_M00_AXI_SRC_ADDR(C_M00_AXI_SRC_ADDR),
     .m00_axi_half(m00_axi_half),

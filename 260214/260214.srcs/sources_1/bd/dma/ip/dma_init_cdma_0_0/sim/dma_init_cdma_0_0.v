@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:init_cdma:1.0
-// IP Revision: 63
+// IP Revision: 64
 
 `timescale 1ns/1ps
 
@@ -56,7 +56,6 @@
 module dma_init_cdma_0_0 (
   addr_buf,
   C_M00_AXI_SRC_ADDR,
-  C_M00_AXI_START_CAPTURE,
   C_M00_AXI_BUF0_ADDR,
   C_M00_AXI_BUF1_ADDR,
   C_M00_AXI_BUF2_ADDR,
@@ -102,7 +101,6 @@ module dma_init_cdma_0_0 (
 
 output [31 : 0] addr_buf;
 input [31 : 0] C_M00_AXI_SRC_ADDR;
-input C_M00_AXI_START_CAPTURE;
 input [31 : 0] C_M00_AXI_BUF0_ADDR;
 input [31 : 0] C_M00_AXI_BUF1_ADDR;
 input [31 : 0] C_M00_AXI_BUF2_ADDR;
@@ -178,7 +176,6 @@ output m00_axi_txn_done;
   ) inst (
     .addr_buf(addr_buf),
     .C_M00_AXI_SRC_ADDR(C_M00_AXI_SRC_ADDR),
-    .C_M00_AXI_START_CAPTURE(C_M00_AXI_START_CAPTURE),
     .C_M00_AXI_BUF0_ADDR(C_M00_AXI_BUF0_ADDR),
     .C_M00_AXI_BUF1_ADDR(C_M00_AXI_BUF1_ADDR),
     .C_M00_AXI_BUF2_ADDR(C_M00_AXI_BUF2_ADDR),

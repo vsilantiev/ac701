@@ -48,16 +48,15 @@
 
 
 // IP VLNV: xilinx.com:user:init_cdma:1.0
-// IP Revision: 63
+// IP Revision: 64
 
 (* X_CORE_INFO = "mydatagen_v1_0,Vivado 2013.3" *)
 (* CHECK_LICENSE_TYPE = "dma_init_cdma_0_0,mydatagen_v1_0,{}" *)
-(* CORE_GENERATION_INFO = "dma_init_cdma_0_0,mydatagen_v1_0,{x_ipProduct=Vivado 2013.3,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=init_cdma,x_ipVersion=1.0,x_ipCoreRevision=63,x_ipLanguage=VERILOG,C_M00_AXI_START_DATA_VALUE=0x00000000,C_M00_AXI_TARGET_SLAVE_BASE_ADDR=0x44A00000,C_M00_AXI_ADDR_WIDTH=32,C_M00_AXI_DATA_WIDTH=32,C_M00_AXI_TRANSACTIONS_NUM=11,C_M00_AXI_DST_ADDR=0x10000000,C_M00_AXI_LEN_DATA=0x00040000,C_M00_OFFSET_DDR=4194303}" *)
+(* CORE_GENERATION_INFO = "dma_init_cdma_0_0,mydatagen_v1_0,{x_ipProduct=Vivado 2013.3,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=init_cdma,x_ipVersion=1.0,x_ipCoreRevision=64,x_ipLanguage=VERILOG,C_M00_AXI_START_DATA_VALUE=0x00000000,C_M00_AXI_TARGET_SLAVE_BASE_ADDR=0x44A00000,C_M00_AXI_ADDR_WIDTH=32,C_M00_AXI_DATA_WIDTH=32,C_M00_AXI_TRANSACTIONS_NUM=11,C_M00_AXI_DST_ADDR=0x10000000,C_M00_AXI_LEN_DATA=0x00040000,C_M00_OFFSET_DDR=4194303}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module dma_init_cdma_0_0 (
   addr_buf,
   C_M00_AXI_SRC_ADDR,
-  C_M00_AXI_START_CAPTURE,
   C_M00_AXI_BUF0_ADDR,
   C_M00_AXI_BUF1_ADDR,
   C_M00_AXI_BUF2_ADDR,
@@ -103,7 +102,6 @@ module dma_init_cdma_0_0 (
 
 output [31 : 0] addr_buf;
 input [31 : 0] C_M00_AXI_SRC_ADDR;
-input C_M00_AXI_START_CAPTURE;
 input [31 : 0] C_M00_AXI_BUF0_ADDR;
 input [31 : 0] C_M00_AXI_BUF1_ADDR;
 input [31 : 0] C_M00_AXI_BUF2_ADDR;
@@ -179,7 +177,6 @@ output m00_axi_txn_done;
   ) inst (
     .addr_buf(addr_buf),
     .C_M00_AXI_SRC_ADDR(C_M00_AXI_SRC_ADDR),
-    .C_M00_AXI_START_CAPTURE(C_M00_AXI_START_CAPTURE),
     .C_M00_AXI_BUF0_ADDR(C_M00_AXI_BUF0_ADDR),
     .C_M00_AXI_BUF1_ADDR(C_M00_AXI_BUF1_ADDR),
     .C_M00_AXI_BUF2_ADDR(C_M00_AXI_BUF2_ADDR),

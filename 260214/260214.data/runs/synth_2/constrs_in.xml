@@ -4,7 +4,7 @@
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/new/dma_wrapper.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../250214/250214.srcs/constrs_1/new/dma_wrapper.xdc"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../250214/250214.srcs/constrs_1/new/dma_wrapper.xdc"/>
         <Attr Name="ImportTime" Val="1393831117"/>
         <Attr Name="UsedInSynthesis" Val="1"/>
         <Attr Name="UsedInImplementation" Val="1"/>
@@ -14,13 +14,13 @@
     </File>
     <File Path="$PDATADIR/constrs_1/designprops.xml">
       <FileInfo SFType="CompatPartsDb">
-        <Attr Name="ImportPath" Val="$PPRDIR/../250214/250214.data/constrs_1/designprops.xml"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../250214/250214.data/constrs_1/designprops.xml"/>
         <Attr Name="ImportTime" Val="1393831117"/>
       </FileInfo>
     </File>
     <File Path="$PDATADIR/constrs_1/usercols.xml">
       <FileInfo SFType="UserColsDb">
-        <Attr Name="ImportPath" Val="$PPRDIR/../250214/250214.data/constrs_1/usercols.xml"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../250214/250214.data/constrs_1/usercols.xml"/>
         <Attr Name="ImportTime" Val="1393831117"/>
       </FileInfo>
     </File>

@@ -47,7 +47,7 @@
 // DO NOT MODIFY THIS FILE.
 
 // IP VLNV: xilinx.com:user:init_cdma:1.0
-// IP Revision: 63
+// IP Revision: 64
 
 // The following must be inserted into your Verilog file for this
 // core to be instantiated. Change the instance name and port connections
@@ -57,7 +57,6 @@
 dma_init_cdma_0_0 your_instance_name (
   .addr_buf(addr_buf),                                  // output [31 : 0] addr_buf
   .C_M00_AXI_SRC_ADDR(C_M00_AXI_SRC_ADDR),              // input [31 : 0] C_M00_AXI_SRC_ADDR
-  .C_M00_AXI_START_CAPTURE(C_M00_AXI_START_CAPTURE),    // input C_M00_AXI_START_CAPTURE
   .C_M00_AXI_BUF0_ADDR(C_M00_AXI_BUF0_ADDR),            // input [31 : 0] C_M00_AXI_BUF0_ADDR
   .C_M00_AXI_BUF1_ADDR(C_M00_AXI_BUF1_ADDR),            // input [31 : 0] C_M00_AXI_BUF1_ADDR
   .C_M00_AXI_BUF2_ADDR(C_M00_AXI_BUF2_ADDR),            // input [31 : 0] C_M00_AXI_BUF2_ADDR

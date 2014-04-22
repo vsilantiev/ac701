@@ -9,6 +9,8 @@
 		parameter integer C_M00_AXI_TRANSACTIONS_NUM = 131072
 	)
 	(
+	    //Старт захвата данных с ADC
+	    input wire START_CAPTURE,
 		//Вход данных с ADC
         input wire [C_M00_AXI_ADDR_WIDTH-1 : 0] C_M00_AXI_DATA_ADC,
         //Указатель начального адреса в BRAM для блока init_cdma
@@ -40,6 +42,7 @@
 		input wire [1 : 0] m00_axi_rresp,
 		input wire  m00_axi_rvalid,
 		output wire  m00_axi_rready
+		
 	);
 // Instantiation of Axi Bus Interface M00_AXI
 	acp_v1_0_M00_AXI # ( 
@@ -51,6 +54,7 @@
 	    .C_M_SRC_ADDR(C_M00_AXI_SRC_ADDR),
 	    .HALF(m00_axi_half),
          .C_M_DATA_ADC(C_M00_AXI_DATA_ADC),
+         .C_M_START_CAPTURE(START_CAPTURE),
 		.M_AXI_ACLK(m00_axi_aclk),
 		.M_AXI_ARESETN(m00_axi_aresetn),
 		.M_AXI_AWADDR(m00_axi_awaddr),

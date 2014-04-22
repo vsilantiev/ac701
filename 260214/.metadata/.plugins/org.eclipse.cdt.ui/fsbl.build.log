@@ -1,4 +1,4 @@
-09:41:46 **** Auto Build of configuration Release for project fsbl ****
+09:59:01 **** Auto Build of configuration Release for project fsbl ****
 make all 
 Building file: ../src/ps7_init.c
 Invoking: ARM gcc compiler
@@ -7,7 +7,7 @@ Finished building: ../src/ps7_init.c
  
 Building target: fsbl.elf
 Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -L"/home/vladimir/260214/fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../fsbl_bsp/ps7_cortexa9_0/lib -o "fsbl.elf"  ./src/ddr_init.o ./src/ff.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+arm-xilinx-eabi-gcc -L"/home/vladimir/Z/zedboard/260214/fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../fsbl_bsp/ps7_cortexa9_0/lib -o "fsbl.elf"  ./src/ddr_init.o ./src/ff.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 Finished building target: fsbl.elf
  
 Invoking: ARM Print Size
@@ -17,5 +17,5 @@ arm-xilinx-eabi-size fsbl.elf  |tee "fsbl.elf.size"
 Finished building: fsbl.elf.size
  
 
-09:41:46 Build Finished (took 166ms)
+09:59:01 Build Finished (took 475ms)
 

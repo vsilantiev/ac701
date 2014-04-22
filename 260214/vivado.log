@@ -1,0 +1,78 @@
+#-----------------------------------------------------------
+# Vivado v2013.3 (64-bit)
+# SW Build 329390 on Wed Oct 16 18:26:55 MDT 2013
+# IP Build 192953 on Wed Oct 16 08:44:02 MDT 2013
+# Start of session at: Wed Apr 16 13:28:10 2014
+# Process ID: 3550
+# Log file: /home/vladimir/Z/zedboard/260214/vivado.log
+# Journal file: /home/vladimir/Z/zedboard/260214/vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: Implementation
+WARNING: [Common 17-301] Failed to get a license: Implementation
+WARNING: [Vivado 15-19] WARNING: No 'Implementation' license found. This message may be safely ignored if a Vivado WebPACK or device-locked license, common for board kits, will be used during implementation.
+
+INFO: [Common 17-78] Attempting to get a license: Synthesis
+WARNING: [Common 17-301] Failed to get a license: Synthesis
+INFO: [Device 21-36] Loading parts and site information from /opt/Xilinx/Vivado/2013.3/data/parts/arch.xml
+Parsing RTL primitives file [/opt/Xilinx/Vivado/2013.3/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/Vivado/2013.3/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+WARNING: [Vivado 15-19] WARNING: No 'Implementation' license found. This message may be safely ignored if a Vivado WebPACK or device-locked license, common for board kits, will be used during implementation.
+
+open_project /home/vladimir/260214/260214.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/vladimir/260214/260214.srcs/sources_1/bd/dma/ip/dma_ADC_emul_0_0/dma_ADC_emul_0_0.upgrade_log'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/260214/IPCore/reg_init_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/260214/IPCore/acp_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/260214/IPCore/init_cdma_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/260214/IPCore'.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/260214/IPCore/Emul'.
+INFO: [IP_Flow 19-2313] Loaded Vivado repository '/opt/Xilinx/Vivado/2013.3/data/ip'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:acp:1.0'. The one found in repository '/home/vladimir/260214/IPCore/acp_1.0' will take precedence over the same IP in repository '/home/vladimir/260214/IPCore'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:reg_init:1.0'. The one found in repository '/home/vladimir/260214/IPCore/reg_init_1.0' will take precedence over the same IP in repository '/home/vladimir/260214/IPCore'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:init_cdma:1.0'. The one found in repository '/home/vladimir/260214/IPCore/init_cdma_1.0' will take precedence over the same IP in repository '/home/vladimir/260214/IPCore'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'omega.local:user:ADC_emul:1.0'. The one found in repository '/home/vladimir/260214/IPCore' will take precedence over the same IP in repository '/home/vladimir/260214/IPCore/Emul'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:12 . Memory (MB): peak = 4651.508 ; gain = 250.773
+open_bd_design {/home/vladimir/260214/260214.srcs/sources_1/bd/dma/dma.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.3 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_cdma:4.1 - axi_cdma_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:3.0 - axi_bram_ctrl_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - axi_crossbar_0
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.0 - axi_bram_ctrl_0_bram
+Adding component instance block -- xilinx.com:user:reg_status:1.0 - reg_status_0
+Adding component instance block -- xilinx.com:user:reg_init:1.0 - reg_init_0
+Adding component instance block -- xilinx.com:user:init_cdma:1.0 - init_cdma_0
+Adding component instance block -- omega.local:user:ADC_emul:1.0 - ADC_emul_0
+Adding component instance block -- xilinx.com:user:acp:1.0 - acp_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Successfully read diagram <dma> from BD file </home/vladimir/260214/260214.srcs/sources_1/bd/dma/dma.bd>
+open_bd_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 4790.574 ; gain = 35.176
+ipx::edit_ip_in_project -upgrade true -name {edit_ip34} -directory {/home/vladimir/260214/IPCore/init_cdma_1.0} {/home/vladimir/260214/IPCore/init_cdma_1.0/component.xml}
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/260214/IPCore/reg_init_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/260214/IPCore/acp_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/260214/IPCore/init_cdma_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/260214/IPCore'.
+WARNING: [IP_Flow 19-3299] If you move the project, the path for repository '/home/vladimir/260214/IPCore' may become invalid. A better location for the repository would be in a path adjacent to the project.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/260214/IPCore/Emul'.
+INFO: [IP_Flow 19-2313] Loaded Vivado repository '/opt/Xilinx/Vivado/2013.3/data/ip'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:acp:1.0'. The one found in repository '/home/vladimir/260214/IPCore/acp_1.0' will take precedence over the same IP in repository '/home/vladimir/260214/IPCore'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:reg_init:1.0'. The one found in repository '/home/vladimir/260214/IPCore/reg_init_1.0' will take precedence over the same IP in repository '/home/vladimir/260214/IPCore'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:init_cdma:1.0'. The one found in repository '/home/vladimir/260214/IPCore/init_cdma_1.0' will take precedence over the same IP in repository '/home/vladimir/260214/IPCore'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'omega.local:user:ADC_emul:1.0'. The one found in repository '/home/vladimir/260214/IPCore' will take precedence over the same IP in repository '/home/vladimir/260214/IPCore/Emul'.
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 4813.770 ; gain = 23.078
+update_compile_order -fileset sim_1
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 16 13:32:45 2014...

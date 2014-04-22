@@ -1,0 +1,207 @@
+#-----------------------------------------------------------
+# Vivado v2013.3 (64-bit)
+# SW Build 329390 on Wed Oct 16 18:26:55 MDT 2013
+# IP Build 192953 on Wed Oct 16 08:44:02 MDT 2013
+# Start of session at: Wed Apr 16 12:38:35 2014
+# Process ID: 769
+# Log file: /home/vladimir/Z/zedboard/vivado.log
+# Journal file: /home/vladimir/Z/zedboard/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/vladimir/Z/zedboard/260214/260214.xpr
+open_bd_design {/home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd}
+ipx::edit_ip_in_project -upgrade true -name {edit_ip} -directory {/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0} {/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0/component.xml}
+ipx::update_ip_instances
+connect_bd_net -net [get_bd_nets reg_init_0_start] [get_bd_pins acp_0/START_CAPTURE] [get_bd_pins reg_init_0/start]
+validate_bd_design
+make_wrapper -files [get_files /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd] -top
+import_files -force -norecurse /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/hdl/dma_wrapper.v
+update_compile_order -fileset sources_1
+generate_target all [get_files  /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd]
+generate_target all [get_files  /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd]
+reset_run synth_2
+launch_runs synth_2
+wait_on_run synth_2
+launch_runs impl_2
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+open_run impl_2
+export_hardware [get_files /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd] [get_runs impl_2] -bitstream -dir /home/vladimir/Z/zedboard/260214
+launch_sdk -bit /home/vladimir/Z/zedboard/260214/hw/dma_wrapper.bit -workspace /home/vladimir/Z/zedboard/260214 -hwspec /home/vladimir/Z/zedboard/260214/hw/dma.xml
+open_bd_design {/home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd}
+open_bd_design {/home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd}
+ipx::edit_ip_in_project -upgrade true -name {edit_ip} -directory {/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0} {/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0/component.xml}
+ipx::update_ip_instances
+validate_bd_design
+make_wrapper -files [get_files /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd] -top
+import_files -force -norecurse /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/hdl/dma_wrapper.v
+update_compile_order -fileset sources_1
+generate_target all [get_files  /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd]
+open_bd_design {/home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd}
+ipx::edit_ip_in_project -upgrade true -name {edit_ip} -directory {/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0} {/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0/component.xml}
+current_project 260214
+ipx::edit_ip_in_project -upgrade true -name {edit_ip1} -directory {/home/vladimir/Z/zedboard/260214/IPCore/init_cdma_1.0} {/home/vladimir/Z/zedboard/260214/IPCore/init_cdma_1.0/component.xml}
+undo
+ipx::current_core {/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0/component.xml}
+ipx::update_ip_instances
+close_project
+validate_bd_design
+make_wrapper -files [get_files /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd] -top
+import_files -force -norecurse /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/hdl/dma_wrapper.v
+update_compile_order -fileset sources_1
+generate_target all [get_files  /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd]
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+open_bd_design {/home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd}
+ipx::edit_ip_in_project -upgrade true -name {edit_ip} -directory {/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0} {/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0/component.xml}
+close_project
+export_hardware [get_files /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd] [get_runs impl_2] -bitstream -dir /home/vladimir/Z/zedboard/260214
+launch_sdk -bit /home/vladimir/Z/zedboard/260214/hw/dma_wrapper.bit -workspace /home/vladimir/Z/zedboard/260214 -hwspec /home/vladimir/Z/zedboard/260214/hw/dma.xml
+ipx::edit_ip_in_project -upgrade true -name {edit_ip} -directory {/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0} {/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0/component.xml}
+current_project 260214
+current_project edit_ip
+ipx::update_ip_instances
+validate_bd_design
+make_wrapper -files [get_files /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd] -top
+import_files -force -norecurse /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/hdl/dma_wrapper.v
+update_compile_order -fileset sources_1
+generate_target all [get_files  /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd]
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+reset_run synth_2
+open_bd_design {/home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd}
+startgroup
+set_property -dict [list CONFIG.WIDTH {16}] [get_bd_cells ADC_emul_0]
+endgroup
+ipx::edit_ip_in_project -upgrade true -name {edit_ip} -directory {/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0} {/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0/component.xml}
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+ipx::update_ip_instances
+ipx::edit_ip_in_project -upgrade true -name {edit_ip} -directory {/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0} {/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0/component.xml}
+current_project 260214
+current_project edit_ip
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+ipx::update_ip_instances
+validate_bd_design
+make_wrapper -files [get_files /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd] -top
+import_files -force -norecurse /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/hdl/dma_wrapper.v
+update_compile_order -fileset sources_1
+generate_target all [get_files  /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd]
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+open_bd_design {/home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd}
+reset_run synth_2
+startgroup
+set_property -dict [list CONFIG.C_M00_AXI_DATA_WIDTH {16} CONFIG.C_M00_AXI_TRANSACTIONS_NUM {262144}] [get_bd_cells acp_0]
+endgroup
+validate_bd_design
+make_wrapper -files [get_files /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd] -top
+import_files -force -norecurse /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/hdl/dma_wrapper.v
+update_compile_order -fileset sources_1
+generate_target all [get_files  /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd]
+generate_target all [get_files  /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd]
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+export_hardware [get_files /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd] [get_runs impl_2] -bitstream -dir /home/vladimir/Z/zedboard/260214
+launch_sdk -bit /home/vladimir/Z/zedboard/260214/hw/dma_wrapper.bit -workspace /home/vladimir/Z/zedboard/260214 -hwspec /home/vladimir/Z/zedboard/260214/hw/dma.xml
+open_bd_design {/home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd}
+ipx::edit_ip_in_project -upgrade true -name {edit_ip} -directory {/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0} {/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0/component.xml}
+ipx::edit_ip_in_project -upgrade true -name {edit_ip} -directory {/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0} {/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0/component.xml}
+startgroup
+current_project 260214
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_datamover:5.1 axi_datamover_0
+endgroup
+set_property location {2 335 307} [get_bd_cells axi_datamover_0]
+delete_bd_objs [get_bd_cells axi_datamover_0]
+startgroup
+set_property -dict [list CONFIG.C_M00_AXI_TRANSACTIONS_NUM {131072}] [get_bd_cells acp_0]
+endgroup
+startgroup
+endgroup
+startgroup
+endgroup
+make_wrapper -files [get_files /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd] -top
+import_files -force -norecurse /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/hdl/dma_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+generate_target all [get_files  /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd]
+generate_target all [get_files  /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd]
+save_bd_design
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+open_bd_design {/home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd}
+startgroup
+set_property -dict [list CONFIG.C_M00_AXI_TRANSACTIONS_NUM {262144}] [get_bd_cells acp_0]
+endgroup
+reset_run impl_2 -noclean_dir
+validate_bd_design
+current_project edit_ip
+ipx::update_ip_instances
+validate_bd_design
+ipx::edit_ip_in_project -upgrade true -name {edit_ip} -directory {/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0} {/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0/component.xml}
+current_project 260214
+startgroup
+set_property -dict [list CONFIG.WIDTH {32}] [get_bd_cells ADC_emul_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.C_M00_AXI_DATA_WIDTH {32}] [get_bd_cells acp_0]
+endgroup
+current_project edit_ip
+ipx::update_ip_instances
+delete_bd_objs [get_bd_nets processing_system7_0_fclk_clk0]
+connect_bd_net -net [get_bd_nets processing_system7_0_fclk_clk2] [get_bd_pins ADC_emul_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK2]
+make_wrapper -files [get_files /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd] -top
+import_files -force -norecurse /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/hdl/dma_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+open_bd_design {/home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd}
+startgroup
+set_property -dict [list CONFIG.C_M00_AXI_DATA_WIDTH {32}] [get_bd_cells acp_0]
+endgroup
+ipx::edit_ip_in_project -upgrade true -name {edit_ip} -directory {/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0} {/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0/component.xml}
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+ipx::update_ip_instances
+make_wrapper -files [get_files /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd] -top
+import_files -force -norecurse /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/hdl/dma_wrapper.v
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd] -top
+import_files -force -norecurse /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/hdl/dma_wrapper.v
+update_compile_order -fileset sources_1
+generate_target all [get_files  /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd]
+open_bd_design {/home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd}
+ipx::edit_ip_in_project -upgrade true -name {edit_ip} -directory {/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0} {/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0/component.xml}
+current_project 260214
+current_project edit_ip
+ipx::update_ip_instances
+make_wrapper -files [get_files /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd] -top
+import_files -force -norecurse /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/hdl/dma_wrapper.v
+update_compile_order -fileset sources_1
+generate_target all [get_files  /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd]
+generate_target all [get_files  /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd]
+make_wrapper -files [get_files /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd] -top
+import_files -force -norecurse /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/hdl/dma_wrapper.v
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd] -top
+import_files -force -norecurse /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/hdl/dma_wrapper.v
+update_compile_order -fileset sources_1
+generate_target all [get_files  /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd]
+generate_target all [get_files  /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd]
+reset_run impl_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+export_hardware [get_files /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd] [get_runs impl_2] -bitstream -dir /home/vladimir/Z/zedboard/260214
+launch_sdk -bit /home/vladimir/Z/zedboard/260214/hw/dma_wrapper.bit -workspace /home/vladimir/Z/zedboard/260214 -hwspec /home/vladimir/Z/zedboard/260214/hw/dma.xml
+open_bd_design {/home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd}
+ipx::edit_ip_in_project -upgrade true -name {edit_ip} -directory {/home/vladimir/Z/zedboard/260214/IPCore/Emul} {/home/vladimir/Z/zedboard/260214/IPCore/Emul/component.xml}
+close_project
+ipx::edit_ip_in_project -upgrade true -name {edit_ip} -directory {/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0} {/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0/component.xml}
+close_project
+startgroup
+set_property -dict [list CONFIG.C_M00_AXI_DATA_WIDTH {32}] [get_bd_cells acp_0]
+endgroup
+startgroup
+endgroup
+save_bd_design

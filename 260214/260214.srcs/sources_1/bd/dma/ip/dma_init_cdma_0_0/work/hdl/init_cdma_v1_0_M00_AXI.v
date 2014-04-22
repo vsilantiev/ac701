@@ -31,7 +31,7 @@
 		// Users to add ports here
         output wire [C_M_AXI_ADDR_WIDTH-1 : 0] ADDR_BUF,
         
-                input wire C_M_START_CAPTURE,
+ 
                 
                 input wire [C_M_AXI_ADDR_WIDTH-1 : 0] C_M_BUF0_ADDR,
         		input wire [C_M_AXI_ADDR_WIDTH-1 : 0] C_M_BUF1_ADDR,
@@ -302,7 +302,7 @@
 	  begin                                                                        
 	    //Only VALID signals must be deasserted during reset per AXI spec          
 	    //Consider inverting then registering active-low reset for higher fmax     
-	    if (M_AXI_ARESETN == 0 || ( init_txn_pulse == 1'b1 && C_M_START_CAPTURE == 1'b1))                                                   
+	    if (M_AXI_ARESETN == 0 || init_txn_pulse == 1'b1)                                                   
 	      begin                                                                    
 	        axi_awvalid <= 1'b0;                                                   
 	      end                                                                      
@@ -328,7 +328,7 @@
 	  // issued/initiated                                                          
 	  always @(posedge M_AXI_ACLK)                                                 
 	  begin                                                                        
-	    if (M_AXI_ARESETN == 0 || ( init_txn_pulse == 1'b1 && C_M_START_CAPTURE == 1'b1))                                                 
+	    if (M_AXI_ARESETN == 0 || init_txn_pulse == 1'b1)                                                 
 	      begin                                                                    
 	        write_index <= 0;                                                      
 	      end                                                                      
@@ -351,7 +351,7 @@
 
 	   always @(posedge M_AXI_ACLK)                                        
 	   begin                                                                         
-	      if (M_AXI_ARESETN == 0 || ( init_txn_pulse == 1'b1 && C_M_START_CAPTURE == 1'b1))                                                    
+	     if (M_AXI_ARESETN == 0 || init_txn_pulse == 1'b1)                                                     
 	       begin                                                                     
 	         axi_wvalid <= 1'b0;                                                     
 	       end                                                                       
@@ -385,7 +385,7 @@
 
 	  always @(posedge M_AXI_ACLK)                                    
 	  begin                                                                
-	    if (M_AXI_ARESETN == 0 || ( init_txn_pulse == 1'b1 && C_M_START_CAPTURE == 1'b1))                                          
+	    if (M_AXI_ARESETN == 0 || init_txn_pulse == 1'b1)                                           
 	      begin                                                            
 	        axi_bready <= 1'b0;                                            
 	      end                                                              
@@ -422,7 +422,7 @@
 	  //Write Addresses                                        
 	  always @(posedge M_AXI_ACLK)                                  
 	      begin                                                     
-	         if (M_AXI_ARESETN == 0 || ( init_txn_pulse == 1'b1 && C_M_START_CAPTURE == 1'b1))                              
+	         if (M_AXI_ARESETN == 0 || init_txn_pulse == 1'b1)                               
 	          begin                                                 
 	            axi_awaddr <= 0;                                    
 	          end                                                   
@@ -437,7 +437,7 @@
 	  // Write data generation                                      
 	  always @(posedge M_AXI_ACLK)                                  
 	      begin                                                     
-	        if (M_AXI_ARESETN == 0 || ( init_txn_pulse == 1'b1 && C_M_START_CAPTURE == 1'b1))                                
+	        if (M_AXI_ARESETN == 0 || init_txn_pulse == 1'b1)                                 
 	          begin                                                 
 	            axi_wdata <= C_M_START_DATA_VALUE;                  
 	          end                                                   
@@ -499,7 +499,7 @@
 	          IDLE:                                                             
 	          // This state is responsible to initiate 
 	          // AXI transaction when init_txn_pulse is asserted 
-	            if ( init_txn_pulse == 1'b1 && C_M_START_CAPTURE == 1'b1 )                                     
+	            if ( init_txn_pulse == 1'b1)                                     
 	              begin                                                                 
 	                mst_exec_state  <= INIT_WRITE;                                      
 	                ERROR <= 1'b0;
@@ -563,7 +563,7 @@
 	                                                                                    
 	  always @(posedge M_AXI_ACLK)                                                      
 	  begin                                                                             
-	     if (M_AXI_ARESETN == 0 || ( init_txn_pulse == 1'b1 && C_M_START_CAPTURE == 1'b1))                                                         
+	     if (M_AXI_ARESETN == 0 || init_txn_pulse == 1'b1)                                                         
 	      last_write <= 1'b0;                                                           
 	                                                                                    
 	    //The last write should be associated with a write address ready response       
@@ -581,7 +581,7 @@
 	                                                                                    
 	  always @(posedge M_AXI_ACLK)                                                      
 	  begin                                                                             
-	     if (M_AXI_ARESETN == 0 || ( init_txn_pulse == 1'b1 && C_M_START_CAPTURE == 1'b1))                                                         
+	     if (M_AXI_ARESETN == 0 || init_txn_pulse == 1'b1)                                                          
 	      writes_done <= 1'b0;                                                          
 	                                                                                    
 	      //The writes_done should be associated with a bready response                 
@@ -596,7 +596,7 @@
 	//Data Comparison                                                                   
 	  always @(posedge M_AXI_ACLK)                                                      
 	  begin                                                                             
-	     if (M_AXI_ARESETN == 0 || ( init_txn_pulse == 1'b1 && C_M_START_CAPTURE == 1'b1))                                                        
+	    if (M_AXI_ARESETN == 0 || init_txn_pulse == 1'b1)                                                        
 	    read_mismatch <= 1'b0;                                                          
 	   /*                                                                                 
 	    //The read data when available (on axi_rready) is compared with the expected data
@@ -610,7 +610,7 @@
 	// Register and hold any data mismatches, or read/write interface errors            
 	  always @(posedge M_AXI_ACLK)                                                      
 	  begin                                                                             
-	     if (M_AXI_ARESETN == 0 || ( init_txn_pulse == 1'b1 && C_M_START_CAPTURE == 1'b1))                                                         
+	     if (M_AXI_ARESETN == 0 || init_txn_pulse == 1'b1)                                                         
 	      error_reg <= 1'b0;                                                            
 	    /*                                                                                
 	    //Capture any error types                                                       
@@ -626,7 +626,7 @@
     	    // Initiates AXI transaction delay    
     	  if (M_AXI_ARESETN == 0)                                                                                                                   
     	        offset_ddr <= 32'h0;                                                                                                                                                                                                                                                  
-    	  else if ( init_txn_pulse == 1'b1 && C_M_START_CAPTURE == 1'b1) 
+    	  else if ( init_txn_pulse == 1'b1 ) 
     	       offset_ddr <= offset_ddr + C_M_LEN_DATA;
     	  end 
     	  /*

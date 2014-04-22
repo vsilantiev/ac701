@@ -1,7 +1,7 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------
 | Tool Version : Vivado v.2013.3 (lin64) Build 329390 Wed Oct 16 18:26:55 MDT 2013
-| Date         : Wed Apr 16 09:38:27 2014
+| Date         : Fri Apr 18 09:44:06 2014
 | Host         : ubuntu running 64-bit Ubuntu 12.04.4 LTS
 | Command      : report_drc
 -----------------------------------------------------------------------------------
@@ -120,7 +120,7 @@ REPORT SUMMARY
                      Delay constraint missing on IO port
                      PS7 block required
            Max violations: <unlimited>
-         Violations found: 31
+         Violations found: 32
 
 2. REPORT DETAILS
 -----------------
@@ -282,9 +282,14 @@ Delay constraint missing on IO port
 The port 'LD_7' does not have any I/O delay defined. It is necessary to have I/O (input or output) delays defined on all the ports to properly time the FPGA interface.
 Related violations: <none>
 
+REQP-181#1 Advisory
+writefirst  
+Synchronous clocking for BRAM (dma_i/axi_mem_intercon/s01_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_WRITE.gen_pktfifo_w_upsizer.pktfifo_write_data_inst/w_buffer/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.WIDE_PRIM36.ram) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to use Read First mode to avoid any conditions for address collision. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
 RTSTAT-10#1 Advisory
 No routable loads  
-80 net(s) have no routable loads. The first 15 problem net(s) are dma_i/processing_system7_0/inst/M_AXI_GP0_ARCACHE[0], dma_i/processing_system7_0/inst/M_AXI_GP0_ARCACHE[1], dma_i/processing_system7_0/inst/M_AXI_GP0_ARCACHE[2], dma_i/processing_system7_0/inst/M_AXI_GP0_ARCACHE[3], dma_i/processing_system7_0/inst/M_AXI_GP0_ARLOCK[0], dma_i/processing_system7_0/inst/M_AXI_GP0_ARLOCK[1], dma_i/processing_system7_0/inst/M_AXI_GP0_ARPROT[0], dma_i/processing_system7_0/inst/M_AXI_GP0_ARPROT[1], dma_i/processing_system7_0/inst/M_AXI_GP0_ARPROT[2], dma_i/processing_system7_0/inst/M_AXI_GP0_ARQOS[0], dma_i/processing_system7_0/inst/M_AXI_GP0_ARQOS[1], dma_i/processing_system7_0/inst/M_AXI_GP0_ARQOS[2], dma_i/processing_system7_0/inst/M_AXI_GP0_ARQOS[3], dma_i/processing_system7_0/inst/M_AXI_GP0_AWCACHE[0], dma_i/processing_system7_0/inst/M_AXI_GP0_AWCACHE[1].
+89 net(s) have no routable loads. The first 15 problem net(s) are dma_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0], dma_i/processing_system7_0/inst/M_AXI_GP0_ARADDR[8], dma_i/processing_system7_0/inst/M_AXI_GP0_ARADDR[9], dma_i/processing_system7_0/inst/M_AXI_GP0_ARADDR[10], dma_i/processing_system7_0/inst/M_AXI_GP0_ARADDR[11], dma_i/processing_system7_0/inst/M_AXI_GP0_ARCACHE[0], dma_i/processing_system7_0/inst/M_AXI_GP0_ARCACHE[1], dma_i/processing_system7_0/inst/M_AXI_GP0_ARCACHE[2], dma_i/processing_system7_0/inst/M_AXI_GP0_ARCACHE[3], dma_i/processing_system7_0/inst/M_AXI_GP0_ARLOCK[0], dma_i/processing_system7_0/inst/M_AXI_GP0_ARLOCK[1], dma_i/processing_system7_0/inst/M_AXI_GP0_ARPROT[0], dma_i/processing_system7_0/inst/M_AXI_GP0_ARPROT[1], dma_i/processing_system7_0/inst/M_AXI_GP0_ARPROT[2], dma_i/processing_system7_0/inst/M_AXI_GP0_ARQOS[0].
 Related violations: <none>
 
 

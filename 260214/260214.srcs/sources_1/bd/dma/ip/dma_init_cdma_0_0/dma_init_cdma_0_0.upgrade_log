@@ -1,7 +1,7 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------
 | Tool Version : Vivado v.2013.3 (lin64) Build 329390 Wed Oct 16 18:26:55 MDT 2013
-| Date         : Tue Apr 15 16:02:56 2014
+| Date         : Wed Apr 16 11:16:34 2014
 | Host         : ubuntu running 64-bit Ubuntu 12.04.4 LTS
 | Command      : upgrade_ip
 | Device       : xc7z020clg484-1
@@ -12,5 +12,14 @@ Upgrade Log for IP 'dma_init_cdma_0_0'
 1. Summary
 ----------
 
-SUCCESS in the upgrade of dma_init_cdma_0_0 (xilinx.com:user:init_cdma:1.0) from (Rev. 62) to (Rev. 63)
+CAUTION (success, with warnings) in the upgrade of dma_init_cdma_0_0 (xilinx.com:user:init_cdma:1.0) from (Rev. 63) to (Rev. 64)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+WARNING: Detected external port differences while upgrading IP 'dma_init_cdma_0_0'. These changes may impact your design.
+
+-upgrade has removed port 'C_M00_AXI_START_CAPTURE'
 

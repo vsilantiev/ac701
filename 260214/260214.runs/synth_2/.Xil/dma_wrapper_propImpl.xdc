@@ -1,5 +1,5 @@
-set_property SRC_FILE_INFO {cfile:/home/vladimir/260214/260214.srcs/sources_1/bd/dma/ip/dma_processing_system7_0_0/dma_processing_system7_0_0.xdc rfile:../../../260214.srcs/sources_1/bd/dma/ip/dma_processing_system7_0_0/dma_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:dma_i/processing_system7_0/inst} [current_design]
-set_property SRC_FILE_INFO {cfile:/home/vladimir/260214/260214.srcs/constrs_1/new/dma_wrapper.xdc rfile:../../../260214.srcs/constrs_1/new/dma_wrapper.xdc id:2} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/ip/dma_processing_system7_0_0/dma_processing_system7_0_0.xdc rfile:../../../260214.srcs/sources_1/bd/dma/ip/dma_processing_system7_0_0/dma_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:dma_i/processing_system7_0/inst} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/vladimir/Z/zedboard/260214/260214.srcs/constrs_1/new/dma_wrapper.xdc rfile:../../../260214.srcs/constrs_1/new/dma_wrapper.xdc id:2} [current_design]
 set_property src_info {type:SCOPED_XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
 set_input_jitter clk_fpga_2 0.6
 set_property src_info {type:SCOPED_XDC file:1 line:24 export:INPUT save:INPUT read:READ} [current_design]

@@ -36,7 +36,7 @@
       <Option Name="IPRepoPath" Val="$PPRDIR/../acp_1.0"/>
       <Option Name="IPRepoPath" Val="$PPRDIR/../axi_adc_1c_v1_00_a"/>
       <Option Name="IPRepoPath" Val="$PPRDIR/../../IPCore"/>
-      <Option Name="IPRepoPath" Val="/home/vladimir/260214/IPCore/init_cdma_1.0"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../260214/IPCore/init_cdma_1.0"/>
       <Option Name="IPRepoPath" Val="$PPRDIR/../reg_init_1.0"/>
       <Option Name="IPRepoPath" Val="$PPRDIR/../Emul"/>
     </Config>

@@ -1,0 +1,271 @@
+#-----------------------------------------------------------
+# Vivado v2013.3 (64-bit)
+# SW Build 329390 on Wed Oct 16 18:26:55 MDT 2013
+# IP Build 192953 on Wed Oct 16 08:44:02 MDT 2013
+# Start of session at: Wed Apr 16 09:55:09 2014
+# Process ID: 28425
+# Log file: /home/vladimir/Z/zedboard/260214/vivado.log
+# Journal file: /home/vladimir/Z/zedboard/260214/vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: Implementation
+WARNING: [Common 17-301] Failed to get a license: Implementation
+WARNING: [Vivado 15-19] WARNING: No 'Implementation' license found. This message may be safely ignored if a Vivado WebPACK or device-locked license, common for board kits, will be used during implementation.
+
+INFO: [Common 17-78] Attempting to get a license: Synthesis
+WARNING: [Common 17-301] Failed to get a license: Synthesis
+INFO: [Device 21-36] Loading parts and site information from /opt/Xilinx/Vivado/2013.3/data/parts/arch.xml
+Parsing RTL primitives file [/opt/Xilinx/Vivado/2013.3/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/Vivado/2013.3/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+WARNING: [Vivado 15-19] WARNING: No 'Implementation' license found. This message may be safely ignored if a Vivado WebPACK or device-locked license, common for board kits, will be used during implementation.
+
+open_project /home/vladimir/Z/zedboard/260214/260214.xpr
+INFO: [Project 1-313] Project file moved from '/home/vladimir/260214' since last save.
+INFO: [Project 1-356] Import path for source /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd: File not found as '/home/vladimir/Z/zedboard/250214/250214.srcs/sources_1/bd/dma/dma.bd'; using path '/home/vladimir/250214/250214.srcs/sources_1/bd/dma/dma.bd' instead.
+INFO: [Project 1-356] Import path for source /home/vladimir/Z/zedboard/260214/260214.data/sources_1/ports.xml: File not found as '/home/vladimir/Z/zedboard/250214/250214.data/sources_1/ports.xml'; using path '/home/vladimir/250214/250214.data/sources_1/ports.xml' instead.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/ip/dma_ADC_emul_0_0/dma_ADC_emul_0_0.upgrade_log', nor could it be found using path '/home/vladimir/260214/260214.srcs/sources_1/bd/dma/ip/dma_ADC_emul_0_0/dma_ADC_emul_0_0.upgrade_log'.
+INFO: [Project 1-356] Import path for source /home/vladimir/Z/zedboard/260214/260214.srcs/constrs_1/new/dma_wrapper.xdc: File not found as '/home/vladimir/Z/zedboard/250214/250214.srcs/constrs_1/new/dma_wrapper.xdc'; using path '/home/vladimir/250214/250214.srcs/constrs_1/new/dma_wrapper.xdc' instead.
+INFO: [Project 1-356] Import path for source /home/vladimir/Z/zedboard/260214/260214.data/constrs_1/designprops.xml: File not found as '/home/vladimir/Z/zedboard/250214/250214.data/constrs_1/designprops.xml'; using path '/home/vladimir/250214/250214.data/constrs_1/designprops.xml' instead.
+INFO: [Project 1-356] Import path for source /home/vladimir/Z/zedboard/260214/260214.data/constrs_1/usercols.xml: File not found as '/home/vladimir/Z/zedboard/250214/250214.data/constrs_1/usercols.xml'; using path '/home/vladimir/250214/250214.data/constrs_1/usercols.xml' instead.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-356] Import path for source /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd: File not found as '/home/vladimir/Z/zedboard/250214/250214.srcs/sources_1/bd/dma/dma.bd'; using path '/home/vladimir/250214/250214.srcs/sources_1/bd/dma/dma.bd' instead.
+INFO: [Project 1-356] Import path for source /home/vladimir/Z/zedboard/260214/260214.data/sources_1/ports.xml: File not found as '/home/vladimir/Z/zedboard/250214/250214.data/sources_1/ports.xml'; using path '/home/vladimir/250214/250214.data/sources_1/ports.xml' instead.
+INFO: [Project 1-356] Import path for source /home/vladimir/Z/zedboard/260214/260214.srcs/constrs_1/new/dma_wrapper.xdc: File not found as '/home/vladimir/Z/zedboard/250214/250214.srcs/constrs_1/new/dma_wrapper.xdc'; using path '/home/vladimir/250214/250214.srcs/constrs_1/new/dma_wrapper.xdc' instead.
+INFO: [Project 1-356] Import path for source /home/vladimir/Z/zedboard/260214/260214.data/constrs_1/designprops.xml: File not found as '/home/vladimir/Z/zedboard/250214/250214.data/constrs_1/designprops.xml'; using path '/home/vladimir/250214/250214.data/constrs_1/designprops.xml' instead.
+INFO: [Project 1-356] Import path for source /home/vladimir/Z/zedboard/260214/260214.data/constrs_1/usercols.xml: File not found as '/home/vladimir/Z/zedboard/250214/250214.data/constrs_1/usercols.xml'; using path '/home/vladimir/250214/250214.data/constrs_1/usercols.xml' instead.
+INFO: [Project 1-356] Import path for source /home/vladimir/Z/zedboard/260214/260214.srcs/constrs_1/new/dma_wrapper.xdc: File not found as '/home/vladimir/Z/zedboard/250214/250214.srcs/constrs_1/new/dma_wrapper.xdc'; using path '/home/vladimir/250214/250214.srcs/constrs_1/new/dma_wrapper.xdc' instead.
+INFO: [Project 1-356] Import path for source /home/vladimir/Z/zedboard/260214/260214.data/constrs_1/designprops.xml: File not found as '/home/vladimir/Z/zedboard/250214/250214.data/constrs_1/designprops.xml'; using path '/home/vladimir/250214/250214.data/constrs_1/designprops.xml' instead.
+INFO: [Project 1-356] Import path for source /home/vladimir/Z/zedboard/260214/260214.data/constrs_1/usercols.xml: File not found as '/home/vladimir/Z/zedboard/250214/250214.data/constrs_1/usercols.xml'; using path '/home/vladimir/250214/250214.data/constrs_1/usercols.xml' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore/reg_init_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore/init_cdma_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore'.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore/Emul'.
+INFO: [IP_Flow 19-2313] Loaded Vivado repository '/opt/Xilinx/Vivado/2013.3/data/ip'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:acp:1.0'. The one found in repository '/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0' will take precedence over the same IP in repository '/home/vladimir/Z/zedboard/260214/IPCore'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:reg_init:1.0'. The one found in repository '/home/vladimir/Z/zedboard/260214/IPCore/reg_init_1.0' will take precedence over the same IP in repository '/home/vladimir/Z/zedboard/260214/IPCore'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:init_cdma:1.0'. The one found in repository '/home/vladimir/Z/zedboard/260214/IPCore/init_cdma_1.0' will take precedence over the same IP in repository '/home/vladimir/Z/zedboard/260214/IPCore'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'omega.local:user:ADC_emul:1.0'. The one found in repository '/home/vladimir/Z/zedboard/260214/IPCore' will take precedence over the same IP in repository '/home/vladimir/Z/zedboard/260214/IPCore/Emul'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 4637.871 ; gain = 254.930
+set_property ip_repo_paths  /home/vladimir/Z/zedboard/260214/IPCore [current_fileset]
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore'.
+open_bd_design {/home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.3 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_cdma:4.1 - axi_cdma_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:3.0 - axi_bram_ctrl_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - axi_crossbar_0
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.0 - axi_bram_ctrl_0_bram
+Adding component instance block -- xilinx.com:user:reg_status:1.0 - reg_status_0
+Adding component instance block -- xilinx.com:user:reg_init:1.0 - reg_init_0
+Adding component instance block -- xilinx.com:user:init_cdma:1.0 - init_cdma_0
+Adding component instance block -- omega.local:user:ADC_emul:1.0 - ADC_emul_0
+Adding component instance block -- xilinx.com:user:acp:1.0 - acp_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Successfully read diagram <dma> from BD file </home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd>
+open_bd_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 4764.828 ; gain = 37.391
+validate_bd_design
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'NO' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+INFO: [BD 41-237] Bus Interface property ID_WIDTH does not match between /axi_mem_intercon/xbar/S00_AXI(1) and /axi_mem_intercon/s00_couplers/auto_us/M_AXI(0)
+INFO: [BD 41-237] Bus Interface property SUPPORTS_NARROW_BURST does not match between /axi_mem_intercon/xbar/S00_AXI(1) and /axi_mem_intercon/s00_couplers/auto_us/M_AXI(0)
+INFO: [BD 41-237] Bus Interface property MAX_BURST_LENGTH does not match between /axi_mem_intercon/xbar/S00_AXI(256) and /axi_mem_intercon/s00_couplers/auto_us/M_AXI(128)
+INFO: [BD 41-237] Bus Interface property ID_WIDTH does not match between /axi_mem_intercon/xbar/S01_AXI(1) and /axi_mem_intercon/s01_couplers/auto_us/M_AXI(0)
+INFO: [BD 41-237] Bus Interface property SUPPORTS_NARROW_BURST does not match between /axi_mem_intercon/xbar/S01_AXI(1) and /axi_mem_intercon/s01_couplers/auto_us/M_AXI(0)
+INFO: [BD 41-237] Bus Interface property MAX_BURST_LENGTH does not match between /axi_mem_intercon/xbar/S01_AXI(256) and /axi_mem_intercon/s01_couplers/auto_us/M_AXI(1)
+INFO: [BD 41-237] Bus Interface property ID_WIDTH does not match between /processing_system7_0/S_AXI_HP0(6) and /axi_mem_intercon/m00_couplers/auto_pc/M_AXI(1)
+validate_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 4764.949 ; gain = 0.000
+success
+ipx::edit_ip_in_project -upgrade true -name {edit_ip} -directory {/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0} {/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0/component.xml}
+INFO: [Project 1-313] Project file moved from 'F:/test1/acp_1.0' since last save.
+IP Repository Path: Could not find the directory '/home/vladimir/Z/zedboard/260214/IPCore/stream_1.0', nor could it be found using path '/home/vladimir/Z/zedboard/260214/F:/test1/stream_1.0'.
+IP Repository Path: Could not find the directory 'f:/test1/acp_1.0'.
+IP Repository Path: Could not find the directory '/home/vladimir/Z/zedboard/260214/dma040414/myslave_1.0', nor could it be found using path '/home/vladimir/Z/zedboard/260214/F:/dma040414/myslave_1.0'.
+IP Repository Path: Could not find the directory '/home/vladimir/Z/zedboard/260214/dma040414/mydatagen_1.0', nor could it be found using path '/home/vladimir/Z/zedboard/260214/F:/dma040414/mydatagen_1.0'.
+IP Repository Path: Could not find the directory '/home/vladimir/root/250214/acp_1.0', nor could it be found using path '/home/vladimir/Z/root/250214/acp_1.0'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user repository '/home/vladimir/Z/zedboard/260214/IPCore/stream_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user repository 'f:/test1/acp_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user repository '/home/vladimir/Z/zedboard/260214/dma040414/myslave_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user repository '/home/vladimir/Z/zedboard/260214/dma040414/mydatagen_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore/init_cdma_1.0'.
+WARNING: [IP_Flow 19-2248] Failed to load user repository '/home/vladimir/root/250214/acp_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore'.
+WARNING: [IP_Flow 19-3299] If you move the project, the path for repository '/home/vladimir/Z/zedboard/260214/IPCore' may become invalid. A better location for the repository would be in a path adjacent to the project.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/260214/IPCore/acp_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore/reg_init_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore/Emul'.
+INFO: [IP_Flow 19-2313] Loaded Vivado repository '/opt/Xilinx/Vivado/2013.3/data/ip'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:init_cdma:1.0'. The one found in repository '/home/vladimir/Z/zedboard/260214/IPCore/init_cdma_1.0' will take precedence over the same IP in repository '/home/vladimir/Z/zedboard/260214/IPCore'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:acp:1.0'. The one found in repository '/home/vladimir/Z/zedboard/260214/IPCore' will take precedence over the same IP in repository '/home/vladimir/260214/IPCore/acp_1.0'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:reg_init:1.0'. The one found in repository '/home/vladimir/Z/zedboard/260214/IPCore' will take precedence over the same IP in repository '/home/vladimir/Z/zedboard/260214/IPCore/reg_init_1.0'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'omega.local:user:ADC_emul:1.0'. The one found in repository '/home/vladimir/Z/zedboard/260214/IPCore' will take precedence over the same IP in repository '/home/vladimir/Z/zedboard/260214/IPCore/Emul'.
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4892.652 ; gain = 73.344
+current_project 260214
+ipx::edit_ip_in_project -upgrade true -name {edit_ip1} -directory {/home/vladimir/Z/zedboard/260214/IPCore/init_cdma_1.0} {/home/vladimir/Z/zedboard/260214/IPCore/init_cdma_1.0/component.xml}
+INFO: [Project 1-313] Project file moved from '/root/zedboard/IPCore/init_cdma_1.0' since last save.
+IP Repository Path: Could not find the directory '/home/vladimir/root/zedboard/IPCore/init_cdma_1.0', nor could it be found using path '/../root/zedboard/IPCore/init_cdma_1.0'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user repository '/home/vladimir/root/zedboard/IPCore/init_cdma_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore/reg_status_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore/axi_adc_1c_v1_00_a'.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore'.
+WARNING: [IP_Flow 19-3299] If you move the project, the path for repository '/home/vladimir/Z/zedboard/260214/IPCore' may become invalid. A better location for the repository would be in a path adjacent to the project.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/260214/IPCore/init_cdma_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore/reg_init_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore/Emul'.
+INFO: [IP_Flow 19-2313] Loaded Vivado repository '/opt/Xilinx/Vivado/2013.3/data/ip'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:reg_status:1.0'. The one found in repository '/home/vladimir/Z/zedboard/260214/IPCore/reg_status_1.0' will take precedence over the same IP in repository '/home/vladimir/Z/zedboard/260214/IPCore'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'Silantiev:user:axi_adc_1c:1.0'. The one found in repository '/home/vladimir/Z/zedboard/260214/IPCore/axi_adc_1c_v1_00_a' will take precedence over the same IP in repository '/home/vladimir/Z/zedboard/260214/IPCore'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:acp:1.0'. The one found in repository '/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0' will take precedence over the same IP in repository '/home/vladimir/Z/zedboard/260214/IPCore'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:init_cdma:1.0'. The one found in repository '/home/vladimir/Z/zedboard/260214/IPCore' will take precedence over the same IP in repository '/home/vladimir/260214/IPCore/init_cdma_1.0'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:reg_init:1.0'. The one found in repository '/home/vladimir/Z/zedboard/260214/IPCore' will take precedence over the same IP in repository '/home/vladimir/Z/zedboard/260214/IPCore/reg_init_1.0'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'omega.local:user:ADC_emul:1.0'. The one found in repository '/home/vladimir/Z/zedboard/260214/IPCore' will take precedence over the same IP in repository '/home/vladimir/Z/zedboard/260214/IPCore/Emul'.
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 4924.773 ; gain = 14.008
+current_project edit_ip
+ipx::current_core {/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0/component.xml}
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+INFO: [IP_Flow 19-2418] Expression "((C_M00_AXI_DATA_WIDTH / 8) - 1)": Will not convert operator '/' to XPATH 'div' to allow integer division if applicable.
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_ip_instances
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user repository '/home/vladimir/root/zedboard/IPCore/init_cdma_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore/reg_status_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore/axi_adc_1c_v1_00_a'.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore'.
+WARNING: [IP_Flow 19-3299] If you move the project, the path for repository '/home/vladimir/Z/zedboard/260214/IPCore' may become invalid. A better location for the repository would be in a path adjacent to the project.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/260214/IPCore/init_cdma_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore/reg_init_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore/Emul'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:reg_status:1.0'. The one found in repository '/home/vladimir/Z/zedboard/260214/IPCore/reg_status_1.0' will take precedence over the same IP in repository '/home/vladimir/Z/zedboard/260214/IPCore'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'Silantiev:user:axi_adc_1c:1.0'. The one found in repository '/home/vladimir/Z/zedboard/260214/IPCore/axi_adc_1c_v1_00_a' will take precedence over the same IP in repository '/home/vladimir/Z/zedboard/260214/IPCore'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:acp:1.0'. The one found in repository '/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0' will take precedence over the same IP in repository '/home/vladimir/Z/zedboard/260214/IPCore'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:init_cdma:1.0'. The one found in repository '/home/vladimir/Z/zedboard/260214/IPCore' will take precedence over the same IP in repository '/home/vladimir/260214/IPCore/init_cdma_1.0'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:reg_init:1.0'. The one found in repository '/home/vladimir/Z/zedboard/260214/IPCore' will take precedence over the same IP in repository '/home/vladimir/Z/zedboard/260214/IPCore/reg_init_1.0'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'omega.local:user:ADC_emul:1.0'. The one found in repository '/home/vladimir/Z/zedboard/260214/IPCore' will take precedence over the same IP in repository '/home/vladimir/Z/zedboard/260214/IPCore/Emul'.
+ipx::update_ip_instances: Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 5016.074 ; gain = 0.000
+current_project 260214
+ipx::edit_ip_in_project -upgrade true -name {edit_ip} -directory {/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0} {/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0/component.xml}
+INFO: [Project 1-313] Project file moved from 'F:/test1/acp_1.0' since last save.
+IP Repository Path: Could not find the directory '/home/vladimir/Z/zedboard/260214/IPCore/stream_1.0', nor could it be found using path '/home/vladimir/Z/zedboard/260214/F:/test1/stream_1.0'.
+IP Repository Path: Could not find the directory 'f:/test1/acp_1.0'.
+IP Repository Path: Could not find the directory '/home/vladimir/Z/zedboard/260214/dma040414/myslave_1.0', nor could it be found using path '/home/vladimir/Z/zedboard/260214/F:/dma040414/myslave_1.0'.
+IP Repository Path: Could not find the directory '/home/vladimir/Z/zedboard/260214/dma040414/mydatagen_1.0', nor could it be found using path '/home/vladimir/Z/zedboard/260214/F:/dma040414/mydatagen_1.0'.
+IP Repository Path: Could not find the directory '/home/vladimir/root/250214/acp_1.0', nor could it be found using path '/home/vladimir/Z/root/250214/acp_1.0'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user repository '/home/vladimir/Z/zedboard/260214/IPCore/stream_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user repository 'f:/test1/acp_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user repository '/home/vladimir/Z/zedboard/260214/dma040414/myslave_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user repository '/home/vladimir/Z/zedboard/260214/dma040414/mydatagen_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore/init_cdma_1.0'.
+WARNING: [IP_Flow 19-2248] Failed to load user repository '/home/vladimir/root/250214/acp_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore'.
+WARNING: [IP_Flow 19-3299] If you move the project, the path for repository '/home/vladimir/Z/zedboard/260214/IPCore' may become invalid. A better location for the repository would be in a path adjacent to the project.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/260214/IPCore/acp_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore/reg_init_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore/Emul'.
+INFO: [IP_Flow 19-2313] Loaded Vivado repository '/opt/Xilinx/Vivado/2013.3/data/ip'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:init_cdma:1.0'. The one found in repository '/home/vladimir/Z/zedboard/260214/IPCore/init_cdma_1.0' will take precedence over the same IP in repository '/home/vladimir/Z/zedboard/260214/IPCore'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:acp:1.0'. The one found in repository '/home/vladimir/Z/zedboard/260214/IPCore' will take precedence over the same IP in repository '/home/vladimir/260214/IPCore/acp_1.0'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:reg_init:1.0'. The one found in repository '/home/vladimir/Z/zedboard/260214/IPCore' will take precedence over the same IP in repository '/home/vladimir/Z/zedboard/260214/IPCore/reg_init_1.0'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'omega.local:user:ADC_emul:1.0'. The one found in repository '/home/vladimir/Z/zedboard/260214/IPCore' will take precedence over the same IP in repository '/home/vladimir/Z/zedboard/260214/IPCore/Emul'.
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 5025.477 ; gain = 0.000
+current_project edit_ip1
+current_project edit_ip
+current_project edit_ip1
+ipx::current_core {/home/vladimir/Z/zedboard/260214/IPCore/init_cdma_1.0/component.xml}
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+INFO: [IP_Flow 19-2418] Expression "((C_M00_AXI_DATA_WIDTH / 8) - 1)": Will not convert operator '/' to XPATH 'div' to allow integer division if applicable.
+ipx::update_ip_instances
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user repository '/home/vladimir/Z/zedboard/260214/IPCore/stream_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user repository 'f:/test1/acp_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user repository '/home/vladimir/Z/zedboard/260214/dma040414/myslave_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user repository '/home/vladimir/Z/zedboard/260214/dma040414/mydatagen_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore/init_cdma_1.0'.
+WARNING: [IP_Flow 19-2248] Failed to load user repository '/home/vladimir/root/250214/acp_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore'.
+WARNING: [IP_Flow 19-3299] If you move the project, the path for repository '/home/vladimir/Z/zedboard/260214/IPCore' may become invalid. A better location for the repository would be in a path adjacent to the project.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/260214/IPCore/acp_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore/reg_init_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore/Emul'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:init_cdma:1.0'. The one found in repository '/home/vladimir/Z/zedboard/260214/IPCore/init_cdma_1.0' will take precedence over the same IP in repository '/home/vladimir/Z/zedboard/260214/IPCore'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:acp:1.0'. The one found in repository '/home/vladimir/Z/zedboard/260214/IPCore' will take precedence over the same IP in repository '/home/vladimir/260214/IPCore/acp_1.0'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:reg_init:1.0'. The one found in repository '/home/vladimir/Z/zedboard/260214/IPCore' will take precedence over the same IP in repository '/home/vladimir/Z/zedboard/260214/IPCore/reg_init_1.0'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'omega.local:user:ADC_emul:1.0'. The one found in repository '/home/vladimir/Z/zedboard/260214/IPCore' will take precedence over the same IP in repository '/home/vladimir/Z/zedboard/260214/IPCore/Emul'.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+ipx::merge_project_changes hdl_parameters [ipx::find_open_core xilinx.com:user:acp:1.0]
+INFO: [IP_Flow 19-2418] Expression "((C_M00_AXI_DATA_WIDTH / 8) - 1)": Will not convert operator '/' to XPATH 'div' to allow integer division if applicable.
+ipx::create_xgui_files [ipx::find_open_core xilinx.com:user:acp:1.0]
+ipx::update_ip_instances
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:acp:1.0'. The one found in repository '/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0' will take precedence over the same IP in repository '/home/vladimir/Z/zedboard/260214/IPCore'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user repository '/home/vladimir/Z/zedboard/260214/IPCore'.
+INFO: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:acp:1.0'. The one found in repository '/home/vladimir/Z/zedboard/260214/IPCore/acp_1.0' will take precedence over the same IP in repository '/home/vladimir/Z/zedboard/260214/IPCore'.
+INFO: [IP_Flow 19-3422] Upgraded dma_acp_0_0 (acp_v1_0 1.0) from revision 55 to revision 57
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading IP 'dma_acp_0_0'. These changes may impact your design.
+INFO: [IP_Flow 19-3471] Wrote upgrade log to '/home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/ip/dma_acp_0_0/dma_acp_0_0.upgrade_log'.
+WARNING: [BD 41-176] The physical port 'm00_axi_araddr' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'm00_axi_arprot' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'm00_axi_arvalid' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'm00_axi_arready' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'm00_axi_rdata' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'm00_axi_rresp' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'm00_axi_rvalid' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'm00_axi_rready' specified in the portmap, is not found on the block! 
+CRITICAL WARNING: [Designutils 20-1366] Unable to reset target(s) for the following file is locked: /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/ip/dma_init_cdma_0_0/dma_init_cdma_0_0.xci
+Locked reason: IP definition 'axi_init_cdma_v1_0' for IP 'dma_init_cdma_0_0' (customized with software release 2013.3) has a different revision in the IP Catalog.   Please select 'Report IP Status' from the 'Tools/Report' menu for instructions to unlock.
+Wrote  : </home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd> 
+upgrade_bd_cells: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 5076.734 ; gain = 0.000
+ipx::update_ip_instances: Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 5076.734 ; gain = 4.000
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
+endgroup
+set_property location {1.5 331 41} [get_bd_cells axi_dma_0]
+delete_bd_objs [get_bd_cells axi_dma_0]
+save_bd_design
+Wrote  : </home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd> 
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 16 10:59:59 2014...

@@ -1,0 +1,8 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/opt/Xilinx/Vivado/2013.3/tps/lnx64/jre/lib/amd64/server/libjvm.so(+0x744749) [0x7ff08fe2a749]
+/opt/Xilinx/Vivado/2013.3/tps/lnx64/jre/lib/amd64/server/libjvm.so(JVM_handle_linux_signal+0xa7) [0x7ff08fe2efb7]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0xfcb0) [0x7ff0b6de4cb0]
+[0x19b05b80]

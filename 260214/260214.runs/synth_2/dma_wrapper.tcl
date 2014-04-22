@@ -5,54 +5,51 @@
   set_param gui.test TreeTableDev
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
-set_msg_config -id {HDL-1065} -limit 10000
 create_project -in_memory -part xc7z020clg484-1
 set_property target_language Verilog [current_project]
 set_property board em.avnet.com:zynq:zed:d [current_project]
 set_param project.compositeFile.enableAutoGeneration 0
 set_property ip_repo_paths {
-  /home/vladimir/260214/IPCore/reg_init_1.0
-  /home/vladimir/260214/IPCore/acp_1.0
-  /home/vladimir/260214/IPCore/init_cdma_1.0
-  /home/vladimir/260214/IPCore
-  /home/vladimir/260214/IPCore/Emul
+  /home/vladimir/Z/zedboard/260214/IPCore/acp_1.0
+  /home/vladimir/Z/zedboard/260214/IPCore
 } [current_fileset]
 
-add_files /home/vladimir/260214/260214.srcs/sources_1/bd/dma/dma.bd
-set_property used_in_implementation false [get_files -all /home/vladimir/260214/260214.srcs/sources_1/bd/dma/ip/dma_processing_system7_0_0/dma_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/vladimir/260214/260214.srcs/sources_1/bd/dma/ip/dma_axi_cdma_0_0/dma_axi_cdma_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/vladimir/260214/260214.srcs/sources_1/bd/dma/ip/dma_axi_cdma_0_0/dma_axi_cdma_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/vladimir/260214/260214.srcs/sources_1/bd/dma/ip/dma_proc_sys_reset_0/dma_proc_sys_reset_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/vladimir/260214/260214.srcs/sources_1/bd/dma/ip/dma_proc_sys_reset_0/dma_proc_sys_reset_0.xdc]
-set_property used_in_implementation false [get_files -all /home/vladimir/260214/260214.srcs/sources_1/bd/dma/ip/dma_proc_sys_reset_0/dma_proc_sys_reset_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/vladimir/260214/260214.srcs/sources_1/bd/dma/ip/dma_axi_bram_ctrl_0_0/dma_axi_bram_ctrl_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/vladimir/260214/260214.srcs/sources_1/bd/dma/ip/dma_xbar_2/dma_xbar_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/vladimir/260214/260214.srcs/sources_1/bd/dma/ip/dma_xbar_3/dma_xbar_3_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/vladimir/260214/260214.srcs/sources_1/bd/dma/ip/dma_axi_crossbar_0_4/dma_axi_crossbar_0_4_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/vladimir/260214/260214.srcs/sources_1/bd/dma/ip/dma_axi_bram_ctrl_0_bram_0/dma_axi_bram_ctrl_0_bram_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/vladimir/260214/260214.srcs/sources_1/bd/dma/ip/dma_auto_pc_1181/dma_auto_pc_1181_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/vladimir/260214/260214.srcs/sources_1/bd/dma/ip/dma_auto_ds_876/dma_auto_ds_876_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/vladimir/260214/260214.srcs/sources_1/bd/dma/ip/dma_auto_ds_876/dma_auto_ds_876_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/vladimir/260214/260214.srcs/sources_1/bd/dma/ip/dma_auto_pc_1182/dma_auto_pc_1182_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/vladimir/260214/260214.srcs/sources_1/bd/dma/ip/dma_auto_us_877/dma_auto_us_877_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/vladimir/260214/260214.srcs/sources_1/bd/dma/ip/dma_auto_us_877/dma_auto_us_877_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/vladimir/260214/260214.srcs/sources_1/bd/dma/ip/dma_auto_pc_1183/dma_auto_pc_1183_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/vladimir/260214/260214.srcs/sources_1/bd/dma/ip/dma_auto_us_878/dma_auto_us_878_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/vladimir/260214/260214.srcs/sources_1/bd/dma/ip/dma_auto_us_878/dma_auto_us_878_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/vladimir/260214/260214.srcs/sources_1/bd/dma/ip/dma_auto_pc_1184/dma_auto_pc_1184_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/vladimir/260214/260214.srcs/sources_1/bd/dma/dma_ooc.xdc]
+add_files /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd
+set_property used_in_implementation false [get_files -all /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/ip/dma_processing_system7_0_0/dma_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/ip/dma_axi_cdma_0_0/dma_axi_cdma_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/ip/dma_axi_cdma_0_0/dma_axi_cdma_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/ip/dma_proc_sys_reset_0/dma_proc_sys_reset_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/ip/dma_proc_sys_reset_0/dma_proc_sys_reset_0.xdc]
+set_property used_in_implementation false [get_files -all /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/ip/dma_proc_sys_reset_0/dma_proc_sys_reset_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/ip/dma_axi_bram_ctrl_0_0/dma_axi_bram_ctrl_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/ip/dma_xbar_2/dma_xbar_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/ip/dma_xbar_3/dma_xbar_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/ip/dma_axi_bram_ctrl_0_bram_0/dma_axi_bram_ctrl_0_bram_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/ip/dma_m01_data_fifo_16/dma_m01_data_fifo_16_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/ip/dma_auto_pc_1529/dma_auto_pc_1529_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/ip/dma_auto_ds_1137/dma_auto_ds_1137_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/ip/dma_auto_ds_1137/dma_auto_ds_1137_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/ip/dma_auto_pc_1530/dma_auto_pc_1530_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/ip/dma_auto_rs_6/dma_auto_rs_6_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/ip/dma_auto_us_1138/dma_auto_us_1138_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/ip/dma_auto_us_1138/dma_auto_us_1138_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/ip/dma_auto_pc_1531/dma_auto_pc_1531_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/ip/dma_auto_us_df_1139/dma_auto_us_df_1139_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/ip/dma_auto_us_df_1139/dma_auto_us_df_1139_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/ip/dma_auto_pc_1532/dma_auto_pc_1532_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma_ooc.xdc]
 set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property is_locked true [get_files /home/vladimir/260214/260214.srcs/sources_1/bd/dma/dma.bd]
+set_property is_locked true [get_files /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/bd/dma/dma.bd]
 
-read_verilog /home/vladimir/260214/260214.srcs/sources_1/imports/hdl/dma_wrapper.v
-read_xdc /home/vladimir/260214/260214.srcs/constrs_1/new/dma_wrapper.xdc
-set_property used_in_implementation false [get_files /home/vladimir/260214/260214.srcs/constrs_1/new/dma_wrapper.xdc]
+read_verilog /home/vladimir/Z/zedboard/260214/260214.srcs/sources_1/imports/hdl/dma_wrapper.v
+read_xdc /home/vladimir/Z/zedboard/260214/260214.srcs/constrs_1/new/dma_wrapper.xdc
+set_property used_in_implementation false [get_files /home/vladimir/Z/zedboard/260214/260214.srcs/constrs_1/new/dma_wrapper.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/vladimir/260214/260214.data/wt [current_project]
-set_property parent.project_dir /home/vladimir/260214 [current_project]
+set_property webtalk.parent_dir /home/vladimir/Z/zedboard/260214/260214.data/wt [current_project]
+set_property parent.project_dir /home/vladimir/Z/zedboard/260214 [current_project]
 synth_design -top dma_wrapper -part xc7z020clg484-1
 write_checkpoint dma_wrapper.dcp
 report_utilization -file dma_wrapper_utilization_synth.rpt -pb dma_wrapper_utilization_synth.pb

@@ -1,4 +1,4 @@
-09:41:43 **** Auto Build of project device-tree_bsp_0 ****
+09:58:54 **** Auto Build of project device-tree_bsp_0 ****
 make -k all 
 libgen -hw ../hw_platform_0/system.xml\
 	       -lp /home/vladimir/PROJECT/XILINX\
@@ -33,8 +33,6 @@ axi_cdma_0.m_axi_aclk connected to processing_system7_0_FCLK_CLK2:
     CLK_FREQ_HZ = 50000000
 axi_cdma_0.s_axi_lite_aclk connected to processing_system7_0_FCLK_CLK2:
     CLK_FREQ_HZ = 50000000
-axi_crossbar_0.aclk connected to processing_system7_0_FCLK_CLK2:
-    CLK_FREQ_HZ = 50000000
 axi_mem_intercon_m00_couplers_auto_pc.aclk connected to
 processing_system7_0_FCLK_CLK2:
     CLK_FREQ_HZ = 50000000
@@ -44,13 +42,19 @@ processing_system7_0_FCLK_CLK2:
 axi_mem_intercon_m01_couplers_auto_pc.aclk connected to
 processing_system7_0_FCLK_CLK2:
     CLK_FREQ_HZ = 50000000
+axi_mem_intercon_m01_couplers_auto_rs.aclk connected to
+processing_system7_0_FCLK_CLK2:
+    CLK_FREQ_HZ = 50000000
+axi_mem_intercon_m01_couplers_m01_data_fifo.aclk connected to
+processing_system7_0_FCLK_CLK2:
+    CLK_FREQ_HZ = 50000000
 axi_mem_intercon_s00_couplers_auto_us.s_axi_aclk connected to
 processing_system7_0_FCLK_CLK2:
     CLK_FREQ_HZ = 50000000
 axi_mem_intercon_s01_couplers_auto_pc.aclk connected to
 processing_system7_0_FCLK_CLK2:
     CLK_FREQ_HZ = 50000000
-axi_mem_intercon_s01_couplers_auto_us.s_axi_aclk connected to
+axi_mem_intercon_s01_couplers_auto_us_df.s_axi_aclk connected to
 processing_system7_0_FCLK_CLK2:
     CLK_FREQ_HZ = 50000000
 axi_mem_intercon_xbar.aclk connected to processing_system7_0_FCLK_CLK2:
@@ -175,69 +179,68 @@ IP connected to bus: ps7_axi_interconnect_0
 -slave S_AXI ps7_axi_interconnect_0 ps7_afi_1
 -slave S_AXI ps7_axi_interconnect_0 ps7_afi_2
 -slave S_AXI ps7_axi_interconnect_0 ps7_afi_3
--slave axi_bram_ctrl_0
 -slave axi_cdma_0
 -slave ps7_afi_0
-IP 57555216 ps7_afi_0 is already appended - skip it
+IP 63745168 ps7_afi_0 is already appended - skip it
 -slave ps7_afi_1
-IP 57555616 ps7_afi_1 is already appended - skip it
+IP 63745568 ps7_afi_1 is already appended - skip it
 -slave ps7_afi_2
-IP 57556016 ps7_afi_2 is already appended - skip it
+IP 63745968 ps7_afi_2 is already appended - skip it
 -slave ps7_afi_3
-IP 57556416 ps7_afi_3 is already appended - skip it
+IP 63746368 ps7_afi_3 is already appended - skip it
 -slave ps7_coresight_comp_0
-IP 57549216 ps7_coresight_comp_0 is already appended - skip it
+IP 63739168 ps7_coresight_comp_0 is already appended - skip it
 -slave ps7_ddr_0
 -slave ps7_ddrc_0
-IP 57547616 ps7_ddrc_0 is already appended - skip it
+IP 63737568 ps7_ddrc_0 is already appended - skip it
 -slave ps7_dev_cfg_0
-IP 57548016 ps7_dev_cfg_0 is already appended - skip it
+IP 63737968 ps7_dev_cfg_0 is already appended - skip it
 -slave ps7_dma_ns
 -slave ps7_dma_s
-IP 57551616 ps7_dma_s is already appended - skip it
+IP 63741568 ps7_dma_s is already appended - skip it
 -slave ps7_ethernet_0
-IP 57903664 ps7_ethernet_0 is already appended - skip it
+IP 64077328 ps7_ethernet_0 is already appended - skip it
 -slave ps7_globaltimer_0
-IP 57550416 ps7_globaltimer_0 is already appended - skip it
+IP 63740368 ps7_globaltimer_0 is already appended - skip it
 -slave ps7_gpio_0
-IP 57547216 ps7_gpio_0 is already appended - skip it
+IP 63737168 ps7_gpio_0 is already appended - skip it
 -slave ps7_gpv_0
-IP 57549616 ps7_gpv_0 is already appended - skip it
+IP 63739568 ps7_gpv_0 is already appended - skip it
 -slave ps7_intc_dist_0
-IP 57550816 ps7_intc_dist_0 is already appended - skip it
+IP 63740768 ps7_intc_dist_0 is already appended - skip it
 -slave ps7_iop_bus_config_0
-IP 57552016 ps7_iop_bus_config_0 is already appended - skip it
+IP 63741968 ps7_iop_bus_config_0 is already appended - skip it
 -slave ps7_l2cachec_0
-IP 57551216 ps7_l2cachec_0 is already appended - skip it
+IP 63741168 ps7_l2cachec_0 is already appended - skip it
 -slave ps7_ocmc_0
-IP 57548816 ps7_ocmc_0 is already appended - skip it
+IP 63738768 ps7_ocmc_0 is already appended - skip it
 -slave ps7_qspi_0
-IP 57901664 ps7_qspi_0 is already appended - skip it
+IP 64075328 ps7_qspi_0 is already appended - skip it
 -slave ps7_qspi_linear_0
-IP 57902064 ps7_qspi_linear_0 is already appended - skip it
+IP 64075728 ps7_qspi_linear_0 is already appended - skip it
 -slave ps7_ram_0
 -slave ps7_ram_1
-IP 57552816 ps7_ram_1 is already appended - skip it
+IP 63742768 ps7_ram_1 is already appended - skip it
 -slave ps7_scuc_0
-IP 57550016 ps7_scuc_0 is already appended - skip it
+IP 63739968 ps7_scuc_0 is already appended - skip it
 -slave ps7_scugic_0
-IP 57553216 ps7_scugic_0 is already appended - skip it
+IP 63743168 ps7_scugic_0 is already appended - skip it
 -slave ps7_scutimer_0
-IP 57553616 ps7_scutimer_0 is already appended - skip it
+IP 63743568 ps7_scutimer_0 is already appended - skip it
 -slave ps7_scuwdt_0
-IP 57554016 ps7_scuwdt_0 is already appended - skip it
+IP 63743968 ps7_scuwdt_0 is already appended - skip it
 -slave ps7_sd_0
-IP 57546448 ps7_sd_0 is already appended - skip it
+IP 63734304 ps7_sd_0 is already appended - skip it
 -slave ps7_slcr_0
-IP 57554416 ps7_slcr_0 is already appended - skip it
+IP 63744368 ps7_slcr_0 is already appended - skip it
 -slave ps7_ttc_0
-IP 57546816 ps7_ttc_0 is already appended - skip it
+IP 63736768 ps7_ttc_0 is already appended - skip it
 -slave ps7_uart_1
-IP 57901264 ps7_uart_1 is already appended - skip it
+IP 64074928 ps7_uart_1 is already appended - skip it
 -slave ps7_usb_0
-IP 57904064 ps7_usb_0 is already appended - skip it
+IP 63374064 ps7_usb_0 is already appended - skip it
 -slave ps7_xadc_0
-IP 57548416 ps7_xadc_0 is already appended - skip it
+IP 63738368 ps7_xadc_0 is already appended - skip it
 -slave reg_init_0
 -slave reg_status_0
 ps7_ocmc_0
@@ -259,5 +262,5 @@ Running post_generate.
 Running execs_generate.
 Finished building libraries
 
-09:41:45 Build Finished (took 1s.514ms)
+09:58:56 Build Finished (took 1s.512ms)
 

@@ -48,13 +48,14 @@
 
 
 // IP VLNV: xilinx.com:user:acp:1.0
-// IP Revision: 55
+// IP Revision: 85
 
 (* X_CORE_INFO = "acp_v1_0,Vivado 2013.3" *)
 (* CHECK_LICENSE_TYPE = "dma_acp_0_0,acp_v1_0,{}" *)
-(* CORE_GENERATION_INFO = "dma_acp_0_0,acp_v1_0,{x_ipProduct=Vivado 2013.3,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=acp,x_ipVersion=1.0,x_ipCoreRevision=55,x_ipLanguage=VERILOG,C_M00_AXI_TARGET_SLAVE_BASE_ADDR=0x40000000,C_M00_AXI_ADDR_WIDTH=32,C_M00_AXI_DATA_WIDTH=32,C_M00_AXI_TRANSACTIONS_NUM=131072}" *)
+(* CORE_GENERATION_INFO = "dma_acp_0_0,acp_v1_0,{x_ipProduct=Vivado 2013.3,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=acp,x_ipVersion=1.0,x_ipCoreRevision=85,x_ipLanguage=VERILOG,C_M00_AXI_TARGET_SLAVE_BASE_ADDR=0xC0000000,C_M00_AXI_ADDR_WIDTH=32,C_M00_AXI_DATA_WIDTH=32,C_M00_AXI_TRANSACTIONS_NUM=131072}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module dma_acp_0_0 (
+  START_CAPTURE,
   C_M00_AXI_DATA_ADC,
   C_M00_AXI_SRC_ADDR,
   m00_axi_half,
@@ -81,6 +82,7 @@ module dma_acp_0_0 (
   m00_axi_aresetn
 );
 
+input START_CAPTURE;
 input [31 : 0] C_M00_AXI_DATA_ADC;
 output [31 : 0] C_M00_AXI_SRC_ADDR;
 output m00_axi_half;
@@ -128,11 +130,12 @@ input m00_axi_aclk;
 input m00_axi_aresetn;
 
   acp_v1_0 #(
-    .C_M00_AXI_TARGET_SLAVE_BASE_ADDR('H40000000),
+    .C_M00_AXI_TARGET_SLAVE_BASE_ADDR('HC0000000),
     .C_M00_AXI_ADDR_WIDTH(32),
     .C_M00_AXI_DATA_WIDTH(32),
     .C_M00_AXI_TRANSACTIONS_NUM(131072)
   ) inst (
+    .START_CAPTURE(START_CAPTURE),
     .C_M00_AXI_DATA_ADC(C_M00_AXI_DATA_ADC),
     .C_M00_AXI_SRC_ADDR(C_M00_AXI_SRC_ADDR),
     .m00_axi_half(m00_axi_half),

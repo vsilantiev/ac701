@@ -1,6 +1,6 @@
 image: {
-	[bootloader]/home/vladimir/260214/fsbl/Release/fsbl.elf
-	/home/vladimir/260214/hw/dma_wrapper.bit
+	[bootloader]/home/vladimir/Z/zedboard/260214/fsbl/Release/fsbl.elf
+	/home/vladimir/Z/zedboard/260214/hw/dma_wrapper.bit
 	u-boot.elf
 	[load=0x2a00000]devicetree.dtb
 	[load=0x3000000]uImage.bin

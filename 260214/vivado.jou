@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2013.3 (64-bit)
+# SW Build 329390 on Wed Oct 16 18:26:55 MDT 2013
+# IP Build 192953 on Wed Oct 16 08:44:02 MDT 2013
+# Start of session at: Wed Apr 16 13:28:10 2014
+# Process ID: 3550
+# Log file: /home/vladimir/Z/zedboard/260214/vivado.log
+# Journal file: /home/vladimir/Z/zedboard/260214/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/vladimir/260214/260214.xpr
+open_bd_design {/home/vladimir/260214/260214.srcs/sources_1/bd/dma/dma.bd}
+ipx::edit_ip_in_project -upgrade true -name {edit_ip34} -directory {/home/vladimir/260214/IPCore/init_cdma_1.0} {/home/vladimir/260214/IPCore/init_cdma_1.0/component.xml}
+update_compile_order -fileset sim_1
+close_project

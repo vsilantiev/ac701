@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-03-24T10:53:43</DateModified>
+  <DateModified>2014-04-21T13:38:03</DateModified>
   <ModuleName>system</ModuleName>
-  <SummaryTimeStamp>2014-03-24T10:53:43</SummaryTimeStamp>
-  <SavedFilePath>/cf_ad9467_zed/__xps/ise/system.xreport</SavedFilePath>
+  <SummaryTimeStamp>2014-04-21T13:38:03</SummaryTimeStamp>
+  <SavedFilePath>/home/vladimir/Z/zedboard/cf_ad9467_zed/__xps/ise/system.xreport</SavedFilePath>
   <FilterFile>filter.filter</FilterFile>
-  <SavedFilterFilePath>/cf_ad9467_zed/__xps/ise</SavedFilterFilePath>
+  <SavedFilterFilePath>/home/vladimir/Z/zedboard/cf_ad9467_zed/__xps/ise</SavedFilterFilePath>
   <DateInitialized>2014-03-24T10:53:42</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

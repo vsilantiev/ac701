@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2013.3 (64-bit)
+# SW Build 329390 on Wed Oct 16 18:26:55 MDT 2013
+# IP Build 192953 on Wed Oct 16 08:44:02 MDT 2013
+# Start of session at: Mon Apr 21 10:27:19 2014
+# Process ID: 7905
+# Log file: /home/vladimir/Z/zedboard/180414stream/180414stream.runs/impl_1/dmas_wrapper.rdi
+# Journal file: /home/vladimir/Z/zedboard/180414stream/180414stream.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source dmas_wrapper.tcl -notrace

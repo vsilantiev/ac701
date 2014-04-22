@@ -1283,3 +1283,52 @@ WARNING::53 - File 'system.bmm' is empty or has no BMM content.
 
 
 Checking expanded design ...
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+WARNING:EDK:1954 - No Top-level Input clock for the design. 
+WARNING:EDK:3712 - IPNAME: axi_interconnect, INSTANCE: axi_interconnect_1 - Frequency of the interconnect's clock port could not be determined. All IPs in the design will be considered to be asynchronous with respect to the interconnect. This will lead to more resource usage. You can avoid this by specifying the clock frequency on the port that the interconnect's clock is connected to.
+WARNING:EDK:3712 - IPNAME: axi_interconnect, INSTANCE: axi_interconnect_2 - Frequency of the interconnect's clock port could not be determined. All IPs in the design will be considered to be asynchronous with respect to the interconnect. This will lead to more resource usage. You can avoid this by specifying the clock frequency on the port that the interconnect's clock is connected to.
+WARNING:EDK:1954 - No Top-level Input clock for the design. 
+WARNING:EDK:3712 - IPNAME: axi_interconnect, INSTANCE: axi_interconnect_1 - Frequency of the interconnect's clock port could not be determined. All IPs in the design will be considered to be asynchronous with respect to the interconnect. This will lead to more resource usage. You can avoid this by specifying the clock frequency on the port that the interconnect's clock is connected to.
+WARNING:EDK:3712 - IPNAME: axi_interconnect, INSTANCE: axi_interconnect_2 - Frequency of the interconnect's clock port could not be determined. All IPs in the design will be considered to be asynchronous with respect to the interconnect. This will lead to more resource usage. You can avoid this by specifying the clock frequency on the port that the interconnect's clock is connected to.
+WARNING:EDK:1954 - No Top-level Input clock for the design. 
+WARNING:EDK:3712 - IPNAME: axi_interconnect, INSTANCE: axi_interconnect_1 - Frequency of the interconnect's clock port could not be determined. All IPs in the design will be considered to be asynchronous with respect to the interconnect. This will lead to more resource usage. You can avoid this by specifying the clock frequency on the port that the interconnect's clock is connected to.
+WARNING:EDK:3712 - IPNAME: axi_interconnect, INSTANCE: axi_interconnect_2 - Frequency of the interconnect's clock port could not be determined. All IPs in the design will be considered to be asynchronous with respect to the interconnect. This will lead to more resource usage. You can avoid this by specifying the clock frequency on the port that the interconnect's clock is connected to.
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+WARNING:EDK:1954 - No Top-level Input clock for the design. 
+WARNING:EDK:3712 - IPNAME: axi_interconnect, INSTANCE: axi_interconnect_1 - Frequency of the interconnect's clock port could not be determined. All IPs in the design will be considered to be asynchronous with respect to the interconnect. This will lead to more resource usage. You can avoid this by specifying the clock frequency on the port that the interconnect's clock is connected to.
+WARNING:EDK:3712 - IPNAME: axi_interconnect, INSTANCE: axi_interconnect_2 - Frequency of the interconnect's clock port could not be determined. All IPs in the design will be considered to be asynchronous with respect to the interconnect. This will lead to more resource usage. You can avoid this by specifying the clock frequency on the port that the interconnect's clock is connected to.
+WARNING:EDK:1954 - No Top-level Input clock for the design. 
+WARNING:EDK:3712 - IPNAME: axi_interconnect, INSTANCE: axi_interconnect_1 - Frequency of the interconnect's clock port could not be determined. All IPs in the design will be considered to be asynchronous with respect to the interconnect. This will lead to more resource usage. You can avoid this by specifying the clock frequency on the port that the interconnect's clock is connected to.
+WARNING:EDK:3712 - IPNAME: axi_interconnect, INSTANCE: axi_interconnect_2 - Frequency of the interconnect's clock port could not be determined. All IPs in the design will be considered to be asynchronous with respect to the interconnect. This will lead to more resource usage. You can avoid this by specifying the clock frequency on the port that the interconnect's clock is connected to.
+WARNING:EDK:1954 - No Top-level Input clock for the design. 
+WARNING:EDK:3712 - IPNAME: axi_interconnect, INSTANCE: axi_interconnect_1 - Frequency of the interconnect's clock port could not be determined. All IPs in the design will be considered to be asynchronous with respect to the interconnect. This will lead to more resource usage. You can avoid this by specifying the clock frequency on the port that the interconnect's clock is connected to.
+WARNING:EDK:3712 - IPNAME: axi_interconnect, INSTANCE: axi_interconnect_2 - Frequency of the interconnect's clock port could not be determined. All IPs in the design will be considered to be asynchronous with respect to the interconnect. This will lead to more resource usage. You can avoid this by specifying the clock frequency on the port that the interconnect's clock is connected to.
+Writing filter settings....
+Done writing filter settings to:
+	/home/vladimir/Z/zedboard/cf_ad9467_zed/etc/system.filters
+Done writing Tab View settings to:
+	/home/vladimir/Z/zedboard/cf_ad9467_zed/etc/system.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+WARNING:EDK:1954 - No Top-level Input clock for the design. 
+WARNING:EDK:3712 - IPNAME: axi_interconnect, INSTANCE: axi_interconnect_1 - Frequency of the interconnect's clock port could not be determined. All IPs in the design will be considered to be asynchronous with respect to the interconnect. This will lead to more resource usage. You can avoid this by specifying the clock frequency on the port that the interconnect's clock is connected to.
+WARNING:EDK:3712 - IPNAME: axi_interconnect, INSTANCE: axi_interconnect_2 - Frequency of the interconnect's clock port could not be determined. All IPs in the design will be considered to be asynchronous with respect to the interconnect. This will lead to more resource usage. You can avoid this by specifying the clock frequency on the port that the interconnect's clock is connected to.
+WARNING:EDK:1954 - No Top-level Input clock for the design. 
+WARNING:EDK:3712 - IPNAME: axi_interconnect, INSTANCE: axi_interconnect_1 - Frequency of the interconnect's clock port could not be determined. All IPs in the design will be considered to be asynchronous with respect to the interconnect. This will lead to more resource usage. You can avoid this by specifying the clock frequency on the port that the interconnect's clock is connected to.
+WARNING:EDK:3712 - IPNAME: axi_interconnect, INSTANCE: axi_interconnect_2 - Frequency of the interconnect's clock port could not be determined. All IPs in the design will be considered to be asynchronous with respect to the interconnect. This will lead to more resource usage. You can avoid this by specifying the clock frequency on the port that the interconnect's clock is connected to.
+WARNING:EDK:1954 - No Top-level Input clock for the design. 
+WARNING:EDK:3712 - IPNAME: axi_interconnect, INSTANCE: axi_interconnect_1 - Frequency of the interconnect's clock port could not be determined. All IPs in the design will be considered to be asynchronous with respect to the interconnect. This will lead to more resource usage. You can avoid this by specifying the clock frequency on the port that the interconnect's clock is connected to.
+WARNING:EDK:3712 - IPNAME: axi_interconnect, INSTANCE: axi_interconnect_2 - Frequency of the interconnect's clock port could not be determined. All IPs in the design will be considered to be asynchronous with respect to the interconnect. This will lead to more resource usage. You can avoid this by specifying the clock frequency on the port that the interconnect's clock is connected to.
+Writing filter settings....
+Done writing filter settings to:
+	/home/vladimir/Z/zedboard/cf_ad9467_zed/etc/system.filters
+Done writing Tab View settings to:
+	/home/vladimir/Z/zedboard/cf_ad9467_zed/etc/system.gui
