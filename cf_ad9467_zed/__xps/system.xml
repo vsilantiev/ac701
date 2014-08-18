@@ -1,5 +1,5 @@
 
-<EDKSYSTEM EDKVERSION="14.7" EDWVERSION="1.2" TIMESTAMP="Mon Apr 21 13:38:03 2014">
+<EDKSYSTEM EDKVERSION="14.7" EDWVERSION="1.2" TIMESTAMP="Tue Jul 29 17:56:29 2014">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="xc7z020" PACKAGE="clg484" PART="xc7z020clg484-1" SOURCE="/home/vladimir/Z/zedboard/cf_ad9467_zed/system.xmp" SPEEDGRADE="-1"/>
 
@@ -310,9 +310,7 @@
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="200000000" DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="22" MPD_INDEX="594" NAME="FCLK_CLK1" SIGIS="CLK" SIGNAME="processing_system7_0_FCLK_CLK1">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_adc_1c_0" PORT="delay_clk"/>
-          </CONNECTIONS>
+          <CONNECTIONS/>
         </PORT>
         <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="23" MPD_INDEX="603" NAME="FCLK_RESET0_N" SIGIS="RST" SIGNAME="processing_system7_0_FCLK_RESET0_N">
           <CONNECTIONS>
@@ -2733,10 +2731,8 @@
             <CONNECTION INSTANCE="External Ports" PORT="adc_data_or_n"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" IS_INSTANTIATED="TRUE" MHS_INDEX="8" MPD_INDEX="6" NAME="delay_clk" SIGNAME="processing_system7_0_FCLK_CLK1">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK1"/>
-          </CONNECTIONS>
+        <PORT DIR="I" IS_INSTANTIATED="TRUE" MHS_INDEX="8" MPD_INDEX="6" NAME="delay_clk" SIGNAME="axi_adc_1c_0_delay_clk_0">
+          <CONNECTIONS/>
         </PORT>
         <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="9" MPD_INDEX="10" NAME="adc_clk" SIGNAME="adc_clk">
           <CONNECTIONS>

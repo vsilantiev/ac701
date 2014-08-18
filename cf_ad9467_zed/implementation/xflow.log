@@ -4,411 +4,121 @@ xflow -wd implementation -p xc7z020clg484-1 -implement xflow.opt system.ngc
 PMSPEC -- Overriding Xilinx file
 </opt/Xilinx/14.7/ISE_DS/EDK/zynq/data/zynq.acd> with local file
 </opt/Xilinx/14.7/ISE_DS/ISE/zynq/data/zynq.acd>
-.... Copying flowfile /opt/Xilinx/14.7/ISE_DS/ISE/xilinx/data/fpga.flw into
-working directory /cf_ad9467_zed/implementation 
 
-Using Flow File: /cf_ad9467_zed/implementation/fpga.flw 
+Using Flow File:
+/home/vladimir/Z/zedboard/cf_ad9467_zed/implementation/fpga.flw 
 Using Option File(s): 
- /cf_ad9467_zed/implementation/xflow.opt 
+ /home/vladimir/Z/zedboard/cf_ad9467_zed/implementation/xflow.opt 
 
-Creating Script File ... 
-
-#----------------------------------------------#
-# Starting program ngdbuild
-# ngdbuild -p xc7z020clg484-1 -nt timestamp -bm system.bmm
-"/cf_ad9467_zed/implementation/system.ngc" -uc system.ucf system.ngd 
-#----------------------------------------------#
-Release 14.7 - ngdbuild P.20131013 (lin64)
-Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
-PMSPEC -- Overriding Xilinx file
-</opt/Xilinx/14.7/ISE_DS/EDK/zynq/data/zynq.acd> with local file
-</opt/Xilinx/14.7/ISE_DS/ISE/zynq/data/zynq.acd>
-
-Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -p
-xc7z020clg484-1 -nt timestamp -bm system.bmm
-/cf_ad9467_zed/implementation/system.ngc -uc system.ucf system.ngd
-
-Reading NGO file "/cf_ad9467_zed/implementation/system.ngc" ...
-Loading design module
-"/cf_ad9467_zed/implementation/system_axi_adc_1c_0_wrapper.ngc"...
-Loading design module
-"/cf_ad9467_zed/implementation/system_chipscope_ila_0_wrapper.ngc"...
-Loading design module
-"/cf_ad9467_zed/implementation/system_axi_dma_0_wrapper.ngc"...
-Loading design module
-"/cf_ad9467_zed/implementation/system_axi_interconnect_2_wrapper.ngc"...
-Loading design module
-"/cf_ad9467_zed/implementation/system_axi_interconnect_1_wrapper.ngc"...
-Loading design module
-"/cf_ad9467_zed/implementation/system_processing_system7_0_wrapper.ngc"...
-Loading design module
-"/cf_ad9467_zed/implementation/system_axi_spi_0_wrapper.ngc"...
-Loading design module
-"/cf_ad9467_zed/implementation/system_util_spi_3w_0_wrapper.ngc"...
-Loading design module
-"/cf_ad9467_zed/implementation/system_chipscope_icon_0_wrapper.ngc"...
-Applying constraints in
-"/cf_ad9467_zed/implementation/system_chipscope_ila_0_wrapper.ncf" to module
-"chipscope_ila_0"...
-WARNING:ConstraintSystem:192 - The TNM 'D2_CLK', does not directly or indirectly
-   drive any flip-flops, latches and/or RAMS and cannot be actively used by the
-   referencing TIg constraint ''. If clock manager blocks are directly or
-   indirectly driven, a new TNM constraint will not be derived since the none of
-   the referencing constraints are a PERIOD constraint. This TNM is used in the
-   following user groups and/or specifications:
-   <TIMESPEC TS_D2_TO_T2 = FROM D2_CLK TO "FFS" TIG;>
-   [/cf_ad9467_zed/implementation/system_chipscope_ila_0_wrapper.ncf(6)]
-   <TIMESPEC TS_J2_TO_D2 = FROM "FFS" TO D2_CLK TIG;>
-   [/cf_ad9467_zed/implementation/system_chipscope_ila_0_wrapper.ncf(7)]
-   <TIMESPEC TS_J3_TO_D2 = FROM "FFS" TO D2_CLK TIG;>
-   [/cf_ad9467_zed/implementation/system_chipscope_ila_0_wrapper.ncf(8)]
-   <TIMESPEC TS_J4_TO_D2 = FROM "FFS" TO D2_CLK TIG;>
-   [/cf_ad9467_zed/implementation/system_chipscope_ila_0_wrapper.ncf(9)]
-
-WARNING:ConstraintSystem:197 - The following specification is invalid because
-   the referenced TNM constraint was removed:
-   <TIMESPEC TS_D2_TO_T2 = FROM D2_CLK TO "FFS" TIG;>
-   [/cf_ad9467_zed/implementation/system_chipscope_ila_0_wrapper.ncf(6)]
-
-WARNING:ConstraintSystem:197 - The following specification is invalid because
-   the referenced TNM constraint was removed:
-   <TIMESPEC TS_J2_TO_D2 = FROM "FFS" TO D2_CLK TIG;>
-   [/cf_ad9467_zed/implementation/system_chipscope_ila_0_wrapper.ncf(7)]
-
-WARNING:ConstraintSystem:197 - The following specification is invalid because
-   the referenced TNM constraint was removed:
-   <TIMESPEC TS_J3_TO_D2 = FROM "FFS" TO D2_CLK TIG;>
-   [/cf_ad9467_zed/implementation/system_chipscope_ila_0_wrapper.ncf(8)]
-
-WARNING:ConstraintSystem:197 - The following specification is invalid because
-   the referenced TNM constraint was removed:
-   <TIMESPEC TS_J4_TO_D2 = FROM "FFS" TO D2_CLK TIG;>
-   [/cf_ad9467_zed/implementation/system_chipscope_ila_0_wrapper.ncf(9)]
-
-Checking Constraint Associations...
-INFO:NgdBuild:981 - Could not find any associations for the following
-   constraint:
-       '<INST "U0/*/U_STAT/U_DIRTY_LDC" TNM = D2_CLK;>
-   [/cf_ad9467_zed/implementation/system_chipscope_ila_0_wrapper.ncf(5)]'
-Applying constraints in
-"/cf_ad9467_zed/implementation/system_axi_dma_0_wrapper.ncf" to module
-"axi_dma_0"...
-Checking Constraint Associations...
-Applying constraints in
-"/cf_ad9467_zed/implementation/system_axi_interconnect_2_wrapper.ncf" to module
-"axi_interconnect_2"...
-WARNING:ConstraintSystem:194 - The TNM
-   'axi_interconnect_2_async_clock_conv_FFDEST', does not directly or indirectly
-   drive any flip-flops, latches and/or RAMs and is not actively used by any
-   referencing constraint.
-
-WARNING:ConstraintSystem:194 - The TNM
-   'axi_interconnect_2_async_clock_conv_FFDEST', does not directly or indirectly
-   drive any flip-flops, latches and/or RAMs and is not actively used by any
-   referencing constraint.
-
-Checking Constraint Associations...
-INFO:NgdBuild:981 - Could not find any associations for the following
-   constraint:
-       '<INST
-   "axi_interconnect_2/*_converter_bank/*clock_conv_inst/*asyncfifo_*/*mem/*dout
-   _i_???" TNM = "axi_interconnect_2_async_clock_conv_FFDEST";>
-   [/cf_ad9467_zed/implementation/system_axi_interconnect_2_wrapper.ncf(6)]'
-INFO:NgdBuild:981 - Could not find any associations for the following
-   constraint:
-       '<INST
-   "axi_interconnect_2/*_converter_bank/*clock_conv_inst/*asyncfifo_*/*mem/*dout
-   _i_????" TNM = "axi_interconnect_2_async_clock_conv_FFDEST";>
-   [/cf_ad9467_zed/implementation/system_axi_interconnect_2_wrapper.ncf(7)]'
-Applying constraints in
-"/cf_ad9467_zed/implementation/system_axi_interconnect_1_wrapper.ncf" to module
-"axi_interconnect_1"...
-WARNING:ConstraintSystem:194 - The TNM
-   'axi_interconnect_1_async_clock_conv_FFDEST', does not directly or indirectly
-   drive any flip-flops, latches and/or RAMs and is not actively used by any
-   referencing constraint.
-
-WARNING:ConstraintSystem:194 - The TNM
-   'axi_interconnect_1_async_clock_conv_FFDEST', does not directly or indirectly
-   drive any flip-flops, latches and/or RAMs and is not actively used by any
-   referencing constraint.
-
-Checking Constraint Associations...
-INFO:NgdBuild:981 - Could not find any associations for the following
-   constraint:
-       '<INST
-   "axi_interconnect_1/*_converter_bank/*clock_conv_inst/*asyncfifo_*/*mem/*dout
-   _i_???" TNM = "axi_interconnect_1_async_clock_conv_FFDEST";>
-   [/cf_ad9467_zed/implementation/system_axi_interconnect_1_wrapper.ncf(6)]'
-INFO:NgdBuild:981 - Could not find any associations for the following
-   constraint:
-       '<INST
-   "axi_interconnect_1/*_converter_bank/*clock_conv_inst/*asyncfifo_*/*mem/*dout
-   _i_????" TNM = "axi_interconnect_1_async_clock_conv_FFDEST";>
-   [/cf_ad9467_zed/implementation/system_axi_interconnect_1_wrapper.ncf(7)]'
-Applying constraints in
-"/cf_ad9467_zed/implementation/system_processing_system7_0_wrapper.ncf" to
-module "processing_system7_0"...
-Checking Constraint Associations...
-Applying constraints in
-"/cf_ad9467_zed/implementation/system_chipscope_icon_0_wrapper.ncf" to module
-"chipscope_icon_0"...
-WARNING:ConstraintSystem:190 - The TNM 'J_CLK', does not directly or indirectly
-   drive any flip-flops, latches and/or RAMS and cannot be actively used by the
-   referencing Period constraint 'TS_J_CLK'. If clock manager blocks are
-   directly or indirectly driven, a new TNM and PERIOD are derived only if the
-   PERIOD constraint is the only referencing constraint and if an output of the
-   clock manager block drives flip-flops, latches or RAMs.  
-   This TNM is used in the following user groups and/or specifications:
-   <TIMESPEC TS_J_CLK = PERIOD J_CLK 30 ns ;>
-   [/cf_ad9467_zed/implementation/system_chipscope_icon_0_wrapper.ncf(2)]
-   <TIMESPEC TS_U_TO_J = FROM U_CLK TO J_CLK 15 ns ;>
-   [/cf_ad9467_zed/implementation/system_chipscope_icon_0_wrapper.ncf(6)]
-   <TIMESPEC TS_J_TO_D = FROM J_CLK TO D_CLK TIG ;>
-   [/cf_ad9467_zed/implementation/system_chipscope_icon_0_wrapper.ncf(8)]
-   <TIMESPEC TS_D_TO_J = FROM D_CLK TO J_CLK TIG ;>
-   [/cf_ad9467_zed/implementation/system_chipscope_icon_0_wrapper.ncf(9)]
-
-WARNING:ConstraintSystem:197 - The following specification is invalid because
-   the referenced TNM constraint was removed:
-   <TIMESPEC TS_J_CLK = PERIOD J_CLK 30 ns ;>
-   [/cf_ad9467_zed/implementation/system_chipscope_icon_0_wrapper.ncf(2)]
-
-WARNING:ConstraintSystem:197 - The following specification is invalid because
-   the referenced TNM constraint was removed:
-   <TIMESPEC TS_U_TO_J = FROM U_CLK TO J_CLK 15 ns ;>
-   [/cf_ad9467_zed/implementation/system_chipscope_icon_0_wrapper.ncf(6)]
-
-WARNING:ConstraintSystem:197 - The following specification is invalid because
-   the referenced TNM constraint was removed:
-   <TIMESPEC TS_J_TO_D = FROM J_CLK TO D_CLK TIG ;>
-   [/cf_ad9467_zed/implementation/system_chipscope_icon_0_wrapper.ncf(8)]
-
-WARNING:ConstraintSystem:197 - The following specification is invalid because
-   the referenced TNM constraint was removed:
-   <TIMESPEC TS_D_TO_J = FROM D_CLK TO J_CLK TIG ;>
-   [/cf_ad9467_zed/implementation/system_chipscope_icon_0_wrapper.ncf(9)]
-
-WARNING:ConstraintSystem:192 - The TNM 'U_CLK', does not directly or indirectly
-   drive any flip-flops, latches and/or RAMS and cannot be actively used by the
-   referencing MaxDelay constraint 'TS_U_TO_J'. If clock manager blocks are
-   directly or indirectly driven, a new TNM constraint will not be derived since
-   the none of the referencing constraints are a PERIOD constraint. This TNM is
-   used in the following user groups and/or specifications:
-   <TIMESPEC TS_U_TO_J = FROM U_CLK TO J_CLK 15 ns ;>
-   [/cf_ad9467_zed/implementation/system_chipscope_icon_0_wrapper.ncf(6)]
-   <TIMESPEC TS_U_TO_U = FROM U_CLK TO U_CLK 15 ns ;>
-   [/cf_ad9467_zed/implementation/system_chipscope_icon_0_wrapper.ncf(7)]
-
-WARNING:ConstraintSystem:197 - The following specification is invalid because
-   the referenced TNM constraint was removed:
-   <TIMESPEC TS_U_TO_J = FROM U_CLK TO J_CLK 15 ns ;>
-   [/cf_ad9467_zed/implementation/system_chipscope_icon_0_wrapper.ncf(6)]
-
-WARNING:ConstraintSystem:197 - The following specification is invalid because
-   the referenced TNM constraint was removed:
-   <TIMESPEC TS_U_TO_U = FROM U_CLK TO U_CLK 15 ns ;>
-   [/cf_ad9467_zed/implementation/system_chipscope_icon_0_wrapper.ncf(7)]
-
-Checking Constraint Associations...
-INFO:NgdBuild:981 - Could not find any associations for the following
-   constraint:
-       '<NET "U0/U_ICON/*/iDRCK_LOCAL" TNM_NET = J_CLK ;>
-   [/cf_ad9467_zed/implementation/system_chipscope_icon_0_wrapper.ncf(1)]'
-INFO:NgdBuild:981 - Could not find any associations for the following
-   constraint:
-       '<NET "U0/iUPDATE_OUT" TNM_NET = U_CLK ;>
-   [/cf_ad9467_zed/implementation/system_chipscope_icon_0_wrapper.ncf(4)]'
-WARNING:NgdBuild:981 - Could not find any associations for the following
-   constraint:
-       '<NET "U0/iSHIFT_OUT" TIG ;>
-   [/cf_ad9467_zed/implementation/system_chipscope_icon_0_wrapper.ncf(5)]'
-Gathering constraint information from source properties...
-Done.
-
-Annotating constraints to design from ucf file "system.ucf" ...
-Resolving constraint associations...
-Checking Constraint Associations...
-WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_J_CLK = PERIOD "J_CLK"
-   30000.000000000 pS HIGH 50.000000000 %;>: Unable to find an active 'TNM' or
-   'TimeGrp' constraint named 'J_CLK'.
-
-WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_U_TO_J = FROM "U_CLK" TO
-   "J_CLK" 15000.000000000 pS;>: Unable to find an active 'TimeGrp' or 'TNM' or
-   'TPSync' constraint named 'U_CLK'.
-
-WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_U_TO_J = FROM "U_CLK" TO
-   "J_CLK" 15000.000000000 pS;>: Unable to find an active 'TimeGrp' or 'TNM' or
-   'TPSync' constraint named 'J_CLK'.
-
-WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_U_TO_U = FROM "U_CLK" TO
-   "U_CLK" 15000.000000000 pS;>: Unable to find an active 'TimeGrp' or 'TNM' or
-   'TPSync' constraint named 'U_CLK'.
-
-WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_U_TO_U = FROM "U_CLK" TO
-   "U_CLK" 15000.000000000 pS;>: Unable to find an active 'TimeGrp' or 'TNM' or
-   'TPSync' constraint named 'U_CLK'.
-
-WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_J_TO_D = FROM "J_CLK" TO
-   "D_CLK" TIG;>: Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync'
-   constraint named 'J_CLK'.
-
-WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_D_TO_J = FROM "D_CLK" TO
-   "J_CLK" TIG;>: Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync'
-   constraint named 'J_CLK'.
-
-WARNING:ConstraintSystem:135 - Constraint <INST
-   /system/EXPANDED/system/axi_interconnect_1/axi_interconnect_1\/mi_converter_b
-   ank\/gen_conv_slot[2].clock_conv_inst\/s_axi_aresetn_resync<2>_inv1_INV_0 TNM
-   = FFS:axi_interconnect_1_reset_resync>: No instances of type FFS were found
-   under block
-   "axi_interconnect_1/axi_interconnect_1/mi_converter_bank/gen_conv_slot[2].clo
-   ck_conv_inst/s_axi_aresetn_resync<2>_inv1_INV_0" (type=INV).
-
-WARNING:ConstraintSystem:135 - Constraint <INST
-   /system/EXPANDED/system/axi_interconnect_1/axi_interconnect_1\/mi_converter_b
-   ank\/gen_conv_slot[2].clock_conv_inst\/m_axi_aresetn_resync<2>_inv1_INV_0 TNM
-   = FFS:axi_interconnect_1_reset_resync>: No instances of type FFS were found
-   under block
-   "axi_interconnect_1/axi_interconnect_1/mi_converter_bank/gen_conv_slot[2].clo
-   ck_conv_inst/m_axi_aresetn_resync<2>_inv1_INV_0" (type=INV).
-
-WARNING:ConstraintSystem:135 - Constraint <INST
-   /system/EXPANDED/system/axi_interconnect_1/axi_interconnect_1\/mi_converter_b
-   ank\/gen_conv_slot[1].clock_conv_inst\/s_axi_aresetn_resync<2>_inv1_INV_0 TNM
-   = FFS:axi_interconnect_1_reset_resync>: No instances of type FFS were found
-   under block
-   "axi_interconnect_1/axi_interconnect_1/mi_converter_bank/gen_conv_slot[1].clo
-   ck_conv_inst/s_axi_aresetn_resync<2>_inv1_INV_0" (type=INV).
-
-WARNING:ConstraintSystem:135 - Constraint <INST
-   /system/EXPANDED/system/axi_interconnect_1/axi_interconnect_1\/mi_converter_b
-   ank\/gen_conv_slot[1].clock_conv_inst\/m_axi_aresetn_resync<2>_inv1_INV_0 TNM
-   = FFS:axi_interconnect_1_reset_resync>: No instances of type FFS were found
-   under block
-   "axi_interconnect_1/axi_interconnect_1/mi_converter_bank/gen_conv_slot[1].clo
-   ck_conv_inst/m_axi_aresetn_resync<2>_inv1_INV_0" (type=INV).
-
-WARNING:ConstraintSystem:135 - Constraint <INST
-   /system/EXPANDED/system/axi_interconnect_1/axi_interconnect_1\/mi_converter_b
-   ank\/gen_conv_slot[0].clock_conv_inst\/s_axi_aresetn_resync<2>_inv1_INV_0 TNM
-   = FFS:axi_interconnect_1_reset_resync>: No instances of type FFS were found
-   under block
-   "axi_interconnect_1/axi_interconnect_1/mi_converter_bank/gen_conv_slot[0].clo
-   ck_conv_inst/s_axi_aresetn_resync<2>_inv1_INV_0" (type=INV).
-
-WARNING:ConstraintSystem:135 - Constraint <INST
-   /system/EXPANDED/system/axi_interconnect_1/axi_interconnect_1\/mi_converter_b
-   ank\/gen_conv_slot[0].clock_conv_inst\/m_axi_aresetn_resync<2>_inv1_INV_0 TNM
-   = FFS:axi_interconnect_1_reset_resync>: No instances of type FFS were found
-   under block
-   "axi_interconnect_1/axi_interconnect_1/mi_converter_bank/gen_conv_slot[0].clo
-   ck_conv_inst/m_axi_aresetn_resync<2>_inv1_INV_0" (type=INV).
-
-WARNING:ConstraintSystem:135 - Constraint <INST
-   /system/EXPANDED/system/axi_interconnect_1/axi_interconnect_1\/si_converter_b
-   ank\/gen_conv_slot[0].clock_conv_inst\/interconnect_aresetn_resync<2>_inv1_IN
-   V_0 TNM = FFS:axi_interconnect_1_reset...>: No instances of type FFS were
-   found under block
-   "axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clo
-   ck_conv_inst/interconnect_aresetn_resync<2>_inv1_INV_0" (type=INV).
-
-WARNING:ConstraintSystem:135 - Constraint <INST
-   /system/EXPANDED/system/axi_interconnect_1/axi_interconnect_1\/si_converter_b
-   ank\/gen_conv_slot[0].clock_conv_inst\/s_axi_aresetn_resync<2>_inv1_INV_0 TNM
-   = FFS:axi_interconnect_1_reset_resync>: No instances of type FFS were found
-   under block
-   "axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clo
-   ck_conv_inst/s_axi_aresetn_resync<2>_inv1_INV_0" (type=INV).
-
-WARNING:ConstraintSystem:135 - Constraint <INST
-   /system/EXPANDED/system/axi_interconnect_1/axi_interconnect_1\/si_converter_b
-   ank\/gen_conv_slot[0].clock_conv_inst\/m_axi_aresetn_resync<2>_inv1_INV_0 TNM
-   = FFS:axi_interconnect_1_reset_resync>: No instances of type FFS were found
-   under block
-   "axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clo
-   ck_conv_inst/m_axi_aresetn_resync<2>_inv1_INV_0" (type=INV).
-
-WARNING:ConstraintSystem:135 - Constraint <INST
-   /system/EXPANDED/system/axi_interconnect_2/axi_interconnect_2\/mi_converter_b
-   ank\/gen_conv_slot[0].clock_conv_inst\/s_axi_aresetn_resync<2>_inv1_INV_0 TNM
-   = FFS:axi_interconnect_2_reset_resync>: No instances of type FFS were found
-   under block
-   "axi_interconnect_2/axi_interconnect_2/mi_converter_bank/gen_conv_slot[0].clo
-   ck_conv_inst/s_axi_aresetn_resync<2>_inv1_INV_0" (type=INV).
-
-WARNING:ConstraintSystem:135 - Constraint <INST
-   /system/EXPANDED/system/axi_interconnect_2/axi_interconnect_2\/mi_converter_b
-   ank\/gen_conv_slot[0].clock_conv_inst\/m_axi_aresetn_resync<2>_inv1_INV_0 TNM
-   = FFS:axi_interconnect_2_reset_resync>: No instances of type FFS were found
-   under block
-   "axi_interconnect_2/axi_interconnect_2/mi_converter_bank/gen_conv_slot[0].clo
-   ck_conv_inst/m_axi_aresetn_resync<2>_inv1_INV_0" (type=INV).
-
-WARNING:ConstraintSystem:135 - Constraint <INST
-   /system/EXPANDED/system/axi_interconnect_2/axi_interconnect_2\/si_converter_b
-   ank\/gen_conv_slot[0].clock_conv_inst\/interconnect_aresetn_resync<2>_inv1_IN
-   V_0 TNM = FFS:axi_interconnect_2_reset...>: No instances of type FFS were
-   found under block
-   "axi_interconnect_2/axi_interconnect_2/si_converter_bank/gen_conv_slot[0].clo
-   ck_conv_inst/interconnect_aresetn_resync<2>_inv1_INV_0" (type=INV).
-
-WARNING:ConstraintSystem:135 - Constraint <INST
-   /system/EXPANDED/system/axi_interconnect_2/axi_interconnect_2\/si_converter_b
-   ank\/gen_conv_slot[0].clock_conv_inst\/s_axi_aresetn_resync<2>_inv1_INV_0 TNM
-   = FFS:axi_interconnect_2_reset_resync>: No instances of type FFS were found
-   under block
-   "axi_interconnect_2/axi_interconnect_2/si_converter_bank/gen_conv_slot[0].clo
-   ck_conv_inst/s_axi_aresetn_resync<2>_inv1_INV_0" (type=INV).
-
-WARNING:ConstraintSystem:135 - Constraint <INST
-   /system/EXPANDED/system/axi_interconnect_2/axi_interconnect_2\/si_converter_b
-   ank\/gen_conv_slot[0].clock_conv_inst\/m_axi_aresetn_resync<2>_inv1_INV_0 TNM
-   = FFS:axi_interconnect_2_reset_resync>: No instances of type FFS were found
-   under block
-   "axi_interconnect_2/axi_interconnect_2/si_converter_bank/gen_conv_slot[0].clo
-   ck_conv_inst/m_axi_aresetn_resync<2>_inv1_INV_0" (type=INV).
-
-WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_D2_TO_T2 = FROM "D2_CLK"
-   TO FFS TIG;>: Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync'
-   constraint named 'D2_CLK'.
-
-WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_J2_TO_D2 = FROM FFS TO
-   "D2_CLK" TIG;>: Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync'
-   constraint named 'D2_CLK'.
-
-WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_J3_TO_D2 = FROM FFS TO
-   "D2_CLK" TIG;>: Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync'
-   constraint named 'D2_CLK'.
-
-WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_J4_TO_D2 = FROM FFS TO
-   "D2_CLK" TIG;>: Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync'
-   constraint named 'D2_CLK'.
-
-WARNING:ConstraintSystem:58 - Constraint <TIMEGRP
-   axi_interconnect_2_reset_source = FFS PADS CPUS;>: CPUS "*" does not match
-   any design objects.
-
-WARNING:ConstraintSystem:58 - Constraint <TIMEGRP
-   axi_interconnect_1_reset_source = FFS PADS CPUS;>: CPUS "*" does not match
-   any design objects.
-
-WARNING:ConstraintSystem:194 - The TNM 'axi_interconnect_1_reset_resync', does
-   not directly or indirectly drive any flip-flops, latches and/or RAMs and is
-   not actively used by any referencing constraint.
-
-WARNING:ConstraintSystem:194 - The TNM 'axi_interconnect_1_reset_resync', does
-   not directly or indirectly drive any flip-flops, latches and/or RAMs and is
-   not actively used by any referencing constraint.
-
-WARNING:ConstraintSystem:194 - The TNM 'axi_interconnect_1_reset_resync', does
-   not directly or indirectly drive any flip-flops, latches and/or RAMs and is
-   not actively used by any referencing constraint.
-
-WARNING:ConstraintSystem:194 - The TNM 'axi_interconnect_1_reset_resync', does
-   not directly or indirectly drive any flip-flops, latches and/or RAMs and is
-   not actively used by any referencing constraint.
-
-WARNING:ConstraintSystem:194 - The TNM 'axi_interconnect_1_reset_resync', does
-   not directly or indirectly drive any flip-flops, latches and/or RAMs and is
-   not actively used by any referencing constr
+ERROR:Xflow:1 - Line   9:  character '' unexpected. 
+ERROR:Xflow:1 - Line  12:  character '' unexpected. 
+ERROR:Xflow:1 - Line  16:  character '' unexpected. 
+ERROR:Xflow:1 - Line  17:  character '' unexpected. 
+ERROR:Xflow:1 - Line  18:  character '' unexpected. 
+ERROR:Xflow:1 - Line  39:  character '' unexpected. 
+ERROR:Xflow:1 - Line  40:  character '' unexpected. 
+ERROR:Xflow:1 - Line  41:  character '' unexpected. 
+ERROR:Xflow:1 - Line  45:  character '' unexpected. 
+ERROR:Xflow:1 - Line  46:  character '' unexpected. 
+ERROR:Xflow:1 - Line  47:  character '' unexpected. 
+ERROR:Xflow:1 - Line  48:  character '' unexpected. 
+ERROR:Xflow:1 - Line  49:  character '' unexpected. 
+ERROR:Xflow:1 - Line  50:  character '' unexpected. 
+ERROR:Xflow:1 - Line  51:  character '' unexpected. 
+ERROR:Xflow:1 - Line  55:  character '' unexpected. 
+ERROR:Xflow:1 - Line  56:  character '' unexpected. 
+ERROR:Xflow:1 - Line  57:  character '' unexpected. 
+ERROR:Xflow:1 - Line  58:  character '' unexpected. 
+ERROR:Xflow:1 - Line  59:  character '' unexpected. 
+ERROR:Xflow:1 - Line  60:  character '' unexpected. 
+ERROR:Xflow:1 - Line  61:  character '' unexpected. 
+ERROR:Xflow:1 - Line  62:  character '' unexpected. 
+ERROR:Xflow:1 - Line  66:  character '' unexpected. 
+ERROR:Xflow:1 - Line  67:  character '' unexpected. 
+ERROR:Xflow:1 - Line  68:  character '' unexpected. 
+ERROR:Xflow:1 - Line  69:  character '' unexpected. 
+ERROR:Xflow:1 - Line  70:  character '' unexpected. 
+ERROR:Xflow:1 - Line  71:  character '' unexpected. 
+ERROR:Xflow:1 - Line  72:  character '' unexpected. 
+ERROR:Xflow:1 - Line  73:  character '' unexpected. 
+ERROR:Xflow:1 - Line  77:  character '' unexpected. 
+ERROR:Xflow:1 - Line  78:  character '' unexpected. 
+ERROR:Xflow:1 - Line  79:  character '' unexpected. 
+ERROR:Xflow:1 - Line  80:  character '' unexpected. 
+ERROR:Xflow:1 - Line  81:  character '' unexpected. 
+ERROR:Xflow:1 - Line  82:  character '' unexpected. 
+ERROR:Xflow:1 - Line  83:  character '' unexpected. 
+ERROR:Xflow:1 - Line  84:  character '' unexpected. 
+ERROR:Xflow:1 - Line  88:  character '' unexpected. 
+ERROR:Xflow:1 - Line  89:  character '' unexpected. 
+ERROR:Xflow:1 - Line  90:  character '' unexpected. 
+ERROR:Xflow:1 - Line  91:  character '' unexpected. 
+ERROR:Xflow:1 - Line  92:  character '' unexpected. 
+ERROR:Xflow:1 - Line  93:  character '' unexpected. 
+ERROR:Xflow:1 - Line  94:  character '' unexpected. 
+ERROR:Xflow:1 - Line  95:  character '' unexpected. 
+ERROR:Xflow:1 - Line  99:  character '' unexpected. 
+ERROR:Xflow:1 - Line 100:  character '' unexpected. 
+ERROR:Xflow:1 - Line 101:  character '' unexpected. 
+ERROR:Xflow:1 - Line 102:  character '' unexpected. 
+ERROR:Xflow:1 - Line 103:  character '' unexpected. 
+ERROR:Xflow:1 - Line 104:  character '' unexpected. 
+ERROR:Xflow:1 - Line 105:  character '' unexpected. 
+ERROR:Xflow:1 - Line 109:  character '' unexpected. 
+ERROR:Xflow:1 - Line 110:  character '' unexpected. 
+ERROR:Xflow:1 - Line 111:  character '' unexpected. 
+ERROR:Xflow:1 - Line 112:  character '' unexpected. 
+ERROR:Xflow:1 - Line 113:  character '' unexpected. 
+ERROR:Xflow:1 - Line 114:  character '' unexpected. 
+ERROR:Xflow:1 - Line 115:  character '' unexpected. 
+ERROR:Xflow:1 - Line 116:  character '' unexpected. 
+ERROR:Xflow:1 - Line 120:  character '' unexpected. 
+ERROR:Xflow:1 - Line 121:  character '' unexpected. 
+ERROR:Xflow:1 - Line 122:  character '' unexpected. 
+ERROR:Xflow:1 - Line 123:  character '' unexpected. 
+ERROR:Xflow:1 - Line 124:  character '' unexpected. 
+ERROR:Xflow:1 - Line 125:  character '' unexpected. 
+ERROR:Xflow:1 - Line 126:  character '' unexpected. 
+ERROR:Xflow:1 - Line 130:  character '' unexpected. 
+ERROR:Xflow:1 - Line 131:  character '' unexpected. 
+ERROR:Xflow:1 - Line 132:  character '' unexpected. 
+ERROR:Xflow:1 - Line 133:  character '' unexpected. 
+ERROR:Xflow:1 - Line 134:  character '' unexpected. 
+ERROR:Xflow:1 - Line 135:  character '' unexpected. 
+ERROR:Xflow:1 - Line 136:  character '' unexpected. 
+ERROR:Xflow:1 - Line 137:  character '' unexpected. 
+ERROR:Xflow:1 - Line 138:  character '' unexpected. 
+ERROR:Xflow:1 - Line 139:  character '' unexpected. 
+ERROR:Xflow:1 - Line 140:  character '' unexpected. 
+ERROR:Xflow:1 - Line 141:  character '' unexpected. 
+ERROR:Xflow:1 - Line 142:  character '' unexpected. 
+ERROR:Xflow:1 - Line 146:  character '' unexpected. 
+ERROR:Xflow:1 - Line 147:  character '' unexpected. 
+ERROR:Xflow:1 - Line 148:  character '' unexpected. 
+ERROR:Xflow:1 - Line 149:  character '' unexpected. 
+ERROR:Xflow:1 - Line 150:  character '' unexpected. 
+ERROR:Xflow:1 - Line 151:  character '' unexpected. 
+ERROR:Xflow:1 - Line 152:  character '' unexpected. 
+ERROR:Xflow:1 - Line 153:  character '' unexpected. 
+ERROR:Xflow:1 - Line 154:  character '' unexpected. 
+ERROR:Xflow:1 - Line 155:  character '' unexpected. 
+ERROR:Xflow:1 - Line 159:  character '' unexpected. 
+ERROR:Xflow:1 - Line 160:  character '' unexpected. 
+ERROR:Xflow:1 - Line 161:  character '' unexpected. 
+ERROR:Xflow:1 - Line 162:  character '' unexpected. 
+ERROR:Xflow:1 - Line 163:  character '' unexpected. 
+ERROR:Xflow:1 - Line 164:  character '' unexpected. 
+ERROR:Xflow:1 - Line 165:  character '' unexpected. 
+ERROR:Xflow:1 - Line 166:  character '' unexpected. 
+ERROR:Xflow:1 - Line 167:  character '' unexpected. 
+ERROR:Xflow:1 - Line 168:  character '' unexpected. 
+ERROR:Xflow:1 - Line 172:  character '' unexpected. 
+ERROR:Xflow:1 - Line 173:  character '' unexpected. 
+ERROR:Xflow:1 - Line 174:  character '' unexpected. 
+ERROR:Xflow:1 - Line 175:  character '' unexpected. 
+ERROR:Xflow:1 - Line 176:  character '' unexpected. 
+ERROR:Xflow:1 - Line 177:  character '' unexpected. 
+ERROR:Xflow:1 - Line 178:  character '' unexpected. 
+ERROR:Xflow:3 - 109 Error(s) found in flowfile
+   /home/vladimir/Z/zedboard/cf_ad9467_zed/implementation/fpga.flw 
+ERROR:Xflow:40 - Errors found in flow and/or option files... Aborting! 

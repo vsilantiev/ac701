@@ -1,7 +1,7 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------
 | Tool Version : Vivado v.2013.3 (lin64) Build 329390 Wed Oct 16 18:26:55 MDT 2013
-| Date         : Tue Apr 22 11:02:41 2014
+| Date         : Mon May 12 10:04:24 2014
 | Host         : ubuntu running 64-bit Ubuntu 12.04.4 LTS
 | Command      : report_drc
 -----------------------------------------------------------------------------------
@@ -120,7 +120,7 @@ REPORT SUMMARY
                      Delay constraint missing on IO port
                      PS7 block required
            Max violations: <unlimited>
-         Violations found: 27
+         Violations found: 33
 
 2. REPORT DETAILS
 -----------------
@@ -259,12 +259,42 @@ Related violations: <none>
 
 XDCM-1#23 Warning
 Delay constraint missing on IO port  
-The port 'SW0' does not have any I/O delay defined. It is necessary to have I/O (input or output) delays defined on all the ports to properly time the FPGA interface.
+The port 'LD1' does not have any I/O delay defined. It is necessary to have I/O (input or output) delays defined on all the ports to properly time the FPGA interface.
+Related violations: <none>
+
+XDCM-1#24 Warning
+Delay constraint missing on IO port  
+The port 'LD2' does not have any I/O delay defined. It is necessary to have I/O (input or output) delays defined on all the ports to properly time the FPGA interface.
+Related violations: <none>
+
+XDCM-1#25 Warning
+Delay constraint missing on IO port  
+The port 'LD3' does not have any I/O delay defined. It is necessary to have I/O (input or output) delays defined on all the ports to properly time the FPGA interface.
+Related violations: <none>
+
+XDCM-1#26 Warning
+Delay constraint missing on IO port  
+The port 'LD4' does not have any I/O delay defined. It is necessary to have I/O (input or output) delays defined on all the ports to properly time the FPGA interface.
+Related violations: <none>
+
+XDCM-1#27 Warning
+Delay constraint missing on IO port  
+The port 'LD5' does not have any I/O delay defined. It is necessary to have I/O (input or output) delays defined on all the ports to properly time the FPGA interface.
+Related violations: <none>
+
+XDCM-1#28 Warning
+Delay constraint missing on IO port  
+The port 'LD6' does not have any I/O delay defined. It is necessary to have I/O (input or output) delays defined on all the ports to properly time the FPGA interface.
+Related violations: <none>
+
+XDCM-1#29 Warning
+Delay constraint missing on IO port  
+The port 'LD7' does not have any I/O delay defined. It is necessary to have I/O (input or output) delays defined on all the ports to properly time the FPGA interface.
 Related violations: <none>
 
 RTSTAT-10#1 Advisory
 No routable loads  
-304 net(s) have no routable loads. The first 15 problem net(s) are dmas_i/axi_dma_0/U0/I_MM2S_DMA_MNGR/mm2s_cmnd_data[0], dmas_i/axi_dma_0/U0/I_MM2S_DMA_MNGR/mm2s_cmnd_data[1], dmas_i/axi_dma_0/U0/I_MM2S_DMA_MNGR/mm2s_cmnd_data[2], dmas_i/axi_dma_0/U0/I_MM2S_DMA_MNGR/mm2s_cmnd_data[3], dmas_i/axi_dma_0/U0/I_MM2S_DMA_MNGR/mm2s_cmnd_data[4], dmas_i/axi_dma_0/U0/I_MM2S_DMA_MNGR/mm2s_cmnd_data[5], dmas_i/axi_dma_0/U0/I_MM2S_DMA_MNGR/mm2s_cmnd_data[6], dmas_i/axi_dma_0/U0/I_MM2S_DMA_MNGR/mm2s_cmnd_data[7], dmas_i/axi_dma_0/U0/I_MM2S_DMA_MNGR/mm2s_cmnd_data[8], dmas_i/axi_dma_0/U0/I_MM2S_DMA_MNGR/mm2s_cmnd_data[9], dmas_i/axi_dma_0/U0/I_MM2S_DMA_MNGR/mm2s_cmnd_data[10], dmas_i/axi_dma_0/U0/I_MM2S_DMA_MNGR/mm2s_cmnd_data[11], dmas_i/axi_dma_0/U0/I_MM2S_DMA_MNGR/mm2s_cmnd_data[12], dmas_i/axi_dma_0/U0/I_MM2S_DMA_MNGR/mm2s_cmnd_data[13], dmas_i/axi_dma_0/U0/I_MM2S_DMA_MNGR/mm2s_cmnd_data[14].
+232 net(s) have no routable loads. The first 15 problem net(s) are dmas_i/axi_dma_0/U0/I_MM2S_DMA_MNGR/mm2s_cmnd_data[0], dmas_i/axi_dma_0/U0/I_MM2S_DMA_MNGR/mm2s_cmnd_data[1], dmas_i/axi_dma_0/U0/I_MM2S_DMA_MNGR/mm2s_cmnd_data[2], dmas_i/axi_dma_0/U0/I_MM2S_DMA_MNGR/mm2s_cmnd_data[3], dmas_i/axi_dma_0/U0/I_MM2S_DMA_MNGR/mm2s_cmnd_data[4], dmas_i/axi_dma_0/U0/I_MM2S_DMA_MNGR/mm2s_cmnd_data[5], dmas_i/axi_dma_0/U0/I_MM2S_DMA_MNGR/mm2s_cmnd_data[6], dmas_i/axi_dma_0/U0/I_MM2S_DMA_MNGR/mm2s_cmnd_data[7], dmas_i/axi_dma_0/U0/I_MM2S_DMA_MNGR/mm2s_cmnd_data[8], dmas_i/axi_dma_0/U0/I_MM2S_DMA_MNGR/mm2s_cmnd_data[9], dmas_i/axi_dma_0/U0/I_MM2S_DMA_MNGR/mm2s_cmnd_data[10], dmas_i/axi_dma_0/U0/I_MM2S_DMA_MNGR/mm2s_cmnd_data[11], dmas_i/axi_dma_0/U0/I_MM2S_DMA_MNGR/mm2s_cmnd_data[12], dmas_i/axi_dma_0/U0/I_MM2S_DMA_MNGR/mm2s_cmnd_data[13], dmas_i/axi_dma_0/U0/I_MM2S_DMA_MNGR/mm2s_cmnd_data[14].
 Related violations: <none>
 
 

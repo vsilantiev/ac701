@@ -140,7 +140,7 @@ BEGIN axi_adc_1c
  PORT adc_data_in_n = adc_data_in_n
  PORT adc_data_or_p = adc_data_or_p
  PORT adc_data_or_n = adc_data_or_n
- PORT delay_clk = processing_system7_0_FCLK_CLK1
+ PORT delay_clk = axi_adc_1c_0_delay_clk_0
  PORT adc_clk = adc_clk
  PORT adc_mon_valid = adc_mon_valid
  PORT adc_mon_data = adc_mon_data

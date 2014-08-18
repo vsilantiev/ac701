@@ -44,7 +44,6 @@ proc step_failed { step } {
 
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
-set_msg_config -id {HDL-1065} -limit 10000
 
 start_step init_design
 set rc [catch {
@@ -60,9 +59,20 @@ set rc [catch {
   read_xdc -ref dmas_axi_dma_0_0 -cells U0 /home/vladimir/Z/zedboard/180414stream/180414stream.srcs/sources_1/bd/dmas/ip/dmas_axi_dma_0_0/dmas_axi_dma_0_0.xdc
   read_xdc -prop_thru_buffers -ref dmas_proc_sys_reset_2 -cells U0 /home/vladimir/Z/zedboard/180414stream/180414stream.srcs/sources_1/bd/dmas/ip/dmas_proc_sys_reset_2/dmas_proc_sys_reset_2_board.xdc
   read_xdc -ref dmas_proc_sys_reset_2 -cells U0 /home/vladimir/Z/zedboard/180414stream/180414stream.srcs/sources_1/bd/dmas/ip/dmas_proc_sys_reset_2/dmas_proc_sys_reset_2.xdc
+  read_xdc -ref dmas_axi_cdma_0_0 -cells U0 /home/vladimir/Z/zedboard/180414stream/180414stream.srcs/sources_1/bd/dmas/ip/dmas_axi_cdma_0_0/dmas_axi_cdma_0_0.xdc
   read_xdc /home/vladimir/Z/zedboard/180414stream/180414stream.srcs/constrs_1/new/dmas_wrapper.xdc
   read_xdc -ref dmas_axi_dma_0_0 -cells U0 /home/vladimir/Z/zedboard/180414stream/180414stream.srcs/sources_1/bd/dmas/ip/dmas_axi_dma_0_0/dmas_axi_dma_0_0_clocks.xdc
-  read_xdc -ref dmas_auto_us_73 -cells inst /home/vladimir/Z/zedboard/180414stream/180414stream.srcs/sources_1/bd/dmas/ip/dmas_auto_us_73/dmas_auto_us_73_clocks.xdc
+  read_xdc -ref dmas_axis_data_fifo_0_1 -cells inst /home/vladimir/Z/zedboard/180414stream/180414stream.srcs/sources_1/bd/dmas/ip/dmas_axis_data_fifo_0_1/dmas_axis_data_fifo_0_1_clocks.xdc
+  read_xdc -ref dmas_auto_ds_1176 -cells inst /home/vladimir/Z/zedboard/180414stream/180414stream.srcs/sources_1/bd/dmas/ip/dmas_auto_ds_1176/dmas_auto_ds_1176_clocks.xdc
+  read_xdc -ref dmas_auto_us_1177 -cells inst /home/vladimir/Z/zedboard/180414stream/180414stream.srcs/sources_1/bd/dmas/ip/dmas_auto_us_1177/dmas_auto_us_1177_clocks.xdc
+  read_xdc -ref dmas_auto_ds_1178 -cells inst /home/vladimir/Z/zedboard/180414stream/180414stream.srcs/sources_1/bd/dmas/ip/dmas_auto_ds_1178/dmas_auto_ds_1178_clocks.xdc
+  read_xdc -ref dmas_auto_ds_1179 -cells inst /home/vladimir/Z/zedboard/180414stream/180414stream.srcs/sources_1/bd/dmas/ip/dmas_auto_ds_1179/dmas_auto_ds_1179_clocks.xdc
+  read_xdc -ref dmas_auto_us_1180 -cells inst /home/vladimir/Z/zedboard/180414stream/180414stream.srcs/sources_1/bd/dmas/ip/dmas_auto_us_1180/dmas_auto_us_1180_clocks.xdc
+  read_xdc -ref dmas_auto_ds_1181 -cells inst /home/vladimir/Z/zedboard/180414stream/180414stream.srcs/sources_1/bd/dmas/ip/dmas_auto_ds_1181/dmas_auto_ds_1181_clocks.xdc
+  read_xdc -ref dmas_auto_us_1182 -cells inst /home/vladimir/Z/zedboard/180414stream/180414stream.srcs/sources_1/bd/dmas/ip/dmas_auto_us_1182/dmas_auto_us_1182_clocks.xdc
+  read_xdc -ref dmas_auto_us_1183 -cells inst /home/vladimir/Z/zedboard/180414stream/180414stream.srcs/sources_1/bd/dmas/ip/dmas_auto_us_1183/dmas_auto_us_1183_clocks.xdc
+  read_xdc -ref dmas_auto_ds_1184 -cells inst /home/vladimir/Z/zedboard/180414stream/180414stream.srcs/sources_1/bd/dmas/ip/dmas_auto_ds_1184/dmas_auto_ds_1184_clocks.xdc
+  read_xdc -ref dmas_auto_us_1185 -cells inst /home/vladimir/Z/zedboard/180414stream/180414stream.srcs/sources_1/bd/dmas/ip/dmas_auto_us_1185/dmas_auto_us_1185_clocks.xdc
   link_design -top dmas_wrapper -part xc7z020clg484-1
   close_msg_db -file init_design.pb
 } RESULT]

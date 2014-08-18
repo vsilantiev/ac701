@@ -25,22 +25,7 @@
 		
 		input wire [C_M00_AXI_ADDR_WIDTH-1 : 0] C_M00_AXI_SRC_ADDR,
 		
-		input wire [C_M00_AXI_ADDR_WIDTH-1 : 0] C_M00_AXI_BUF0_ADDR,
-		input wire [C_M00_AXI_ADDR_WIDTH-1 : 0] C_M00_AXI_BUF1_ADDR,
-		input wire [C_M00_AXI_ADDR_WIDTH-1 : 0] C_M00_AXI_BUF2_ADDR,
-		input wire [C_M00_AXI_ADDR_WIDTH-1 : 0] C_M00_AXI_BUF3_ADDR,
-		input wire [C_M00_AXI_ADDR_WIDTH-1 : 0] C_M00_AXI_BUF4_ADDR,
-		input wire [C_M00_AXI_ADDR_WIDTH-1 : 0] C_M00_AXI_BUF5_ADDR,
-		input wire [C_M00_AXI_ADDR_WIDTH-1 : 0] C_M00_AXI_BUF6_ADDR,
-		input wire [C_M00_AXI_ADDR_WIDTH-1 : 0] C_M00_AXI_BUF7_ADDR,
-		input wire [C_M00_AXI_ADDR_WIDTH-1 : 0] C_M00_AXI_BUF8_ADDR,
-		input wire [C_M00_AXI_ADDR_WIDTH-1 : 0] C_M00_AXI_BUF9_ADDR,
-		input wire [C_M00_AXI_ADDR_WIDTH-1 : 0] C_M00_AXI_BUF10_ADDR,
-		input wire [C_M00_AXI_ADDR_WIDTH-1 : 0] C_M00_AXI_BUF11_ADDR,
-		input wire [C_M00_AXI_ADDR_WIDTH-1 : 0] C_M00_AXI_BUF12_ADDR,
-		input wire [C_M00_AXI_ADDR_WIDTH-1 : 0] C_M00_AXI_BUF13_ADDR,
-		input wire [C_M00_AXI_ADDR_WIDTH-1 : 0] C_M00_AXI_BUF14_ADDR,
-		input wire [C_M00_AXI_ADDR_WIDTH-1 : 0] C_M00_AXI_BUF15_ADDR,
+
 		
 		// User ports ends
 		// Do not modify the ports beyond this line
@@ -85,26 +70,7 @@
 		.C_M_AXI_ADDR_WIDTH(C_M00_AXI_ADDR_WIDTH),
 		.C_M_AXI_DATA_WIDTH(C_M00_AXI_DATA_WIDTH),
 		.C_M_TRANSACTIONS_NUM(C_M00_AXI_TRANSACTIONS_NUM)
-	) mydatagen_v1_0_M00_AXI_inst (
-                      
-	      .C_M_BUF0_ADDR(C_M00_AXI_BUF0_ADDR),
-	      .C_M_BUF1_ADDR(C_M00_AXI_BUF1_ADDR),
-	      .C_M_BUF2_ADDR(C_M00_AXI_BUF2_ADDR),
-	      .C_M_BUF3_ADDR(C_M00_AXI_BUF3_ADDR),
-	      .C_M_BUF4_ADDR(C_M00_AXI_BUF4_ADDR),
-	      .C_M_BUF5_ADDR(C_M00_AXI_BUF5_ADDR),
-	      .C_M_BUF6_ADDR(C_M00_AXI_BUF6_ADDR),
-	      .C_M_BUF7_ADDR(C_M00_AXI_BUF7_ADDR),
-	      .C_M_BUF8_ADDR(C_M00_AXI_BUF8_ADDR),
-	      .C_M_BUF9_ADDR(C_M00_AXI_BUF9_ADDR),
-	      .C_M_BUF10_ADDR(C_M00_AXI_BUF10_ADDR),
-	      .C_M_BUF11_ADDR(C_M00_AXI_BUF11_ADDR),
-	      .C_M_BUF12_ADDR(C_M00_AXI_BUF12_ADDR),
-	      .C_M_BUF13_ADDR(C_M00_AXI_BUF13_ADDR),
-	      .C_M_BUF14_ADDR(C_M00_AXI_BUF14_ADDR),
-	      .C_M_BUF15_ADDR(C_M00_AXI_BUF15_ADDR),
-	     
-	     
+	) mydatagen_v1_0_M00_AXI_inst (	     
 	     .C_M_SRC_ADDR(C_M00_AXI_SRC_ADDR),
 	     .ADDR_BUF(addr_buf),
 		.INIT_AXI_TXN(m00_axi_init_axi_txn),

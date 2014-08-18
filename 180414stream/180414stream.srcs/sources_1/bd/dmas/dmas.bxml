@@ -2,96 +2,138 @@
 <Root MajorVersion="0" MinorVersion="27">
   <CompositeFile CompositeFileTopName="dmas" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED"/>
-    <Generation Name="SIMULATION" State="GENERATED"/>
+    <Generation Name="SYNTHESIS" State="STALE"/>
+    <Generation Name="IMPLEMENTATION" State="STALE"/>
+    <Generation Name="SIMULATION" State="STALE"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip/dmas_processing_system7_0_0/dmas_processing_system7_0_0.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="1398149803" IsTrackable="true"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1399873699" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip/dmas_axi_dma_0_0/dmas_axi_dma_0_0.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="1398149804" IsTrackable="true"/>
-        <Library Name="work"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/dmas_stream_acp_0_3/dmas_stream_acp_0_3.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="1398149804" IsTrackable="true"/>
-        <Library Name="work"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/dmas_ADC_emul_0_1/dmas_ADC_emul_0_1.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="1398149804" IsTrackable="true"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1399873701" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip/dmas_axi_mem_intercon_4/dmas_axi_mem_intercon_4.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="false" Timestamp="1398055663" IsTrackable="true"/>
+        <Properties IsEditable="false" IsVisible="false" Timestamp="1399873680" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip/dmas_proc_sys_reset_2/dmas_proc_sys_reset_2.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="1398149805" IsTrackable="true"/>
-        <Library Name="work"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/dmas_init_axi_dma_0_0/dmas_init_axi_dma_0_0.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="1398149805" IsTrackable="true"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1399873703" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip/dmas_processing_system7_0_axi_periph_5/dmas_processing_system7_0_axi_periph_5.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="false" Timestamp="1398055663" IsTrackable="true"/>
+        <Properties IsEditable="false" IsVisible="false" Timestamp="1399873680" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip/dmas_init_axi_dma_0_axi_periph_6/dmas_init_axi_dma_0_axi_periph_6.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="false" Timestamp="1398055663" IsTrackable="true"/>
+        <Properties IsEditable="false" IsVisible="false" Timestamp="1399873680" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip/dmas_xbar_9/dmas_xbar_9.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="1398149806" IsTrackable="true"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1399873709" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/dmas_axi_crossbar_0_10/dmas_axi_crossbar_0_10.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="1398149806" IsTrackable="true"/>
+      <File Name="ip/dmas_axi_bram_ctrl_0_0/dmas_axi_bram_ctrl_0_0.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1399873714" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/dmas_reg_status_0_0/dmas_reg_status_0_0.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="1398149807" IsTrackable="true"/>
+      <File Name="ip/dmas_axi_bram_ctrl_0_bram_0/dmas_axi_bram_ctrl_0_bram_0.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1399873716" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/dmas_slave_stream_0_0/dmas_slave_stream_0_0.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="false" Timestamp="1398069202" IsTrackable="true"/>
+      <File Name="ip/dmas_init_dma_v4_0_0/dmas_init_dma_v4_0_0.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1399873717" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/dmas_axi_cdma_0_0/dmas_axi_cdma_0_0.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1399873720" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/dmas_axi_mem_intercon_1_7/dmas_axi_mem_intercon_1_7.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="false" Timestamp="1399873680" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/dmas_init_dma_v4_0_axi_periph_8/dmas_init_dma_v4_0_axi_periph_8.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="false" Timestamp="1399873680" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/dmas_xbar_14/dmas_xbar_14.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1399873727" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/dmas_xbar_15/dmas_xbar_15.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1399873732" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/dmas_xbar_16/dmas_xbar_16.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1399873736" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/dmas_xbar_17/dmas_xbar_17.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1399873741" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/dmas_def_stream_0_0/dmas_def_stream_0_0.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1399873743" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/dmas_ADC_emul_0_3/dmas_ADC_emul_0_3.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1399873748" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
@@ -104,22 +146,113 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/dmas_auto_pc_146/dmas_auto_pc_146.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true"/>
+      <File Name="ip/dmas_auto_ds_1176/dmas_auto_ds_1176.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1399873748" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/dmas_auto_us_73/dmas_auto_us_73.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true"/>
+      <File Name="ip/dmas_auto_us_1177/dmas_auto_us_1177.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1399873750" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/dmas_auto_pc_147/dmas_auto_pc_147.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true"/>
+      <File Name="ip/dmas_auto_ds_1178/dmas_auto_ds_1178.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1399873752" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/dmas_auto_pc_1539/dmas_auto_pc_1539.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1399873754" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/dmas_auto_pc_1540/dmas_auto_pc_1540.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1399873756" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/dmas_auto_pc_1541/dmas_auto_pc_1541.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1399873758" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/dmas_auto_ds_1179/dmas_auto_ds_1179.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1399873762" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/dmas_auto_pc_1542/dmas_auto_pc_1542.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1399873764" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/dmas_auto_pc_1543/dmas_auto_pc_1543.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1399873766" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/dmas_auto_us_1180/dmas_auto_us_1180.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1399873769" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/dmas_auto_ds_1181/dmas_auto_ds_1181.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1399873773" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/dmas_auto_us_1182/dmas_auto_us_1182.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1399873775" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/dmas_auto_pc_1544/dmas_auto_pc_1544.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1399873777" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/dmas_auto_us_1183/dmas_auto_us_1183.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1399873779" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/dmas_auto_ds_1184/dmas_auto_ds_1184.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1399873784" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/dmas_auto_us_1185/dmas_auto_us_1185.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1399873784" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>

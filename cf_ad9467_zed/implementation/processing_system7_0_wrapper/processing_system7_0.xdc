@@ -2,7 +2,7 @@
 ##
 ##  Xilinx, Inc. 2006            www.xilinx.com
 ############################################################################
-##  File name :       /cf_ad9467_zed/implementation/processing_system7_0_wrapper/processing_system7_0.xdc
+##  File name :       /home/vladimir/Z/zedboard/cf_ad9467_zed/implementation/processing_system7_0_wrapper/processing_system7_0.xdc
 ##
 ##  Details :     Constraints file
 ##                    FPGA family:       zynq

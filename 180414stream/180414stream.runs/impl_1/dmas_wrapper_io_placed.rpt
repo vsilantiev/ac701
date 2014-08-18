@@ -1,7 +1,7 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------
 | Tool Version : Vivado v.2013.3 (lin64) Build 329390 Wed Oct 16 18:26:55 MDT 2013
-| Date         : Tue Apr 22 11:02:08 2014
+| Date         : Mon May 12 10:03:07 2014
 | Host         : ubuntu running 64-bit Ubuntu 12.04.4 LTS
 | Command      : report_io -file dmas_wrapper_io_placed.rpt
 | Design       : dmas_wrapper
@@ -22,7 +22,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|           132 |
+|           138 |
 +---------------+
 
 
@@ -51,7 +51,7 @@ Table of Contents
 | A17        |                   | IOB33S    | IO_L9N_T1_DQS_AD3N_35   | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
 | A18        |                   | IOB33M    | IO_L10P_T1_AD11P_35     | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
 | A19        |                   | IOB33S    | IO_L10N_T1_AD11N_35     | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
-| A20        |                   |           | VCCO_35                 |           |                   |             35 |            |           |             |           |    2.50 |            |                        |                  |
+| A20        |                   |           | VCCO_35                 |           |                   |             35 |            |           |             |           |   any** |            |                        |                  |
 | A21        |                   | IOB33M    | IO_L15P_T2_DQS_AD12P_35 | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
 | A22        |                   | IOB33S    | IO_L15N_T2_DQS_AD12N_35 | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
 | AA1        | DDR_dq[26]        | IOPAD     | PS_DDR_DQ26_502         | BIDIR     | SSTL15_T_DCI      |                |            |      FAST |             |           |         | FIXED      | NONE                   | SPLIT            |
@@ -135,7 +135,7 @@ Table of Contents
 | C13        | FIXED_IO_mio[39]  | IOPAD     | PS_MIO39_501            | BIDIR     | LVCMOS18*         |                |          8 |      FAST |             |           |         | FIXED      | NONE                   | NONE             |
 | C14        | FIXED_IO_mio[49]  | IOPAD     | PS_MIO49_501            | BIDIR     | LVCMOS18*         |                |          8 |      SLOW |             |           |         | FIXED      | NONE                   | NONE             |
 | C15        |                   | IOB33M    | IO_L7P_T1_AD2P_35       | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
-| C16        |                   |           | VCCO_35                 |           |                   |             35 |            |           |             |           |    2.50 |            |                        |                  |
+| C16        |                   |           | VCCO_35                 |           |                   |             35 |            |           |             |           |   any** |            |                        |                  |
 | C17        |                   | IOB33M    | IO_L11P_T1_SRCC_35      | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
 | C18        |                   | IOB33S    | IO_L11N_T1_SRCC_35      | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
 | C19        |                   | IOB33S    | IO_L12N_T1_MRCC_35      | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
@@ -160,7 +160,7 @@ Table of Contents
 | D16        |                   | IOB33M    | IO_L2P_T0_AD8P_35       | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
 | D17        |                   | IOB33S    | IO_L2N_T0_AD8N_35       | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
 | D18        |                   | IOB33M    | IO_L12P_T1_MRCC_35      | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
-| D19        |                   |           | VCCO_35                 |           |                   |             35 |            |           |             |           |    2.50 |            |                        |                  |
+| D19        |                   |           | VCCO_35                 |           |                   |             35 |            |           |             |           |   any** |            |                        |                  |
 | D20        |                   | IOB33M    | IO_L14P_T2_AD4P_SRCC_35 | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
 | D21        |                   | IOB33S    | IO_L17N_T2_AD5N_35      | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
 | D22        |                   | IOB33M    | IO_L16P_T2_35           | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
@@ -185,7 +185,7 @@ Table of Contents
 | E19        |                   | IOB33M    | IO_L21P_T3_DQS_AD14P_35 | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
 | E20        |                   | IOB33S    | IO_L21N_T3_DQS_AD14N_35 | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
 | E21        |                   | IOB33M    | IO_L17P_T2_AD5P_35      | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
-| E22        |                   |           | VCCO_35                 |           |                   |             35 |            |           |             |           |    2.50 |            |                        |                  |
+| E22        |                   |           | VCCO_35                 |           |                   |             35 |            |           |             |           |   any** |            |                        |                  |
 | F1         | DDR_dq[7]         | IOPAD     | PS_DDR_DQ7_502          | BIDIR     | SSTL15_T_DCI      |                |            |      FAST |             |           |         | FIXED      | NONE                   | SPLIT            |
 | F2         | DDR_dq[6]         | IOPAD     | PS_DDR_DQ6_502          | BIDIR     | SSTL15_T_DCI      |                |            |      FAST |             |           |         | FIXED      | NONE                   | SPLIT            |
 | F3         | DDR_reset_n       | IOPAD     | PS_DDR_DRST_B_502       | BIDIR     | SSTL15            |                |            |      FAST |             |           |         | FIXED      | NONE                   | NONE             |
@@ -200,14 +200,14 @@ Table of Contents
 | F12        | FIXED_IO_mio[25]  | IOPAD     | PS_MIO25_501            | BIDIR     | LVCMOS18*         |                |          8 |      FAST |             |           |         | FIXED      | NONE                   | NONE             |
 | F13        | FIXED_IO_mio[38]  | IOPAD     | PS_MIO38_501            | BIDIR     | LVCMOS18*         |                |          8 |      FAST |             |           |         | FIXED      | NONE                   | NONE             |
 | F14        | FIXED_IO_mio[35]  | IOPAD     | PS_MIO35_501            | BIDIR     | LVCMOS18*         |                |          8 |      FAST |             |           |         | FIXED      | NONE                   | NONE             |
-| F15        |                   |           | VCCO_35                 |           |                   |             35 |            |           |             |           |    2.50 |            |                        |                  |
+| F15        |                   |           | VCCO_35                 |           |                   |             35 |            |           |             |           |   any** |            |                        |                  |
 | F16        |                   | IOB33M    | IO_L1P_T0_AD0P_35       | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
 | F17        |                   | IOB33S    | IO_L6N_T0_VREF_35       | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
 | F18        |                   | IOB33M    | IO_L5P_T0_AD9P_35       | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
 | F19        |                   | IOB33S    | IO_L20N_T3_AD6N_35      | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
 | F20        |                   |           | GND                     |           |                   |                |            |           |             |           |         |            |                        |                  |
 | F21        |                   | IOB33M    | IO_L23P_T3_35           | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
-| F22        | SW0               | IOB33S    | IO_L23N_T3_35           | INPUT     | LVCMOS25          |             35 |            |           |             |      NONE |         | FIXED      | NONE                   | NONE             |
+| F22        |                   | IOB33S    | IO_L23N_T3_35           | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
 | G1         | DDR_dq[9]         | IOPAD     | PS_DDR_DQ9_502          | BIDIR     | SSTL15_T_DCI      |                |            |      FAST |             |           |         | FIXED      | NONE                   | SPLIT            |
 | G2         | DDR_dq[8]         | IOPAD     | PS_DDR_DQ8_502          | BIDIR     | SSTL15_T_DCI      |                |            |      FAST |             |           |         | FIXED      | NONE                   | SPLIT            |
 | G3         |                   |           | GND                     |           |                   |                |            |           |             |           |         |            |                        |                  |
@@ -225,7 +225,7 @@ Table of Contents
 | G15        |                   | IOB33M    | IO_L4P_T0_35            | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
 | G16        |                   | IOB33S    | IO_L4N_T0_35            | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
 | G17        |                   | IOB33M    | IO_L6P_T0_35            | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
-| G18        |                   |           | VCCO_35                 |           |                   |             35 |            |           |             |           |    2.50 |            |                        |                  |
+| G18        |                   |           | VCCO_35                 |           |                   |             35 |            |           |             |           |   any** |            |                        |                  |
 | G19        |                   | IOB33M    | IO_L20P_T3_AD6P_35      | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
 | G20        |                   | IOB33M    | IO_L22P_T3_AD7P_35      | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
 | G21        |                   | IOB33S    | IO_L22N_T3_AD7N_35      | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
@@ -250,7 +250,7 @@ Table of Contents
 | H18        |                   | IOB33     | IO_25_35                | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
 | H19        |                   | IOB33M    | IO_L19P_T3_35           | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
 | H20        |                   | IOB33S    | IO_L19N_T3_VREF_35      | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
-| H21        |                   |           | VCCO_35                 |           |                   |             35 |            |           |             |           |    2.50 |            |                        |                  |
+| H21        |                   |           | VCCO_35                 |           |                   |             35 |            |           |             |           |   any** |            |                        |                  |
 | H22        |                   | IOB33M    | IO_L24P_T3_AD15P_35     | UNUSED    |                   |             35 |            |           |             |           |         |            |                        |                  |
 | J1         | DDR_dq[14]        | IOPAD     | PS_DDR_DQ14_502         | BIDIR     | SSTL15_T_DCI      |                |            |      FAST |             |           |         | FIXED      | NONE                   | SPLIT            |
 | J2         | DDR_dqs_n[1]      | IOPAD     | PS_DDR_DQS_N1_502       | BIDIR     | DIFF_SSTL15_T_DCI |                |            |      FAST |             |           |         | FIXED      | NONE                   | SPLIT            |
@@ -426,7 +426,7 @@ Table of Contents
 | T18        |                   | IOB33S    | IO_L23N_T3_34           | UNUSED    |                   |             34 |            |           |             |           |         |            |                        |                  |
 | T19        |                   | IOB33S    | IO_L22N_T3_34           | UNUSED    |                   |             34 |            |           |             |           |         |            |                        |                  |
 | T20        |                   |           | GND                     |           |                   |                |            |           |             |           |         |            |                        |                  |
-| T21        |                   | IOB33M    | IO_L1P_T0_33            | UNUSED    |                   |             33 |            |           |             |           |         |            |                        |                  |
+| T21        | LD1               | IOB33M    | IO_L1P_T0_33            | OUTPUT    | LVCMOS25          |             33 |         12 |      SLOW |             |           |         | FIXED      | NONE                   | NONE             |
 | T22        | LD0               | IOB33M    | IO_L2P_T0_33            | OUTPUT    | LVCMOS25          |             33 |         12 |      SLOW |             |           |         | FIXED      | NONE                   | NONE             |
 | U1         | DDR_dq[25]        | IOPAD     | PS_DDR_DQ25_502         | BIDIR     | SSTL15_T_DCI      |                |            |      FAST |             |           |         | FIXED      | NONE                   | SPLIT            |
 | U2         | DDR_dq[27]        | IOPAD     | PS_DDR_DQ27_502         | BIDIR     | SSTL15_T_DCI      |                |            |      FAST |             |           |         | FIXED      | NONE                   | SPLIT            |
@@ -441,15 +441,15 @@ Table of Contents
 | U11        |                   | IOB33S    | IO_L5N_T0_13            | UNUSED    |                   |             13 |            |           |             |           |         |            |                        |                  |
 | U12        |                   | IOB33M    | IO_L5P_T0_13            | UNUSED    |                   |             13 |            |           |             |           |         |            |                        |                  |
 | U13        |                   |           | GND                     |           |                   |                |            |           |             |           |         |            |                        |                  |
-| U14        |                   | IOB33     | IO_25_33                | UNUSED    |                   |             33 |            |           |             |           |         |            |                        |                  |
+| U14        | LD7               | IOB33     | IO_25_33                | OUTPUT    | LVCMOS25          |             33 |         12 |      SLOW |             |           |         | FIXED      | NONE                   | NONE             |
 | U15        |                   | IOB33M    | IO_L15P_T2_DQS_33       | UNUSED    |                   |             33 |            |           |             |           |         |            |                        |                  |
 | U16        |                   | IOB33S    | IO_L15N_T2_DQS_33       | UNUSED    |                   |             33 |            |           |             |           |         |            |                        |                  |
 | U17        |                   | IOB33M    | IO_L16P_T2_33           | UNUSED    |                   |             33 |            |           |             |           |         |            |                        |                  |
 | U18        |                   |           | VCCO_33                 |           |                   |             33 |            |           |             |           |    2.50 |            |                        |                  |
-| U19        |                   | IOB33     | IO_0_33                 | UNUSED    |                   |             33 |            |           |             |           |         |            |                        |                  |
+| U19        | LD6               | IOB33     | IO_0_33                 | OUTPUT    | LVCMOS25          |             33 |         12 |      SLOW |             |           |         | FIXED      | NONE                   | NONE             |
 | U20        |                   | IOB33M    | IO_L5P_T0_33            | UNUSED    |                   |             33 |            |           |             |           |         |            |                        |                  |
-| U21        |                   | IOB33S    | IO_L1N_T0_33            | UNUSED    |                   |             33 |            |           |             |           |         |            |                        |                  |
-| U22        |                   | IOB33S    | IO_L2N_T0_33            | UNUSED    |                   |             33 |            |           |             |           |         |            |                        |                  |
+| U21        | LD3               | IOB33S    | IO_L1N_T0_33            | OUTPUT    | LVCMOS25          |             33 |         12 |      SLOW |             |           |         | FIXED      | NONE                   | NONE             |
+| U22        | LD2               | IOB33S    | IO_L2N_T0_33            | OUTPUT    | LVCMOS25          |             33 |         12 |      SLOW |             |           |         | FIXED      | NONE                   | NONE             |
 | V1         |                   |           | VCCO_DDR_502            |           |                   |                |            |           |             |           |   any** |            |                        |                  |
 | V2         | DDR_dqs_p[3]      | IOPAD     | PS_DDR_DQS_P3_502       | BIDIR     | DIFF_SSTL15_T_DCI |                |            |      FAST |             |           |         | FIXED      | NONE                   | SPLIT            |
 | V3         | DDR_cke           | IOPAD     | PS_DDR_CKE_502          | BIDIR     | SSTL15            |                |            |      SLOW |             |           |         | FIXED      | NONE                   | NONE             |
@@ -471,7 +471,7 @@ Table of Contents
 | V19        |                   | IOB33S    | IO_L6N_T0_VREF_33       | UNUSED    |                   |             33 |            |           |             |           |         |            |                        |                  |
 | V20        |                   | IOB33S    | IO_L5N_T0_33            | UNUSED    |                   |             33 |            |           |             |           |         |            |                        |                  |
 | V21        |                   |           | VCCO_33                 |           |                   |             33 |            |           |             |           |    2.50 |            |                        |                  |
-| V22        |                   | IOB33M    | IO_L3P_T0_DQS_33        | UNUSED    |                   |             33 |            |           |             |           |         |            |                        |                  |
+| V22        | LD4               | IOB33M    | IO_L3P_T0_DQS_33        | OUTPUT    | LVCMOS25          |             33 |         12 |      SLOW |             |           |         | FIXED      | NONE                   | NONE             |
 | W1         | DDR_dq[28]        | IOPAD     | PS_DDR_DQ28_502         | BIDIR     | SSTL15_T_DCI      |                |            |      FAST |             |           |         | FIXED      | NONE                   | SPLIT            |
 | W2         | DDR_dqs_n[3]      | IOPAD     | PS_DDR_DQS_N3_502       | BIDIR     | DIFF_SSTL15_T_DCI |                |            |      FAST |             |           |         | FIXED      | NONE                   | SPLIT            |
 | W3         | DDR_dq[30]        | IOPAD     | PS_DDR_DQ30_502         | BIDIR     | SSTL15_T_DCI      |                |            |      FAST |             |           |         | FIXED      | NONE                   | SPLIT            |
@@ -493,7 +493,7 @@ Table of Contents
 | W19        |                   |           | GND                     |           |                   |                |            |           |             |           |         |            |                        |                  |
 | W20        |                   | IOB33M    | IO_L4P_T0_33            | UNUSED    |                   |             33 |            |           |             |           |         |            |                        |                  |
 | W21        |                   | IOB33S    | IO_L4N_T0_33            | UNUSED    |                   |             33 |            |           |             |           |         |            |                        |                  |
-| W22        |                   | IOB33S    | IO_L3N_T0_DQS_33        | UNUSED    |                   |             33 |            |           |             |           |         |            |                        |                  |
+| W22        | LD5               | IOB33S    | IO_L3N_T0_DQS_33        | OUTPUT    | LVCMOS25          |             33 |         12 |      SLOW |             |           |         | FIXED      | NONE                   | NONE             |
 | Y1         | DDR_dq[31]        | IOPAD     | PS_DDR_DQ31_502         | BIDIR     | SSTL15_T_DCI      |                |            |      FAST |             |           |         | FIXED      | NONE                   | SPLIT            |
 | Y2         |                   |           | GND                     |           |                   |                |            |           |             |           |         |            |                        |                  |
 | Y3         | DDR_dq[29]        | IOPAD     | PS_DDR_DQ29_502         | BIDIR     | SSTL15_T_DCI      |                |            |      FAST |             |           |         | FIXED      | NONE                   | SPLIT            |

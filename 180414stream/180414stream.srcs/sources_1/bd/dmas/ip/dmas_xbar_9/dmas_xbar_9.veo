@@ -55,46 +55,76 @@
 
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
 dmas_xbar_9 your_instance_name (
-  .aclk(aclk),                    // input aclk
-  .aresetn(aresetn),              // input aresetn
-  .s_axi_awaddr(s_axi_awaddr),    // input [31 : 0] s_axi_awaddr
-  .s_axi_awprot(s_axi_awprot),    // input [2 : 0] s_axi_awprot
-  .s_axi_awvalid(s_axi_awvalid),  // input [0 : 0] s_axi_awvalid
-  .s_axi_awready(s_axi_awready),  // output [0 : 0] s_axi_awready
-  .s_axi_wdata(s_axi_wdata),      // input [31 : 0] s_axi_wdata
-  .s_axi_wstrb(s_axi_wstrb),      // input [3 : 0] s_axi_wstrb
-  .s_axi_wvalid(s_axi_wvalid),    // input [0 : 0] s_axi_wvalid
-  .s_axi_wready(s_axi_wready),    // output [0 : 0] s_axi_wready
-  .s_axi_bresp(s_axi_bresp),      // output [1 : 0] s_axi_bresp
-  .s_axi_bvalid(s_axi_bvalid),    // output [0 : 0] s_axi_bvalid
-  .s_axi_bready(s_axi_bready),    // input [0 : 0] s_axi_bready
-  .s_axi_araddr(s_axi_araddr),    // input [31 : 0] s_axi_araddr
-  .s_axi_arprot(s_axi_arprot),    // input [2 : 0] s_axi_arprot
-  .s_axi_arvalid(s_axi_arvalid),  // input [0 : 0] s_axi_arvalid
-  .s_axi_arready(s_axi_arready),  // output [0 : 0] s_axi_arready
-  .s_axi_rdata(s_axi_rdata),      // output [31 : 0] s_axi_rdata
-  .s_axi_rresp(s_axi_rresp),      // output [1 : 0] s_axi_rresp
-  .s_axi_rvalid(s_axi_rvalid),    // output [0 : 0] s_axi_rvalid
-  .s_axi_rready(s_axi_rready),    // input [0 : 0] s_axi_rready
-  .m_axi_awaddr(m_axi_awaddr),    // output [95 : 0] m_axi_awaddr
-  .m_axi_awprot(m_axi_awprot),    // output [8 : 0] m_axi_awprot
-  .m_axi_awvalid(m_axi_awvalid),  // output [2 : 0] m_axi_awvalid
-  .m_axi_awready(m_axi_awready),  // input [2 : 0] m_axi_awready
-  .m_axi_wdata(m_axi_wdata),      // output [95 : 0] m_axi_wdata
-  .m_axi_wstrb(m_axi_wstrb),      // output [11 : 0] m_axi_wstrb
-  .m_axi_wvalid(m_axi_wvalid),    // output [2 : 0] m_axi_wvalid
-  .m_axi_wready(m_axi_wready),    // input [2 : 0] m_axi_wready
-  .m_axi_bresp(m_axi_bresp),      // input [5 : 0] m_axi_bresp
-  .m_axi_bvalid(m_axi_bvalid),    // input [2 : 0] m_axi_bvalid
-  .m_axi_bready(m_axi_bready),    // output [2 : 0] m_axi_bready
-  .m_axi_araddr(m_axi_araddr),    // output [95 : 0] m_axi_araddr
-  .m_axi_arprot(m_axi_arprot),    // output [8 : 0] m_axi_arprot
-  .m_axi_arvalid(m_axi_arvalid),  // output [2 : 0] m_axi_arvalid
-  .m_axi_arready(m_axi_arready),  // input [2 : 0] m_axi_arready
-  .m_axi_rdata(m_axi_rdata),      // input [95 : 0] m_axi_rdata
-  .m_axi_rresp(m_axi_rresp),      // input [5 : 0] m_axi_rresp
-  .m_axi_rvalid(m_axi_rvalid),    // input [2 : 0] m_axi_rvalid
-  .m_axi_rready(m_axi_rready)    // output [2 : 0] m_axi_rready
+  .aclk(aclk),                      // input aclk
+  .aresetn(aresetn),                // input aresetn
+  .s_axi_awaddr(s_axi_awaddr),      // input [31 : 0] s_axi_awaddr
+  .s_axi_awlen(s_axi_awlen),        // input [7 : 0] s_axi_awlen
+  .s_axi_awsize(s_axi_awsize),      // input [2 : 0] s_axi_awsize
+  .s_axi_awburst(s_axi_awburst),    // input [1 : 0] s_axi_awburst
+  .s_axi_awlock(s_axi_awlock),      // input [0 : 0] s_axi_awlock
+  .s_axi_awcache(s_axi_awcache),    // input [3 : 0] s_axi_awcache
+  .s_axi_awprot(s_axi_awprot),      // input [2 : 0] s_axi_awprot
+  .s_axi_awqos(s_axi_awqos),        // input [3 : 0] s_axi_awqos
+  .s_axi_awvalid(s_axi_awvalid),    // input [0 : 0] s_axi_awvalid
+  .s_axi_awready(s_axi_awready),    // output [0 : 0] s_axi_awready
+  .s_axi_wdata(s_axi_wdata),        // input [63 : 0] s_axi_wdata
+  .s_axi_wstrb(s_axi_wstrb),        // input [7 : 0] s_axi_wstrb
+  .s_axi_wlast(s_axi_wlast),        // input [0 : 0] s_axi_wlast
+  .s_axi_wvalid(s_axi_wvalid),      // input [0 : 0] s_axi_wvalid
+  .s_axi_wready(s_axi_wready),      // output [0 : 0] s_axi_wready
+  .s_axi_bresp(s_axi_bresp),        // output [1 : 0] s_axi_bresp
+  .s_axi_bvalid(s_axi_bvalid),      // output [0 : 0] s_axi_bvalid
+  .s_axi_bready(s_axi_bready),      // input [0 : 0] s_axi_bready
+  .s_axi_araddr(s_axi_araddr),      // input [31 : 0] s_axi_araddr
+  .s_axi_arlen(s_axi_arlen),        // input [7 : 0] s_axi_arlen
+  .s_axi_arsize(s_axi_arsize),      // input [2 : 0] s_axi_arsize
+  .s_axi_arburst(s_axi_arburst),    // input [1 : 0] s_axi_arburst
+  .s_axi_arlock(s_axi_arlock),      // input [0 : 0] s_axi_arlock
+  .s_axi_arcache(s_axi_arcache),    // input [3 : 0] s_axi_arcache
+  .s_axi_arprot(s_axi_arprot),      // input [2 : 0] s_axi_arprot
+  .s_axi_arqos(s_axi_arqos),        // input [3 : 0] s_axi_arqos
+  .s_axi_arvalid(s_axi_arvalid),    // input [0 : 0] s_axi_arvalid
+  .s_axi_arready(s_axi_arready),    // output [0 : 0] s_axi_arready
+  .s_axi_rdata(s_axi_rdata),        // output [63 : 0] s_axi_rdata
+  .s_axi_rresp(s_axi_rresp),        // output [1 : 0] s_axi_rresp
+  .s_axi_rlast(s_axi_rlast),        // output [0 : 0] s_axi_rlast
+  .s_axi_rvalid(s_axi_rvalid),      // output [0 : 0] s_axi_rvalid
+  .s_axi_rready(s_axi_rready),      // input [0 : 0] s_axi_rready
+  .m_axi_awaddr(m_axi_awaddr),      // output [191 : 0] m_axi_awaddr
+  .m_axi_awlen(m_axi_awlen),        // output [47 : 0] m_axi_awlen
+  .m_axi_awsize(m_axi_awsize),      // output [17 : 0] m_axi_awsize
+  .m_axi_awburst(m_axi_awburst),    // output [11 : 0] m_axi_awburst
+  .m_axi_awlock(m_axi_awlock),      // output [5 : 0] m_axi_awlock
+  .m_axi_awcache(m_axi_awcache),    // output [23 : 0] m_axi_awcache
+  .m_axi_awprot(m_axi_awprot),      // output [17 : 0] m_axi_awprot
+  .m_axi_awregion(m_axi_awregion),  // output [23 : 0] m_axi_awregion
+  .m_axi_awqos(m_axi_awqos),        // output [23 : 0] m_axi_awqos
+  .m_axi_awvalid(m_axi_awvalid),    // output [5 : 0] m_axi_awvalid
+  .m_axi_awready(m_axi_awready),    // input [5 : 0] m_axi_awready
+  .m_axi_wdata(m_axi_wdata),        // output [383 : 0] m_axi_wdata
+  .m_axi_wstrb(m_axi_wstrb),        // output [47 : 0] m_axi_wstrb
+  .m_axi_wlast(m_axi_wlast),        // output [5 : 0] m_axi_wlast
+  .m_axi_wvalid(m_axi_wvalid),      // output [5 : 0] m_axi_wvalid
+  .m_axi_wready(m_axi_wready),      // input [5 : 0] m_axi_wready
+  .m_axi_bresp(m_axi_bresp),        // input [11 : 0] m_axi_bresp
+  .m_axi_bvalid(m_axi_bvalid),      // input [5 : 0] m_axi_bvalid
+  .m_axi_bready(m_axi_bready),      // output [5 : 0] m_axi_bready
+  .m_axi_araddr(m_axi_araddr),      // output [191 : 0] m_axi_araddr
+  .m_axi_arlen(m_axi_arlen),        // output [47 : 0] m_axi_arlen
+  .m_axi_arsize(m_axi_arsize),      // output [17 : 0] m_axi_arsize
+  .m_axi_arburst(m_axi_arburst),    // output [11 : 0] m_axi_arburst
+  .m_axi_arlock(m_axi_arlock),      // output [5 : 0] m_axi_arlock
+  .m_axi_arcache(m_axi_arcache),    // output [23 : 0] m_axi_arcache
+  .m_axi_arprot(m_axi_arprot),      // output [17 : 0] m_axi_arprot
+  .m_axi_arregion(m_axi_arregion),  // output [23 : 0] m_axi_arregion
+  .m_axi_arqos(m_axi_arqos),        // output [23 : 0] m_axi_arqos
+  .m_axi_arvalid(m_axi_arvalid),    // output [5 : 0] m_axi_arvalid
+  .m_axi_arready(m_axi_arready),    // input [5 : 0] m_axi_arready
+  .m_axi_rdata(m_axi_rdata),        // input [383 : 0] m_axi_rdata
+  .m_axi_rresp(m_axi_rresp),        // input [11 : 0] m_axi_rresp
+  .m_axi_rlast(m_axi_rlast),        // input [5 : 0] m_axi_rlast
+  .m_axi_rvalid(m_axi_rvalid),      // input [5 : 0] m_axi_rvalid
+  .m_axi_rready(m_axi_rready)      // output [5 : 0] m_axi_rready
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

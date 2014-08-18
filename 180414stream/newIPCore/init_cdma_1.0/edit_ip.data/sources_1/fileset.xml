@@ -44,6 +44,9 @@
       <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../260214/IPCore/init_cdma_1.0"/>
       <Option Name="IPRepoPath" Val="$PPRDIR/../reg_init_1.0"/>
       <Option Name="IPRepoPath" Val="$PPRDIR/../Emul"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../init_axi_dma_1.0"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../../newIPCore"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../init_dma_2.0"/>
     </Config>
   </FileSet>
 </DARoots>

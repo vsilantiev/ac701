@@ -146,7 +146,13 @@
 		<Port Id="FIXED_IO_ps_porb" Dir="INOUT"/>
 		<Port Id="FIXED_IO_ps_srstb" Dir="INOUT"/>
 		<Port Id="LD0" Dir="OUT"/>
-		<Port Id="SW0" Dir="IN"/>
+		<Port Id="LD1" Dir="OUT"/>
+		<Port Id="LD2" Dir="OUT"/>
+		<Port Id="LD3" Dir="OUT"/>
+		<Port Id="LD4" Dir="OUT"/>
+		<Port Id="LD5" Dir="OUT"/>
+		<Port Id="LD6" Dir="OUT"/>
+		<Port Id="LD7" Dir="OUT"/>
 	</Ifc>
 </Interface>
 

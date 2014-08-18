@@ -11,15 +11,23 @@
 		parameter integer C_S00_AXI_ADDR_WIDTH	= 8,
 
 		// Parameters of Axi Master Bus Interface M00_AXI
-		parameter  C_M00_AXI_START_DATA_VALUE	= 32'hAA000000,
-		parameter  C_M00_AXI_TARGET_SLAVE_BASE_ADDR	= 32'h40000000,
+		///parameter  C_M00_AXI_TARGET_SLAVE_BASE_ADDR	= 32'h40000000,
 		parameter integer C_M00_AXI_ADDR_WIDTH	= 32,
 		parameter integer C_M00_AXI_DATA_WIDTH	= 32,
 		parameter integer C_M00_AXI_TRANSACTIONS_NUM	= 4
 	)
 	(
 		// Users to add ports here
-
+        output wire PS_START_CAPTURES,// со слайва
+        
+        output wire [17:0] PS_LEN_REF,//длина рефки от слайва т.е. от zynq
+        input wire [17:0] PL_LEN_REF,//длина рефки в init_dma т.е. в dma
+        
+        input wire IRQ_END_STR, 
+        
+        input wire PL_START_CAPTURES,
+        
+        output wire VALID2STR,
 		// User ports ends
 		// Do not modify the ports beyond this line
 
@@ -51,9 +59,7 @@
 		
 		
 		
-		input wire  m00_axi_init_axi_txn,
-		output wire  m00_axi_error,
-		output wire  m00_axi_txn_done,
+
 		input wire  m00_axi_aclk,
 		input wire  m00_axi_aresetn,
 		output wire [C_M00_AXI_ADDR_WIDTH-1 : 0] m00_axi_awaddr,
@@ -81,6 +87,8 @@
 		.C_S_AXI_DATA_WIDTH(C_S00_AXI_DATA_WIDTH),
 		.C_S_AXI_ADDR_WIDTH(C_S00_AXI_ADDR_WIDTH)
 	) init_axi_dma_v1_0_S00_AXI_inst (
+	     .S_PS_LEN_REF(PS_LEN_REF),
+	    .S_PS_START_CAPTURES(PS_START_CAPTURES),
 		.S_AXI_ACLK(s00_axi_aclk),
 		.S_AXI_ARESETN(s00_axi_aresetn),
 		.S_AXI_AWADDR(s00_axi_awaddr),
@@ -106,15 +114,15 @@
 
 // Instantiation of Axi Bus Interface M00_AXI
 	init_axi_dma_v1_0_M00_AXI # ( 
-		.C_M_START_DATA_VALUE(C_M00_AXI_START_DATA_VALUE),
-		.C_M_TARGET_SLAVE_BASE_ADDR(C_M00_AXI_TARGET_SLAVE_BASE_ADDR),
+		////.C_M_TARGET_SLAVE_BASE_ADDR(C_M00_AXI_TARGET_SLAVE_BASE_ADDR),
 		.C_M_AXI_ADDR_WIDTH(C_M00_AXI_ADDR_WIDTH),
 		.C_M_AXI_DATA_WIDTH(C_M00_AXI_DATA_WIDTH),
 		.C_M_TRANSACTIONS_NUM(C_M00_AXI_TRANSACTIONS_NUM)
 	) init_axi_dma_v1_0_M00_AXI_inst (
-		.INIT_AXI_TXN(m00_axi_init_axi_txn),
-		.ERROR(m00_axi_error),
-		.TXN_DONE(m00_axi_txn_done),
+	     .M_VALID2STR(VALID2STR),
+	     .M_IRQ_END_STR(IRQ_END_STR),
+	     .M_LEN_REF(PL_LEN_REF),
+	    .M_START_CAPTURES(PL_START_CAPTURES),
 		.M_AXI_ACLK(m00_axi_aclk),
 		.M_AXI_ARESETN(m00_axi_aresetn),
 		.M_AXI_AWADDR(m00_axi_awaddr),
@@ -139,7 +147,8 @@
 	);
 
 	// Add user logic here
-
+    assign PL_START_CAPTURES = PS_START_CAPTURES;// input = output
+    assign PL_LEN_REF = PS_LEN_REF;
 	// User logic ends
 
 	endmodule

@@ -15,7 +15,7 @@
     <File Path="$PSRCDIR/sources_1/imports/hdl/dmas_wrapper.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/bd/dmas/hdl/dmas_wrapper.v"/>
-        <Attr Name="ImportTime" Val="1398149817"/>
+        <Attr Name="ImportTime" Val="1399873647"/>
         <Attr Name="UsedInSynthesis" Val="1"/>
         <Attr Name="UsedInImplementation" Val="1"/>
         <Attr Name="UsedInSimulation" Val="1"/>
@@ -24,13 +24,12 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/bd/dmas/ip/dmas_stream_acp_0_2/dmas_stream_acp_0_2.upgrade_log"/>
-    <File Path="$PSRCDIR/sources_1/bd/dmas/ip/dmas_stream_adc_0_0/dmas_stream_adc_0_0.upgrade_log"/>
-    <File Path="$PSRCDIR/sources_1/bd/dmas/ip/dmas_stream_acp_0_3/dmas_stream_acp_0_3.upgrade_log"/>
-    <File Path="$PSRCDIR/sources_1/bd/dmas/ip/dmas_init_axi_dma_0_0/dmas_init_axi_dma_0_0.upgrade_log"/>
     <File Path="$PDATADIR/sources_1/ports.xml">
       <FileInfo SFType="PortsDb"/>
     </File>
+    <File Path="$PSRCDIR/sources_1/bd/dmas/ip/dmas_ADC_emul_0_2/dmas_ADC_emul_0_2.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/dmas/ip/dmas_def_stream_0_0/dmas_def_stream_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/dmas/ip/dmas_init_dma_v4_0_0/dmas_init_dma_v4_0_0.upgrade_log"/>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="dmas_wrapper"/>

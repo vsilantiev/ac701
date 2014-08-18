@@ -32,17 +32,17 @@ XMDF file found: chipscope_ila_0_xmdf.tcl
 WARNING: chipscope_ila_0.vhd does not exist, will not be added to ISE project.
 WARNING: chipscope_ila_0.vho does not exist, will not be added to ISE project.
 Adding
-/cf_ad9467_zed/implementation/chipscope_ila_0_wrapper/tmp/_cg/chipscope_ila_0.as
-y -view all -origin_type imported
+/home/vladimir/Z/zedboard/cf_ad9467_zed/implementation/chipscope_ila_0_wrapper/t
+mp/_cg/chipscope_ila_0.asy -view all -origin_type imported
 Adding
-/cf_ad9467_zed/implementation/chipscope_ila_0_wrapper/tmp/_cg/chipscope_ila_0.ng
-c -view all -origin_type created
+/home/vladimir/Z/zedboard/cf_ad9467_zed/implementation/chipscope_ila_0_wrapper/t
+mp/_cg/chipscope_ila_0.ngc -view all -origin_type created
 Checking file
-"/cf_ad9467_zed/implementation/chipscope_ila_0_wrapper/tmp/_cg/chipscope_ila_0.n
-gc" for project device match ...
+"/home/vladimir/Z/zedboard/cf_ad9467_zed/implementation/chipscope_ila_0_wrapper/
+tmp/_cg/chipscope_ila_0.ngc" for project device match ...
 File
-"/cf_ad9467_zed/implementation/chipscope_ila_0_wrapper/tmp/_cg/chipscope_ila_0.n
-gc" device information matches project device.
+"/home/vladimir/Z/zedboard/cf_ad9467_zed/implementation/chipscope_ila_0_wrapper/
+tmp/_cg/chipscope_ila_0.ngc" device information matches project device.
 INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
    Please set the new top explicitly by running the "project set top" command.
    To re-calculate the new top automatically, set the "Auto Implementation Top"

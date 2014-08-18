@@ -5,9 +5,7 @@ vhdl
 -intstyle
 default
 -lp
-/cf_lib/
+/home/vladimir/Z/zedboard/cf_lib/
 -msg
 __xps/ise/xmsgprops.lst
--parallel
-yes
 system.mhs

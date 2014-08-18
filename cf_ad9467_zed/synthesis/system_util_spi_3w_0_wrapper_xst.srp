@@ -1,11 +1,11 @@
 Release 14.7 - xst P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> 
-Parameter TMPDIR set to /cf_ad9467_zed/synthesis/xst_temp_dir/
+Parameter TMPDIR set to /home/vladimir/Z/zedboard/cf_ad9467_zed/synthesis/xst_temp_dir/
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 
@@ -37,11 +37,11 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "system_util_spi_3w_0_wrapper_xst.prj"
-Verilog Include Directory          : {"/cf_ad9467_zed/pcores/" "/cf_lib/edk/pcores/" "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/" "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/" }
+Verilog Include Directory          : {"/home/vladimir/Z/zedboard/cf_ad9467_zed/pcores/" "/home/vladimir/Z/zedboard/cf_lib/edk/pcores/" "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/" "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/" }
 
 ---- Target Parameters
 Target Device                      : xc7z020clg484-1
-Output File Name                   : "system_util_spi_3w_0_wrapper.ngc"
+Output File Name                   : "../implementation/system_util_spi_3w_0_wrapper.ngc"
 
 ---- Source Options
 Top Module Name                    : system_util_spi_3w_0_wrapper
@@ -56,7 +56,7 @@ Optimization Effort                : 1
 Hierarchy Separator                : /
 
 ---- Other Options
-Cores Search Directories           : {./}
+Cores Search Directories           : {../implementation}
 
 =========================================================================
 
@@ -64,10 +64,10 @@ Cores Search Directories           : {./}
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "/cf_lib/edk/pcores/util_spi_3w_v1_00_a/hdl/vhdl/util_spi_3w.vhd" into library util_spi_3w_v1_00_a
+Parsing VHDL file "/home/vladimir/Z/zedboard/cf_lib/edk/pcores/util_spi_3w_v1_00_a/hdl/vhdl/util_spi_3w.vhd" into library util_spi_3w_v1_00_a
 Parsing entity <util_spi_3w>.
 Parsing architecture <IMP> of entity <util_spi_3w>.
-Parsing VHDL file "/cf_ad9467_zed/synthesis/parallel_run/hdl/system_util_spi_3w_0_wrapper.vhd" into library work
+Parsing VHDL file "/home/vladimir/Z/zedboard/cf_ad9467_zed/hdl/system_util_spi_3w_0_wrapper.vhd" into library work
 Parsing entity <system_util_spi_3w_0_wrapper>.
 Parsing architecture <STRUCTURE> of entity <system_util_spi_3w_0_wrapper>.
 
@@ -84,13 +84,13 @@ Elaborating entity <util_spi_3w> (architecture <IMP>) from library <util_spi_3w_
 =========================================================================
 
 Synthesizing Unit <system_util_spi_3w_0_wrapper>.
-    Related source file is "/cf_ad9467_zed/synthesis/parallel_run/hdl/system_util_spi_3w_0_wrapper.vhd".
+    Related source file is "/home/vladimir/Z/zedboard/cf_ad9467_zed/hdl/system_util_spi_3w_0_wrapper.vhd".
     Summary:
 	no macro.
 Unit <system_util_spi_3w_0_wrapper> synthesized.
 
 Synthesizing Unit <util_spi_3w>.
-    Related source file is "/cf_lib/edk/pcores/util_spi_3w_v1_00_a/hdl/vhdl/util_spi_3w.vhd".
+    Related source file is "/home/vladimir/Z/zedboard/cf_lib/edk/pcores/util_spi_3w_v1_00_a/hdl/vhdl/util_spi_3w.vhd".
     Found 1-bit register for signal <x_csn_d>.
     Found 1-bit register for signal <m_enable>.
     Found 1-bit register for signal <m_rdwr>.
@@ -353,13 +353,13 @@ m_clk          |    2.161|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 19.00 secs
-Total CPU time to Xst completion: 18.68 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.92 secs
  
 --> 
 
 
-Total memory usage is 518520 kilobytes
+Total memory usage is 518356 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

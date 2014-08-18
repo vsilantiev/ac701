@@ -30,25 +30,7 @@
 	    input wire [C_M_AXI_ADDR_WIDTH-1 : 0] C_M_SRC_ADDR,
 		// Users to add ports here
         output wire [C_M_AXI_ADDR_WIDTH-1 : 0] ADDR_BUF,
-        
- 
-                
-                input wire [C_M_AXI_ADDR_WIDTH-1 : 0] C_M_BUF0_ADDR,
-        		input wire [C_M_AXI_ADDR_WIDTH-1 : 0] C_M_BUF1_ADDR,
-        		input wire [C_M_AXI_ADDR_WIDTH-1 : 0] C_M_BUF2_ADDR,
-        		input wire [C_M_AXI_ADDR_WIDTH-1 : 0] C_M_BUF3_ADDR,
-        		input wire [C_M_AXI_ADDR_WIDTH-1 : 0] C_M_BUF4_ADDR,
-        		input wire [C_M_AXI_ADDR_WIDTH-1 : 0] C_M_BUF5_ADDR,
-        		input wire [C_M_AXI_ADDR_WIDTH-1 : 0] C_M_BUF6_ADDR,
-        		input wire [C_M_AXI_ADDR_WIDTH-1 : 0] C_M_BUF7_ADDR,
-        		input wire [C_M_AXI_ADDR_WIDTH-1 : 0] C_M_BUF8_ADDR,
-        		input wire [C_M_AXI_ADDR_WIDTH-1 : 0] C_M_BUF9_ADDR,
-        		input wire [C_M_AXI_ADDR_WIDTH-1 : 0] C_M_BUF10_ADDR,
-        		input wire [C_M_AXI_ADDR_WIDTH-1 : 0] C_M_BUF11_ADDR,
-        		input wire [C_M_AXI_ADDR_WIDTH-1 : 0] C_M_BUF12_ADDR,
-        		input wire [C_M_AXI_ADDR_WIDTH-1 : 0] C_M_BUF13_ADDR,
-        		input wire [C_M_AXI_ADDR_WIDTH-1 : 0] C_M_BUF14_ADDR,
-        		input wire [C_M_AXI_ADDR_WIDTH-1 : 0] C_M_BUF15_ADDR,
+
         
         
 		// User ports ends
@@ -564,9 +546,7 @@
 	  always @(posedge M_AXI_ACLK)                                                      
 	  begin                                                                             
 	     if (M_AXI_ARESETN == 0 || init_txn_pulse == 1'b1)                                                         
-	      last_write <= 1'b0;                                                           
-	                                                                                    
-	    //The last write should be associated with a write address ready response       
+	      last_write <= 1'b0;                                                                 
 	    else if ((write_index == C_M_TRANSACTIONS_NUM) && M_AXI_AWREADY)                
 	      last_write <= 1'b1;                                                           
 	    else                                                                            
@@ -661,44 +641,7 @@
 
 	       end
             
-          always @(posedge M_AXI_ACLK)
-             begin
-                 if (M_AXI_ARESETN == 0)
-                      buff_addr <= 1'b0;
-                 else if (offset_ddr == 32'h0 && C_M_BUF0_ADDR != 0) 
-                      buff_addr <= C_M_BUF0_ADDR;
-                 else if (offset_ddr == 32'h0 && C_M_BUF1_ADDR != 0) 
-                      buff_addr <= C_M_BUF1_ADDR;
-                 else if (offset_ddr == 32'h0 && C_M_BUF2_ADDR != 0) 
-                      buff_addr <= C_M_BUF2_ADDR;
-                 else if (offset_ddr == 32'h0 && C_M_BUF3_ADDR != 0) 
-                      buff_addr <= C_M_BUF3_ADDR;
-                 else if (offset_ddr == 32'h0 && C_M_BUF4_ADDR != 0) 
-                      buff_addr <= C_M_BUF4_ADDR;
-                 else if (offset_ddr == 32'h0 && C_M_BUF5_ADDR != 0) 
-                      buff_addr <= C_M_BUF5_ADDR;
-                 else if (offset_ddr == 32'h0 && C_M_BUF6_ADDR != 0) 
-                      buff_addr <= C_M_BUF6_ADDR;
-                 else if (offset_ddr == 32'h0 && C_M_BUF7_ADDR != 0) 
-                      buff_addr <= C_M_BUF7_ADDR;
-                 else if (offset_ddr == 32'h0 && C_M_BUF8_ADDR != 0) 
-                      buff_addr <= C_M_BUF8_ADDR;
-                 else if (offset_ddr == 32'h0 && C_M_BUF9_ADDR != 0) 
-                      buff_addr <= C_M_BUF9_ADDR;
-                 else if (offset_ddr == 32'h0 && C_M_BUF10_ADDR != 0) 
-                      buff_addr <= C_M_BUF10_ADDR;
-                 else if (offset_ddr == 32'h0 && C_M_BUF11_ADDR != 0) 
-                      buff_addr <= C_M_BUF11_ADDR;
-                 else if (offset_ddr == 32'h0 && C_M_BUF12_ADDR != 0) 
-                      buff_addr <= C_M_BUF12_ADDR;
-                 else if (offset_ddr == 32'h0 && C_M_BUF13_ADDR != 0) 
-                      buff_addr <= C_M_BUF13_ADDR;
-                 else if (offset_ddr == 32'h0 && C_M_BUF14_ADDR != 0) 
-                      buff_addr <= C_M_BUF14_ADDR;
-                 else if (offset_ddr == 32'h0 && C_M_BUF15_ADDR != 0) 
-                      buff_addr <= C_M_BUF15_ADDR;                                                                     
-            end
-
+         
 	// User logic ends
 
 	endmodule

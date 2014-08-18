@@ -43,6 +43,11 @@
       <Option Name="IPRepoPath" Val="$PPRDIR/../../newIPCore"/>
       <Option Name="IPRepoPath" Val="/home/vladimir/Z/zedboard/180414stream/newIPCore/init_axi_dma_1.0"/>
       <Option Name="IPRepoPath" Val="$PPRDIR/../stream_acp_1.0"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../../../../180414stream/newIPCore/init_axi_dma_1.0"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../260214/IPCore/acp_1.0"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../init_cdma_1.0"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../../../260214/IPCore/acp_1.0"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../def_stream_1.0"/>
     </Config>
   </FileSet>
 </DARoots>

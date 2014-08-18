@@ -12,7 +12,8 @@
 	)
 	(
 		// Users to add ports here
-
+        output wire S_PS_START_CAPTURES,
+        output wire [17:0] S_PS_LEN_REF,
 		// User ports ends
 		// Do not modify the ports beyond this line
 
@@ -171,6 +172,8 @@
 	integer	 byte_index;
 
 	// I/O Connections assignments
+    assign S_PS_START_CAPTURES = slv_reg0 [18];
+    assign S_PS_LEN_REF[17:0] = slv_reg0 [17:0];
 
 	assign S_AXI_AWREADY	= axi_awready;
 	assign S_AXI_WREADY	= axi_wready;

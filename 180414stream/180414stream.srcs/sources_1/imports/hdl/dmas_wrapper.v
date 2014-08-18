@@ -23,7 +23,13 @@ module dmas_wrapper
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
     LD0,
-    SW0);
+    LD1,
+    LD2,
+    LD3,
+    LD4,
+    LD5,
+    LD6,
+    LD7);
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
   inout DDR_cas_n;
@@ -46,7 +52,13 @@ module dmas_wrapper
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
   output LD0;
-  input SW0;
+  output LD1;
+  output LD2;
+  output LD3;
+  output LD4;
+  output LD5;
+  output LD6;
+  output LD7;
 
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
@@ -70,7 +82,13 @@ module dmas_wrapper
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
   wire LD0;
-  wire SW0;
+  wire LD1;
+  wire LD2;
+  wire LD3;
+  wire LD4;
+  wire LD5;
+  wire LD6;
+  wire LD7;
 
 dmas dmas_i
        (.DDR_addr(DDR_addr),
@@ -95,5 +113,11 @@ dmas dmas_i
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
         .LD0(LD0),
-        .SW0(SW0));
+        .LD1(LD1),
+        .LD2(LD2),
+        .LD3(LD3),
+        .LD4(LD4),
+        .LD5(LD5),
+        .LD6(LD6),
+        .LD7(LD7));
 endmodule
